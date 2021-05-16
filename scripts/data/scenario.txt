@@ -1,0 +1,204 @@
+[H]Register
+
+Name: Users Registration
+
+Actors: Users
+
+Goal: Users do not have an account and want to use the system.
+
+Preconditions: User open registration page.
+
+Main Success Scenario:
+
+1. System will show a general information form to the user.
+
+2. Users fill the valid username and password in the general form.
+
+3. Users fill all general fields in the general form.
+
+4. Users confirm the general form.
+
+5. System will ask the user to fill a food preference form.
+
+6. Users fill the food preference form.
+
+7. Users confirm the registration form.
+
+8. User is registered and logged in.
+
+Extensions (a)
+
+2a. Username is invalid, already existed or password confirmation is mismatched.
+
+3a. System asks the user to input a valid username and password again.
+
+4a. Go back to the main scenario number 2.
+
+Extensions (b)
+
+3b. User didn’t fill some fields in the general form.
+
+4b. Users confirm the general form.
+
+5b. System asks the user to fill all the fields in the general form.
+
+6b. Go back to the main scenario number 3.
+
+Postconditions: None
+
+
+
+[H]ndividual Recommendation
+Name: Individual Recommendation
+
+Actors: Users
+
+Goal: Users want the system to suggest restaurants for them.
+
+Preconditions: User is logged in and opens an individual recommendation page.
+
+Main Success Scenario:
+
+1. User allows the system to access their current location
+
+2. The system shows a confirmation page to the user.
+
+3. Users confirm the setting.
+
+4. The system will show the suggested restaurant to the user
+
+5. Users select the restaurant that they want to go to.
+
+6. Users see their selected restaurant as a final restaurant.
+
+7. Recommendation completed
+
+Extensions (a)
+
+1a. Users do not allow the system to access their current location.
+
+2a. The nearby restaurant suggestion will be disabled.
+
+3a. Continue to the main scenario number 2.
+
+Extensions (b)
+
+2b. Users change the setting for that meal.
+
+3b. Go back to the main scenario number 3.
+
+Extensions (c)
+
+4c. Users save the restaurant to their favorite list.
+
+5c.  Go back to the main scenario number 5.
+
+Postconditions: None
+
+
+[H]Group Recommendation
+Name: Group Recommendation
+
+Actors: Users
+
+Goal: Users want the system to suggest restaurants for their group.
+
+Preconditions: Users are logged in and open a group recommendation page.
+
+Main Success Scenario:
+
+1. Users allow the system to access their current location.
+
+2. Users see the confirmation page and group pin code.
+
+3. Users share pin code or QR code to others members.
+
+4. Every member joined.
+
+5. Head of the party selects to start the recommendation.
+
+6. Everybody in the group sees the same set of the restaurants.
+
+7. Everybody selects their restaurant they want to go to by their preference.
+
+8. Everybody finished selecting the restaurants.
+
+9. The system shows the final restaurant to the group.
+
+9. Recommendation completed
+
+Extensions (a)
+
+3a. Users choose to join the group by inputting the group pin.
+
+4a. Group pin is invalid.
+
+5a. Users cannot join the invalid pin group.
+
+Extension (b)
+
+6b. Users save the restaurant to their favorite list.
+
+7b. Continue to the main scenario number 7
+
+Postconditions: None
+
+
+[H]Edit the Food Preference
+Actors: Users
+
+Goal: Users want to edit their food preference.
+
+Preconditions: Users are logged in.
+
+Main Success Scenario:
+
+1. Users choose to edit their food preference.
+
+2. The old food preference will be shown and let users edit them.
+
+5. User confirm the modification
+
+Postconditions: None
+
+[H]See the Favorite List
+Actors: Users
+
+Goal: Users want to see their restaurant favorite list.
+
+Preconditions: Users are logged in
+
+Main Success Scenario:
+
+1. Users choose to see their favorite list.
+
+2. The system shows a list of their favorite restaurants to the users.
+
+3. Users see their favorite list.
+
+Extensions (a)
+
+3a. Users choose to remove the restaurant from their favorite list.
+
+4a. The restaurant is removed from their favorites list.
+
+Postconditions: None
+
+
+[H]Logout
+Name: Users Logout
+
+Actors: Users
+
+Goal: Users want to logout from the system.
+
+Preconditions: Users are logged in.
+
+Main Success Scenario:
+
+1. User choose to logout
+
+2. User is logged out
+
+Postconditions: None
+

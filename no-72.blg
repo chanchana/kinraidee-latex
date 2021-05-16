@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: no-72.aux
+The style file: kmutt.bst
+Database file #1: string.bib
+Database file #2: cpe.bib
+Warning--empty year in bworld
+You've used 16 entries,
+            2177 wiz_defined-function locations,
+            854 strings with 9540 characters,
+and the built_in function-call counts, 5741 in all, are:
+= -- 573
+> -- 239
+< -- 4
++ -- 97
+- -- 78
+* -- 478
+:= -- 934
+add.period$ -- 16
+call.type$ -- 16
+change.case$ -- 71
+chr.to.int$ -- 0
+cite$ -- 17
+duplicate$ -- 227
+empty$ -- 473
+format.name$ -- 78
+if$ -- 1215
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 16
+newline$ -- 84
+num.names$ -- 32
+pop$ -- 97
+preamble$ -- 1
+purify$ -- 71
+quote$ -- 0
+skip$ -- 142
+stack$ -- 0
+substring$ -- 378
+swap$ -- 52
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 62
+warning$ -- 1
+while$ -- 58
+width$ -- 18
+write$ -- 193
+(There was 1 warning)

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  16 MAY 2021 13:40
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  16 MAY 2021 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -442,6 +442,15 @@ braces):
 >  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 )
 Package polyglossia Info: Default language is latex.
+) (/usr/local/texlive/2021basic/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen169
+\TX@old@table=\dimen170
+\TX@old@col=\dimen171
+\TX@target=\dimen172
+\TX@delta=\dimen173
+\TX@cols=\count302
+\TX@ftn=\toks30
 )
 (/usr/local/texlive/2021basic/texmf-dist/tex/latex/polyglossia/gloss-english.ld
 f
@@ -601,50 +610,55 @@ tterspace=0;extend=1.0;mapping=tex-text;"
 (fontspec)             =1.0\fontdimen 4\font 
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 12.
-\c@theorem=\count302
-\c@lemma=\count303
-\c@corollary=\count304
+(Font)              scaled to size 10.0pt on input line 13.
+\c@theorem=\count303
+\c@lemma=\count304
+\c@corollary=\count305
 
 (./no-72.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
+
+
+LaTeX Warning: Label `fig:3seqdiagram_register' multiply defined.
+
 )
 \openout1 = `no-72.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-20.
+21.
  (/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 121.
 LaTeX Font Info:    Trying to load font information for T3+cmr on input line 12
-0.
- (/usr/local/texlive/2021basic/texmf-dist/tex/latex/tipa/t3cmr.fd
+1.
+
+(/usr/local/texlive/2021basic/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -688,7 +702,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 120.
+Package hyperref Info: Link coloring ON on input line 121.
 
 (/usr/local/texlive/2021basic/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -700,43 +714,43 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ing.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count305
+\c@section@level=\count306
 )
-LaTeX Info: Redefining \ref on input line 120.
-LaTeX Info: Redefining \pageref on input line 120.
-LaTeX Info: Redefining \nameref on input line 120.
+LaTeX Info: Redefining \ref on input line 121.
+LaTeX Info: Redefining \pageref on input line 121.
+LaTeX Info: Redefining \nameref on input line 121.
  (./no-72.out) (./no-72.out)
 \@outlinefile=\write3
 \openout3 = `no-72.out'.
 
-LaTeX Info: Redefining \rmfamily on input line 120.
-LaTeX Info: Redefining \sffamily on input line 120.
-LaTeX Info: Redefining \ttfamily on input line 120.
+LaTeX Info: Redefining \rmfamily on input line 121.
+LaTeX Info: Redefining \sffamily on input line 121.
+LaTeX Info: Redefining \ttfamily on input line 121.
 File: logo02.jpg Graphic file (type bmp)
 <logo02.jpg>
  [1
 
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 130
+LaTeX Font Info:    Trying to load font information for U+msa on input line 131
 .
 
 (/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 130
+LaTeX Font Info:    Trying to load font information for U+msb on input line 131
 .
 
 (/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 13
-0.
+1.
 
 (/usr/local/texlive/2021basic/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in alignment at lines 130--130
+Underfull \hbox (badness 10000) in alignment at lines 131--131
 [] [] 
  []
 
@@ -745,156 +759,156 @@ Underfull \hbox (badness 10000) in alignment at lines 130--130
 Package hyperref Warning: bookmark level for unknown chapterx defaults to 0.
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 135.
+(Font)              scaled to size 10.0pt on input line 136.
 
-Underfull \hbox (badness 10000) in alignment at lines 143--145
+Underfull \hbox (badness 10000) in alignment at lines 144--146
 [][] 
  []
 
 [2]
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 12.29996pt on input line 154.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-\thai@year=\count306
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+(Font)              scaled to size 12.29996pt on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count307
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count308
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count309
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count310
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count311
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count312
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count313
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count314
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count315
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count316
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 \thai@year=\count317
-LaTeX Info: Redefining \rmfamily on input line 155.
-LaTeX Info: Redefining \sffamily on input line 155.
-LaTeX Info: Redefining \ttfamily on input line 155.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
+\thai@year=\count318
+LaTeX Info: Redefining \rmfamily on input line 156.
+LaTeX Info: Redefining \sffamily on input line 156.
+LaTeX Info: Redefining \ttfamily on input line 156.
 
-Overfull \hbox (6.50941pt too wide) in paragraph at lines 157--158
+Overfull \hbox (6.50941pt too wide) in paragraph at lines 158--159
 []\TU/THSarabunNew(0)/m/n/10 ในช่วงไม่กี่ปีที่ผ่านมาได้มีการใช้ระบบแนะนำ (Recom
 mendation System) อย่างแพร่หลายไม่ว่าจะเป็นภาพยนตร์ เพลง หรือระบบแนะนำ
  []
 
 
-Overfull \hbox (12.06892pt too wide) in paragraph at lines 157--158
+Overfull \hbox (12.06892pt too wide) in paragraph at lines 158--159
 \TU/THSarabunNew(0)/m/n/10 ผลิตภัณฑ์ต่าง ๆ เพื่อลดระยะเวลาและความยุ่งยากในการค้
 นหาของผู้ใช้รวมถึงเพิ่มประสบการณ์ของผู้ใช้อย่างไรก็ตามระบบแนะนำร้านอาหาร
  []
 
 
-Overfull \hbox (7.0875pt too wide) in paragraph at lines 157--158
+Overfull \hbox (7.0875pt too wide) in paragraph at lines 158--159
 \TU/THSarabunNew(0)/m/n/10 ยังมีน้อยมากในวงการระบบคำแนะนำนอกจากนั้นระบบแนะนำร้า
 นอาหารที่มีอยู่ในประเทศไทยเป็นเพียงแอปพลิเคชันแบบสุ่มและส่วนใหญ่
  []
 
 
-Overfull \hbox (3.09001pt too wide) in paragraph at lines 159--160
+Overfull \hbox (3.09001pt too wide) in paragraph at lines 160--161
 []\TU/THSarabunNew(0)/m/n/10 ด้วยเหตุนี้เอง ทางผู้พัฒนาจึงมีความตั้งใจที่จะพัฒน
 าเว็บแอปพลิเคชันสำหรับแนะนำร้านอาหารที่อยู่ในพื้นที่จังหวัดกรุงเทพมหานครสำหรับ
  []
 
 
-Overfull \hbox (11.14642pt too wide) in paragraph at lines 159--160
+Overfull \hbox (11.14642pt too wide) in paragraph at lines 160--161
 \TU/THSarabunNew(0)/m/n/10 รายบุคคลและรายกลุ่มขึ้น เพื่อเป็นตัวช่วยในการตัดสินใ
 จทั้งแบบเดี่ยวและกลุ่มได้ดีมากยิ่งขึ้น โดยระบบแนะนําร้านอาหารจะอ้างอิงจากข้อมูล
 
  []
 
 
-Overfull \hbox (2.68407pt too wide) in paragraph at lines 159--160
+Overfull \hbox (2.68407pt too wide) in paragraph at lines 160--161
 \TU/THSarabunNew(0)/m/n/10 ในการหาค่าเหมาะสมที่สุดเชิงคณิตศาสตร์ (Mathematical 
 Optimization) สุดท้ายนี้ผู้พัฒนามีความมุ่งหวังว่าระบบแนะนําร้านอาหารราย
  []
 
 
-Overfull \hbox (17.38255pt too wide) in paragraph at lines 159--160
+Overfull \hbox (17.38255pt too wide) in paragraph at lines 160--161
 \TU/THSarabunNew(0)/m/n/10 บุคคลและรายกลุ่มในโครงงานนี้จะช่วยลดเวลาที่เสียไปในก
 ารตัดสินใจและเพิ่มความพึงพอใจของผู้ใช้งานต่อร้านอาหารที่ระบบได้ทำการแนะนำ 
  []
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 12.29996pt on input line 166.
+(Font)              scaled to size 12.29996pt on input line 167.
 
-Underfull \hbox (badness 10000) in alignment at lines 163--167
+Underfull \hbox (badness 10000) in alignment at lines 164--168
 [][] 
  []
 
 [3]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 175.
+(Font)              scaled to size 12.0pt on input line 176.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 175.
+(Font)              scaled to size 12.0pt on input line 176.
 
-Overfull \hbox (13.67783pt too wide) in paragraph at lines 180--181
+Overfull \hbox (13.67783pt too wide) in paragraph at lines 181--182
 []\TU/TimesNewRoman(0)/m/n/10 We would also like to express our very great appr
 eciation to our committees, Asst.Prof.Dr. Rajchawit Sarochawik-
  []
@@ -907,11 +921,11 @@ LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
  [5
 
-] [6])
+] [6] [7])
 \tf@toc=\write4
 \openout4 = `no-72.toc'.
 
- [7] (./no-72.lot
+ [8] (./no-72.lot
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
@@ -919,26 +933,21 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 \tf@lot=\write5
 \openout5 = `no-72.lot'.
 
- [8
+ [9
 
 ] (./no-72.lof
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
-)
+ [10
+
+])
 \tf@lof=\write6
 \openout6 = `no-72.lof'.
 
- [9
-
-]
-Overfull \hbox (12.98328pt too wide) in paragraph at lines 203--203
+ [11]
+Overfull \hbox (12.98328pt too wide) in paragraph at lines 204--204
 []|\TU/TimesNewRoman(0)/b/n/10 SYMBOL| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
  []
 
 
@@ -946,9 +955,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 []|\TU/TimesNewRoman(0)/m/n/10 jobs/
  []
 
-[10
 
-] [11
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
+ []
+
+[12
+
+] [13
 
 ]
 Chapter 1.
@@ -958,19 +972,19 @@ Package hyperref Warning: bookmark level for unknown chapterxx defaults to 0.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 228.
+(hyperref)                removed on input line 229.
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 14.0pt on input line 230.
+(Font)              scaled to size 14.0pt on input line 231.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 13.0pt on input line 248.
+(Font)              scaled to size 13.0pt on input line 249.
 [1
 
 ] [2] [3] [4]
 File: ./images/1gantt1.png Graphic file (type bmp)
 <./images/1gantt1.png>
 
-Overfull \hbox (6.38pt too wide) in paragraph at lines 395--396
+Overfull \hbox (6.38pt too wide) in paragraph at lines 396--397
  [][] 
  []
 
@@ -980,14 +994,224 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ./images/1gantt2.png Graphic file (type bmp)
 <./images/1gantt2.png>
 
-Overfull \hbox (6.38pt too wide) in paragraph at lines 400--401
+Overfull \hbox (6.38pt too wide) in paragraph at lines 401--402
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] [6] [7]
+[5] [6] [7] [8]
+Chapter 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern -5.0pt
+(hyperref)                removed on input line 433.
+
+[9
+
+]
+Chapter 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern -5.0pt
+(hyperref)                removed on input line 453.
+
+[10
+
+]
+File: ./images/3usecase.png Graphic file (type bmp)
+<./images/3usecase.png>
+
+Overfull \hbox (6.38pt too wide) in paragraph at lines 478--479
+ [][] 
+ []
+
+[11] [12] [13] [14] [15]
+File: ./images/3functional_breakdown.png Graphic file (type bmp)
+<./images/3functional_breakdown.png>
+File: ./images/3system_overview.png Graphic file (type bmp)
+<./images/3system_overview.png>
+ [16] [17]
+File: ./images/3architect.png Graphic file (type bmp)
+<./images/3architect.png>
+ [18]
+File: ./images/3arch_appserver.png Graphic file (type bmp)
+<./images/3arch_appserver.png>
+ [19]
+File: ./images/3arch_appclient.png Graphic file (type bmp)
+<./images/3arch_appclient.png>
+File: ./images/3arch_recommender.png Graphic file (type bmp)
+<./images/3arch_recommender.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20]
+File: ./images/3arch_dataservice.png Graphic file (type bmp)
+<./images/3arch_dataservice.png>
+ [21]
+File: ./images/3arch_database.png Graphic file (type bmp)
+<./images/3arch_database.png>
+ [22]
+File: ./images/3actdiagram_register.png Graphic file (type bmp)
+<./images/3actdiagram_register.png>
+ [23]
+File: ./images/3actdiagram_indirec.png Graphic file (type bmp)
+<./images/3actdiagram_indirec.png>
+ [24]
+File: ./images/3actdiagram_grouprec.png Graphic file (type bmp)
+<./images/3actdiagram_grouprec.png>
+ [25]
+File: ./images/3seqdiagram_register.png Graphic file (type bmp)
+<./images/3seqdiagram_register.png>
+ [26]
+File: ./images/3seqdiagram_indirec.png Graphic file (type bmp)
+<./images/3seqdiagram_indirec.png>
+
+Overfull \hbox (13.52638pt too wide) in paragraph at lines 816--817
+ [][] 
+ []
+
+[27] [28]
+File: ./images/3seqdiagram_creategroup.png Graphic file (type bmp)
+<./images/3seqdiagram_creategroup.png>
+ [29]
+File: ./images/3seqdiagram_grouprec.png Graphic file (type bmp)
+<./images/3seqdiagram_grouprec.png>
+ [30] [31]
+File: ./images/3ui_StartPageUserInterfaceDesign.png Graphic file (type bmp)
+<./images/3ui_StartPageUserInterfaceDesign.png>
+ [32]
+File: ./images/3ui_RegistrationPageUserInterfaceDesign.png Graphic file (type b
+mp)
+<./images/3ui_RegistrationPageUserInterfaceDesign.png>
+ [33]
+File: ./images/3ui_ProfileSetupPageUserInterfaceDesign.png Graphic file (type b
+mp)
+<./images/3ui_ProfileSetupPageUserInterfaceDesign.png>
+ [34]
+File: ./images/3ui_HomePageUserInterfaceDesign.png Graphic file (type bmp)
+<./images/3ui_HomePageUserInterfaceDesign.png>
+File: ./images/3ui_FilterWindowUserInterfaceDesign.png Graphic file (type bmp)
+<./images/3ui_FilterWindowUserInterfaceDesign.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35] [36]
+File: ./images/3ui_RecommendationSuccessPageUserInterfaceDesign.png Graphic fil
+e (type bmp)
+<./images/3ui_RecommendationSuccessPageUserInterfaceDesign.png>
+ [37]
+File: ./images/3ui_GroupJoiningUserInterfaceDesign.png Graphic file (type bmp)
+<./images/3ui_GroupJoiningUserInterfaceDesign.png>
+ [38]
+File: ./images/3ui_GroupConfirmationPageUserInterfaceDesign.png Graphic file (t
+ype bmp)
+<./images/3ui_GroupConfirmationPageUserInterfaceDesign.png>
+ [39]
+File: ./images/3ui_GroupRecommendationPageUserInterfaceDesign.png Graphic file 
+(type bmp)
+<./images/3ui_GroupRecommendationPageUserInterfaceDesign.png>
+ [40]
+File: ./images/3ui_ProfileManagementPageUserInterfaceDesign.png Graphic file (t
+ype bmp)
+<./images/3ui_ProfileManagementPageUserInterfaceDesign.png>
+ [41]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[42]
+File: ./images/3db_RestaurantCollectionsIndexes.png Graphic file (type bmp)
+<./images/3db_RestaurantCollectionsIndexes.png>
+File: ./images/3db_UserCollectionsIndexes.png Graphic file (type bmp)
+<./images/3db_UserCollectionsIndexes.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[43]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ./model2.pdf Graphic file (type pdf)
+<use ./model2.pdf>
+[44] [45]
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern -5.0pt
+(hyperref)                removed on input line 1166.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1179--1179
+[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
+ []
+
+[46
+
+]
+Chapter 5.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern -5.0pt
+(hyperref)                removed on input line 1208.
+
+[47
+
+]
+Chapter 6.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern -5.0pt
+(hyperref)                removed on input line 1215.
+
+(./no-72.bbl [48
+
+]) [49
+
+] [50]
+
+Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.0pt
+(hyperref)                replaced by space on input line 1242.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1244
+
+ []
+
+[51] [52]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.0pt
+(hyperref)                replaced by space on input line 1312.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1313--1314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1325--1326
+
+ []
+
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1038,27 +1262,30 @@ braces):
 >  {thai/babelname}  =>  {thai}
 >  {thai/localnumeral}  =>  {thainumerals}
 >  {thai/Localnumeral}  =>  {thainumerals}.
- [8] (./no-72.aux
+[53] (./no-72.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
 )
+
+LaTeX Warning: There were multiply-defined labels.
+
 
 Package rerunfilecheck Warning: File `no-72.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `no-72.out':
-(rerunfilecheck)             Before: 4D068E0F7868DF64FD55D45B32BFD508;9551
-(rerunfilecheck)             After:  1403C7F85575A86C27CAA91718E00AB0;4981.
+(rerunfilecheck)             Before: F544F336E802B7E2C002F2E4CD6F7245;16418
+(rerunfilecheck)             After:  943271693E175ACAF87ADBB127AACB9B;17321.
  ) 
 Here is how much of TeX's memory you used:
- 16263 strings out of 478436
- 299286 string characters out of 5853929
- 673118 words of memory out of 5000000
- 35898 multiletter control sequences out of 15000+600000
- 406079 words of font info for 73 fonts, out of 8000000 for 9000
+ 16553 strings out of 478436
+ 308065 string characters out of 5853929
+ 691773 words of memory out of 5000000
+ 36151 multiletter control sequences out of 15000+600000
+ 406087 words of font info for 74 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 110i,9n,117p,843b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,11n,117p,1119b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on no-72.pdf (20 pages).
+Output written on no-72.pdf (67 pages).

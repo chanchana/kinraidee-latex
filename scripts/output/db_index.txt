@@ -1,0 +1,11 @@
+With database indexing, we can query the data faster by storing additional information about data. Every collection has an indexed id so that we can query the data from their id faster. However, we also set more indexing on 2 collections which are restaurants and users.
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/3db_RestaurantCollectionsIndexes.png}
+\caption{Restaurant Collection’s Indexes}\label{fig:3db_RestaurantCollectionsIndexes}
+\end{figure}
+From~\ref{fig:3db_RestaurantCollectionsIndexes}, we can see that the restaurant collection has one more index which is the location index. This index is used for query restaurants by a distance of 2 coordinates.
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/3db_UserCollectionsIndexes.png}
+\caption{User Collection’s Indexes}\label{fig:3db_UserCollectionsIndexes}
+\end{figure}
+From~\ref{fig:3db_UserCollectionsIndexes}, we can see that the user collection has one more index which is the username index. This index is used for query users by username. It also helps when checking the username’s availability. The username index also applies to other collections that require finding  the record by the username which is the favorite collection.

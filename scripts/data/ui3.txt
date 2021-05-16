@@ -1,0 +1,151 @@
+[H]Login Page
+
+
+Figure 3.16: Start Page User Interface Design
+
+        1. Username and password input fields
+
+        2. Login button to confirm the input fields
+
+        3. Register button, it links to the registration page
+
+        4. Login as Guest for users who do not want an account but want to start using our system right away.
+
+        When users open the application, the login page will appear first if they did not login yet. They need to input their username and password in the fields (1) then They can tap the “Login” button (2) to log in. After login, they will see the home page (Figure 3.19). If they do not have an account, they can tap on the “Register” button (3) and they will see the registration page (Figure 3.17). However, they can choose to login without any account by tapping on the “Login as Guest” button (4) and the system will directly bring them to the home page (Figure 3.19).
+
+[H]Registration Page
+
+
+Figure 3.17: Registration Page User Interface Design
+
+        1. New username field
+
+        2. New password field
+
+        3. Re-enter the password field, it needs to be matched with the password field
+
+        4. Next button, links to a general information setup page
+
+        If users choose to register, the registration page will appear and ask users to input a new username, password, and re-enter the password (1), (2), (3) respectively. If the input username is invalid or already taken, the system will alert users and let them choose a new username. If the password field and re-enter password field are mismatched, the system will also alert and tell users to input their password and re-enter password fields again. After all of the information in the fields is valid and users tap on the “Next” button (4), they will proceed to the next step which is the profile setting step stated in Figure 3.18.
+
+
+
+Figure 3.18: Profile Setup Page User Interface Design
+
+        1. General information form
+
+        2. Next button, will proceed users to the food preference setup step
+
+        3. Food preference form, let users choose their food preference in each category.
+
+        4. Finish button, to complete the form and the registration.
+
+        5. Skip button, lets users skip the food preference setup process.
+
+        After users input the valid username and password, the next step is user profile setup. This process consists of 2 steps which are general information setup and food preferences information setup. The first one on the left of Figure 3.18 is a general information setup step. Users are required to fill in all the information in the form and accept the terms and privacy (1) then they can proceed to the next step by tapping the “Next” button (2). For the second step, preferences information set up, they will see many available categories of food. They can choose their food preferences in the form (3) and tap on “Finish” to complete the registration. However, if they do not want to set their preferences yet, they can tap on the “Skip” button (5) to skip the preferences setup process. After the registration is completed, they will see the home page (Figure 3.19) and start using our system.
+
+[H]Individual Restaurant Recommendation Page
+
+
+Figure 3.19: Home Page User Interface Design
+
+        1. Restaurant card, it shows the general information about a restaurant.
+
+        2. “i” button, when tapped, more information will be shown.
+
+        3 Filter button, it will bring up the filter window.
+
+        4. Like button, tapped once users are satisfied with the restaurant
+
+        5. Dislike button, if users are not satisfied with the restaurant, they can tap this button to see the next suggestion.
+
+        6. Profile button, links to the profile page.
+
+        
+
+After users logged in or registered, they will see the home page. By entering the home page, the system will automatically start recommending some restaurants to users. Users will see the information of each suggested restaurant (1). They can also see some more information about each restaurant by tapping the “i” icon (2). They can filter the suggested restaurants by tapping the “Filters” button (3) and the filter window will appear (Figure 3.20). If they are satisfied with the suggested restaurant, they can tap on the “Yummy” button (4) or swipe the restaurant card to the right, and then the success page will appear (Figure 3.21). Otherwise, if they are not satisfied with that restaurant, they can tap on the “Nah” button (5) or swipe the restaurant card to the left, and then the system will show the next suggested restaurant to users and let them consider it again. Users can see their profile by tapping the profile picture button (6) and the profile management page will appear (Figure 3.25).
+
+
+
+Figure 3.20: Filter Window User Interface Design
+
+        1. Filtering options.
+
+        2. Arrow button, will apply current filtering and close the filter window.
+
+        3. Filter button with applied filter tags, users can open the filter window again by tapping this button.
+
+        4. Reset button, will remove all the applied filters.
+
+        After users tap on the “Filter” button on the home page (number 3 on Figure 3.19), the filter window will appear. Users can filter restaurants by choosing the available options that appear on the filter window (1). After finishing choosing the filtering option, they can tap on the arrow icon (2) to apply the filter and the filter window will be minimized. They can see the applied filters at the bottom of the screen (3). They can change their filtering by tapping on the bottom bar (3) to bring the filter window up again. They can tap on the “Reset” button (4) to remove all of the applied filters. After applying any filters, the system will suggest the restaurant that matches its filtering condition.
+
+
+
+Figure 3.21: Recommendation Success Page User Interface Design
+
+        1. Swipe right for the satisfying restaurant.
+
+        2. Like button which works the same as the swipe right.
+
+        3. Restaurant card showing general information about the liked restaurant.
+
+        4. Recommendation rating, let users rate satisfaction with their current recommendation.
+
+        On the home page which users see the suggested restaurant, if users are satisfied with the suggested restaurant, they can swipe right (1) or tap on the “Yummy” button (2). After that, the recommendation success page will appear (the right picture in Figure 3.21). On the success page, users can see the restaurant information in the center of the screen (3). They can give a rating score for the recommendation from 1 star to 5 stars (4). After they are done seeing the information, they can tap on the “Done” button (5) to close the success page and they will see the home page (Figure 3.19) again.
+
+[H]Group Restaurant Recommendation Page
+
+
+Figure 3.22: Group Joining User Interface Design
+
+        1. Group pin code which other members used for joining the group.
+
+        2. Join button, it will bring up the joining dialog
+
+        3. Group pin code input field, let users input the group pin code.
+
+        4. Join button which lets users join their existing group without input the group pin code again.
+
+        In the following section, we will walk through the group recommendation process. On the home page (the left picture in Figure 3.22), it will show the group pin on the top of the screen (1). To start the group recommendation, the user has to share this pin code with other members in the group and this will make the pin code owner be the head of the group. Other members can join the group by tapping on the “Join” button (2) and the joining dialog will appear (the right picture in Figure 3.22). In the joining dialog, other members can input the pin that appeared on the group head’s device (1). Moreover, users can join the previously joined group, which will be shown as favorites. They can directly join their favorite group by tapping the “Join” button (4) in the group they want to join without input the pin code again. After someone joins the group the group recommendation will be initialized and all members that joined the group will see the group confirmation page next (Figure 3.23).
+
+
+
+Figure 3.23: Group Confirmation Page User Interface Design
+
+        1. Group pin code which other members used for joining the group.
+
+        2. Crown icon indicates who is the head of this group
+
+        3. 3 dots icon for more action on each member in the group.
+
+        4. Kick button, it let the head remove some members from the group.
+
+        After someone joins the group, all joined members will see this group confirmation page. On the top, there is a group pin code that the members in the group can share with other people if they want to join this eating group. The head of the group will have a crown icon (2) and they can manage the members in the group. If the head wants to remove some of the members, they can do it by tapping the 3 dots icon (3) followed by tapping the “Kick” button, after that the kicked member will no longer be in the party. When all members are joined and ready, the head will tap on the “Start” button to begin the group recommendation.
+
+
+
+
+Figure 3.24: Group Recommendation Page User Interface Design
+
+        1. Like or dislike area for choosing the restaurant.
+
+        2. Progress bar indicates the progress of the group decision.
+
+        3. Members button, will bring up the members dialog which shows all members.
+
+        4. Filter button for setting the filters for restaurants.
+
+        After the group has been created and confirmed, the group recommendation will begin. All members will see the same suggested set of restaurants. Each member will choose whether they like or not but tapping “Yummy” and “Nah” or swiping (1) is the same as in individual recommendation. The group recommendation will be finished after all members like the same restaurant. The top bar (2) indicates the highest number of members that agree on the same restaurant, when it is full, it means everybody agrees on the same restaurant and the recommendation is finished. Users can see the members by tapping the “Member” button (3). Users still can set the filter by tapping the “Filter” button (4) but this time the filters will be applied to every member in the group.
+
+[H]Profile Page
+
+
+Figure 3.25: Profile Management Page User Interface Design
+
+        1. History button, it links to the history page (the right picture in Figure 3.25)
+
+        2. Privacy button, it let users change their password and their privacy setting.
+
+        3. Back button which brings users back to their home page.
+
+        After users choose to view their profile (number 6 in Figure 3.19), they will see the left picture in Figure 3.25. They can choose to view their selected restaurant history by tapping the “History” button (1) and a list of selected restaurants will be shown (the right picture of Figure 3.25). They can also choose to edit their profile such as their name, gender, or birthdate or choose to edit their food preferences. They can reset their password and set the privacy setting under the “Privacy” section (2). They can go back to the main screen by tapping the arrow icon (3).

@@ -1,0 +1,83 @@
+Table 3.1: Database Collection and Description
+
+Collection Name
+
+Description
+
+restaurants
+
+Restaurant information including name, address, photo URL, etc., restaurant profile.
+
+users
+
+User information including authentication information, general information such as name, gender, age, and food preference information.
+
+recommendations
+
+Information for each recommendation session. This collection includes all of the interaction histories from the user in each recommendation session.
+
+categories
+
+Information about restaurant categories. We keep the categories separated with restaurant collection to reduce the redundancy.
+
+favorites
+
+Keep the information about the favorite list of restaurants for each user.
+
+
+Table 3.2: Restaurant Schema
+
+Key Name
+
+Type
+
+Description
+
+name
+
+String
+
+Name of the restaurant
+
+profile.categories
+
+Array of ObjectId
+
+Restaurant categories such as Thai, Korean, Fast Food. This field references category collection using their category id.
+
+profile.price_range
+
+Number
+
+The price range of the restaurant, from 1-4.
+
+profile.rating
+
+Number
+
+Facebook users’ rating of the restaurant. From 1 to 5 stars.
+
+profile.likes
+
+Number
+
+The number of users that liked the restaurant’s Facebook page.
+
+address
+
+String
+
+One line address string of the restaurant.
+
+location.coordinates
+
+Array of Numbers
+
+Coordinate of the restaurant in form of [longitude, latitude]
+
+link
+
+String
+
+URL link to their Facebook page.
+

@@ -4,6 +4,7 @@
 \documentclass[12pt,oneside,openright,a4paper]{cpe-english-project}
 
 \usepackage{polyglossia}
+\usepackage{tabularx}
 \setdefaultlanguage{english}
 \setotherlanguage{thai}
 \newfontfamily\thaifont[Script=Thai,Scale=1.23]{TH Sarabun New}
@@ -426,17 +427,702 @@ Our system will recommend restaurants to individuals or groups by using our reco
 \end{itemize}
 
 
-\end{document}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%  Literature Review %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Background Theory and Related Work}
 
-\url{http://www.cpe.kmutt.ac.th}
-Explain theory, algorithms, protocols, or existing research works and tools related to your work. \cite{bworld}
+\section{Background}
+
+As the world becomes more digital and technology is all around us, before we realized it, we were accustomed to a personalized experience. Many online businesses are implementing personalized recommendation systems that try to identify a user’s preferences and provide them with relevant items to enhance the user's experience. However, mainstream restaurant recommendation applications in Thailand have not implemented personalized recommenders yet. This leads to the issue of finding an ideal restaurant which is always struggling for users and a person who is looking for new restaurants. Furthermore, the online problem survey revealed that many people faced a harder time to decide due to the group eating. Therefore, group decision making is very complex and time-consuming.
+
+We brought this problem up to solve it since it is a common problem that everyone faces in daily life and no solution can be solved sustainably. Moreover, the majority of recommender systems are designed for individual users and the group recommender is challenging and new in the market. Inspired by such a challenge, we will invent a restaurant recommender system that could potentially reduce decision-making time for both individuals and groups and be an alternative way for users to opt for their ideal restaurants. Our system considers the interaction between users and restaurants and also uses side information e.g. users’ tastes and preferences, restaurant profile, etc. This approach is able to maximize users’ satisfaction and increase users’ experience.
+
+
+\section{Related Theory}
+%TODO
+\section{Technologies}
+%TODO
+\section{Related Research/Competing Solutions}
+%TODO
+
+
+
+
+
+\chapter{Methodology and Design}
+
+\section{System Functionality}
+\subsection{Requirements}
+\begin{itemize}
+\item Users are able to register if they do not have an account.
+\item Users are able to logout from our system.
+\item An individual user is able to see the suggested restaurants.
+\item Users are able to set restaurant preferences for each meal.
+\item Users are able to see information about restaurants.
+\item Users are able to select the restaurant that they want to go from the individual recommendation.
+\item Users are able to rank the restaurants that they want to go by their preference from the group recommendation.
+\item Users are able to join an eating group using a group pin code.
+\item A group of users is able to start a group recommendation.
+\item Users are able to save restaurants to their favorites and view them later.
+\item Users are able to edit their food preferences.
+\item The system must recommend restaurants to individuals and groups based on their preferences and behavior.
+\item The system can suggest nearby restaurants based on users’ current location.
+\end{itemize}
+
+
+\newpage
+\subsection{Use Case Diagram}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=440pt]{./images/3usecase.png}
+\caption{Use Case Diagram}\label{fig:3usecase}
+\end{figure}
+
+\begin{enumerate}
+\item Users can log in to the system using their username and password.
+\item Users can register and users are required to set their food preference first before using the system.
+\item Users can confirm the preference and see the suggested restaurants as individual eating and they can select the suggested restaurants. Moreover, users can save the restaurant into their favorite list.
+\item Users can create a group or join other groups, then they can see the group confirmation page, and start the group recommendation.
+\item Users can edit their food preference again.
+\item Users can see their favorite list.
+\item Users can log out from our system.
+\end{enumerate}
+
+\subsection{Use Case Narrative}
+\subsubsection{Login}
+
+\textbf{Name}: Users Login\\
+\textbf{Actors}: Users\\
+\textbf{Goal}: Users want to login into the system.\\
+\textbf{Preconditions}: None\\
+\textbf{Main Success Scenario}:\\
+\textbf{1}. Users input their valid username and password.\\
+\textbf{2}. User is logged in.\\
+\textbf{Extensions (a)}\\
+\textbf{1a}. Input username or password is not correct.\\
+\textbf{2a}. System asks a user to input username and password again.\\
+\textbf{3a}. Go back to the main scenario number 1.\\
+\textbf{Extensions (b)}\\
+\textbf{1b}. Input username or password is not correct.\\
+\textbf{2b}. Users go to a registration page.\\
+\textbf{Postconditions}: None
+
+\subsubsection{Register}
+
+\textbf{Name}: Users Login\\
+\textbf{Actors}: Users\\
+\textbf{Goal}: Users want to login into the system.\\
+\textbf{Preconditions}: None\\
+\textbf{Main Success Scenario}:\\
+\textbf{1}. Users input their valid username and password.\\
+\textbf{2}. User is logged in.\\
+\textbf{Extensions (a)}\\
+\textbf{1a}. Input username or password is not correct.\\
+\textbf{2a}. System asks a user to input username and password again.\\
+\textbf{3a}. Go back to the main scenario number 1.\\
+\textbf{Extensions (b)}\\
+\textbf{1b}. Input username or password is not correct.\\
+\textbf{2b}. Users go to a registration page.\\
+\textbf{Postconditions}: None
+
+\subsubsection{Register}
+\textbf{Name}: Users Registration\\
+\textbf{Actors}: Users\\
+\textbf{Goal}: Users do not have an account and want to use the system.\\
+\textbf{Preconditions}: User open registration page.\\
+\textbf{Main Success Scenario}: \\
+\textbf{1}. System will show a general information form to the user.\\
+\textbf{2}. Users fill the valid username and password in the general form.\\
+\textbf{3}. Users fill all general fields in the general form.\\
+\textbf{4}. Users confirm the general form.\\
+\textbf{5}. System will ask the user to fill a food preference form.\\
+\textbf{6}. Users fill the food preference form.\\
+\textbf{7}. Users confirm the registration form.\\
+\textbf{8}. User is registered and logged in.\\
+\textbf{Extensions (a)} \\
+\textbf{2a}. Username is invalid, already existed or password confirmation is mismatched.\\
+\textbf{3a}. System asks the user to input a valid username and password again.\\
+\textbf{4a}. Go back to the main scenario number 2.\\
+\textbf{Extensions (b)} \\
+\textbf{3b}. User didn’t fill some fields in the general form.\\
+\textbf{4b}. Users confirm the general form.\\
+\textbf{5b}. System asks the user to fill all the fields in the general form.\\
+\textbf{6b}. Go back to the main scenario number 3.\\
+\textbf{Postconditions}: None
+
+\subsubsection{Individual Recommendation}
+\textbf{Name}: Individual Recommendation\\
+\textbf{Actors}: Users\\
+\textbf{Goal}: Users want the system to suggest restaurants for them.\\
+\textbf{Preconditions}: User is logged in and opens an individual recommendation page.\\
+\textbf{Main Success Scenario}: \\
+\textbf{1}. User allows the system to access their current location\\
+\textbf{2}. The system shows a confirmation page to the user.\\
+\textbf{3}. Users confirm the setting.\\
+\textbf{4}. The system will show the suggested restaurant to the user\\
+\textbf{5}. Users select the restaurant that they want to go to.\\
+\textbf{6}. Users see their selected restaurant as a final restaurant.\\
+\textbf{7}. Recommendation completed\\
+\textbf{Extensions (a)} \\
+\textbf{1a}. Users do not allow the system to access their current location.\\
+\textbf{2a}. The nearby restaurant suggestion will be disabled.\\
+\textbf{3a}. Continue to the main scenario number 2.\\
+\textbf{Extensions (b)} \\
+\textbf{2b}. Users change the setting for that meal.\\
+\textbf{3b}. Go back to the main scenario number 3.\\
+\textbf{Extensions (c)} \\
+\textbf{4c}. Users save the restaurant to their favorite list.\\
+\textbf{5c}. Go back to the main scenario number 5.\\
+\textbf{Postconditions}: None
+
+\subsubsection{Group Recommendation}
+\textbf{Name}: Group Recommendation\\
+\textbf{Actors}: Users\\
+\textbf{Goal}: Users want the system to suggest restaurants for their group.\\
+\textbf{Preconditions}: Users are logged in and open a group recommendation page.\\
+\textbf{Main Success Scenario}: \\
+\textbf{1}. Users allow the system to access their current location.\\
+\textbf{2}. Users see the confirmation page and group pin code.\\
+\textbf{3}. Users share pin code or QR code to others members.\\
+\textbf{4}. Every member joined.\\
+\textbf{5}. Head of the party selects to start the recommendation.\\
+\textbf{6}. Everybody in the group sees the same set of the restaurants.\\
+\textbf{7}. Everybody selects their restaurant they want to go to by their preference.\\
+\textbf{8}. Everybody finished selecting the restaurants.\\
+\textbf{9}. The system shows the final restaurant to the group.\\
+\textbf{9}. Recommendation completed\\
+\textbf{Extensions (a)} \\
+\textbf{3a}. Users choose to join the group by inputting the group pin.\\
+\textbf{4a}. Group pin is invalid.\\
+\textbf{5a}. Users cannot join the invalid pin group.\\
+\textbf{Extension (b)} \\
+\textbf{6b}. Users save the restaurant to their favorite list.\\
+\textbf{7b}. Continue to the main scenario number 7\\
+\textbf{Postconditions}: None
+
+\subsubsection{Edit the Food Preference}
+\textbf{Actors}: Users\\
+\textbf{Goal}: Users want to edit their food preference.\\
+\textbf{Preconditions}: Users are logged in.\\
+\textbf{Main Success Scenario}: \\
+\textbf{1}. Users choose to edit their food preference.\\
+\textbf{2}. The old food preference will be shown and let users edit them.\\
+\textbf{5}. User confirm the modification\\
+\textbf{Postconditions}: None
+
+\subsubsection{See the Favorite List}
+\textbf{Actors}: Users\\
+\textbf{Goal}: Users want to see their restaurant favorite list.\\
+\textbf{Preconditions}: Users are logged in\\
+\textbf{Main Success Scenario}: \\
+\textbf{1}. Users choose to see their favorite list.\\
+\textbf{2}. The system shows a list of their favorite restaurants to the users.\\
+\textbf{3}. Users see their favorite list.\\
+\textbf{Extensions (a)} \\
+\textbf{3a}. Users choose to remove the restaurant from their favorite list.\\
+\textbf{4a}. The restaurant is removed from their favorites list.\\
+\textbf{Postconditions}: None
+
+\subsubsection{Logout}
+\textbf{Name}: Users Logout\\
+\textbf{Actors}: Users\\
+\textbf{Goal}: Users want to logout from the system.\\
+\textbf{Preconditions}: Users are logged in.\\
+\textbf{Main Success Scenario}: \\
+\textbf{1}. User choose to logout\\
+\textbf{2}. User is logged out\\
+\textbf{Postconditions}: None
+
+
+\newpage
+\subsection{Functional Breakdown Structure}
+\begin{figure}[!h]\centering
+\includegraphics[width=360pt]{./images/3functional_breakdown.png}
+\caption{Functional Breakdown Structure of the System}\label{fig:3functional_breakdown}
+\end{figure}
+
+Our system consists of 5 functional components which are:
+
+\begin{enumerate}
+\item Authentication, it handles user registration, login, and logout.
+\item Restaurant, it serves the restaurant information and their profile which include restaurant categories, price and distance.
+\item Recommendation, it generates the restaurant recommendation which is separated into individual and group recommendation.
+\item Group Management, manages the group used in group recommendation.
+\item Profile Management, manages the user profile and their favorite list.
+\end{enumerate}
+
+
+\section{System Architecture}
+\subsection{System Overview}
+\begin{figure}[!h]\centering
+\includegraphics[width=360pt]{./images/3system_overview.png}
+\caption{System Overview}\label{fig:3system_overview}
+\end{figure}
+
+In this section, we will give an overview of our system about their responsibility and we will discuss each component in detail in the next section.
+
+From Figure~\ref{fig:3system_overview}, we can see the relationship between each component. Our system consists of mainly 5 components which are Database, App Server, App Client, Recommender, and Data Service.
+
+%TODO Italic specific name
+\begin{itemize}
+\item Database: store all of the data of our system.
+\item App Server: handle all server-side processes including restaurant data management, group management, recommendation request handling, and authentication system. This component acts as a center of the system.
+\item App Client: serve the user interface to users via a web application.
+\item Recommender: handle the restaurant's suggestion. This component will receive the recommendation request from App Server and return the suggestion result back to App Server.
+\item Data Service: collect restaurant data from external sources, preprocess the data, and feed the data into App Server.
+\end{itemize}
+
+We separate these components into 2 sides which are the backend side and the frontend side. The backend side includes Database, App Server, Recommender, and Data Service. The frontend side is only App Client.
+
+
+\newpage
+\subsection{Restaurant Recommender System Architect}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/3architect.png}
+\caption{System Architecture}\label{fig:3architect}
+\end{figure}
+
+Figure~\ref{fig:3architect} shows the detailed architecture of our system. As we mentioned before, our system consists of 5 components. Each of these components communicates via HTTP request and response. All of the components except Database are deployed using Google Cloud App Engine and Database is deployed via MongoDB Atlas. There are 2 external services that our system needs to be interacted with which are Google Cloud Storage for storing restaurant’s images and Facebook Graph API for querying primary restaurant information. We will walk through each component in detail in the following section.
+
+
+\newpage
+\subsubsection{App Server Architecture}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=360pt]{./images/3arch_appserver.png}
+\caption{App Server Architecture}\label{fig:3arch_appserver}
+\end{figure}
+
+App Server is responsible for handling all server-side processes. The processes include authentication, user management, group management, recommendation management, restaurant management, and model management. This component acts as a center of our system that lets all other components communicate with them.
+
+For database communication, this is the only component that allows access to the database, so any components needed to access any data must communicate through App Server. The database connection module acts as an interface to the database for App Server.
+
+For an App Client communication, App Client needs to send a request to App Server in order to complete a task. The requests include authentication requests, create and update a recommendation request, get, create, and update group requests and get, create, and update user information requests.
+
+For a Data Service communication, Data Service generates processed restaurant data and it sends those data to App Server to create a restaurant and store them in the database.
+
+For a Recommender communication, App Server needs to send requests to Recommender for restaurant suggestion generation and model training. Recommender also needs to send a request to App Server to get restaurant information and user information.
+
+There is also one external system that App Server needs to communicate with which is Google Cloud Storage. App Server will send a request to store the restaurant’s images and get the existing image from that service.
+
+App Server is implemented using TypeScript and Express framework which is a web application framework and deployed on Google Cloud App Engine service.
+
+
+\subsubsection{App Client Architecture}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=200pt]{./images/3arch_appclient.png}
+\caption{App Client Architecture}\label{fig:3arch_appclient}
+\end{figure}
+
+App Client is responsible for serving the user interface to users and handling user interactions. There are 2 modules in this component which are User Interface that serves as an interface to users and Server Client that handles user’s tasks and communicates with App Server. App Client is implemented using TypeScript and React framework and deployed on Google Cloud App Engine service.
+
+
+\subsubsection{Recommender Architecture}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=200pt]{./images/3arch_recommender.png}
+\caption{Recommender Architecture}\label{fig:3arch_recommender}
+\end{figure}
+
+Recommender is responsible for restaurant suggestion generation. There are 2 modules in this component which are Suggestion Generator and Model Manger.
+
+Suggestion Generator will receive a recommendation request from App Server, generate one set of restaurants using a local model, and send that response back to App Server. In this process, Recommender also needs to get some information about restaurants and users from App Server for the generation.
+
+Model Manager will manage the local model. It is waiting for a training request from App Server to train a new local model. It also sends the training information request back to App Server after the training process is finished.
+
+Recommender implemented using Python which can easily communicate with the model because many libraries are supporting the machine learning process. It also uses the Flask framework to make them listen for requests from App Server. It is deployed on the Google Cloud App Engine service.
+
+
+\subsubsection{Data Service Architecture}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=200pt]{./images/3arch_dataservice.png}
+\caption{Data Service Architecture}\label{fig:3arch_dataservice}
+\end{figure}
+%TODO Check for update
+Data Service is responsible for collecting restaurant information from an external source. This component has 3 modules which are Data Fetcher which collect the restaurant information from Facebook Graph API and save it to the local raw files, Data Reader which will read the files and process that data into the correct format and Data Feeder will send the processed data to App Server to create restaurants in the system. Currently, it is designed to collect the restaurant data manually, so if we want to update or collect more restaurants, we need to trigger the task in this service again. Data Service is implemented as a simple Python script without any web framework because no components need to send a request to Data Service.
+
+
+\subsubsection{Database Architecture}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/3arch_database.png}
+\caption{App Server Architecture}\label{fig:3arch_database}
+\end{figure}
+
+Database is responsible for storing all data in our system. We choose to have NoSQL for our database because the schema of the data can change quickly, having a flexible schema can make our system adapt to the change in data format more easily. We will discuss the database structure in section 3.5 Database Structure. To access the data in the database, App Server will send a query command via the database connection module in App Server. The database is implemented using MongoDB and deployed using their official cloud service, MongoDB Atlas.
+
+
+\newpage
+\section{User Journey}
+
+\subsection{Activity Diagrams}
+
+\subsubsection{Registration}
+
+\begin{figure}[!h]\centering
+\includegraphics[height=400pt]{./images/3actdiagram_register.png}
+\caption{Registration Activity Diagram}\label{fig:3actdiagram_register}
+\end{figure}
+
+When users open a registration page, they will be asked to input their new username and password. If their new username and password are valid they need to fill in the food preferences information. Then the registration will be completed.
+
+\newpage
+\subsubsection{Individual Restaurant Recommendation}
+
+\begin{figure}[!h]\centering
+\includegraphics[height=400pt]{./images/3actdiagram_indirec.png}
+\caption{Individual Restaurant Recommendation Activity Diagram}\label{fig:3actdiagram_indirec}
+\end{figure}
+
+When users choose to start the individual recommendation, users need to allow their current location access in order to use nearby suggestion features. And before entering the recommendation, they will see the confirmation page which they can configure the setting and location. After that, they will see the suggested restaurant and can optionally save any restaurant into their favorite list. If they are satisfied with the suggestion and select the final restaurant, the recommendation will be completed. Otherwise, users can choose to see more suggestions.
+
+\newpage
+\subsubsection{Registration}
+
+\begin{figure}[!h]\centering
+\includegraphics[height=400pt]{./images/3actdiagram_grouprec.png}
+\caption{Group Restaurant Recommendation Activity Diagram}\label{fig:3actdiagram_grouprec}
+\end{figure}
+
+When a group of users wants to start a group recommendation, they firstly need to create a group and let other members join the group. This requires only one member to create a group and that person will be a head of the party which they can change the location and main configuration. Other members can use the group pin code shared by the head or other members that are already in the group. After the head chooses to start the recommendation, the same set of restaurants will be shown to all members. Everybody then needs to rank the restaurants that they want to go to by their preference. After everybody is done selecting their restaurants, the final suggested restaurant will be shown to the group and the recommendation is completed.
+
+
+\newpage
+\subsection{Sequence Diagrams}
+
+\subsubsection{Registration}
+
+\begin{figure}[!h]\centering
+\includegraphics[height=400pt]{./images/3seqdiagram_register.png}
+\caption{Registration Sequence Diagram}\label{fig:3seqdiagram_register}
+\end{figure}
+
+\textbf{Scenario}: Users register for a new account.
+\begin{enumerate}
+\item Users open the registration page and App Client shows the registration form to users.
+\item Once users fill in their new username and password, App Client will validate the username format (2.1). If they are valid, App Client will send those fields to the app server (2.2). Next, App Server will query the username from the database (2.2.1). If the username does not exist in the database, the new user will be created (2.2.4) and sent back to App Client (2.3). The App Client will send a food preference setting form to the users (2.4).
+\item Once users fill the food preferences setting form, the user profile in the database will be updated (3.1.2) and the registration will be completed (3.3)
+\end{enumerate}
+
+
+\newpage
+\subsubsection{Individual Restaurant Recommendation}
+
+\begin{figure}[!h]\centering
+\includegraphics[height=600pt]{./images/3seqdiagram_indirec.png}
+\caption{Individual Restaurant Recommendation Sequence Diagram}\label{fig:3seqdiagram_register}
+\end{figure}
+
+\newpage
+\textbf{Scenario}: Users want to see the restaurant recommendation for individuals and they want to see more suggestions than the first set of the suggested restaurants.
+\begin{enumerate}
+\item When users want to see a recommendation, App Client will send an initial recommendation request to the App Server (1.1), App Server will create a new recommendation data (1.1.1 and 1.1.2) and send the recommendation back to App Client (1.2). Next, App Client will send the token to App Server again (1.3). Once App Server receives the token, it will fetch nearby restaurants (1.3.1 and 1.3.2) and send a recommendation request with the restaurants to Recommender (1.4.1). Recommender will generate a set of suggested restaurants and send them back to App Server and App Client (1.4.2 and 1.5). Lastly, App Client will show a restaurant in the restaurant set to users  (1.6).
+\item Users will see the suggested restaurants. In this scenario, users choose to see more suggested restaurants (2). After that App Client will send a recommendation token with current restaurants interaction data to filter out the suggested restaurants in the first set (2.1). The next process is generating a restaurant suggestion which is the same process as before, but this time, App Server will send only the filtered restaurants to Recommender (2.2.1). After the suggestion is generated, it will be sent back to App Server, App Client and users (2.2.2, 2.3, and 2.4).
+\item When users select the restaurant from the set (3) which means the recommendation is finished, App Client will send the recommendation token with a finish flag to App Server (3.1). App Server will send an update request to Database (3.1.1) and after its success, the recommendation success screen will be shown to users (3.3).
+\end{enumerate}
+
+
+
+\newpage
+
+\subsubsection{Create Group}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/3seqdiagram_creategroup.png}
+\caption{Create Group Sequence Diagram}\label{fig:3seqdiagram_creategroup}
+\end{figure}
+
+\textbf{Scenario}: A group of 2 people wants to create a new eating group by the first user creating a group and the other one joining the group.
+\begin{enumerate}
+\item The first member creates a group (1). App Client sends data to App Server (1.1). App Server generates a group pin code (1.1.1) and creates a new record in the database (1.1.2). Finally, the member will see a group confirmation page and a group pin code (1.3).
+\item After the member has the group pin code, they can share it to other members (2). When other members join a group with a pin code (2.1), App Server will update the record in the database (2.1.1) and other members will see the same group confirmation page as the person who created a group (2.2). The group information of the first member will also be updated (2.3).
+\end{enumerate}
+
+
+\newpage
+
+\subsubsection{Group Restaurant Recommendation}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/3seqdiagram_grouprec.png}
+\caption{Create Group Sequence Diagram}\label{fig:3seqdiagram_grouprec}
+\end{figure}
+
+\newpage
+\textbf{Scenario}: A group of 2 people wants to have a restaurant recommendation for their group and they already have a group created.
+\begin{enumerate}
+\item When a head of the group which is the first member who created the group chooses to start a recommendation (1), App Client will request a new group recommendation to App Server (1.1). After that App Server and Recommender will generate a suggestion which has the same process as the individual recommendation (1.1.1 to 1.1.4). Note that Recommender can handle multiple users in the recommendation. Finally, the same suggested restaurant set will be shown to all members (1.3 and 1.4).
+\item The first member finishes selecting their restaurant by their preference (2). App Server will update a group data (2.1) and both of the members will receive the update group data (2.3 and 2.4). However, the recommendation is not completed yet, it needs to wait for the other member to finish selecting the restaurants.
+\item The second member finishes selecting the restaurants (3). App Server will update a group data again (3.1). In this time, App Client detects that every member has finished selecting the restaurant, so it will send a group finalization request with a finish flag (3.3). App Server will finalize the final restaurant to the group (3.3.1) and update the group data again (3.3.2). Finally, the final restaurant will be shown to every member (3.5 and 3.6) and the recommendation will be completed.
+\end{enumerate}
+
+
+
+
+\section{User Interface Design}
+This section presents the user interface design of the restaurant recommendation system which designs in the Figma application.
+
+The user interface of our web application includes login, registration, individual restaurant recommendation, group restaurant recommendation, and users’ profile as follows.
+
+\newpage
+\subsection{Login Page}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_StartPageUserInterfaceDesign.png}
+\caption{Start Page User Interface Design}\label{fig:3ui_StartPageUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item Username and password input fields
+\item Login button to confirm the input fields
+\item Register button, it links to the registration page
+\item Login as Guest for users who do not want an account but want to start using our system right away.
+\end{enumerate}
+When users open the application, the login page will appear first if they did not login yet. They need to input their username and password in the fields (1) then They can tap the “Login” button (2) to log in. After login, they will see the home page (Figure 3.19). If they do not have an account, they can tap on the “Register” button (3) and they will see the registration page (Figure 3.17). However, they can choose to login without any account by tapping on the “Login as Guest” button (4) and the system will directly bring them to the home page (Figure 3.19).
+\newpage
+\subsection{Registration Page}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_RegistrationPageUserInterfaceDesign.png}
+\caption{Registration Page User Interface Design}\label{fig:3ui_RegistrationPageUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item New username field
+\item New password field
+\item Re-enter the password field, it needs to be matched with the password field
+\item Next button, links to a general information setup page
+\end{enumerate}
+If users choose to register, the registration page will appear and ask users to input a new username, password, and re-enter the password (1), (2), (3) respectively. If the input username is invalid or already taken, the system will alert users and let them choose a new username. If the password field and re-enter password field are mismatched, the system will also alert and tell users to input their password and re-enter password fields again. After all of the information in the fields is valid and users tap on the “Next” button (4), they will proceed to the next step which is the profile setting step stated in~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign}.
+\newpage
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_ProfileSetupPageUserInterfaceDesign.png}
+\caption{Profile Setup Page User Interface Design}\label{fig:3ui_ProfileSetupPageUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item General information form
+\item Next button, will proceed users to the food preference setup step
+\item Food preference form, let users choose their food preference in each category.
+\item Finish button, to complete the form and the registration.
+\item Skip button, lets users skip the food preference setup process.
+\end{enumerate}
+After users input the valid username and password, the next step is user profile setup. This process consists of 2 steps which are general information setup and food preferences information setup. The first one on the left of~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign} is a general information setup step. Users are required to fill in all the information in the form and accept the terms and privacy (1) then they can proceed to the next step by tapping the “Next” button (2). For the second step, preferences information set up, they will see many available categories of food. They can choose their food preferences in the form (3) and tap on “Finish” to complete the registration. However, if they do not want to set their preferences yet, they can tap on the “Skip” button (5) to skip the preferences setup process. After the registration is completed, they will see the home page (Figure 3.19) and start using our system.
+\newpage
+\subsection{Individual Restaurant Recommendation Page}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_HomePageUserInterfaceDesign.png}
+\caption{Home Page User Interface Design}\label{fig:3ui_HomePageUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item Restaurant card, it shows the general information about a restaurant.
+\item “i” button, when tapped, more information will be shown.
+\item 
+\item Like button, tapped once users are satisfied with the restaurant
+\item Dislike button, if users are not satisfied with the restaurant, they can tap this button to see the next suggestion.
+\item Profile button, links to the profile page.
+\end{enumerate}
+After users logged in or registered, they will see the home page. By entering the home page, the system will automatically start recommending some restaurants to users. Users will see the information of each suggested restaurant (1). They can also see some more information about each restaurant by tapping the “i” icon (2). They can filter the suggested restaurants by tapping the “Filters” button (3) and the filter window will appear (Figure 3.20). If they are satisfied with the suggested restaurant, they can tap on the “Yummy” button (4) or swipe the restaurant card to the right, and then the success page will appear (Figure 3.21). Otherwise, if they are not satisfied with that restaurant, they can tap on the “Nah” button (5) or swipe the restaurant card to the left, and then the system will show the next suggested restaurant to users and let them consider it again. Users can see their profile by tapping the profile picture button (6) and the profile management page will appear (Figure 3.25).
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_FilterWindowUserInterfaceDesign.png}
+\caption{Filter Window User Interface Design}\label{fig:3ui_FilterWindowUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item Filtering options.
+\item Arrow button, will apply current filtering and close the filter window.
+\item Filter button with applied filter tags, users can open the filter window again by tapping this button.
+\item Reset button, will remove all the applied filters.
+\end{enumerate}
+After users tap on the “Filter” button on the home page (number 3 on~\ref{fig:3ui_HomePageUserInterfaceDesign}), the filter window will appear. Users can filter restaurants by choosing the available options that appear on the filter window (1). After finishing choosing the filtering option, they can tap on the arrow icon (2) to apply the filter and the filter window will be minimized. They can see the applied filters at the bottom of the screen (3). They can change their filtering by tapping on the bottom bar (3) to bring the filter window up again. They can tap on the “Reset” button (4) to remove all of the applied filters. After applying any filters, the system will suggest the restaurant that matches its filtering condition.
+\newpage
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_RecommendationSuccessPageUserInterfaceDesign.png}
+\caption{Recommendation Success Page User Interface Design}\label{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item Swipe right for the satisfying restaurant.
+\item Like button which works the same as the swipe right.
+\item Restaurant card showing general information about the liked restaurant.
+\item Recommendation rating, let users rate satisfaction with their current recommendation.
+\end{enumerate}
+On the home page which users see the suggested restaurant, if users are satisfied with the suggested restaurant, they can swipe right (1) or tap on the “Yummy” button (2). After that, the recommendation success page will appear (the right picture in~\ref{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}). On the success page, users can see the restaurant information in the center of the screen (3). They can give a rating score for the recommendation from 1 star to 5 stars (4). After they are done seeing the information, they can tap on the “Done” button (5) to close the success page and they will see the home page (Figure 3.19) again.
+\newpage
+\subsection{Group Restaurant Recommendation Page}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_GroupJoiningUserInterfaceDesign.png}
+\caption{Group Joining User Interface Design}\label{fig:3ui_GroupJoiningUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item Group pin code which other members used for joining the group.
+\item Join button, it will bring up the joining dialog
+\item Group pin code input field, let users input the group pin code.
+\item Join button which lets users join their existing group without input the group pin code again.
+\end{enumerate}
+In the following section, we will walk through the group recommendation process. On the home page (the left picture in~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}), it will show the group pin on the top of the screen (1). To start the group recommendation, the user has to share this pin code with other members in the group and this will make the pin code owner be the head of the group. Other members can join the group by tapping on the “Join” button (2) and the joining dialog will appear (the right picture in~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}). In the joining dialog, other members can input the pin that appeared on the group head’s device (1). Moreover, users can join the previously joined group, which will be shown as favorites. They can directly join their favorite group by tapping the “Join” button (4) in the group they want to join without input the pin code again. After someone joins the group the group recommendation will be initialized and all members that joined the group will see the group confirmation page next (Figure 3.23).
+\newpage
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_GroupConfirmationPageUserInterfaceDesign.png}
+\caption{Group Confirmation Page User Interface Design}\label{fig:3ui_GroupConfirmationPageUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item Group pin code which other members used for joining the group.
+\item Crown icon indicates who is the head of this group
+\item 3 dots icon for more action on each member in the group.
+\item Kick button, it let the head remove some members from the group.
+\end{enumerate}
+After someone joins the group, all joined members will see this group confirmation page. On the top, there is a group pin code that the members in the group can share with other people if they want to join this eating group. The head of the group will have a crown icon (2) and they can manage the members in the group. If the head wants to remove some of the members, they can do it by tapping the 3 dots icon (3) followed by tapping the “Kick” button, after that the kicked member will no longer be in the party. When all members are joined and ready, the head will tap on the “Start” button to begin the group recommendation.
+\newpage
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_GroupRecommendationPageUserInterfaceDesign.png}
+\caption{Group Recommendation Page User Interface Design}\label{fig:3ui_GroupRecommendationPageUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item Like or dislike area for choosing the restaurant.
+\item Progress bar indicates the progress of the group decision.
+\item Members button, will bring up the members dialog which shows all members.
+\item Filter button for setting the filters for restaurants.
+\end{enumerate}
+After the group has been created and confirmed, the group recommendation will begin. All members will see the same suggested set of restaurants. Each member will choose whether they like or not but tapping “Yummy” and “Nah” or swiping (1) is the same as in individual recommendation. The group recommendation will be finished after all members like the same restaurant. The top bar (2) indicates the highest number of members that agree on the same restaurant, when it is full, it means everybody agrees on the same restaurant and the recommendation is finished. Users can see the members by tapping the “Member” button (3). Users still can set the filter by tapping the “Filter” button (4) but this time the filters will be applied to every member in the group.
+\newpage
+\subsection{Profile Page}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/3ui_ProfileManagementPageUserInterfaceDesign.png}
+\caption{Profile Management Page User Interface Design}\label{fig:3ui_ProfileManagementPageUserInterfaceDesign}
+\end{figure}
+\begin{enumerate}
+\item History button, it links to the history page (the right picture in Figure 3.25)
+\item Privacy button, it let users change their password and their privacy setting.
+\item Back button which brings users back to their home page.
+\end{enumerate}
+After users choose to view their profile (number 6 in~\ref{fig:3ui_HomePageUserInterfaceDesign}), they will see the left picture in~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}. They can choose to view their selected restaurant history by tapping the “History” button (1) and a list of selected restaurants will be shown (the right picture of~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}). They can also choose to edit their profile such as their name, gender, or birthdate or choose to edit their food preferences. They can reset their password and set the privacy setting under the “Privacy” section (2). They can go back to the main screen by tapping the arrow icon (3).
+
+
+\section{Database Structure}
+In this section, we explain our database structure in the Database component. Our database stores all information for our system as a NoSQL database. Then, we discuss the database collection’s name and description, the schema of each collection, and database indexing.
+
+\newpage
+\subsection{Collections}
+\begin{table}[!h]
+\caption{Database Collection and Description}\label{tbl:3DatabaseCollectionandDescription}
+\begin{tabularx}{\textwidth}{l|X} \hline\hline
+Collection Name & Description \\ \hline\hline
+restaurants & Restaurant information including name, address, photo URL, etc., restaurant profile. \\ \hline
+users & User information including authentication information, general information such as name, gender, age, and food preference information. \\ \hline
+recommendations & Information for each recommendation session. This collection includes all of the interaction histories from the user in each recommendation session. \\ \hline
+categories & Information about restaurant categories. We keep the categories separated with restaurant collection to reduce the redundancy. \\ \hline
+favorites & Keep the information about the favorite list of restaurants for each user. \\ \hline\hline
+\end{tabularx}
+\end{table}
+
+Table ~\ref{tbl:3DatabaseCollectionandDescription} shows us all collections in our NoSQL database, their collection’s name, and their description. Our database contains mainly 5 collections including restaurants, users, recommendations, categories, and favorites.
+
+\subsection{Schema}
+
+Although NoSQL does not have a fixed database schema, by using Mongoose as a MongoDB database connection framework, it provides some primary schema for data creating and reading facilitation. Having Mongoose’s schema can help us manage a uniform data format with easy schema migration. However, inserting data with a different format from Mongoose’s schema does not break the process and no part of the data will be discarded. In this section, we will show some mandatory fields for each collection.
+
+
+\begin{table}[!h]
+\caption{Restaurant Schema}\label{tbl:3RestaurantSchema}
+\begin{tabularx}{\textwidth}{l|l|X} \hline\hline
+Key Name & Type & Description \\ \hline\hline
+name & String & Name of the restaurant \\ \hline
+profile.categories & Array of ObjectId & Restaurant categories such as Thai, Korean, Fast Food. This field references category collection using their category id. \\ \hline
+profile.price\_range & Number & The price range of the restaurant, from 1-4. \\ \hline
+profile.rating & Number & Facebook users’ rating of the restaurant. From 1 to 5 stars. \\ \hline
+profile.likes & Number & The number of users that liked the restaurant’s Facebook page. \\ \hline
+address & String & One line address string of the restaurant. \\ \hline
+location.coordinates & Array of Numbers & Coordinate of the restaurant in form of [longitude, latitude] \\ \hline
+link & String & URL link to their Facebook page. \\ \hline\hline
+\end{tabularx}
+\end{table}
+
+\begin{table}[!h]
+\caption{User Schema}\label{tbl:3UserSchema}
+\begin{tabularx}{\textwidth}{l|l|X} \hline\hline
+Key Name & Type & Description \\ \hline\hline
+authentication & Object & Authentication token object for user login. \\ \hline
+username & String & Username of the user. \\ \hline
+password & String & Encrypted password of the user. \\ \hline
+profile.gender & String & Gender of the user. \\ \hline
+profile.birthdate & Date & Birthdate of the user. \\ \hline
+profile.preference & Object & Food preferences of users. \\ \hline\hline
+\end{tabularx}
+\end{table}
+
+\begin{table}[!h]
+\caption{Recommendation Schema}\label{tbl:3RecommendationSchema}
+\begin{tabularx}{\textwidth}{l|l|X} \hline\hline
+Key Name & Type & Description \\ \hline\hline
+users & Array of ObjectId & Users that request the recommendation. This field references user collection using their user id. \\ \hline
+histories & Array of Object & User interaction history in each recommendation session. \\ \hline
+histories.restaurant & ObjectId & Interacted restaurant. This field references restaurant collection using their restaurant id. \\ \hline
+histories.is\_love & Boolean & Whether users select go or not go to the interacted restaurant. \\ \hline
+histories.timestamp & Date & The timestamp of each interaction history. \\ \hline
+location.coordinate & Array of Numbers & The location that this recommendation session occurs in the form of [longitude, latitude]. \\ \hline\hline
+\end{tabularx}
+\end{table}
+
+\begin{table}[!h]
+\caption{Category Schema}\label{tbl:3CategorySchema}
+\begin{tabularx}{\textwidth}{l|l|X} \hline\hline
+Key Name & Type & Description \\ \hline\hline
+name & String & Name of the category eg. Thai Restaurant, Korean Restaurant, or Fast Food Restaurant. \\ \hline
+is\_common & Boolean & Whether this category is a common category. \\ \hline\hline
+\end{tabularx}
+\end{table}
+
+\begin{table}[!h]
+\caption{Favorite Schema}\label{tbl:3FavoriteSchema}
+\begin{tabularx}{\textwidth}{l|l|X} \hline\hline
+Key Name & Type & Description \\ \hline\hline
+user & ObjectId & User of the current record. \\ \hline
+restaurants & Array of & List of their favorite restaurants. \\ \hline\hline
+\end{tabularx}
+\end{table}
+
+Note that we need to keep a category collection separated from restaurant information because some of the collected restaurant data may have a different name but same id or different id with the same name so we want to keep this information correctly and easily maintained later.
+
+
+\subsection{Indexing}
+
+With database indexing, we can query the data faster by storing additional information about data. Every collection has an indexed id so that we can query the data from their id faster. However, we also set more indexing on 2 collections which are restaurants and users.
+
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/3db_RestaurantCollectionsIndexes.png}
+\caption{Restaurant Collection’s Indexes}\label{fig:3db_RestaurantCollectionsIndexes}
+\end{figure}
+
+From~\ref{fig:3db_RestaurantCollectionsIndexes}, we can see that the restaurant collection has one more index which is the location index. This index is used for query restaurants by a distance of 2 coordinates.
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/3db_UserCollectionsIndexes.png}
+\caption{User Collection’s Indexes}\label{fig:3db_UserCollectionsIndexes}
+\end{figure}
+
+From~\ref{fig:3db_UserCollectionsIndexes}, we can see that the user collection has one more index which is the username index. This index is used for query users by username. It also helps when checking the username’s availability. The username index also applies to other collections that require finding  the record by the username which is the favorite collection.
+
+
+\section{Restaurant Recommendation Algorithm}
+%TODO
+
+\section{Production Testing Plan}
+
+\subsection{Production Deployment}
+
+We will deploy our components that need to listen to requests and send requests to other components which are App Client, App Server, Recommender, and Database. App Client, App Server, and Recommender will be deployed on Google Cloud App Engine since the deployment service is flexible for multiple programming languages and supports auto scalability. Database will be deployed on MongoDB Atlas which is an official cloud deployment service for MongoDB databases. Both Google Cloud App Engine and MongoDB Atlas provide an interactive dashboard for monitoring the performance.
+
+\subsection{User Evaluation}
+
+We will test our application and gather feedback from 20 people. We will collect the data about overall satisfaction, usability, user experience, and improvement suggestions. After the data has been collected, we will analyze and evaluate the application.
+
+\subsection{Application Evaluation}
+
+The performance of main components, App Client, App Server, and Recommender, will be evaluated by monitoring the response latency and doing load tests. The production application performance metrics can also be retrieved by the Google Cloud App Engine dashboard.
+
+
 
 \section{Recommender Systems}
+
+%\url{http://www.cpe.kmutt.ac.th}
+%Explain theory, algorithms, protocols, or existing research works and tools related to your work. \cite{bworld}
 
 \begin{table}[!h]
 \caption{test table method1}\label{tbl:method1}
@@ -529,7 +1215,7 @@ You can title this chapter as \textbf{Preliminary Results} or \textbf{Work Progr
 \chapter{Conclusions}
 
 This chapter is optional for proposal and progress reports but 
-is required for the final report.
+is required for the final report.\cite{shen04}
 
 \section{Problems and Solutions}
 State your problems and how you fixed them.

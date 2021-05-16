@@ -1,0 +1,105 @@
+\begin{thebibliography}{10}
+
+\bibitem{shen04}
+C.-C. Shen, C.~Srisathapornphat, R.~Lui, Z.~Huang, C.~Jaikaeo, and E.L. Lloyd,
+\newblock  2004, ``CLTC: A Cluster-Based Topology Control Framework for Ad Hoc
+  Network,''
+\newblock {\bf IEEE Trans. Mobile Computing}, vol. 3, no. 1, pp. 18--32,
+  Jan--Mar 2004.
+
+\bibitem{bworld}
+L.~Bao,
+\newblock ``{BWorld Robot Control Software},'' Available at
+  \url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/},
+\newblock [Online; accessed 19-July-2008].
+
+\bibitem{zztest}
+L.~Bao and J.J. Garcia-Luan-Aceves,  2003,
+\newblock ``Topology Management in Ad Hoc Networks,''
+\newblock in {\bf Proc. ACM MobiHoc'03}, Maryland, USA, June 2003, pp.
+  129--140.
+
+\bibitem{bettstetter03}
+C.~Bettstetter, G.~Resta, and P.~Santi,
+\newblock  2003, ``The Node Distribution of the Random Waypoint Mobility Model
+  for Wireless Ad Hoc Networks,''
+\newblock {\bf IEEE Trans. Mobile Computing}, vol. 2, no. 3, pp. 257--269,
+  Jul--Sep 2003.
+
+\bibitem{bianchi00}
+G.~Bianchi,
+\newblock  2000, ``Performance Analysis of the IEEE 802.11 Distributed
+  Coordination Function,''
+\newblock {\bf IEEE J. Select. Areas Commun.}, vol. 13, no. 3, pp. 535--548,
+  Mar. 2000.
+
+\bibitem{gupta98}
+P.~Gupta and P.R. Kumar,
+\newblock  1998, ``Critical Power for Asymptotic Connectivity in Wireless
+  Networks,''
+\newblock {\bf Stochastic Analysis, Control, Optimization and Applications},
+  pp. 547--566, 1998.
+
+\bibitem{hon02}
+H.~Honkasalo, K.~Pehkonen, M.T. Niemi, and A.T. Leino,
+\newblock  2002, ``WCDMA and WLAN for 3G and Beyond,''
+\newblock {\bf IEEE Wireless Commun. Mag.}, pp. 14--18, Apr. 2002.
+
+\bibitem{santi05b}
+P.~Santi,
+\newblock  2005, {\bf Topology Control in Wireless Ad Hoc and Sensor Networks},
+\newblock Wiley,
+\newblock p.133.
+
+\bibitem{norros95}
+I.~Norros,
+\newblock  1995, ``On the use of Fractional Brownian Motion in the Theory of
+  Connectionless Networks,''
+\newblock {\bf IEEE J. Select. Areas Commun.}, vol. 13, no. 6, pp. 953--962,
+  Aug. 1995.
+
+\bibitem{eun01}
+D.Y. Eun and N.B. Shroff,  2001,
+\newblock ``A Measurement-Analytic Framework for QoS Estimation Based on the
+  Dominant Time Scale,''
+\newblock in {\bf Proc. IEEE INFOCOM'01}, Anchorage, AK, Apr. 2001.
+
+\bibitem{kim01}
+H.S. Kim and N.B. Shroff,
+\newblock  2001, ``Loss Probability Calculations and Asymptotic Analysis for
+  Finite Buffer Multiplexers,''
+\newblock {\bf IEEE/ACM Trans. Networking}, vol. 9, no. 6, pp. 755--768, Dec.
+  2001.
+
+\bibitem{singh02}
+J.P. Singh, N.~Bambos, B.~Srinivasan, and D.~Clawin,  2002,
+\newblock ``Wireless LAN Performance under Varied Stress Conditions in
+  Vehicular Traffic Scenarios,''
+\newblock in {\bf Proc. IEEE Vehicular Technology Conference}, 2002.
+
+\bibitem{subramanian00}
+L.~Subramanian and R.H. Katz,  2000,
+\newblock ``An Architecture for Building Self-Configurable Systems,''
+\newblock in {\bf Proc. ACM MobiHoc'00}, Boston, USA, Aug. 2000.
+
+\bibitem{takagi84}
+H.~Takagi and L.~Kleinrock,
+\newblock  1984, ``Optimal Transmission Ranges for Randomly Distributed Packet
+  Radio Terminals,''
+\newblock {\bf IEEE Trans. Commun.}, vol. COM-32, no. 3, pp. 246--257, Mar.
+  1984.
+
+\bibitem{yu04}
+C.~Yu, K.G. Shin, and B.~Lee,
+\newblock  2004, ``Power-Stepped Protocol: Enhancing Spatial Utilization in a
+  Clustered Mobile Ad Hoc Network,''
+\newblock {\bf IEEE J. Select. Areas Commun.}, vol. 22, no. 7, pp. 1322--1334,
+  Sept. 2004.
+
+\bibitem{barowski05}
+Y.~Barowski, S.~Biaz, and P.~Agrawal,  2005,
+\newblock ``Towards the Performance Analysis of IEEE 802.11 in Multi-hop Ad-Hoc
+  Networks,''
+\newblock in {\bf Proc. IEEE WCNC'05}, Mar. 2005, pp. 100--106.
+
+\end{thebibliography}
