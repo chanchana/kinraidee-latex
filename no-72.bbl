@@ -7,6 +7,210 @@ C.-C. Shen, C.~Srisathapornphat, R.~Lui, Z.~Huang, C.~Jaikaeo, and E.L. Lloyd,
 \newblock {\bf IEEE Trans. Mobile Computing}, vol. 3, no. 1, pp. 18--32,
   Jan--Mar 2004.
 
+\bibitem{WhatIsWebApplicationWebAppsAndItsBenefits}
+Margaret Rouse,
+\newblock ``{What Is Web Application (Web Apps) And Its Benefits},'' Available
+  at
+  \url{https://searchsoftwarequality.techtarget.com/definition/Web-application-Web-app},
+\newblock [Online; accessed 28-November-2020].
+
+\bibitem{RecommendationSystemsPrinciples}
+F.O. Isinkaye, Y.O. Folajimi, and B.A. Ojokoh,
+\newblock  2015, ``Recommendation systems: Principles, methods and
+  evaluation,''
+\newblock {\bf Egyptian Informatics Journal}, vol. 16, no. 3, 2015.
+
+\bibitem{Recommendersystem}
+Wikipedia,
+\newblock ``{Recommender system},'' Available at
+  \url{https://en.wikipedia.org/wiki/Recommender_system#Content-based_filtering},
+\newblock [Online; accessed 20-November-2020].
+
+\bibitem{WhatisMachineLearning}
+Expert~System Team,
+\newblock ``{What is Machine Learning?},'' Available at
+  \url{https://expertsystem.com/machine-learning-definition/},
+\newblock [Online; accessed 26-November-2020].
+
+\bibitem{Collaborativefiltering}
+Wikipedia,
+\newblock ``{Collaborative filtering},'' Available at
+  \url{https://en.wikipedia.org/wiki/Collaborative_filtering},
+\newblock [Online; accessed 21-November-2020].
+
+\bibitem{AlgorithmsforDiscreteOptimization}
+Sanjam Singh,
+\newblock ``{Algorithms for Discrete Optimization},'' Available at
+  \url{https://mech.iitm.ac.in/nspch52.pdf},
+\newblock [Online; accessed 16-March-2021].
+
+\bibitem{Mathematicaloptimization}
+Wikipedia,
+\newblock ``{Mathematical optimization},'' Available at
+  \url{https://en.wikipedia.org/wiki/Mathematical_optimization},
+\newblock [Online; accessed 16-March-2021].
+
+\bibitem{Geneticalgorithm}
+Wikipedia,
+\newblock ``{Genetic algorithm},'' Available at
+  \url{https://en.wikipedia.org/wiki/Genetic_algorithm},
+\newblock [Online; accessed 16-March-2021].
+
+\bibitem{IntroductiontoGeneticAlgorithmsIncludingExampleCode}
+Vijini Mallawaarachchi,
+\newblock ``{Introduction to Genetic Algorithms — Including Example Code},''
+  Available at
+  \url{https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3},
+\newblock [Online; accessed 16-March-2021].
+
+\bibitem{HTMLHyperTextMarkupLanguage}
+MDN,
+\newblock ``{HTML: HyperText Markup Language},'' Available at
+  \url{https://developer.mozilla.org/en-US/docs/Web/HTML},
+\newblock [Online; accessed 26-November-2020].
+
+\bibitem{JavaScript}
+MDN,
+\newblock ``{JavaScript},'' Available at
+  \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript},
+\newblock [Online; accessed 26-November-2020].
+
+\bibitem{TypeScript}
+Microsoft,
+\newblock ``{TypeScript},'' Available at \url{https://www.typescriptlang.org/},
+\newblock [Online; accessed 27-November-2020].
+
+\bibitem{IntroductiontoNodejs}
+OpenJS Foundation,
+\newblock ``{Introduction to Node.js},'' Available at
+  \url{https://nodejs.dev/learn},
+\newblock [Online; accessed 27-November-2020].
+
+\bibitem{WhydidwebuildReact}
+Pete Hunt,
+\newblock ``{Why did we build React?},'' Available at
+  \url{https://reactjs.org/blog/2013/06/05/why-react.html},
+\newblock [Online; accessed 27-November-2020].
+
+\bibitem{TOP10ADVANTAGESOFUSINGREACTJS}
+DA14,
+\newblock ``{TOP 10 ADVANTAGES OF USING REACT.JS},'' Available at
+  \url{https://da-14.com/blog/its-high-time-reactjs-ten-reasons-give-it-try},
+\newblock [Online; accessed 27-November-2020].
+
+\bibitem{PythonTutorial}
+Tutorialspoint,
+\newblock ``{Python Tutorial},'' Available at
+  \url{https://www.tutorialspoint.com/python/index.htm},
+\newblock [Online; accessed 27-November-2020].
+
+\bibitem{Top7ReasonsWhyYouNeedtoLearnPythonasaDataScientist}
+Olha Bahaieva,
+\newblock ``{Top 7 Reasons Why You Need to Learn Python as a Data Scientist},''
+  Available at
+  \url{https://towardsdatascience.com/top-10-reasons-why-you-need-to-learn-python-as-a-data-scientist-e3d26539ec00},
+\newblock [Online; accessed 27-November-2020].
+
+\bibitem{JupyterLabOverview}
+JupyterLab,
+\newblock ``{JupyterLab Overview},'' Available at
+  \url{https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html},
+\newblock [Online; accessed 6-December-2020].
+
+\bibitem{WhatIsFigmaa101Intro}
+Compact Creative,
+\newblock ``{What Is Figma? a 101 Intro},'' Available at
+  \url{https://designshack.net/articles/software/what-is-figma-intro/},
+\newblock [Online; accessed 6-December-2020].
+
+\bibitem{AnoverviewofHTTP}
+MDN,
+\newblock ``{An overview of HTTP},'' Available at
+  \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview},
+\newblock [Online; accessed 27-November-2020].
+
+\bibitem{HTTPrequestmethods}
+MDN,
+\newblock ``{HTTP request methods},'' Available at
+  \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods},
+\newblock [Online; accessed 28-November-2020].
+
+\bibitem{Express}
+IBM StrongLoop,
+\newblock ``{Express},'' Available at \url{https://expressjs.com/},
+\newblock [Online; accessed 28-November-2020].
+
+\bibitem{Flask}
+The~Pallets Projects,
+\newblock ``{Flask},'' Available at \url{https://palletsprojects.com/p/flask/},
+\newblock [Online; accessed 28-November-2020].
+
+\bibitem{WhatisNoSQL}
+Inc MongoDB,
+\newblock ``{What is NoSQL?},'' Available at
+  \url{https://www.mongodb.com/nosql-explained},
+\newblock [Online; accessed 28-November-2020].
+
+\bibitem{WhatisMongoDBIntroductionArchitectureFeaturesExample}
+Guru99,
+\newblock ``{What is MongoDB? Introduction, Architecture, Features \&
+  Example},'' Available at \url{https://www.guru99.com/what-is-mongodb.html},
+\newblock [Online; accessed 28-November-2020].
+
+\bibitem{mongoose}
+Mongoose,
+\newblock ``{mongoose},'' Available at \url{https://mongoosejs.com/},
+\newblock [Online; accessed 28-November-2020].
+
+\bibitem{GoogleAppEngineDocumentation}
+Google,
+\newblock ``{Google App Engine Documentation},'' Available at
+  \url{https://cloud.google.com/appengine/docs},
+\newblock [Online; accessed 17-November-2020].
+
+\bibitem{MongoDBAtlas}
+Inc MongoDB,
+\newblock ``{MongoDB Atlas},'' Available at
+  \url{https://docs.atlas.mongodb.com/#service-fullname},
+\newblock [Online; accessed 18-November-2020].
+
+\bibitem{GraphAPI}
+Facebook,
+\newblock ``{Graph API},'' Available at
+  \url{https://developers.facebook.com/docs/graph-api/},
+\newblock [Online; accessed 18-November-2020].
+
+\bibitem{Entréechoosefromaworldofdisheswithasingletouch}
+Sharanya Gopinathan,
+\newblock ``{Entrée - choose from a world of dishes with a single touch},''
+  Available at \url{https://techweek.com/entree-choose-dishes-single-touch/},
+\newblock [Online; accessed 29-August-2020].
+
+\bibitem{EatseeSeeitEatit}
+Apple Store,
+\newblock ``{Eatsee - See it. Eat it},'' Available at
+  \url{https://apps.apple.com/us/app/id1202110881},
+\newblock [Online; accessed 30-August-2020].
+
+\bibitem{Tinderapp}
+Wikipedia,
+\newblock ``{Tinder (app)},'' Available at
+  \url{https://en.wikipedia.org/wiki/Tinder_(app)},
+\newblock [Online; accessed 30-August-2020].
+
+\bibitem{ExpertSystemsWithApplications}
+I.~Garcia, L.~Sebastia, and E.~Onaindia,
+\newblock  2011, ``On the design of individual and group recommender systems
+  for tourism,''
+\newblock {\bf Expert Systems with Applications}, vol. 38, no. 6, 2011.
+
+\bibitem{BuildauserbasedcollaborativefilteringrecommendationengineforAnime}
+Chris I,
+\newblock ``{Build a user-based collaborative filtering recommendation engine
+  for Anime},'' Available at
+  \url{https://towardsdatascience.com/build-a-user-based-collaborative-filtering-recommendation-engine-for-anime-92d35921f304},
+\newblock [Online; accessed 30-August-2020].
+
 \bibitem{bworld}
 L.~Bao,
 \newblock ``{BWorld Robot Control Software},'' Available at

@@ -1,0 +1,244 @@
+
+@misc{ WhatIsWebApplicationWebAppsAndItsBenefits,
+  author = {Margaret Rouse},
+  title = {{What Is Web Application (Web Apps) And Its Benefits}},
+  howpublished = "Available at \url{https://searchsoftwarequality.techtarget.com/definition/Web-application-Web-app}",
+  note = "[Online; accessed 28-November-2020]"
+}
+                    
+@article{ RecommendationSystemsPrinciples,
+  author =	 {F.O. Isinkaye and Y.O. Folajimi and B.A. Ojokoh},
+  title =	 {Recommendation systems: Principles, methods and evaluation},
+  journal =	 {Egyptian Informatics Journal},
+  volume =	 16,
+  number =	 3,
+  year =	 2015
+}
+
+@misc{ Recommendersystem,
+  author = {Wikipedia},
+  title = {{Recommender system}},
+  howpublished = "Available at \url{https://en.wikipedia.org/wiki/Recommender_system#Content-based_filtering}",
+  note = "[Online; accessed 20-November-2020]"
+}
+                    
+@misc{ WhatisMachineLearning,
+  author = {Expert System Team},
+  title = {{What is Machine Learning?}},
+  howpublished = "Available at \url{https://expertsystem.com/machine-learning-definition/}",
+  note = "[Online; accessed 26-November-2020]"
+}
+                    
+@misc{ Collaborativefiltering,
+  author = {Wikipedia},
+  title = {{Collaborative filtering}},
+  howpublished = "Available at \url{https://en.wikipedia.org/wiki/Collaborative_filtering}",
+  note = "[Online; accessed 21-November-2020]"
+}
+                    
+@misc{ AlgorithmsforDiscreteOptimization,
+  author = {Sanjam Singh},
+  title = {{Algorithms for Discrete Optimization}},
+  howpublished = "Available at \url{https://mech.iitm.ac.in/nspch52.pdf}",
+  note = "[Online; accessed 16-March-2021]"
+}
+                    
+@misc{ Mathematicaloptimization,
+  author = {Wikipedia},
+  title = {{Mathematical optimization}},
+  howpublished = "Available at \url{https://en.wikipedia.org/wiki/Mathematical_optimization}",
+  note = "[Online; accessed 16-March-2021]"
+}
+                    
+@misc{ Geneticalgorithm,
+  author = {Wikipedia},
+  title = {{Genetic algorithm}},
+  howpublished = "Available at \url{https://en.wikipedia.org/wiki/Genetic_algorithm}",
+  note = "[Online; accessed 16-March-2021]"
+}
+                    
+@misc{ IntroductiontoGeneticAlgorithmsIncludingExampleCode,
+  author = {Vijini Mallawaarachchi},
+  title = {{Introduction to Genetic Algorithms — Including Example Code}},
+  howpublished = "Available at \url{https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3}",
+  note = "[Online; accessed 16-March-2021]"
+}
+                    
+@misc{ HTMLHyperTextMarkupLanguage,
+  author = {MDN},
+  title = {{HTML: HyperText Markup Language}},
+  howpublished = "Available at \url{https://developer.mozilla.org/en-US/docs/Web/HTML}",
+  note = "[Online; accessed 26-November-2020]"
+}
+                    
+@misc{ JavaScript,
+  author = {MDN},
+  title = {{JavaScript}},
+  howpublished = "Available at \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript}",
+  note = "[Online; accessed 26-November-2020]"
+}
+                    
+@misc{ TypeScript,
+  author = {Microsoft},
+  title = {{TypeScript}},
+  howpublished = "Available at \url{https://www.typescriptlang.org/}",
+  note = "[Online; accessed 27-November-2020]"
+}
+                    
+@misc{ IntroductiontoNodejs,
+  author = {OpenJS Foundation},
+  title = {{Introduction to Node.js}},
+  howpublished = "Available at \url{https://nodejs.dev/learn}",
+  note = "[Online; accessed 27-November-2020]"
+}
+                    
+@misc{ WhydidwebuildReact,
+  author = {Pete Hunt},
+  title = {{Why did we build React?}},
+  howpublished = "Available at \url{https://reactjs.org/blog/2013/06/05/why-react.html}",
+  note = "[Online; accessed 27-November-2020]"
+}
+                    
+@misc{ TOP10ADVANTAGESOFUSINGREACTJS,
+  author = {DA14},
+  title = {{TOP 10 ADVANTAGES OF USING REACT.JS}},
+  howpublished = "Available at \url{https://da-14.com/blog/its-high-time-reactjs-ten-reasons-give-it-try}",
+  note = "[Online; accessed 27-November-2020]"
+}
+                    
+@misc{ PythonTutorial,
+  author = {Tutorialspoint},
+  title = {{Python Tutorial}},
+  howpublished = "Available at \url{https://www.tutorialspoint.com/python/index.htm}",
+  note = "[Online; accessed 27-November-2020]"
+}
+                    
+@misc{ Top7ReasonsWhyYouNeedtoLearnPythonasaDataScientist,
+  author = {Olha Bahaieva},
+  title = {{Top 7 Reasons Why You Need to Learn Python as a Data Scientist}},
+  howpublished = "Available at \url{https://towardsdatascience.com/top-10-reasons-why-you-need-to-learn-python-as-a-data-scientist-e3d26539ec00}",
+  note = "[Online; accessed 27-November-2020]"
+}
+                    
+@misc{ JupyterLabOverview,
+  author = {JupyterLab},
+  title = {{JupyterLab Overview}},
+  howpublished = "Available at \url{https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html}",
+  note = "[Online; accessed 6-December-2020]"
+}
+                    
+@misc{ WhatIsFigmaa101Intro,
+  author = {Compact Creative},
+  title = {{What Is Figma? a 101 Intro}},
+  howpublished = "Available at \url{https://designshack.net/articles/software/what-is-figma-intro/}",
+  note = "[Online; accessed 6-December-2020]"
+}
+                    
+@misc{ AnoverviewofHTTP,
+  author = {MDN},
+  title = {{An overview of HTTP}},
+  howpublished = "Available at \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview}",
+  note = "[Online; accessed 27-November-2020]"
+}
+                    
+@misc{ HTTPrequestmethods,
+  author = {MDN},
+  title = {{HTTP request methods}},
+  howpublished = "Available at \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods}",
+  note = "[Online; accessed 28-November-2020]"
+}
+                    
+@misc{ Express,
+  author = {StrongLoop, IBM},
+  title = {{Express}},
+  howpublished = "Available at \url{https://expressjs.com/}",
+  note = "[Online; accessed 28-November-2020]"
+}
+                    
+@misc{ Flask,
+  author = {The Pallets Projects},
+  title = {{Flask}},
+  howpublished = "Available at \url{https://palletsprojects.com/p/flask/}",
+  note = "[Online; accessed 28-November-2020]"
+}
+                    
+@misc{ WhatisNoSQL,
+  author = {MongoDB, Inc},
+  title = {{What is NoSQL?}},
+  howpublished = "Available at \url{https://www.mongodb.com/nosql-explained}",
+  note = "[Online; accessed 28-November-2020]"
+}
+                    
+@misc{ WhatisMongoDBIntroductionArchitectureFeaturesExample,
+  author = {Guru99},
+  title = {{What is MongoDB? Introduction, Architecture, Features & Example}},
+  howpublished = "Available at \url{https://www.guru99.com/what-is-mongodb.html}",
+  note = "[Online; accessed 28-November-2020]"
+}
+                    
+@misc{ mongoose,
+  author = {Mongoose},
+  title = {{mongoose}},
+  howpublished = "Available at \url{https://mongoosejs.com/}",
+  note = "[Online; accessed 28-November-2020]"
+}
+                    
+@misc{ GoogleAppEngineDocumentation,
+  author = {Google},
+  title = {{Google App Engine Documentation}},
+  howpublished = "Available at \url{https://cloud.google.com/appengine/docs}",
+  note = "[Online; accessed 17-November-2020]"
+}
+                    
+@misc{ MongoDBAtlas,
+  author = {MongoDB, Inc},
+  title = {{MongoDB Atlas}},
+  howpublished = "Available at \url{https://docs.atlas.mongodb.com/#service-fullname}",
+  note = "[Online; accessed 18-November-2020]"
+}
+                    
+@misc{ GraphAPI,
+  author = {Facebook},
+  title = {{Graph API}},
+  howpublished = "Available at \url{https://developers.facebook.com/docs/graph-api/}",
+  note = "[Online; accessed 18-November-2020]"
+}
+                    
+@misc{ Entréechoosefromaworldofdisheswithasingletouch,
+  author = {Sharanya Gopinathan},
+  title = {{Entrée - choose from a world of dishes with a single touch}},
+  howpublished = "Available at \url{https://techweek.com/entree-choose-dishes-single-touch/}",
+  note = "[Online; accessed 29-August-2020]"
+}
+                    
+@misc{ EatseeSeeitEatit,
+  author = {Apple Store},
+  title = {{Eatsee - See it. Eat it}},
+  howpublished = "Available at \url{https://apps.apple.com/us/app/id1202110881}",
+  note = "[Online; accessed 30-August-2020]"
+}
+                    
+@misc{ Tinderapp,
+  author = {Wikipedia},
+  title = {{Tinder (app)}},
+  howpublished = "Available at \url{https://en.wikipedia.org/wiki/Tinder_(app)}",
+  note = "[Online; accessed 30-August-2020]"
+}
+                    
+@article{ ExpertSystemsWithApplications,
+  author =	 {Garcia, I. and Sebastia, L. and & Onaindia, E},
+  title =	 {On the design of individual and group recommender systems for tourism},
+  journal =	 {Expert Systems with Applications},
+  volume =	 38,
+  number =	 6,
+  year =	 2011
+}
+
+
+@misc{ BuildauserbasedcollaborativefilteringrecommendationengineforAnime,
+  author = {Chris I},
+  title = {{Build a user-based collaborative filtering recommendation engine for Anime}},
+  howpublished = "Available at \url{https://towardsdatascience.com/build-a-user-based-collaborative-filtering-recommendation-engine-for-anime-92d35921f304}",
+  note = "[Online; accessed 30-August-2020]"
+}
+                    

@@ -1,27 +1,47 @@
 column_count = 3
-table_name_prefix = '3'
-flex_column_index = -1
+table_name_prefix = '2'
+# flex_column_index = -1
+flex_column_index = None
 input_text = """
 
-Table 3.6: Favorite Schema
+Table 2.1: Characteristics of Explicit and Implicit Feedback
 
-Key Name
 
-Type
+Implicit Feedback
 
-Description
+Explicit Feedback
 
-user
+Accuracy
 
-ObjectId
+Low
 
-User of the current record.
+High
 
-restaurants
+Abundance
 
-Array of
+High
 
-List of their favorite restaurants.
+Low
+
+Context-sensitive
+
+Yes
+
+Yes
+
+Expressivity of user preference
+
+Positive
+
+Positive and Negative
+
+Measurement reference
+
+Relative
+
+Absolute
+
+
 
 
 
@@ -32,7 +52,8 @@ table_name = ''
 table_data = []
 row = []
 column_setting = ['l'] * column_count
-column_setting[flex_column_index] = 'X'
+if flex_column_index is not None:
+    column_setting[flex_column_index] = 'X'
 
 
 for line in input_text.split('\n'):

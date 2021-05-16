@@ -5,6 +5,7 @@
 
 \usepackage{polyglossia}
 \usepackage{tabularx}
+%\usepackage{algorithm}
 \setdefaultlanguage{english}
 \setotherlanguage{thai}
 \newfontfamily\thaifont[Script=Thai,Scale=1.23]{TH Sarabun New}
@@ -440,12 +441,211 @@ We brought this problem up to solve it since it is a common problem that everyon
 
 
 \section{Related Theory}
-%TODO
+
+\subsection{Web Application}
+
+A web application is an application program that is stored on a remote server and delivered over the internet through a browser interface. \cite{WhatIsWebApplicationWebAppsAndItsBenefits} Because web applications are delivered through the internet, users do not need to install the application and it also allows multiple users access to the application at the same time on the same version. Moreover, running web applications require only an internet browser, so a web application is a platform and operating system independent.
+
+Because our platform needs to be easily accessible for users not only individual users but also every member in the group of users, having a web application that does not require any installation and platform independence is a perfect solution. Users can easily access our platform via their mobile internet browser and all of them will see the same version of the application. A web application also accommodates the development process since we do not need to implement the different versions for different platforms.
+
+
+\subsection{Information Collection}
+
+This collects relevant information of users to generate a user profile or model for the prediction tasks including the user’s attributes, behaviors, or content of the resources the user accesses. \cite{WhatisMachineLearning} We need to do this process due to the recommender cannot provide results accurately until the users’ profile and preferences have been constructed. So, there are several types of information/feedback that can be captured and studied including explicit and implicit feedback.
+
+
+\subsubsection{Explicit Feedback}
+
+The accuracy of the recommendation depends on the number of ratings provided by the user. The only shortcoming of this method is, it requires effort from the users and also, users are not always ready to supply enough information. Despite the fact that explicit feedback requires more effort from the user, it is still seen as providing more reliable data, since it does not involve extracting preferences from actions, and it also provides transparency into the recommendation process that results in a slightly higher perceived recommendation quality and more confidence in the recommendations. \cite{Recommendersystem}
+
+\subsubsection{Implicit Feedback}
+
+The system automatically infers the user’s preferences by monitoring the different actions of users such as the history of purchases, navigation history, and time spent on some web pages, links followed by the user, content of an email, and button clicks among others. Implicit feedback reduces the burden on users by inferring their user’s preferences from their behavior with the system. The method though does not require effort from the user, but it is less accurate. Also, it has been argued that implicit preference data might in actuality be more objective, as there is no bias arising from users responding in a socially desirable way. \cite{Recommendersystem}
+
+
+\begin{table}[!h]
+\caption{Characteristics of Explicit and Implicit Feedback}\label{tbl:2CharacteristicsofExplicitandImplicitFeedback}
+\begin{tabular}{l|l|l} \hline\hline
+Implicit Feedback & Explicit Feedback & Accuracy \\ \hline\hline
+Low & High & Abundance \\ \hline
+High & Low & Context-sensitive \\ \hline
+Yes & Yes & Expressivity of user preference \\ \hline
+Positive & Positive and Negative & Measurement reference \\ \hline
+Relative & Absolute \\ \hline\hline
+\end{tabular}\par
+\smallskip
+Source: https://core.ac.uk/download/pdf/207051652.pdf
+\end{table}
+
+
+From Table~\ref{tbl:2CharacteristicsofExplicitandImplicitFeedback}, the accuracy of implicit feedback is lower than explicit feedback due to system monitoring only (indirect way). But with this approach, we can get abundant feedback whereas explicit feedback is scarce. Moreover, implicit feedback can capture only positive e.g. if a user never visits restaurant A that does not mean he/she does not like that restaurant. Although implicit feedback tends to be relative such as if a user visited restaurant B 10 times and restaurant C 100 times, then we can conclude that he/she has a higher preference for C than B. Lastly, as we can see from the table, one thing that is similar to each other is both are sensitive to the context
+
+
+%TODO check update
+In this project, the PDPA or Personal Data Protection Act is not related to us. This rule mentioned about the protection of personal information. Any app that needs access to that data needs consent from the owner by informing the purpose of what information is collected and using that information for what purpose. However, we collected user information including username, password, and user profile: food preference where all of them do not relate to personal information.
+
+\subsection{Overview of Machine Learning}
+
+Machine learning is an application of artificial intelligence (AI) that provides systems’ ability to automatically learn and improve from experience without being explicitly programmed. \cite{WhatisMachineLearning} Machine learning is often categorized into 3 types which are supervised learning, unsupervised learning, and reinforcement learning.
+
+In supervised learning, it is learned from the labeled data and predicts the future events from the labeled e.g. classified cats and dogs. In contrast, unsupervised learning deals with unlabeled data which is extremely useful to discover patterns, not just predict the future from labeled data e.g. customer segmentation. Last is reinforcement learning which is the closest to human learning by learning to take corrective action with the provided environment, for example, AlphaGo which lets the machine learn how to play Go.
+
+As our project is a recommendation system that needs to predict the next user-preferred restaurants from interactions and side information which mainly are unlabelled data. So, the model works on its own to discover patterns and information which is the restaurant for each user based on preferences. In addition, this project is an unsupervised learning problem.
+
+
+\subsection{Recommendation System Techniques}
+
+Recommender systems are usually as if a decision making strategy that helps users select the interest items based on users’ preferences or profile from overwhelmed available items or complex environments. There are 3 main types of recommendation filtering techniques which are content-based, collaborative, and hybrid. Each of these has different features and potentials.
+
+\subsubsection{Content-based Filtering Technique}
+
+Content-based filtering is a technique which recommends based on the similarity between the items and using users’ profile/description. Items that are mostly related to the positive user’s evaluation are recommended to the user. This approach uses a variety of models to find the similarity document to get meaningful suggestions by treating the recommendation as a user-specific classification problem by classifying for the user's likes and dislikes based on an item's features. \cite{Collaborativefiltering} Moreover, it does not require other users’ profiles as they do not affect recommendations, for example, the system wants to recommend the product which is similar to the product that user has purchased in the past, so they use content-based filtering to be the recommender by using the characteristics of the product to recommend including genre, price, style, description, picture, etc.
+
+Therefore, this technique has the ability to recommend new items even if there is no user’s evaluation/rating. This would mean that it is able to recommend accurately without user preferences which consequence that if there is a poor description of items and an unorganized user profile, it can lead to the worst recommendation. So, the effectiveness of the content-based filtering technique depends on the richness of descriptive information, but lastly, it is unable to recommend a product that is very different from the product that the user previously purchased, resulting in the user receiving a not diverse category of product. To overcome this, it can adapt to some form of a hybrid system.
+
+Moreover, from this approach, our project can use the algorithm to be part of our recommendation system which makes the system have an ability to recommend a restaurant even if there’s no user preference or we can say that we are able to overcome the new user problem.
+
+
+\subsubsection{Collaborative Filtering Technique}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=250pt]{./images/2cfprocess.png}
+\caption{Collaborative Filtering Process}\label{fig:2cfprocess}
+\end{figure}
+
+A collaborative filtering technique as opposed to the content-based filtering technique which collaborative filtering cannot recommend the item by using only the description of metadata. The key idea of this technique is a group of people with similar tastes, often tend to like similar items. So, collaborative filtering uses only data about rating profiles from different users or items in order to generate the recommendation. Here is the flow of this technique:
+
+\begin{enumerate}
+\item Gather user expression from her/his preferences by items rated.
+\item Match the user’s ratings with other users’ then find the most similar tastes.
+\item Recommend with the high rating of unseen items from similar users to this user.
+\end{enumerate}
+
+To recommend, it works by creating a user-item matrix of preferences for items by users, as Figure~\ref{fig:2cfprocess} above which represents the process start from the matrix to the output of this system, and then calculating the similarity between profiles to get the relevant item that matches the user. Thus, the user will be able to get the items that he/she has not rated yet but already rated from a similar user. This approach can produce the output either prediction or recommendation by prediction represented as a score of an item for the user whereas recommendation is represented as a top N list of items as mentioned in Figure~\ref{fig:2cfprocess}. Collaborative filtering techniques can separate into 2 main categories: memory-based and model-based.
+
+
+\paragraph{Memory-based}\
+
+Memory-based can approach in 2 ways which are user-based and item-based.
+
+User-based collaborative filtering is to find the users who are similar to the target user and then recommend by calculating the weighted averages of the ratings from the group of similar users. For item-based collaborative filtering is calculating the similarity between items instead of users for determining the items which are similar to the target item then, calculating the weighted average of the ratings from a group of similar items.
+
+To calculate the weighted average, there are several popular similarity measurements to find the similarity between user/item including Pearson correlation coefficient and Cosine similarity.
+
+\begin{equation}\label{eq:simil}
+simil(x, y) = \frac{\sum_{i\in I_xy}^{}(r_{x,i}-\bar{r}_{x})(r_{y,i}-\bar{r}_{y})}
+{\sqrt{\sum_{i\in I_xy}^{}(r_{x,i}-\bar{r}_{x})^2}\sqrt{\sum_{i\in I_xy}^{}(r_{y,i}-\bar{r}_{y})^2}}
+\end{equation}
+
+From the above example equation~\ref{eq:simil}, it is a Pearson correlation coefficient, $simil(x, y)$ denotes the similarity between 2 users $x$ and $y$, mean the rating given to the item $i$ by user $x$, $\bar{r}_{x}$ means the mean rating of user $x$, $I_{xy}$ and is equal to a total number of items in the user-item.
+
+
+\begin{equation}\label{eq:cos}
+cos(\vec{x},\vec{y}) 
+=\frac{\vec{x}\cdot \vec{y}}{\left \| \vec{x} \right \|\times \left \| \vec{y} \right \|}
+=\frac{\sum_{i\in I_xy}^{}r_{x,i}r_{y,i}}
+{\sqrt{\sum_{i\in I_xy}^{}r_{x,i}^2}\sqrt{\sum_{i\in I_xy}^{}r_{y,i}^2}}
+\end{equation}
+
+For cosine similarity~\ref{eq:cos}, it is different from Pearson correlation coefficient which calculates as a vector-space model by measuring the similarity between dimensional vectors based on the angle which $cos(\vec{x},\vec{y})$ denotes to the similarity between 2 users $x$ and $y$.
+
+
+\paragraph{Model-based}\
+
+This approach is able to improve the performance of collaborative filtering by constructing the model which is done by using machine learning or data mining techniques. Moreover, with this approach, dimensionality reduction methods are mostly being used as complementary techniques to improve the robustness and accuracy of the memory-based approach. \cite{Recommendersystem}
+
+For example, this technique is matrix factorization which is able to discover hidden concepts and their relationship with users and items.
+
+\
+
+The advantage of the collaborative filtering technique is performed in domains where there is not much content associated with items and where content is difficult for a computer system to analyze such as opinions and ideas. \cite{Recommendersystem} But there is some disadvantage which is about the cold-start problem which refers to the new user or item that comes with the empty profile since the user has not rated any item yet. Moreover, a memory-based approach has a problem with scalability. This issue can be solved by the model-based approach.
+
+Collaborative filtering can perform better than content-based filtering in poor content. With the advantages of this technique, we are able to reduce the user effort by performing with the implicit feedback that comes from the system monitoring and get the recommendation result more accurately.
+
+
+\subsubsection{Hybrid Filtering Technique}
+
+The hybrid filtering technique is the most recommender system used nowadays. It is a combination of content-filtering, collaborative filtering, and other approaches. There are several ways to implement e.g. doing content filtering and collaborative filtering predictions separately and then combining them later, etc. Combining different recommendation techniques can provide a better system and be able to overcome the limitations of a pure recommendation system.
+
+Therefore, the Hybrid approach can give a better recommendation than a pure approach and can avoid the cold-start problem, sparsity, scalability, and other problems.
+
+According to both techniques which are content-based and collaborative filtering, we found that they can reduce both of their problems whether cold-start problems that come from collaborative filtering which are content-based able to overcome, or about the diversity recommendation problem which hybrid approach can overcome. In our opinion, the hybrid filtering technique is the best choice to be done in a restaurant recommendation system.
+        
+        
+
+\subsection{Aggregation Mechanism}
+
+Since this project aims to recommend the restaurant to users both individuals and groups, we need to aggregate individual preferences into group preferences before recommending to a group of users. There are many existing strategies for aggregation but the key idea of this approach is how the individual group members’ preferences are combined into a group preference.
+
+For the aggregating preferences strategy, the individual preferences will be aggregated into groups by combining the user’s preferences/ratings of each item and let this be the group rating. Then, group recommendations will be based on this preference and offer only the top N recommendations list to the group which N refers to the number of items that will be recommended to a group.
+
+\subsection{Optimization Techniques}
+
+The optimization algorithm is a procedure which is executed iteratively by comparing various solutions till an optimum or a satisfactory solution is found \cite{AlgorithmsforDiscreteOptimization} which can be either the minimum or the maximum value. The optimal value can be selected from a set of available solutions with some criterion \cite{Mathematicaloptimization}. Examples of objective functions that require maximum values ​​are: number of kilometers that a delivery vehicle can run per 1 gallon of fuel, number of customers, number of customers eating in a restaurant per hour, etc. Examples of objective functions that require minimum values ​​are: cost per unit of production, factory electricity consumption per hour, and so on.
+
+In this project, we have adopted a method of optimization to define the objective function of our system. The objective of our system is to maximize the satisfaction of users based on the recommendations of restaurants that meet the interests and needs of that user.
+
+\subsection{Genetic Algorithm}
+
+The genetic algorithm (GA) is a metaheuristic method inspired by the process of natural selection that belongs to the larger class of evolutionary algorithms (EA). Genetic algorithms are commonly used to generate high-quality solutions to optimization and search problems by relying on biologically inspired operators such as mutation, crossover, and selection. \cite{Geneticalgorithm}
+
+In the genetic algorithm, the optimal solution is found by replacing an existing set of parameters in the form of chromosomes. Each parameter in the chromosome is known as a gene which is usually replaced with binary numbers by encoding methods. Encoding of chromosomes is the first step in solving the problem and it depends on the problem. The initial population will be random values. To find the fitness solution, each generation will either mutate or switch genes between each other until a new generation of population with more fitness is obtained, this evolving process will continue until a suitable answer is found. The overall process of genetic algorithms is shown in the following pseudocode.
+
+%TODO use algorithm package
+
+\textbf{Pseudocode}\cite{IntroductiontoGeneticAlgorithmsIncludingExampleCode}\\
+\textbf{1} START\\
+\textbf{2} Generate the initial population\\
+\textbf{3} Compute fitness\\
+\textbf{4} REPEAT\\
+\textbf{5} \quad Parent Selection\\
+\textbf{6} \quad Crossover/Mutation\\
+\textbf{7} \quad Compute fitness\\
+\textbf{8} UNTIL population has converged\\
+\textbf{9} STOP\\
+
+The genetic algorithm consists of 4 main phases: Initial Population, Selection, Reproduction, and Termination. The details of each phase are as follows.
+
+
+\paragraph*{1. Initial Population}\
+
+%TODO check for update
+Before getting the population, the problem needs to go through the encoding methods which can be binary, permutation, or value encoding. Binary encoding is the most common method that represents the solution in strings of 1s and 0s. Permutation encoding is usually used for Travelling Salesman Problem which every chromosome is a string of numbers. Value encoding is used in the problem where complicated values and binary method would not be sufficient, so that it is necessary to develop a specific crossover and mutation method.
+
+Population comes from the set of chromosomes which each chromosome is a solution to a problem that needs to be solved. Genes can combine to be a chromosome which is known as the solution. The value of genes is randomized, with the initial number of genes dependent on the problem and sometimes can be significantly randomized to get closer to the answer.
+
+\paragraph*{2. Selection}\
+
+The idea of selection is to select the appropriate chromosomes or the fitter chromosomes measured by a fitness function and pass them to the next generation to be able to get a more optimal answer to the problem. Generally, chromosomes with higher fitness have more chances than lower fitness to reproduction.
+
+\paragraph*{3. Reproduction}\
+
+After the selection process, this process will use those chromosomes to generate the next generation by either crossover or mutation. Crossover is the most significant phase in a genetic algorithm. For each pair of parents to be mated, a crossover point is chosen at random from within the genes. \cite{IntroductiontoGeneticAlgorithmsIncludingExampleCode} After that, offspring will be created and added to the population of next generation. For mutation, it occurs when new offspring are formed by flipped some bits. This process exists to maintain the diversity of population and prevent premature convergence.
+
+\paragraph*{4. Termination}\cite{Geneticalgorithm}
+
+This generational process is repeated until a termination condition has been reached. Common terminating conditions are:
+
+\begin{itemize}
+\item A solution is found that satisfies minimum criteria
+\item Fixed number of generations reached
+\item Allocated budget (computation time/money) reached
+\item The highest ranking solution's fitness is reaching or has reached a plateau such that successive iterations no longer produce better results
+\item Manual inspection
+\item Combinations of the above
+\end{itemize}
+
+\
+
+In this approach, we can create a recommendation system for both individuals and groups which is based on users’ preferences along with the user's restaurant selection history. Genetic algorithms approach is the most likely to be able to serve our objective which is to maximize the satisfaction of users.
+
+
+
+
 \section{Technologies}
 %TODO
 \section{Related Research/Competing Solutions}
 %TODO
-
 
 
 
