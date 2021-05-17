@@ -5,8 +5,8 @@
 \contentsline {chapterx}{\mdseries CONTENTS}{xi}{Doc-Start}%
 \contentsline {chapterx}{\mdseries LIST OF TABLES}{xii}{Doc-Start}%
 \contentsline {chapterx}{\mdseries LIST OF FIGURES}{xiii}{Doc-Start}%
-\contentsline {chapterx}{\mdseries LIST OF SYMBOLS}{xvii}{Doc-Start}%
-\contentsline {chapterx}{\mdseries LIST OF TECHNICAL VOCABULARY AND ABBREVATIONS}{xviii}{Doc-Start}%
+\contentsline {chapterx}{\mdseries LIST OF SYMBOLS}{xviii}{Doc-Start}%
+\contentsline {chapterx}{\mdseries LIST OF TECHNICAL VOCABULARY AND ABBREVATIONS}{xix}{Doc-Start}%
 \contentsline {chapterxx}{\mdseries \bf CHAPTER}{1}{chapter.1}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {1.}\hskip -0.5em Introduction}}}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Keywords}{1}{section.1.1}%
@@ -43,8 +43,6 @@
 \contentsline {subsection}{\numberline {2.2.4}Recommendation System Techniques}{11}{subsection.2.2.4}%
 \contentsline {subsubsection}{\numberline {2.2.4.1}Content-based Filtering Technique}{11}{subsubsection.2.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.2.4.2}Collaborative Filtering Technique}{12}{subsubsection.2.2.4.2}%
-\contentsline {paragraph}{\numberline {2.2.4.2.1}Memory-based}{12}{paragraph.2.2.4.2.1}%
-\contentsline {paragraph}{\numberline {2.2.4.2.2}Model-based}{13}{paragraph.2.2.4.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.4.3}Hybrid Filtering Technique}{13}{subsubsection.2.2.4.3}%
 \contentsline {subsection}{\numberline {2.2.5}Aggregation Mechanism}{14}{subsection.2.2.5}%
 \contentsline {subsection}{\numberline {2.2.6}Optimization Techniques}{14}{subsection.2.2.6}%
@@ -183,6 +181,7 @@
 \contentsline {section}{\numberline {5.2}Future Works}{114}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Conclusion}{115}{section.5.3}%
 \contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{116}{section.5.3}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{119}{section.5.3}%
-\contentsline {apdx}{A\hskip 1em First appendix title}{120}{section.5.3}%
-\contentsline {apdx}{B\hskip 1em Second appendix title}{122}{equation.1.3.5}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{118}{section.5.3}%
+\contentsline {apdx}{A\hskip 1em Restaurant Considerations Survey}{119}{section.5.3}%
+\contentsline {apdx}{B\hskip 1em Genetic Algorithm Code}{132}{figure.1.25}%
+\contentsline {apdx}{C\hskip 1em Genetic Algorithm Test Code}{136}{lstnumber.-1.134}%

@@ -40,7 +40,29 @@
   {\par\nobreak\smallskip
    \hfill(#2\IfValueT{#1}{~---~#1})\endoldquote 
    \addvspace{\bigskipamount}}
+% Code
+\usepackage{listings}
+\usepackage{color}
 
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
 %\setmathfont(Digits)[Scale=1.0,LetterSpace=0,FakeStretch=1.0]{Times New Roman}
 
 
@@ -545,7 +567,7 @@ A collaborative filtering technique as opposed to the content-based filtering te
 To recommend, it works by creating a user-item matrix of preferences for items by users, as Figure~\ref{fig:2cfprocess} above which represents the process start from the matrix to the output of this system, and then calculating the similarity between profiles to get the relevant item that matches the user. Thus, the user will be able to get the items that he/she has not rated yet but already rated from a similar user. This approach can produce the output either prediction or recommendation by prediction represented as a score of an item for the user whereas recommendation is represented as a top N list of items as mentioned in Figure~\ref{fig:2cfprocess}. Collaborative filtering techniques can separate into 2 main categories: memory-based and model-based.
 
 
-\paragraph{Memory-based}\
+\paragraph*{1. Memory-based}\
 
 Memory-based can approach in 2 ways which are user-based and item-based.
 
@@ -571,7 +593,7 @@ cos(\vec{x},\vec{y})
 For cosine similarity~\ref{eq:cos}, it is different from Pearson correlation coefficient which calculates as a vector-space model by measuring the similarity between dimensional vectors based on the angle which $cos(\vec{x},\vec{y})$ denotes to the similarity between 2 users $x$ and $y$.
 
 
-\paragraph{Model-based}\
+\paragraph*{2. Model-based}\
 
 This approach is able to improve the performance of collaborative filtering by constructing the model which is done by using machine learning or data mining techniques. Moreover, with this approach, dimensionality reduction methods are mostly being used as complementary techniques to improve the robustness and accuracy of the memory-based approach. \cite{Recommendersystem}
 
@@ -2465,105 +2487,369 @@ Restaurant recommendation system for individuals and groups is a web application
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix{First appendix title}
-\noindent{\large\bf Put appropriate topic here} \\
+\appendix{Restaurant Considerations Survey}
+\noindent{\large\bf Restaurant Considerations Survey} \\
 
-This is where you put hardware circuit diagrams, detailed experimental data in tables or source codes, etc.. \\ \bigskip
+We conduct the restaurant consideration survey in order to understand the user behavior and validate the problem to make sure that it is existing, not just our opinion.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1RestaurantConsiderationSurveyinGoogleform.png}
+\caption{Restaurant Consideration Survey in Google form}\label{fig:A1RestaurantConsiderationSurveyinGoogleform}
+\end{figure}
+
+In this survey, we separated into 4 parts which are basic information, individuals eating consideration, groups eating consideration, and experience of using recommendation applications.
+
+We surveyed by sharing the Google form through social media platforms e.g. Facebook, Instagram, etc. By having 148 respondents who have done the problem validation survey. Here are the results of this survey.
+
+\textbf{Part 1: Basic Information}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1GenderofRespondents.png}
+\caption{Gender of Respondents}\label{fig:A1GenderofRespondents}
+\end{figure}
+
+From the survey, 66.2\% were female, 32.4\% were male, and unspecified gender 1.4\% which concluded into 148 respondents.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1DistributionofRespondentsAge.png}
+\caption{Distribution of Respondents’ Age}\label{fig:A1DistributionofRespondentsAge}
+\end{figure}
+
+As Figure~\ref{fig:A1DistributionofRespondentsAge} showed us the distribution of respondents’ age, we found that the most age range is around 19 - 23 years old which the interviewees mostly have the age range of 21 years old with 24.3\%.
 
 
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1OccupationofRespondents.png}
+\caption{Occupation of Respondents}\label{fig:A1OccupationofRespondents}
+\end{figure}
 
-This appendix describes two static allocation methods for fGn (or fBm)
-traffic. Here, $\lambda$ and $C$ are respectively the traffic arrival
-rate and the service rate per dimensionless time step. Their unit are
-converted to a physical time unit by multiplying the step size
-$\Delta$. For a fBm self-similar traffic source,
-Norros~\cite{norros95} provides its EB as
-\begin{equation}\label{eq:norros}
-  C = \lambda + (\kappa(H)\sqrt{-2\ln\epsilon})^{1/H}a^{1/(2H)}x^{-(1-H)/H}\lambda^{1/(2H)}
-\end{equation}
-where $\kappa(H) = H^H(1-H)^{(1-H)}$. Simplicity in the calculation is
-the attractive feature of (\ref{eq:norros}).
+The most occupation of our respondents are students with 52.7\% and followed by office workers 26.4\%. Moreover, this pie chart is related to the distribution of respondents’ age, with the most age range being around 19 - 23 years old which is the range of students in Thailand.
 
-The MVA technique developed in~\cite{kim01} so far provides the most
-accurate estimation of the loss probability compared to previous
-bandwidth allocation techniques according to simulation results.
-Consider a discrete-time queueing system with constant service rate
-$C$ and input process $\lambda_n$ with $\mathbb{E}\{\lambda_n\} =
-\lambda$ and $\mathrm{Var}\{\lambda_n\} = \sigma^2$.  Define $X_n \equiv
-\sum_{k=1}^n \lambda_k - Cn$.  The loss probability due to the MVA
-approach is given by
-\begin{equation}\label{eq:loss_mva}
-  \varepsilon \approx \alpha e^{-m_x/2}
-\end{equation}
-where
-\begin{equation}\label{eq:mx}
-m_x = \min_{n \geq 0} \frac{((C-\lambda)n + B)^2}{\mathrm{Var}\{X_n\}} =
-\frac{((C-\lambda)n^\ast + B)^2}{\mathrm{Var}\{X_{n^{\ast}}\}}
-\end{equation} 
-and 
-\begin{equation}\label{eq:alpha}
-  \alpha =
-  \frac{1}{\lambda\sqrt{2\pi\sigma^2}}\exp\left(\frac{(C-\lambda)^2}{2\sigma^2}\right)
-  \int_C^\infty (r-C)\exp\left(\frac{(r-\lambda)^2}{2\sigma^2}\right)\, dr
-\end{equation}
-For a given $\varepsilon$, we numerically solve for $C$ that satisfies
-(\ref{eq:loss_mva}). Any search algorithm can be used to do the task.
-Here, the bisection method is used.  
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1EstimatedDailyCostofEating.png}
+\caption{Estimated Daily Cost of Eating}\label{fig:A1EstimatedDailyCostofEating}
+\end{figure}
 
-Next, we show how $\mathrm{Var}\{X_n\}$ can be determined.  Let
-$C_{\lambda}(l)$ be the autocovariance function of $\lambda_n$.  The
-MVA technique basically approximates the input process $\lambda_n$
-with a Gaussian process, which allows $\mathrm{Var}\{X_n\}$ to be
-represented by the autocovariance function.  In particular, the
-variance of $X_n$ can be expressed in terms of $C_{\lambda}(l)$ as
-\begin{equation}
-  \mathrm{Var}\{X_n\} = nC_{\lambda}(0) + 2\sum_{l=1}^{n-1} (n-l)C_{\lambda}(l)
-\end{equation} 
-Therefore, $C_{\lambda}(l)$ must be known in the MVA technique, either
-by assuming specific traffic models or by off-line analysis in case of
-traces.  In most practical situations, $C_{\lambda}(l)$ will not be
-known in advance, and an on-line measurement algorithm developed
-in~\cite{eun01} is required to jointly determine both $n^\ast$ and
-$m_x$. For fGn traffic, $\mathrm{Var}\{X_n\}$ is equal to $\sigma^2
-n^{2H}$, where $\sigma^2 = \mathrm{Var}\{\lambda_n\}$, and we can find
-the $n^\ast$ that minimizes (\ref{eq:mx}) directly. Although $\lambda$
-can be easily measured, it is not the case for $\sigma^2$ and $H$.
-Consequently, the MVA technique suffers from the need of prior
-knowledge traffic parameters.
+Figure~\ref{fig:A1EstimatedDailyCostofEating}, The most eating cost per day is 200 baht with 32.4\% or 48 out of 148 respondents. As you can see from the figure, a few respondents have a lot of budget for eating per day which the maximum budget is 4,000 baht.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheRestaurants.png}
+\caption{The Application or Platform that Respondent Usually Use to Find the Restaurants}\label{fig:A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheRestaurants}
+\end{figure}
+
+In summary, they usually find the restaurant from the delivery platform e.g. Grab, Get, Lineman, etc. From search engines like Google and applications that gather restaurants in one place like Wongnai and so on.
+
+\newpage
+\textbf{Part 2: Individuals Eating Consideration}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1Top3ConditionstoFindtheRestaurantwhenEatingAlone.png}
+\caption{Top 3 Conditions to Find the Restaurant when Eating Alone}\label{fig:A1Top3ConditionstoFindtheRestaurantwhenEatingAlone}
+\end{figure}
+
+As you can see from Figure~\ref{fig:A1Top3ConditionstoFindtheRestaurantwhenEatingAlone}, the condition that concerns them the most when eating alone is the price followed by the quality of food then available for delivery. Moreover, they are still concerned about the distance between them and the restaurant too.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1AverageTimetoSelecttheRestaurantAlone.png}
+\caption{Average Time to Select the Restaurant Alone}\label{fig:A1AverageTimetoSelecttheRestaurantAlone}
+\end{figure}
+
+From Figure~\ref{fig:A1AverageTimetoSelecttheRestaurantAlone}, the most range of time that respondents spend to select the restaurant in an individual is 5 - 10 minutes with 40.5\% followed by 10 - 30 minutes which 35.1\% Furthermore, we notice that with 11.5\% they said that depending on the period.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1NumberofRespondentsThinkingthatRestaurantSelectionisTheirPain.png}
+\caption{Number of Respondents Thinking that Restaurant Selection is Their Pain}\label{fig:A1NumberofRespondentsThinkingthatRestaurantSelectionisTheirPain}
+\end{figure}
+
+We found that around 62.8\% of respondents have a problem with restaurant selection which can prove our assumption that making the decision to go to the restaurant for each meal is still a problem nowadays.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1WhichMealHasProblemtheMost.png}
+\caption{Which Meal Has Problem the Most}\label{fig:A1WhichMealHasProblemtheMost}
+\end{figure}
+
+The meal that everyone has the most problem with is dinner time. In our opinion, we think that it is the first meal that everybody reunited again after work or study. So many people, many conditions, which leads to complex decision making.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1ProblemBetweenDine-inandDelivery.png}
+\caption{Problem Between Dine-in and Delivery}\label{fig:A1ProblemBetweenDine-inandDelivery}
+\end{figure}
+
+In Figure~\ref{fig:A1RestaurantConsiderationSurveyinGoogleform}1, you can see that dine-in and delivery are almost half-and-half. For dine-in problems, they said that it is hard to find the restaurant and decisions cannot be made quickly but for delivery, they know which restaurant to eat due to the foods’ picture of each restaurant and dine-in needs to consider more conditions than delivery. For delivery problems, they said that it is hard to decide what to eat because there is an overwhelming amount of restaurants to choose from and the main condition needed to consider is the distance from the restaurant.
+
+\newpage
+\textbf{Part 3: Groups Eating Consideration}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1AverageTimetoSelecttheRestaurantinGroup.png}
+\caption{Average Time to Select the Restaurant in Group}\label{fig:A1AverageTimetoSelecttheRestaurantinGroup}
+\end{figure}
+
+From Figure~\ref{fig:A1RestaurantConsiderationSurveyinGoogleform}2, the most range of time that respondents spend to select the restaurant in a group is 5 - 10 minutes with 37.5\% followed by 10 - 30 minutes which 32.4\% Furthermore, we notice that 18.2\% of respondents spend time more than 30 minutes which 3 times Three times the number of people compare to individual.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1NumberofRespondentsThinkingthatRestaurantSelectioninGroupisTheirPain.png}
+\caption{Number of Respondents Thinking that Restaurant Selection in Group is Their Pain}\label{fig:A1NumberofRespondentsThinkingthatRestaurantSelectioninGroupisTheirPain}
+\end{figure}
+
+We found that around 65.5\% of respondents have a problem with restaurant selection in groups which compared to individual problems, has increased up to 2.7\%. Thus, we can conclude that people faced more pain with group eating than individuals.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1TheFrequencyofGroupEatingProblems.png}
+\caption{The Frequency of Group Eating Problems}\label{fig:A1TheFrequencyofGroupEatingProblems}
+\end{figure}
+
+From this figure, we found that respondents tend to have restaurant selection in group problems often.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem.png}
+\caption{The Most Type of Group that Usually Occur Group Eating Problem}\label{fig:A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem}
+\end{figure}
+
+Next, we want to know which group usually faces the pain of this problem. Figure~\ref{fig:A1RestaurantConsiderationSurveyinGoogleform}5 reveals that a group of friends usually faced the pain with 75.3\% and followed by family then, boyfriend/girlfriend.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGroupofFriends.png}
+\caption{Top 3 Conditions to Find the Restaurant when Eating with Group of Friends}\label{fig:A1Top3ConditionstoFindtheRestaurantwhenEatingwithGroupofFriends}
+\end{figure}
+
+The top 3 conditions are price, promotion, quality of the food which include the distance of the restaurant to be the condition to consider.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily.png}
+\caption{Top 3 Conditions to Find the Restaurant when Eating with Family}\label{fig:A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily}
+\end{figure}
+
+The top 3 conditions are quality of food, distance, and price which include the environment of the restaurant to be the condition to consider due to from 3 groups, only this group concerns the environment of the restaurants compared to the other.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend.png}
+\caption{Top 3 Conditions to Find the Restaurant when Eating with Girlfriend/boyfriend}\label{fig:A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend}
+\end{figure}
+
+The top 3 conditions are promotion, price, and quality which include the quality of services to be the condition to consider due to from 3 groups, only this group concerns the services compared to the other groups which are family and friends. As you can see, the conditions when eating are significantly different from each other.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1ReasonofProblemthatFrequentlyOccurswhenEatinginGroup.png}
+\caption{Reason of Problem that Frequently Occurs when Eating in Group}\label{fig:A1ReasonofProblemthatFrequentlyOccurswhenEatinginGroup}
+\end{figure}
+
+In conclusion, the main issue of this problem is about the member of that group cannot decide what and where to eat. Finally, the decision cannot be made.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1HowInvolvedAreYouinMakingRestaurantDecisions.png}
+\caption{How Involved Are You in Making Restaurant Decisions}\label{fig:A1HowInvolvedAreYouinMakingRestaurantDecisions}
+\end{figure}
+
+We found that most people usually take part in decision making which can conclude that every condition and preferences of each member in that group are important.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1SolutiontoSolveGroupEatingProblems.png}
+\caption{Solution to Solve Group Eating Problems}\label{fig:A1SolutiontoSolveGroupEatingProblems}
+\end{figure}
+
+Most of the solution is voting and going to the restaurant that wins by majority vote and a few said that eating separately. However, this cannot serve all members' conditions, some of them complain and feel bad when their choices don't bring up to the group.
+
+\newpage
+\textbf{Part 4: Experience of using Recommendation Applications}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1PercentageofRespondentsthatUsingRecommendationApplications.png}
+\caption{Percentage of Respondents that Using Recommendation Applications}\label{fig:A1PercentageofRespondentsthatUsingRecommendationApplications}
+\end{figure}
+
+Surprisingly found that most of the respondents never use the recommendation application with over 70\%.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1RecommendationApplications.png}
+\caption{Recommendation Applications}\label{fig:A1RecommendationApplications}
+\end{figure}
+
+There are a variety of ways for the recommendation system from excel to the randomization application. Moreover, they use a delivery application to choose their restaurant as a recommender.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A1UsageProblemofExistingRecommendationApplication.png}
+\caption{Usage Problem of Existing Recommendation Application}\label{fig:A1UsageProblemofExistingRecommendationApplication}
+\end{figure}
+
+Even there’s a lot of recommendations, it is still randomized, the menu is not updated, and most applications just recommend common food, not restaurants. Moreover, some of the applications are too complex to use.
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% The 2nd appendix %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix{Second appendix title}
-\noindent{\large\bf Put appropriate topic here} \\
+\appendix{Genetic Algorithm Code}
+\noindent{\large\bf Genetic Algorithm Code} \\
 
-Next, we show how $\mathrm{Var}\{X_n\}$ can be determined.  Let
-$C_{\lambda}(l)$ be the autocovariance function of $\lambda_n$.  The
-MVA technique basically approximates the input process $\lambda_n$
-with a Gaussian process, which allows $\mathrm{Var}\{X_n\}$ to be
-represented by the autocovariance function.  In particular, the
-variance of $X_n$ can be expressed in terms of $C_{\lambda}(l)$ as
-\begin{equation}
-  \mathrm{Var}\{X_n\} = nC_{\lambda}(0) + 2\sum_{l=1}^{n-1} (n-l)C_{\lambda}(l)
-\end{equation} 
+\begin{lstlisting}
+def genetic_algorithm_recommender(restaurants, users, genes=6, get_matrix=False, varbose=False):
 
-\noindent{\large\bf Add more topic as you need} \\
+    def compute_fitness(chromosome_value):
+        group_score = 0
+        for user in users:
+            score_sum = 0
+            user_categories = user['categories']
+            user_categories_set = set(user_categories)
+            user_price_range = user.get('price_range', -1)
+            if not user_price_range:
+                user_price_range = None
+            for index in chromosome_value:
+                score = 0
+                restaurant = restaurants[index]
+                restaurant_categories = [category['name_en'] for category in restaurant['profile']['categories']]
+                restaurant_price_range = restaurant['profile']['price_range'] or None
+                restaurant_distance = restaurant['dist']['calculated'] or None
+                preference_score = 0
+                for index, user_category in enumerate(user_categories):
+                    if user_category in restaurant_categories:
+                        preference_score += len(user_categories) - index
+                price_score = 0
+                if user_price_range and restaurant_price_range:
+                    gap = user_price_range - restaurant_price_range
+                    if gap == 0:
+                        price_score = 3
+                    elif gap == 1:
+                        price_score = 2
+                    elif gap == 2:
+                        price_score = 1
+                history_score = user['history_score']
+                score = preference_score + price_score + history_score
+                score_sum += score
+            group_score += score_sum
+        return group_score
 
-Therefore, $C_{\lambda}(l)$ must be known in the MVA technique, either
-by assuming specific traffic models or by off-line analysis in case of
-traces.  In most practical situations, $C_{\lambda}(l)$ will not be
-known in advance, and an on-line measurement algorithm developed
-in~\cite{eun01} is required to jointly determine both $n^\ast$ and
-$m_x$. For fGn traffic, $\mathrm{Var}\{X_n\}$ is equal to $\sigma^2
-n^{2H}$, where $\sigma^2 = \mathrm{Var}\{\lambda_n\}$, and we can find
-the $n^\ast$ that minimizes (\ref{eq:mx}) directly. Although $\lambda$
-can be easily measured, it is not the case for $\sigma^2$ and $H$.
-Consequently, the MVA technique suffers from the need of prior
-knowledge traffic parameters. 
+    def get_top_n_chromosomes(chromosomes, top_n):
+        return sorted(chromosomes, key= lambda chromosome: chromosome[0], reverse=True)[:top_n]
+
+    def get_pairs(chromosomes):
+        pairs = []
+        selected_chromosomes = get_top_n_chromosomes(chromosomes, TOP_N)
+        for _ in range(PAIRS):
+            new_pair = []
+            count = 0
+            while True:
+                if count == 100:
+                    break
+                new_pair = sample(range(len(selected_chromosomes)), 2)
+                count += 1
+                if new_pair not in pairs:
+                    pairs.append(new_pair)
+                    break
+        return [(selected_chromosomes[pair[0]], selected_chromosomes[pair[1]]) for pair in pairs]
+
+    def crossover(chromosome_value_1, chromosome_value_2):
+        new_chromosome_value_1 = []
+        new_chromosome_value_2 = []
+        for index, each_chromosome_value_1 in enumerate(chromosome_value_1):
+            each_new_chromosome_value_1 = chromosome_value_1[index]
+            each_new_chromosome_value_2 = chromosome_value_2[index]
+            is_swap = False
+            if each_chromosome_value_1 not in chromosome_value_2 and each_new_chromosome_value_2 not in chromosome_value_1 and random() < CROSSOVER_RATE:
+                is_swap = True
+            if is_swap:
+                each_new_chromosome_value_1 = chromosome_value_2[index]
+                each_new_chromosome_value_2 = chromosome_value_1[index]
+            new_chromosome_value_1.append(each_new_chromosome_value_1)
+            new_chromosome_value_2.append(each_new_chromosome_value_2)
+        return [new_chromosome_value_1, new_chromosome_value_2]
+
+    def mutate(chromosome_value):
+        if random() < MUTATION_RATE:
+            mutated_chromosome_value = []
+            for each_chromosome_value in chromosome_value:
+                if random() < MUTATION_RATE:
+                    count = 0
+                    while True:
+                        if count == 100:
+                            mutated_chromosome_value.append(each_chromosome_value)
+                            break
+                        else:
+                            count += 1
+                            new_gene = sample(range(len(restaurants)), 1)[0]
+                            if new_gene not in chromosome_value and new_gene not in mutated_chromosome_value:
+                                mutated_chromosome_value.append(new_gene)
+                                break
+                else:
+                    mutated_chromosome_value.append(each_chromosome_value)
+            return [chromosome_value, mutated_chromosome_value]
+        return [chromosome_value]
+
+    def generate_new_generation(pairs):
+        crossovered_chromosomes = []
+        new_generation = []
+        # crossover
+        for pair in pairs:
+            chromosome_1 = pair[0]
+            chromosome_2 = pair[1]
+            new_chromosomes = crossover(chromosome_1[1], chromosome_2[1])
+            crossovered_chromosomes += new_chromosomes
+        # mutation
+        for chromosome_value in crossovered_chromosomes:
+            new_generation += mutate(chromosome_value)
+        return new_generation
+
+    def add_fitness_for_population(chromosome_values):
+        return [(compute_fitness(chromosome_value), chromosome_value) for chromosome_value in chromosome_values]
+
+    def initialize_population():
+        return [sample(range(len(restaurants)), genes) for _ in range(POPULATION)]
+
+    def is_converged(generation_highest_fitnesses):
+        return len(generation_highest_fitnesses) > CONVERGED_NUMBER and generation_highest_fitnesses[-1] == generation_highest_fitnesses[-CONVERGED_NUMBER]
+
+    population = initialize_population()
+    generation_highest_fitnesses = []
+    generation_highest_fitness_chromosomes = []
+    number_of_generation = 0
+    while True:
+        number_of_generation += 1
+        chromosomes = add_fitness_for_population(population)
+        highest_fitness_chromosome = max(chromosomes)
+        generation_highest_fitnesses.append(highest_fitness_chromosome[0])
+        generation_highest_fitness_chromosomes.append(highest_fitness_chromosome)
+        print(f"Gen#{number_of_generation}: {highest_fitness_chromosome}") if varbose else ''
+
+        if number_of_generation == 100 or is_converged(generation_highest_fitnesses):
+            print(f"Result: {highest_fitness_chromosome}") if varbose else ''
+            recommended_restaurants = [restaurants[index] for index in highest_fitness_chromosome[1]]
+            return recommended_restaurants if not get_matrix else (recommended_restaurants, generation_highest_fitness_chromosomes)
+            
+        pairs = get_pairs(chromosomes)
+        population = generate_new_generation(pairs)
+\end{lstlisting}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% The 2nd appendix %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix{Genetic Algorithm Test Code}
+\noindent{\large\bf Genetic Algorithm Test Code} \\
 
+\begin{lstlisting}
+def test_genetic_algorithm_recommender(count=6):
 
+    with open('recommender/test_data/nearby_restaurants.json') as f:
+        response = json.load(f)
+
+    input_restaurants = response
+    input_restaurants = [restaurant for restaurant in input_restaurants if restaurant['type'] == 'restaurant']
+
+    user_irin = {
+        "name": "irin",
+        "categories": ['Korean', 'Japanese', 'Italian', 'Thai', 'Shabu Shabu'],
+        "price_range": 2,
+    }
+    user_north = {
+        "name": "north",
+        "categories": ['Thai', 'Japanese', 'Korean', 'Shabu Shabu', 'Steakhouse'],
+        "price_range": 3,
+    }
+    users = [user_irin, user_north]
+    
+    recommended_retaurants, generations = genetic_algorithm_recommender(input_restaurants, users, get_matrix=True, genes=count)
+    return recommended_retaurants, generations
+\end{lstlisting}
 
 \end{document}

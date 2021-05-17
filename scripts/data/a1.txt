@@ -1,0 +1,136 @@
+We conduct the restaurant consideration survey in order to understand the user behavior and validate the problem to make sure that it is existing, not just our opinion.
+
+
+Figure 1: Restaurant Consideration Survey in Google form
+
+In this survey, we separated into 4 parts which are basic information, individuals eating consideration, groups eating consideration, and experience of using recommendation applications.
+
+We surveyed by sharing the Google form through social media platforms e.g. Facebook, Instagram, etc. By having 148 respondents who have done the problem validation survey. Here are the results of this survey.
+
+
+Part 1: Basic Information
+
+Forms response chart. Question title: เพศ. Number of responses: 148 responses.
+Figure 2: Gender of Respondents
+
+From the survey, 66.2% were female, 32.4% were male, and unspecified gender 1.4% which concluded into 148 respondents.
+
+Forms response chart. Question title: อายุ. Number of responses: 148 responses.
+Figure 3: Distribution of Respondents’ Age
+
+As Figure 3 showed us the distribution of respondents’ age, we found that the most age range is around 19 - 23 years old which the interviewees mostly have the age range of 21 years old with 24.3%.
+
+Forms response chart. Question title: อาชีพ. Number of responses: 148 responses.
+Figure 4: Occupation of Respondents
+
+The most occupation of our respondents are students with 52.7% and followed by office workers 26.4%. Moreover, this pie chart is related to the distribution of respondents’ age, with the most age range being around 19 - 23 years old which is the range of students in Thailand.
+
+
+Figure 5: Estimated Daily Cost of Eating
+
+Figure 5, The most eating cost per day is 200 baht with 32.4% or 48 out of 148 respondents. As you can see from the figure, a few respondents have a lot of budget for eating per day which the maximum budget is 4,000 baht.
+
+
+
+Figure 6: The Application or Platform that Respondent Usually Use to Find the Restaurants
+
+In summary, they usually find the restaurant from the delivery platform e.g. Grab, Get, Lineman, etc. From search engines like Google and applications that gather restaurants in one place like Wongnai and so on.
+
+Part 2: Individuals Eating Consideration
+
+Forms response chart. Question title: 3 ปัจจัยแรกในการเลือกร้านอาหาร เมื่อคุณกินคนเดียว (เลือก 3 ข้อ). Number of responses: .
+Figure 7: Top 3 Conditions to Find the Restaurant when Eating Alone
+
+As you can see from Figure 7, the condition that concerns them the most when eating alone is the price followed by the quality of food then available for delivery. Moreover, they are still concerned about the distance between them and the restaurant too.
+
+Forms response chart. Question title: โดยเฉลี่ยคุณใช้เวลาเลือกร้านอาหารนานเท่าไหร่. Number of responses: 148 responses.
+Figure 8: Average Time to Select the Restaurant Alone
+
+From Figure 8, the most range of time that respondents spend to select the restaurant in an individual is 5 - 10 minutes with 40.5% followed by 10 - 30 minutes which 35.1% Furthermore, we notice that with 11.5% they said that depending on the period.
+
+Forms response chart. Question title: คุณคิดว่าการเลือกร้านอาหารเป็นปัญหาหรือไม่. Number of responses: 148 responses.
+Figure 9: Number of Respondents Thinking that Restaurant Selection is Their Pain
+
+We found that around 62.8% of respondents have a problem with restaurant selection which can prove our assumption that making the decision to go to the restaurant for each meal is still a problem nowadays.
+
+Forms response chart. Question title: มื้อใดที่เกิดปัญหานี้มากที่สุด. Number of responses: 144 responses.
+Figure 10: Which Meal Has Problem the Most
+
+The meal that everyone has the most problem with is dinner time. In our opinion, we think that it is the first meal that everybody reunited again after work or study. So many people, many conditions, which leads to complex decision making.
+
+Forms response chart. Question title: ระหว่างการสั่งแบบ delivery กับ ไปกินที่ร้าน แบบใดที่มีปัญหาในการเลือกร้านอาหารมากกว่ากัน. Number of responses: 148 responses.
+Figure 11: Problem Between Dine-in and Delivery
+
+In Figure 11, you can see that dine-in and delivery are almost half-and-half. For dine-in problems, they said that it is hard to find the restaurant and decisions cannot be made quickly but for delivery, they know which restaurant to eat due to the foods’ picture of each restaurant and dine-in needs to consider more conditions than delivery. For delivery problems, they said that it is hard to decide what to eat because there is an overwhelming amount of restaurants to choose from and the main condition needed to consider is the distance from the restaurant.
+
+
+Part 3: Groups Eating Consideration
+
+Forms response chart. Question title: โดยเฉลี่ยกลุ่มของคุณใช้เวลาเลือกร้านอาหารนานเท่าไหร่. Number of responses: 148 responses.
+Figure 12: Average Time to Select the Restaurant in Group
+
+From Figure 12, the most range of time that respondents spend to select the restaurant in a group is 5 - 10 minutes with 37.5% followed by 10 - 30 minutes which 32.4% Furthermore, we notice that 18.2% of respondents spend time more than 30 minutes which 3 times Three times the number of people compare to individual.
+
+Forms response chart. Question title: คุณเคยมีปัญหากับการเลือกร้านอาหารกับคนในกลุ่มมั้ย. Number of responses: 148 responses.
+Figure 13: Number of Respondents Thinking that Restaurant Selection in Group is Their Pain
+
+We found that around 65.5% of respondents have a problem with restaurant selection in groups which compared to individual problems, has increased up to 2.7%. Thus, we can conclude that people faced more pain with group eating than individuals.
+
+Forms response chart. Question title: คุณเกิดปัญหาในการเลือกร้านอาหารเป็นกลุ่มบ่อยแค่ไหน. Number of responses: 97 responses.
+Figure 14: The Frequency of Group Eating Problems
+
+From this figure, we found that respondents tend to have restaurant selection in group problems often.
+
+Forms response chart. Question title: กลุ่มคนที่มีปัญหาส่วนมากเป็นคนกลุ่มใด. Number of responses: 97 responses.
+
+Figure 15: The Most Type of Group that Usually Occur Group Eating Problem
+
+Next, we want to know which group usually faces the pain of this problem. Figure 15 reveals that a group of friends usually faced the pain with 75.3% and followed by family then, boyfriend/girlfriend.
+
+Forms response chart. Question title: 3 ปัจจัยในการเลือกร้านอาหาร เมื่อคุณกินข้าวเป็นกลุ่ม กับเพื่อน (เลือก 3 ข้อ). Number of responses: .
+Figure 16: Top 3 Conditions to Find the Restaurant when Eating with Group of Friends
+
+The top 3 conditions are price, promotion, quality of the food which include the distance of the restaurant to be the condition to consider.
+
+Forms response chart. Question title: 3 ปัจจัยในการเลือกร้านอาหาร เมื่อคุณกินข้าวเป็นกลุ่ม กับครอบครัว (เลือก 3 ข้อ). Number of responses: .
+Figure 17: Top 3 Conditions to Find the Restaurant when Eating with Family
+
+The top 3 conditions are quality of food, distance, and price which include the environment of the restaurant to be the condition to consider due to from 3 groups, only this group concerns the environment of the restaurants compared to the other.
+
+Forms response chart. Question title: 3 ปัจจัยในการเลือกร้านอาหาร เมื่อคุณกินข้าวกับแฟน (เลือก 3 ข้อ). Number of responses: .
+Figure 18: Top 3 Conditions to Find the Restaurant when Eating with Girlfriend/boyfriend
+
+The top 3 conditions are promotion, price, and quality which include the quality of services to be the condition to consider due to from 3 groups, only this group concerns the services compared to the other groups which are family and friends. As you can see, the conditions when eating are significantly different from each other.
+
+
+Figure 19: Reason of Problem that Frequently Occurs when Eating in Group
+
+In conclusion, the main issue of this problem is about the member of that group cannot decide what and where to eat. Finally, the decision cannot be made.
+
+Forms response chart. Question title: คุณมีส่วนร่วมในการตัดสินใจเลือกร้านอาหารมากน้อยแค่ไหน. Number of responses: 97 responses.
+Figure 20: How Involved Are You in Making Restaurant Decisions
+
+We found that most people usually take part in decision making which can conclude that every condition and preferences of each member in that group are important.
+
+
+Figure 21: Solution to Solve Group Eating Problems
+
+Most of the solution is voting and going to the restaurant that wins by majority vote and a few said that eating separately. However, this cannot serve all members' conditions, some of them complain and feel bad when their choices don't bring up to the group.
+
+
+Part 4: Experience of using Recommendation Applications
+
+
+Figure 22: Percentage of Respondents that Using Recommendation Applications
+
+Surprisingly found that most of the respondents never use the recommendation application with over 70%.
+
+
+Figure 23: Recommendation Applications
+
+There are a variety of ways for the recommendation system from excel to the randomization application. Moreover, they use a delivery application to choose their restaurant as a recommender.
+
+
+Figure 24: Usage Problem of Existing Recommendation Application
+
+Even there’s a lot of recommendations, it is still randomized, the menu is not updated, and most applications just recommend common food, not restaurants. Moreover, some of the applications are too complex to use.

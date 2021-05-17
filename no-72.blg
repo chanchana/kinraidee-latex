@@ -38,47 +38,45 @@ Warning--empty year in GraphAPI
 Warning--empty year in Entréechoosefromaworldofdisheswithasingletouch
 Warning--empty year in EatseeSeeitEatit
 Warning--empty year in Tinderapp
-Warning--empty year in BuildauserbasedcollaborativefilteringrecommendationengineforAnime
-Warning--empty year in bworld
-You've used 54 entries,
+You've used 36 entries,
             2177 wiz_defined-function locations,
-            1051 strings with 16096 characters,
-and the built_in function-call counts, 14161 in all, are:
-= -- 1426
-> -- 543
-< -- 4
-+ -- 226
-- -- 168
-* -- 980
-:= -- 2397
-add.period$ -- 54
-call.type$ -- 54
-change.case$ -- 192
+            956 strings with 13428 characters,
+and the built_in function-call counts, 7940 in all, are:
+= -- 804
+> -- 279
+< -- 0
++ -- 119
+- -- 82
+* -- 466
+:= -- 1383
+add.period$ -- 36
+call.type$ -- 36
+change.case$ -- 113
 chr.to.int$ -- 0
-cite$ -- 90
-duplicate$ -- 502
-empty$ -- 1230
-format.name$ -- 168
-if$ -- 2966
+cite$ -- 70
+duplicate$ -- 258
+empty$ -- 719
+format.name$ -- 82
+if$ -- 1650
 int.to.chr$ -- 0
-int.to.str$ -- 54
-missing$ -- 19
-newline$ -- 274
-num.names$ -- 108
-pop$ -- 425
+int.to.str$ -- 36
+missing$ -- 2
+newline$ -- 183
+num.names$ -- 72
+pop$ -- 315
 preamble$ -- 1
-purify$ -- 192
+purify$ -- 113
 quote$ -- 0
-skip$ -- 371
+skip$ -- 216
 stack$ -- 0
-substring$ -- 569
-swap$ -- 90
-text.length$ -- 4
+substring$ -- 181
+swap$ -- 36
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 214
-warning$ -- 36
-while$ -- 134
-width$ -- 56
-write$ -- 614
-(There were 36 warnings)
+type$ -- 144
+warning$ -- 34
+while$ -- 72
+width$ -- 38
+write$ -- 400
+(There were 34 warnings)

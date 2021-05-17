@@ -1,6 +1,6 @@
-file_name = '4_resdata_result'
+file_name = 'a1'
 figure_size = 'width=350pt'
-prefix = '5'
+prefix = 'A1'
 
 figure_dict = {}
 
