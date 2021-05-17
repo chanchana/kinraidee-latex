@@ -552,8 +552,9 @@ Moreover, from this approach, our project can use the algorithm to be part of ou
 
 \begin{figure}[H]\centering
 \includegraphics[width=250pt]{./images/2cfprocess.png}
+\caption{Collaborative Filtering Process}
+%\vspace{-8pt}\textbf{Source}: www.sciencedirect.com/science/article/pii/S1110866515000341
 \label{fig:2cfprocess}
-\captionsource{Collaborative Filtering Process}{https://www.sciencedirect.com/science/article/pii/S1110866515000341}
 \end{figure}
 
 A collaborative filtering technique as opposed to the content-based filtering technique which collaborative filtering cannot recommend the item by using only the description of metadata. The key idea of this technique is a group of people with similar tastes, often tend to like similar items. So, collaborative filtering uses only data about rating profiles from different users or items in order to generate the recommendation. Here is the flow of this technique:
@@ -567,7 +568,7 @@ A collaborative filtering technique as opposed to the content-based filtering te
 To recommend, it works by creating a user-item matrix of preferences for items by users, as Figure~\ref{fig:2cfprocess} above which represents the process start from the matrix to the output of this system, and then calculating the similarity between profiles to get the relevant item that matches the user. Thus, the user will be able to get the items that he/she has not rated yet but already rated from a similar user. This approach can produce the output either prediction or recommendation by prediction represented as a score of an item for the user whereas recommendation is represented as a top N list of items as mentioned in Figure~\ref{fig:2cfprocess}. Collaborative filtering techniques can separate into 2 main categories: memory-based and model-based.
 
 
-\paragraph*{1. Memory-based}\
+\textbf{1. Memory-based}\par
 
 Memory-based can approach in 2 ways which are user-based and item-based.
 
@@ -593,7 +594,7 @@ cos(\vec{x},\vec{y})
 For cosine similarity~\ref{eq:cos}, it is different from Pearson correlation coefficient which calculates as a vector-space model by measuring the similarity between dimensional vectors based on the angle which $cos(\vec{x},\vec{y})$ denotes to the similarity between 2 users $x$ and $y$.
 
 
-\paragraph*{2. Model-based}\
+\textbf{2. Model-based}\par
 
 This approach is able to improve the performance of collaborative filtering by constructing the model which is done by using machine learning or data mining techniques. Moreover, with this approach, dimensionality reduction methods are mostly being used as complementary techniques to improve the robustness and accuracy of the memory-based approach. \cite{Recommendersystem}
 
@@ -733,8 +734,8 @@ HTTP is a protocol that allows the fetching of resources, such as HTML documents
 
 \begin{figure}[H]\centering
 \includegraphics[width=250pt]{./images/2http.png}
-\label{fig:2http}
 \captionsource{Communication Through an HTTP Protocol}{https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview}
+\label{fig:2http}
 \end{figure}
 
 
@@ -1330,44 +1331,49 @@ When a group of users wants to start a group recommendation, they firstly need t
 \end{enumerate}
 
 
-
-
 \section{User Interface Design}
 This section presents the user interface design of the restaurant recommendation system which designs in the Figma application.
 
 The user interface of our web application includes login, registration, individual restaurant recommendation, group restaurant recommendation, and users’ profile as follows.
 
 \newpage
-\subsection{Login Page}
+\subsubsection{Login Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_StartPageUserInterfaceDesign.png}
 \caption{Start Page User Interface Design}\label{fig:3ui_StartPageUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
 \item Username and password input fields
 \item Login button to confirm the input fields
 \item Register button, it links to the registration page
 \item Login as Guest for users who do not want an account but want to start using our system right away.
 \end{enumerate}
-When users open the application, the login page will appear first if they did not login yet. They need to input their username and password in the fields (1) then They can tap the “Login” button (2) to log in. After login, they will see the home page (Figure 3.19). If they do not have an account, they can tap on the “Register” button (3) and they will see the registration page (Figure 3.17). However, they can choose to login without any account by tapping on the “Login as Guest” button (4) and the system will directly bring them to the home page (Figure 3.19).
+
+When users open the application, the login page will appear first if they did not login yet. They need to input their username and password in the fields (1) then They can tap the “Login” button (2) to log in. After login, they will see the home page (Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}). If they do not have an account, they can tap on the “Register” button (3) and they will see the registration page (Figure~\ref{fig:3ui_RegistrationPageUserInterfaceDesign}). However, they can choose to login without any account by tapping on the “Login as Guest” button (4) and the system will directly bring them to the home page (Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}).
+
 \newpage
-\subsection{Registration Page}
+\subsubsection{Registration Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_RegistrationPageUserInterfaceDesign.png}
 \caption{Registration Page User Interface Design}\label{fig:3ui_RegistrationPageUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
 \item New username field
 \item New password field
 \item Re-enter the password field, it needs to be matched with the password field
 \item Next button, links to a general information setup page
 \end{enumerate}
+
 If users choose to register, the registration page will appear and ask users to input a new username, password, and re-enter the password (1), (2), (3) respectively. If the input username is invalid or already taken, the system will alert users and let them choose a new username. If the password field and re-enter password field are mismatched, the system will also alert and tell users to input their password and re-enter password fields again. After all of the information in the fields is valid and users tap on the “Next” button (4), they will proceed to the next step which is the profile setting step stated in Figure~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign}.
+
 \newpage
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_ProfileSetupPageUserInterfaceDesign.png}
 \caption{Profile Setup Page User Interface Design}\label{fig:3ui_ProfileSetupPageUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
 \item General information form
 \item Next button, will proceed users to the food preference setup step
@@ -1375,93 +1381,116 @@ If users choose to register, the registration page will appear and ask users to 
 \item Finish button, to complete the form and the registration.
 \item Skip button, lets users skip the food preference setup process.
 \end{enumerate}
-After users input the valid username and password, the next step is user profile setup. This process consists of 2 steps which are general information setup and food preferences information setup. The first one on the left of Figure~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign} is a general information setup step. Users are required to fill in all the information in the form and accept the terms and privacy (1) then they can proceed to the next step by tapping the “Next” button (2). For the second step, preferences information set up, they will see many available categories of food. They can choose their food preferences in the form (3) and tap on “Finish” to complete the registration. However, if they do not want to set their preferences yet, they can tap on the “Skip” button (5) to skip the preferences setup process. After the registration is completed, they will see the home page (Figure 3.19) and start using our system.
+
+After users input the valid username and password, the next step is user profile setup. This process consists of 2 steps which are general information setup and food preferences information setup. The first one on the left of Figure~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign} is a general information setup step. Users are required to fill in all the information in the form and accept the terms and privacy (1) then they can proceed to the next step by tapping the “Next” button (2). For the second step, preferences information set up, they will see many available categories of food. They can choose their food preferences in the form (3) and tap on “Finish” to complete the registration. However, if they do not want to set their preferences yet, they can tap on the “Skip” button (5) to skip the preferences setup process. After the registration is completed, they will see the home page (Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}) and start using our system.
+
 \newpage
-\subsection{Individual Restaurant Recommendation Page}
+\subsubsection{Individual Restaurant Recommendation Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_HomePageUserInterfaceDesign.png}
 \caption{Home Page User Interface Design}\label{fig:3ui_HomePageUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
 \item Restaurant card, it shows the general information about a restaurant.
 \item “i” button, when tapped, more information will be shown.
-\item 
+\item Filter button, it will bring up the filter window.
 \item Like button, tapped once users are satisfied with the restaurant
 \item Dislike button, if users are not satisfied with the restaurant, they can tap this button to see the next suggestion.
 \item Profile button, links to the profile page.
 \end{enumerate}
-After users logged in or registered, they will see the home page. By entering the home page, the system will automatically start recommending some restaurants to users. Users will see the information of each suggested restaurant (1). They can also see some more information about each restaurant by tapping the “i” icon (2). They can filter the suggested restaurants by tapping the “Filters” button (3) and the filter window will appear (Figure 3.20). If they are satisfied with the suggested restaurant, they can tap on the “Yummy” button (4) or swipe the restaurant card to the right, and then the success page will appear (Figure 3.21). Otherwise, if they are not satisfied with that restaurant, they can tap on the “Nah” button (5) or swipe the restaurant card to the left, and then the system will show the next suggested restaurant to users and let them consider it again. Users can see their profile by tapping the profile picture button (6) and the profile management page will appear (Figure 3.25).
+
+After users logged in or registered, they will see the home page. By entering the home page, the system will automatically start recommending some restaurants to users. Users will see the information of each suggested restaurant (1). They can also see some more information about each restaurant by tapping the “i” icon (2). They can filter the suggested restaurants by tapping the “Filters” button (3) and the filter window will appear (Figure~\ref{fig:3ui_FilterWindowUserInterfaceDesign}). If they are satisfied with the suggested restaurant, they can tap on the “Yummy” button (4) or swipe the restaurant card to the right, and then the success page will appear (Figure~\ref{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}). Otherwise, if they are not satisfied with that restaurant, they can tap on the “Nah” button (5) or swipe the restaurant card to the left, and then the system will show the next suggested restaurant to users and let them consider it again. Users can see their profile by tapping the profile picture button (6) and the profile management page will appear (Figure~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}).
+
+\newpage
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_FilterWindowUserInterfaceDesign.png}
 \caption{Filter Window User Interface Design}\label{fig:3ui_FilterWindowUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
 \item Filtering options.
 \item Arrow button, will apply current filtering and close the filter window.
 \item Filter button with applied filter tags, users can open the filter window again by tapping this button.
 \item Reset button, will remove all the applied filters.
 \end{enumerate}
+
 After users tap on the “Filter” button on the home page (number 3 on Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}), the filter window will appear. Users can filter restaurants by choosing the available options that appear on the filter window (1). After finishing choosing the filtering option, they can tap on the arrow icon (2) to apply the filter and the filter window will be minimized. They can see the applied filters at the bottom of the screen (3). They can change their filtering by tapping on the bottom bar (3) to bring the filter window up again. They can tap on the “Reset” button (4) to remove all of the applied filters. After applying any filters, the system will suggest the restaurant that matches its filtering condition.
+
 \newpage
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_RecommendationSuccessPageUserInterfaceDesign.png}
 \caption{Recommendation Success Page User Interface Design}\label{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
 \item Swipe right for the satisfying restaurant.
 \item Like button which works the same as the swipe right.
 \item Restaurant card showing general information about the liked restaurant.
 \item Recommendation rating, let users rate satisfaction with their current recommendation.
 \end{enumerate}
-On the home page which users see the suggested restaurant, if users are satisfied with the suggested restaurant, they can swipe right (1) or tap on the “Yummy” button (2). After that, the recommendation success page will appear (the right picture in Figure~\ref{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}). On the success page, users can see the restaurant information in the center of the screen (3). They can give a rating score for the recommendation from 1 star to 5 stars (4). After they are done seeing the information, they can tap on the “Done” button (5) to close the success page and they will see the home page (Figure 3.19) again.
+
+On the home page which users see the suggested restaurant, if users are satisfied with the suggested restaurant, they can swipe right (1) or tap on the “Yummy” button (2). After that, the recommendation success page will appear (the right picture in Figure~\ref{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}). On the success page, users can see the restaurant information in the center of the screen (3). They can give a rating score for the recommendation from 1 star to 5 stars (4). After they are done seeing the information, they can tap on the “Done” button (5) to close the success page and they will see the home page (Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}) again.
+
 \newpage
-\subsection{Group Restaurant Recommendation Page}
+\subsubsection{Group Restaurant Recommendation Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_GroupJoiningUserInterfaceDesign.png}
 \caption{Group Joining User Interface Design}\label{fig:3ui_GroupJoiningUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
 \item Group pin code which other members used for joining the group.
 \item Join button, it will bring up the joining dialog
 \item Group pin code input field, let users input the group pin code.
 \item Join button which lets users join their existing group without input the group pin code again.
 \end{enumerate}
-In the following section, we will walk through the group recommendation process. On the home page (the left picture in Figure~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}), it will show the group pin on the top of the screen (1). To start the group recommendation, the user has to share this pin code with other members in the group and this will make the pin code owner be the head of the group. Other members can join the group by tapping on the “Join” button (2) and the joining dialog will appear (the right picture in Figure~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}). In the joining dialog, other members can input the pin that appeared on the group head’s device (1). Moreover, users can join the previously joined group, which will be shown as favorites. They can directly join their favorite group by tapping the “Join” button (4) in the group they want to join without input the pin code again. After someone joins the group the group recommendation will be initialized and all members that joined the group will see the group confirmation page next (Figure 3.23).
+
+In the following section, we will walk through the group recommendation process. On the home page (the left picture in Figure~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}), it will show the group pin on the top of the screen (1). To start the group recommendation, the user has to share this pin code with other members in the group and this will make the pin code owner be the head of the group. Other members can join the group by tapping on the “Join” button (2) and the joining dialog will appear (the right picture in Figure~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}). In the joining dialog, other members can input the pin that appeared on the group head’s device (1). Moreover, users can join the previously joined group, which will be shown as favorites. They can directly join their favorite group by tapping the “Join” button (4) in the group they want to join without input the pin code again. After someone joins the group the group recommendation will be initialized and all members that joined the group will see the group confirmation page next (Figure~\ref{fig:3ui_GroupConfirmationPageUserInterfaceDesign}).
+
 \newpage
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_GroupConfirmationPageUserInterfaceDesign.png}
 \caption{Group Confirmation Page User Interface Design}\label{fig:3ui_GroupConfirmationPageUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
 \item Group pin code which other members used for joining the group.
 \item Crown icon indicates who is the head of this group
 \item 3 dots icon for more action on each member in the group.
 \item Kick button, it let the head remove some members from the group.
 \end{enumerate}
+
 After someone joins the group, all joined members will see this group confirmation page. On the top, there is a group pin code that the members in the group can share with other people if they want to join this eating group. The head of the group will have a crown icon (2) and they can manage the members in the group. If the head wants to remove some of the members, they can do it by tapping the 3 dots icon (3) followed by tapping the “Kick” button, after that the kicked member will no longer be in the party. When all members are joined and ready, the head will tap on the “Start” button to begin the group recommendation.
+
 \newpage
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_GroupRecommendationPageUserInterfaceDesign.png}
 \caption{Group Recommendation Page User Interface Design}\label{fig:3ui_GroupRecommendationPageUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
 \item Like or dislike area for choosing the restaurant.
 \item Progress bar indicates the progress of the group decision.
 \item Members button, will bring up the members dialog which shows all members.
 \item Filter button for setting the filters for restaurants.
 \end{enumerate}
+
 After the group has been created and confirmed, the group recommendation will begin. All members will see the same suggested set of restaurants. Each member will choose whether they like or not but tapping “Yummy” and “Nah” or swiping (1) is the same as in individual recommendation. The group recommendation will be finished after all members like the same restaurant. The top bar (2) indicates the highest number of members that agree on the same restaurant, when it is full, it means everybody agrees on the same restaurant and the recommendation is finished. Users can see the members by tapping the “Member” button (3). Users still can set the filter by tapping the “Filter” button (4) but this time the filters will be applied to every member in the group.
+
 \newpage
-\subsection{Profile Page}
+\subsubsection{Profile Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_ProfileManagementPageUserInterfaceDesign.png}
 \caption{Profile Management Page User Interface Design}\label{fig:3ui_ProfileManagementPageUserInterfaceDesign}
 \end{figure}
+
 \begin{enumerate}
-\item History button, it links to the history page (the right picture in Figure 3.25)
+\item History button, it links to the history page (the right picture in Figure~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign})
 \item Privacy button, it let users change their password and their privacy setting.
 \item Back button which brings users back to their home page.
 \end{enumerate}
+
 After users choose to view their profile (number 6 in Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}), they will see the left picture in Figure~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}. They can choose to view their selected restaurant history by tapping the “History” button (1) and a list of selected restaurants will be shown (the right picture of Figure~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}). They can also choose to edit their profile such as their name, gender, or birthdate or choose to edit their food preferences. They can reset their password and set the privacy setting under the “Privacy” section (2). They can go back to the main screen by tapping the arrow icon (3).
 
 
@@ -1585,16 +1614,16 @@ In conclusion, we decided to use the \textit{\textbf{Genetic Algorithm}} for our
 
 Figure~\ref{fig:3GeneticAlgorithmFlowchart} displays the main process of the restaurant recommendation by applying the principles of the Genetic Algorithm to the system.
 
-\paragraph*{1. Initial Population}\
+\textbf{1. Initial Population}\par
 
-One set of the restaurant recommendations consists of 10 restaurants. In the genetic algorithm, one chromosome then contains 10 genes for 10 restaurants.  Initially, restaurants are drawn from the database based on the user's surroundings or selected locations only. Then, the restaurants are randomly assigned to each gene in the chromosome. Figure 3.29 shows the example of the genes in one chromosome that has a list of restaurants R1 to R10. We set the number of chromosomes to 100. Therefore, 100 chromosomes are initialized in the same manner.
+One set of the restaurant recommendations consists of 10 restaurants. In the genetic algorithm, one chromosome then contains 10 genes for 10 restaurants.  Initially, restaurants are drawn from the database based on the user's surroundings or selected locations only. Then, the restaurants are randomly assigned to each gene in the chromosome. Figure~\ref{fig:3ga_init} shows the example of the genes in one chromosome that has a list of restaurants R1 to R10. We set the number of chromosomes to 100. Therefore, 100 chromosomes are initialized in the same manner.
 
 \begin{figure}[H]\centering
 \includegraphics[width=300pt]{./images/3ga_init.png}
 \caption{Example of Population in 1 Chromosome}\label{fig:3ga_init}
 \end{figure}
 
-\paragraph*{2. Selection}\
+\textbf{2. Selection}\par
 
 The proper selection of genes will have a selection process through objective function or fitness function. Our system wants to maximize the users’ satisfaction based on their preferences and interests. Therefore, we have formulated the equation of our objective function as follows:
 
@@ -1626,7 +1655,7 @@ $F_i$; A score  the restaurant that meet the user’s history selection
 
 After the system computes all fitness values, the chromosomes will be sorted in descending order and then select individuals from the top 30 to be parents to reproduce the next generation.
 
-\paragraph*{3. Reproduction}\
+\textbf{3. Reproduction}\par
 
 From the top 30 chromosomes, the system randomly matches the pair until it reaches 50 pairs. After that the crossover and mutation methods are performed in order to generate a new population with better quality and more diversity from the previous generation.
 
@@ -1634,7 +1663,7 @@ In the crossover method, the developers wanted to recommend a unique restaurant 
 
 In the mutation method, the developers have set the number of chances that a chromosome in each generation will mutate to 30\%. The mutation process is performed by randomly recruiting a new restaurant from the database to provide more variety than the previous generation.
 
-\paragraph*{4. Termination}\
+\textbf{4. Termination}\par
 
 The algorithm will be terminated when the fitness values of 15 generations are all the same which implies that the algorithm cannot find a better generation that has a higher fitness value.
 
@@ -2258,7 +2287,7 @@ Let us give an example similar to this technique, Alice likes to go to restauran
 
 \subsubsection{Discover the Similarity of Users}
 
-We selected cosine similarities to be the methods to find the similarity. As we know that this method relies on vector representation which in this experiment will represent the users with a list of each restaurant ratings. We will represent it into a user-restaurant matrix with the rating values as Figure~\ref{fig:4SomePartoftheUser-restaurantMatrix} below.
+We selected cosine similarities to be the methods to find the similarity. As we know that this method relies on vector representation which in this experiment will represent the users with a list of each restaurant ratings. We will represent it into a user-restaurant matrix with the rating values as Figure~\ref{fig:4SomePartoftheUserrestaurantMatrix} below.
 
 \begin{figure}[H]\centering
 \includegraphics[width=350pt]{./images/4SomePartoftheUserrestaurantMatrix.png}

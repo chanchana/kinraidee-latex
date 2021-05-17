@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  17 MAY 2021 19:07
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  17 MAY 2021 20:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1046,7 +1046,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: ./images/2cfprocess.png Graphic file (type bmp)
 <./images/2cfprocess.png>
  [11] [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 639--649
+Underfull \hbox (badness 10000) in paragraph at lines 640--650
 
  []
 
@@ -1054,7 +1054,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 639--649
 File: ./images/2http.png Graphic file (type bmp)
 <./images/2http.png>
 
-Underfull \hbox (badness 10000) in alignment at lines 753--753
+Underfull \hbox (badness 10000) in alignment at lines 754--754
 [][] 
  []
 
@@ -1071,7 +1071,7 @@ File: ./images/2whatman.png Graphic file (type bmp)
 File: ./images/2tinder.jpeg Graphic file (type bmp)
 <./images/2tinder.jpeg>
  [25]
-Overfull \hbox (12.03842pt too wide) in paragraph at lines 894--894
+Overfull \hbox (12.03842pt too wide) in paragraph at lines 895--895
 []\TU/TimesNewRoman(0)/b/n/13 On the design of Individual and Group Recommender
  Systems for Tourism
  []
@@ -1083,7 +1083,7 @@ Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 922.
+(hyperref)                removed on input line 923.
 
 [28
 
@@ -1091,7 +1091,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: ./images/3usecase.png Graphic file (type bmp)
 <./images/3usecase.png>
 
-Overfull \hbox (6.38pt too wide) in paragraph at lines 947--948
+Overfull \hbox (6.38pt too wide) in paragraph at lines 948--949
  [][] 
  []
 
@@ -1134,7 +1134,7 @@ File: ./images/3seqdiagram_register.png Graphic file (type bmp)
 File: ./images/3seqdiagram_indirec.png Graphic file (type bmp)
 <./images/3seqdiagram_indirec.png>
 
-Overfull \hbox (13.52638pt too wide) in paragraph at lines 1285--1286
+Overfull \hbox (13.52638pt too wide) in paragraph at lines 1286--1287
  [][] 
  []
 
@@ -1145,9 +1145,13 @@ File: ./images/3seqdiagram_creategroup.png Graphic file (type bmp)
 File: ./images/3seqdiagram_grouprec.png Graphic file (type bmp)
 <./images/3seqdiagram_grouprec.png>
  [49] [50]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1340.
+
 File: ./images/3ui_StartPageUserInterfaceDesign.png Graphic file (type bmp)
 <./images/3ui_StartPageUserInterfaceDesign.png>
- [51]
+[51]
 File: ./images/3ui_RegistrationPageUserInterfaceDesign.png Graphic file (type b
 mp)
 <./images/3ui_RegistrationPageUserInterfaceDesign.png>
@@ -1158,9 +1162,10 @@ mp)
  [53]
 File: ./images/3ui_HomePageUserInterfaceDesign.png Graphic file (type bmp)
 <./images/3ui_HomePageUserInterfaceDesign.png>
+ [54]
 File: ./images/3ui_FilterWindowUserInterfaceDesign.png Graphic file (type bmp)
 <./images/3ui_FilterWindowUserInterfaceDesign.png>
- [54] [55]
+ [55]
 File: ./images/3ui_RecommendationSuccessPageUserInterfaceDesign.png Graphic fil
 e (type bmp)
 <./images/3ui_RecommendationSuccessPageUserInterfaceDesign.png>
@@ -1179,17 +1184,16 @@ File: ./images/3ui_GroupRecommendationPageUserInterfaceDesign.png Graphic file
 File: ./images/3ui_ProfileManagementPageUserInterfaceDesign.png Graphic file (t
 ype bmp)
 <./images/3ui_ProfileManagementPageUserInterfaceDesign.png>
- [60]
-[61]
+ [60] [61]
 File: ./images/3db_RestaurantCollectionsIndexes.png Graphic file (type bmp)
 <./images/3db_RestaurantCollectionsIndexes.png>
 File: ./images/3db_UserCollectionsIndexes.png Graphic file (type bmp)
 <./images/3db_UserCollectionsIndexes.png>
  [62]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 1576.
+(Font)              scaled to size 10.0pt on input line 1605.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 1576.
+(Font)              scaled to size 10.0pt on input line 1605.
  [63]
 File: ./images/3GeneticAlgorithmFlowchart.png Graphic file (type bmp)
 <./images/3GeneticAlgorithmFlowchart.png>
@@ -1201,12 +1205,13 @@ File: ./images/3ga_grouprecflow.png Graphic file (type bmp)
 <./images/3ga_grouprecflow.png>
 File: ./images/3ga_rankagg.png Graphic file (type bmp)
 <./images/3ga_rankagg.png>
- [66] [67] [68]
+
+[66] [67] [68]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 1705.
+(hyperref)                removed on input line 1734.
 
 File: ./images/4ThaiChanasRestaurantDataExample.png Graphic file (type bmp)
 <./images/4ThaiChanasRestaurantDataExample.png>
@@ -1219,7 +1224,7 @@ File: ./images/4FacebooksRestaurantDataExample.png Graphic file (type bmp)
 File: ./images/4RestaurantDuplicationChecking.png Graphic file (type bmp)
 <./images/4RestaurantDuplicationChecking.png>
 
-Overfull \hbox (2.0803pt too wide) in paragraph at lines 1743--1744
+Overfull \hbox (2.0803pt too wide) in paragraph at lines 1772--1773
 \TU/TimesNewRoman(0)/m/n/10 contains more information. However, “McDonald’s MBK
 ” has a similar name with “McDonald’s PARAGON”
  []
@@ -1251,7 +1256,7 @@ File: ./images/4FacetofaceInterviewProcess.png Graphic file (type bmp)
 File: ./images/4DistributionofPeoplesLocation.png Graphic file (type bmp)
 <./images/4DistributionofPeoplesLocation.png>
 
-Overfull \hbox (16.38pt too wide) in paragraph at lines 1831--1832
+Overfull \hbox (16.38pt too wide) in paragraph at lines 1860--1861
  [][] 
  []
 
@@ -1353,7 +1358,7 @@ File: ./images/4UserIDinObjectIDPattern.png Graphic file (type bmp)
 File: ./images/4SampleofSelectedUserBehaviorData.png Graphic file (type bmp)
 <./images/4SampleofSelectedUserBehaviorData.png>
 
-Overfull \hbox (18.68805pt too wide) in paragraph at lines 2237--2238
+Overfull \hbox (18.68805pt too wide) in paragraph at lines 2266--2267
 []\TU/TimesNewRoman(0)/m/n/10 For the restaurants’ dataset, we select some rela
 ted columns which are ‘id’, ‘name’, ‘cats’, ‘cats_ids’, ‘price_range’,
  []
@@ -1363,14 +1368,9 @@ File: ./images/4SelectedColumnsfromRestaurantsData.png Graphic file (type bmp)
 [101]
 File: ./images/4SampleofSelectedRestaurantData.png Graphic file (type bmp)
 <./images/4SampleofSelectedRestaurantData.png>
-
-
-LaTeX Warning: Reference `fig:4SomePartoftheUser-restaurantMatrix' on page 102 
-undefined on input line 2261.
-
 File: ./images/4SomePartoftheUserrestaurantMatrix.png Graphic file (type bmp)
 <./images/4SomePartoftheUserrestaurantMatrix.png>
-[102]
+ [102]
 File: ./images/4FunctiontoFindaSimilarityBetweenUser.png Graphic file (type bmp
 )
 <./images/4FunctiontoFindaSimilarityBetweenUser.png>
@@ -1431,7 +1431,7 @@ Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 2424.
+(hyperref)                removed on input line 2453.
 
 [113
 
@@ -1538,10 +1538,10 @@ Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2490.
+(hyperref)                replaced by space on input line 2519.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2491--2492
+Underfull \hbox (badness 10000) in paragraph at lines 2520--2521
 
  []
 
@@ -1625,23 +1625,23 @@ le (type bmp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2683.
+(hyperref)                replaced by space on input line 2712.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2684--2685
+Underfull \hbox (badness 10000) in paragraph at lines 2713--2714
 
  []
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 2686.
+(Font)              scaled to size 9.0pt on input line 2715.
 [132] [133] [134] [135]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2827.
+(hyperref)                replaced by space on input line 2856.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2828--2829
+Underfull \hbox (badness 10000) in paragraph at lines 2857--2858
 
  []
 
@@ -1701,21 +1701,18 @@ LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
 )
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `no-72.out' has not changed.
-(rerunfilecheck)             Checksum: BA425967ECCF93802E21F4DA1956772F;30195.
+(rerunfilecheck)             Checksum: A607AD3F2403848A3EC02EEFF4EE0549;30260.
  ) 
 Here is how much of TeX's memory you used:
- 18800 strings out of 478436
- 363764 string characters out of 5853929
+ 18782 strings out of 478436
+ 363494 string characters out of 5853929
  945112 words of memory out of 5000000
- 38279 multiletter control sequences out of 15000+600000
+ 38261 multiletter control sequences out of 15000+600000
  406119 words of font info for 78 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 110i,10n,117p,1133b,1858s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,10n,117p,1219b,1858s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on no-72.pdf (156 pages).

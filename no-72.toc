@@ -111,11 +111,11 @@
 \contentsline {subsubsection}{\numberline {3.3.2.3}Create Group}{48}{subsubsection.3.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.3.2.4}Group Restaurant Recommendation}{49}{subsubsection.3.3.2.4}%
 \contentsline {section}{\numberline {3.4}User Interface Design}{50}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Login Page}{51}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Registration Page}{52}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Individual Restaurant Recommendation Page}{54}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Group Restaurant Recommendation Page}{57}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Profile Page}{60}{subsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.0.1}Login Page}{51}{subsubsection.3.4.0.1}%
+\contentsline {subsubsection}{\numberline {3.4.0.2}Registration Page}{52}{subsubsection.3.4.0.2}%
+\contentsline {subsubsection}{\numberline {3.4.0.3}Individual Restaurant Recommendation Page}{54}{subsubsection.3.4.0.3}%
+\contentsline {subsubsection}{\numberline {3.4.0.4}Group Restaurant Recommendation Page}{57}{subsubsection.3.4.0.4}%
+\contentsline {subsubsection}{\numberline {3.4.0.5}Profile Page}{60}{subsubsection.3.4.0.5}%
 \contentsline {section}{\numberline {3.5}Database Structure}{60}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Collections}{61}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Schema}{61}{subsection.3.5.2}%
