@@ -1,0 +1,26 @@
+Our system needs to recommend restaurants to users, so restaurant data is crucial data for our system. First, we obtained general restaurant information from the Thai Chana platform via their API endpoint, ‘https://api-search.thaichana.com/’, that information includes the name and coordinates of restaurants.
+
+
+
+Figure 4.1: Thai Chana’s Restaurant Data Example
+
+Figure 4.1 shows an example of Thai Chana’s restaurant data. However, there is one issue with this data which is it does not contain information about the categories of restaurants which we need to use in the data analytic and machine learning part. To overcome this issue, we will use Facebook Graph API for additional information. We used names of restaurants from Thai Chana data to query new restaurant information from Facebook Graph API which contains tags about restaurant categories.
+
+
+
+Figure 4.2: Facebook’s Restaurant Data Example
+
+Figure 4.2 shows an example of Facebook Graph API data. The data contains all information we need such as name, coordinate and restaurant profile such as restaurant categories, price range, and engagement. Moreover, some restaurant data contains image URLs for the restaurant which is very useful for users’ consideration.
+
+Preprocessing Process
+For restaurant data preprocessing, it consists of mainly 2 processes which are data transforming and restaurant duplication checking.
+
+In data transformation, we format our collected data into the right format from our database schema. This transformation process happens in the Data Service component and then it will send each restaurant to App Server. Consequently, App Server has a logic for solving restaurant duplication problems that we have faced. This issue is very common because some restaurants may create multiple Facebook pages. So, Facebook data did not guarantee that all of the restaurants in the data is unique. To fix this problem, App Server detects the duplicated restaurant.
+
+
+
+Figure 4.3: Restaurant Duplication Checking
+
+The restaurant duplication checking is done by checking their name’s similarity with a ratio of 0.65 and their distance from the new incoming restaurant with all of the existing restaurants in the 200 meters range from our database. The system will choose to store only the restaurant that contains more information.
+
+Figure 4.3 shows an example of restaurant duplication checking. We can see that “McDonald’s PARAGON” and “McDonald’s SiamParagon” are very close to each other and the name similarity is more than our threshold. Therefore, the system will classify one of the restaurants as a duplicate and choose to store only one that contains more information. However, “McDonald’s MBK” has a similar name with “McDonald’s PARAGON” but it is not in the range of 200 meters. The system then will not detect this restaurant as a duplicate, which is correct because it is a different branch.

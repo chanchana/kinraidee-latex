@@ -1,43 +1,25 @@
-column_count = 2
-table_name_prefix = '2'
+column_count = 3
+table_name_prefix = '4'
 flex_column_index = -1
 # flex_column_index = None
 input_text = """
 
 
 
-Table 2.4: Mongoose’ Schema Types
 
-Type
+Table 4.2: Recommender API Specification
+
+Method
+
+Path
 
 Description
 
-ObjectId
+POST
 
-A special type typically used for unique identifiers
+/recommend/<type>
 
-String
-
-A sequence of characters in string format
-
-Number
-
-A real number which includes all types of number such as integer, float, or double.
-
-Boolean
-
-True or false state
-
-Date
-
-Datetime format
-
-Object
-
-Nested object
-
-
-
+Request a set of suggested restaurants. “type” is needed to specify a different version of the recommendation model.
 
 
 
@@ -73,7 +55,7 @@ print(table_data)
 print()
 print('--------------------------------------')
 print()
-print('\\begin{table}[!h]')
+print('\\begin{table}[H]')
 print(f'\\caption{{{table_name}}}\label{{tbl:{table_name_prefix}{table_name.replace(" ", "")}}}')
 print(f"\\begin{{tabularx}}{{\\textwidth}}{{{'|'.join(column_setting)}}} \hline\hline")
 for index, row_data in enumerate(table_data):

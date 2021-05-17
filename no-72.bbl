@@ -167,19 +167,6 @@ Mongoose,
 \newblock ``{mongoose},'' Available at \url{https://mongoosejs.com/},
 \newblock [Online; accessed 28-November-2020].
 
-\bibitem{shen04}
-C.-C. Shen, C.~Srisathapornphat, R.~Lui, Z.~Huang, C.~Jaikaeo, and E.L. Lloyd,
-\newblock  2004, ``CLTC: A Cluster-Based Topology Control Framework for Ad Hoc
-  Network,''
-\newblock {\bf IEEE Trans. Mobile Computing}, vol. 3, no. 1, pp. 18--32,
-  Jan--Mar 2004.
-
-\bibitem{RecommendationSystemsPrinciples}
-F.O. Isinkaye, Y.O. Folajimi, and B.A. Ojokoh,
-\newblock  2015, ``Recommendation systems: Principles, methods and
-  evaluation,''
-\newblock {\bf Egyptian Informatics Journal}, vol. 16, no. 3, 2015.
-
 \bibitem{GoogleAppEngineDocumentation}
 Google,
 \newblock ``{Google App Engine Documentation},'' Available at
@@ -222,19 +209,32 @@ I.~Garcia, L.~Sebastia, and E.~Onaindia,
   for tourism,''
 \newblock {\bf Expert Systems with Applications}, vol. 38, no. 6, 2011.
 
-\bibitem{BuildauserbasedcollaborativefilteringrecommendationengineforAnime}
-Chris I,
-\newblock ``{Build a user-based collaborative filtering recommendation engine
-  for Anime},'' Available at
-  \url{https://towardsdatascience.com/build-a-user-based-collaborative-filtering-recommendation-engine-for-anime-92d35921f304},
-\newblock [Online; accessed 30-August-2020].
-
 \bibitem{MusicRecommender}
 Hyun-Tae Kim, Eungyeong Kim, Jong-Hyun Lee, and Chang~Wook Ahn,
 \newblock  2010, ``A recommender system based on genetic algorithm for music
   data,''
 \newblock {\bf ICCET 2010 - 2010 International Conference on Computer
   Engineering and Technology, Proceedings}, vol. 6, 01 2010.
+
+\bibitem{shen04}
+C.-C. Shen, C.~Srisathapornphat, R.~Lui, Z.~Huang, C.~Jaikaeo, and E.L. Lloyd,
+\newblock  2004, ``CLTC: A Cluster-Based Topology Control Framework for Ad Hoc
+  Network,''
+\newblock {\bf IEEE Trans. Mobile Computing}, vol. 3, no. 1, pp. 18--32,
+  Jan--Mar 2004.
+
+\bibitem{RecommendationSystemsPrinciples}
+F.O. Isinkaye, Y.O. Folajimi, and B.A. Ojokoh,
+\newblock  2015, ``Recommendation systems: Principles, methods and
+  evaluation,''
+\newblock {\bf Egyptian Informatics Journal}, vol. 16, no. 3, 2015.
+
+\bibitem{BuildauserbasedcollaborativefilteringrecommendationengineforAnime}
+Chris I,
+\newblock ``{Build a user-based collaborative filtering recommendation engine
+  for Anime},'' Available at
+  \url{https://towardsdatascience.com/build-a-user-based-collaborative-filtering-recommendation-engine-for-anime-92d35921f304},
+\newblock [Online; accessed 30-August-2020].
 
 \bibitem{bworld}
 L.~Bao,

@@ -1,0 +1,192 @@
+
+\newpage
+\subsubsection{Login}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_LoginPageUserInterface.png}
+\caption{Login Page User Interface}\label{fig:4ui_LoginPageUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Username and password fields let users type their account’s username and password.
+\item Login button lets users confirm their login information.
+\item Register link button takes users to the registration page.
+\end{enumerate}
+
+When users open the application for the first time, they will see the login page. On this page, users can put their username and password in the above fields (1). After that, they can tap on the Login button (2) to continue. The system will validate the input information and let the user see the home screen. However, if they do not have any account yet, they can tap on the Register link button (3) to go to the registration page.
+
+\newpage
+\subsubsection{Registration}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_RegistrationUserInterface.png}
+\caption{Registration User Interface}\label{fig:4ui_RegistrationUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item New username and password input field.
+\item Next button lets users continue the registration process.
+\item Login link button takes users to the previous login page.
+\item Food preference page lets users set their food preference.
+\item Food preference ranking box let users reordering their food preference by dragging each food preference displayed in the list.
+\item Done button lets users finish their registration process and access the home screen.
+\end{enumerate}
+
+The page is for users that do not have an account yet. They can choose their new username and password by inputting in the fields (1). They can tap on the Next button (2) to continue the process or go back to the login page by tapping the Login link button (3). After they tapped on the Next button (2), the food preference page (4) will be shown to the user. They need to rearrange the food preference items in the list to the love box (5) by dragging each item with a total of 5 selected items. After they select exactly 5 items, they can tap on the Done button (6) to finish the registration and they will be redirected to the home screen.
+
+\newpage
+\subsubsection{Home Screen}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_HomeScreenUserInterface.png}
+\caption{Home Screen User Interface}\label{fig:4ui_HomeScreenUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Individual Eating button takes users to individual recommendation confirmation pages.
+\item Group Eating section lets users create and join groups for a group recommendation.
+\item Your Favorite button takes users to their favorite restaurant list page.
+\item Edit Preference button takes users to the previous food preference page to edit their preference again.
+\item About button takes users to the about section.
+\item Logout Button let users sign out from the system.
+\end{enumerate}
+
+After users are logged in or complete the registration, they will see the home screen page shown in Figure~\ref{fig:4ui_HomeScreenUserInterface}. In this page, users can navigate to individual eating (1), group eating (2), favorite restaurant list (3), edit preference page (4) and about page (5). Users can log out by tapping on the Logout button (6).
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_LanguageSwitchingUserInterface.png}
+\caption{Language Switching User Interface}\label{fig:4ui_LanguageSwitchingUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Switch language button lets users change the display language for an entire application.
+\end{enumerate}
+
+Our application supports multiple display languages which include Thai and English. Users can switch the display language with the home screen from the top button labelled “ไทย” or “EN”. Note that when switching the language, not only the home screen display language will be changed, but also an entire application.
+
+\newpage
+\subsubsection{Individual Recommendation}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_IndividualRecommendationConfirmationUserInterface.png}
+\caption{Individual Recommendation Confirmation User Interface}\label{fig:4ui_IndividualRecommendationConfirmationUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Map lets users see the recommendation location or change the pin to desired location. It can be zoomed in and out and panned to any direction.
+\item Search location button lets users search a location by keyword.
+\item Target recommendation type selection includes restaurant, dessert shop and bar.
+\item Prefer price selection includes cheaper than 100 baht, 100 - 250 baht, 250 - 500 baht, and more than 500 baht.
+\item Next button lets users start an individual recommendation with the current setting.
+\end{enumerate}
+
+When users tap on the individual eating button in the home screen, users will see this individual confirmation page before starting the recommendation. In this confirmation page, users can change the recommendation location in the map (1) by panning to the target location or search location by keyword (2), change target recommendation type (3), and their preferred price (4). If users are satisfied with their setting, they can tap on the Start button (5) to start an individual recommendation.
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_IndividualRecommendationUserInterface.png}
+\caption{Individual Recommendation User Interface}\label{fig:4ui_IndividualRecommendationUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Recommended restaurant list.
+\item Detail of each restaurant. When users tap on each restaurant, the restaurant item will be expanded to show more information.
+\item Save to your favorite button lets users save each restaurant to their favorite list.
+\end{enumerate}
+
+When users start the individual recommendation, they will see 10 suggested restaurants shown in the list (1). They can choose to see an additional 10 restaurants at the end of the list. They can tap on each restaurant to see the details (2) and tap it again to collapse it. Moreover, they can add each restaurant to their favorite restaurant list by tapping the save button (3).
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_IndividualRecommendationSelectionUserInterface.png}
+\caption{Individual Recommendation Selection User Interface}\label{fig:4ui_IndividualRecommendationSelectionUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Users can choose their target restaurant by dragging them into the Love box.
+\item Finish button lets users finish the recommendation. This button will be available only if users select exactly 1 restaurant.
+\end{enumerate}
+
+The goal of the individual recommendation page is to choose exactly one restaurant to be the target restaurant. The process can be done by dragging the restaurant that users want into the Love box. They can select more than 1 restaurant from the box above, but ultimately, they need to clear the selected list to have only 1 restaurant in order to finish the recommendation. Finally, if they want to finish the recommendation, they can tap on Finish button (2) to complete the current recommendation.
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_IndividualRecommendationSuccessUserInterface.png}
+\caption{Individual Recommendation Success User Interface}\label{fig:4ui_IndividualRecommendationSuccessUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Recommendation rating dialog lets users rate how satisfied they were with the recommendation.
+\item Restaurant detail of the final restaurant.
+\item Home button takes users back to the home screen.
+\end{enumerate}
+
+After users finish the recommendation, the system will show the recommendation success page. The recommendation rating dialog will be prompted to let users rate the recommendation and use this score for the model's further improvement. Users can see the details of the selected restaurant (2) and go back to the home screen by tapping the Home button (3).
+
+\newpage
+\subsubsection{Group Recommendation}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_GroupCreatingUserInterface.png}
+\caption{Group Creating User Interface}\label{fig:4ui_GroupCreatingUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Create Group button lets users create an eating group that other people can join.
+\item Pin Code used for group joining for other people.
+\item Share button lets users use QR code or a link to invite other people.
+\item Group customization lets users who are a head of the group change the group setting.
+\item Members list shows current members who are in the group. The crown icon indicates that the person is a head of the group.
+\item QR code for invite other people
+\item Copy link button lets users quickly share an invitation through the link.
+\end{enumerate}
+
+When a group of people want to start a group recommendation, they need to firstly create a group. Creating a group can be done by tapping the Create Group button (1) on the home screen. After that, the person who creates a group will see a group confirmation page (the middle screen on Figure~\ref{fig:4ui_GroupCreatingUserInterface}). The page contains group pin code (2) that lets other people join the group, group customization setting (4) that lets a head of the group change the group setting, and member list (5) that shows all current members on the group. Moreover, users can tap on the Share button (3) to open a share sheet which contains a QR code (6) and the copy link button (7), so that other members can join the group easier. However, this group cannot be started yet, because there is only one member, so users need to wait for the other members.
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_GroupJoiningUserInterface.png}
+\caption{Group Joining User Interface}\label{fig:4ui_GroupJoiningUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Join Group button makes a join group dialog appear to users.
+\item Pin code input field lets users put their group pin code that they want to join.
+\item Join button lets users join the group with the input pin code.
+\end{enumerate}
+
+Next, if other users want to join the created group, they can tap on the Join Group button (1) and the join group dialog will be prompted. The dialog lets users input the group pin code obtained from the created group. Lastly, users can tap on the Join button to enter the group if the group pin code is valid.
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_JoinedGroupUserInterface.png}
+\caption{Joined Group User Interface}\label{fig:4ui_JoinedGroupUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Updated member list.
+\item Start button
+\end{enumerate}
+
+After other people have joined the group, the member list will be updated (1). Each member can set their own preferred price (2), however, one the head of the group can change the group setting. When all members join and  are ready to start a group recommendation, the head can tap on the Start button to start the group recommendation.
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_GroupRecommendationUserInterface.png}
+\caption{Group Recommendation User Interface}\label{fig:4ui_GroupRecommendationUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Drag the item to the box above and rearrange them by users preference.
+\item Finish button for users who finished rearranging already.
+\item Waiting dialog.
+\end{enumerate}
+
+When the group recommendation is started, every member will see the same set of the suggested restaurants. The goal of this group recommendation page is that every member needs to rearrange the shown restaurants by dragging the restaurant up and down (1) according to their preference. After users rearrange all of the 6 restaurants, they can tap on the Finish button (2) to submit their information. However, since the system needs to collect every member’s information, if there is someone who has not finished their rearranging yet, the waiting dialog will be shown (3).
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_GroupRecommendationSuccessUserInterface.png}
+\caption{Group Recommendation Success User Interface}\label{fig:4ui_GroupRecommendationSuccessUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Summary button brings up the summary of the recommendation.
+\item Home button takes users back to the home screen.
+\end{enumerate}
+
+When every member taps on the Finish button on the previous page, the group recommendation success screen will be shown. This page is very similar to individual recommendations, but it has the Summary button (1) that shows the summary of ranking for each restaurant. Lastly, users can go back to the home screen by tapping the Home button (2).
+
+\newpage
+\subsubsection{Favorite List}
+\begin{figure}[!h]\centering
+\includegraphics[height=300pt]{./images/4ui_FavoriteRestaurantListUserInterface.png}
+\caption{Favorite Restaurant List User Interface}\label{fig:4ui_FavoriteRestaurantListUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Your Favorite button takes users to their favorite restaurant list page.
+\item Favorite restaurant list page.
+\end{enumerate}
+
+Users can view their previous saved restaurant by tapping on the Your Favorite button (1) in the home screen and the favorite restaurant list page (2) will be shown to users. Users can view the restaurant information by tapping on each restaurant.

@@ -5,6 +5,7 @@
 
 \usepackage{polyglossia}
 \usepackage{tabularx}
+\usepackage{float}
 %\usepackage{algorithm}
 \setdefaultlanguage{english}
 \setotherlanguage{thai}
@@ -31,6 +32,14 @@
   \leftskip=4em\rightskip=2em%
   \noindent\ignorespaces}{%
   \par\medskip}
+\let\oldquote\quote
+\let\endoldquote\endquote
+
+\RenewDocumentEnvironment{quote}{om}
+  {\oldquote}
+  {\par\nobreak\smallskip
+   \hfill(#2\IfValueT{#1}{~---~#1})\endoldquote 
+   \addvspace{\bigskipamount}}
 
 %\setmathfont(Digits)[Scale=1.0,LetterSpace=0,FakeStretch=1.0]{Times New Roman}
 
@@ -404,12 +413,12 @@ Our system will recommend restaurants to individuals or groups by using our reco
  \end{enumerate}
 \end{enumerate}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=440pt]{./images/1gantt1.png}
 \caption{Gantt Chart for the First Semester}\label{fig:1_1}
 \end{figure}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=440pt]{./images/1gantt2.png}
 \caption{Gantt Chart for the Second Semester}\label{fig:1_2}
 \end{figure}
@@ -474,7 +483,7 @@ The accuracy of the recommendation depends on the number of ratings provided by 
 The system automatically infers the user’s preferences by monitoring the different actions of users such as the history of purchases, navigation history, and time spent on some web pages, links followed by the user, content of an email, and button clicks among others. Implicit feedback reduces the burden on users by inferring their user’s preferences from their behavior with the system. The method though does not require effort from the user, but it is less accurate. Also, it has been argued that implicit preference data might in actuality be more objective, as there is no bias arising from users responding in a socially desirable way. \cite{Recommendersystem}
 
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Characteristics of Explicit and Implicit Feedback}\label{tbl:2CharacteristicsofExplicitandImplicitFeedback}
 \begin{tabular}{l|l|l} \hline\hline
 Implicit Feedback & Explicit Feedback & Accuracy \\ \hline\hline
@@ -519,7 +528,7 @@ Moreover, from this approach, our project can use the algorithm to be part of ou
 
 \subsubsection{Collaborative Filtering Technique}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=250pt]{./images/2cfprocess.png}
 \label{fig:2cfprocess}
 \captionsource{Collaborative Filtering Process}{https://www.sciencedirect.com/science/article/pii/S1110866515000341}
@@ -700,7 +709,7 @@ Figma is a cloud-based design and prototyping tool for digital projects. It’s 
 
 HTTP is a protocol that allows the fetching of resources, such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. \cite{AnoverviewofHTTP}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=250pt]{./images/2http.png}
 \label{fig:2http}
 \captionsource{Communication Through an HTTP Protocol}{https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview}
@@ -711,7 +720,7 @@ Figure~\ref{fig:2http} shows how messages are communicated via the HTTP protocol
 
 HTTP defines a set of request methods for requests to indicate the desired action to be performed for a given resource. Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs. \cite{HTTPrequestmethods} The common HTTP verbs are shown in Table~\ref{tbl:2CommonHTTPVerbs}.
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Common HTTP Verbs}\label{tbl:2CommonHTTPVerbs}
 \begin{tabularx}{\textwidth}{l|l} \hline\hline
 Verb & Description \\ \hline\hline
@@ -746,7 +755,7 @@ Flask is a lightweight web application framework for Python. It is designed to m
 
 NoSQL databases are non-tabular and store data differently than relational tables. They provide flexible schemas and scale easily with large amounts of data and high user loads. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. \cite{WhatisNoSQL} The description of each type is shown in Table~\ref{tbl:2NoSQLTypesandDescription}.
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{NoSQL Types and Description}\label{tbl:2NoSQLTypesandDescription}
 \begin{tabularx}{\textwidth}{l|X} \hline\hline
 Type & Description \\ \hline\hline
@@ -768,7 +777,7 @@ MongoDB is a document-based NoSQL database used for high volume data storage. In
 
 Mongoose is a JavaScript library which provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks, and more, out of the box. \cite{mongoose} It also provides an interface to connect to the database. Although NoSQL does not have a fixed schema, having a schema for some essential fields in the model helps in a uniform data format that facilitates database operations in our system. Mongoose provides essential types for declaring the model’s schema. The essential types are shown and described in Table~\ref{tbl:2MongooseSchemaTypes} below.
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Mongoose’ Schema Types}\label{tbl:2MongooseSchemaTypes}
 \begin{tabularx}{\textwidth}{l|X} \hline\hline
 Type & Description \\ \hline\hline
@@ -809,7 +818,7 @@ Google Cloud Storage is a web service that allows storing and accessing data on 
 
 \subsection{Entrée}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/2eatsee.png}
 \label{fig:2eatsee}
 \captionsource{Screenshot of Entrée Application}{https://appadvice.com/app/entr-c3-a9e-decide-your-next-meal/1037913795}
@@ -822,7 +831,7 @@ Compared to our system, Entrée can suggest restaurants for only individuals, in
 \newpage
 \subsection{Eatsee}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/2eatseereal.png}
 \label{fig:2eatseereal}
 \captionsource{Screenshot of Eatsee Application}{https://apps.apple.com/us/app/id1202110881}
@@ -836,7 +845,7 @@ Compared to our system, Eastsee only suggests random food based on their prefere
 \newpage
 \subsection{Whatever Mans}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=250pt]{./images/2whatman.png}
 \label{fig:2whatman}
 \captionsource{Screenshot of Whatever Mans Application}{https://play.google.com/store/apps/details?id=com.DEC.Eatwhat}
@@ -849,7 +858,7 @@ Compared to our system, Whatever Mans Application supports only on an Android pl
 \newpage
 \subsection{Tinder}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/2tinder.jpeg}
 \label{fig:2tinder}
 \captionsource{Screenshot of Tinder Application}{https://www.androidauthority.com/best-tinder-alternatives-android-1084559/}
@@ -862,7 +871,7 @@ Compared to our system, Tinder shares a similarity with our system which is a re
 \newpage
 \subsection{On the design of Individual and Group Recommender Systems for Tourism Paper}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/2grsk.png}
 \label{fig:2grsk}
 \captionsource{GRSK Architecture from the Paper}{https://www.semanticscholar.org/paper/On-the-design-of-individual-and-group-recommender-Garcia-Sebastia/b367686e60db2f68102cd14b1360e9fc26a1757b}
@@ -912,7 +921,7 @@ Compared to our system, the information of this paper that uses the genetic algo
 \newpage
 \subsection{Use Case Diagram}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=440pt]{./images/3usecase.png}
 \caption{Use Case Diagram}\label{fig:3usecase}
 \end{figure}
@@ -1075,7 +1084,7 @@ Compared to our system, the information of this paper that uses the genetic algo
 
 \newpage
 \subsection{Functional Breakdown Structure}
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=360pt]{./images/3functional_breakdown.png}
 \caption{Functional Breakdown Structure of the System}\label{fig:3functional_breakdown}
 \end{figure}
@@ -1093,7 +1102,7 @@ Our system consists of 5 functional components which are:
 
 \section{System Architecture}
 \subsection{System Overview}
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=360pt]{./images/3system_overview.png}
 \caption{System Overview}\label{fig:3system_overview}
 \end{figure}
@@ -1117,7 +1126,7 @@ We separate these components into 2 sides which are the backend side and the fro
 \newpage
 \subsection{Restaurant Recommender System Architect}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/3architect.png}
 \caption{System Architecture}\label{fig:3architect}
 \end{figure}
@@ -1128,7 +1137,7 @@ Figure~\ref{fig:3architect} shows the detailed architecture of our system. As we
 \newpage
 \subsubsection{App Server Architecture}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=360pt]{./images/3arch_appserver.png}
 \caption{App Server Architecture}\label{fig:3arch_appserver}
 \end{figure}
@@ -1150,7 +1159,7 @@ App Server is implemented using TypeScript and Express framework which is a web 
 
 \subsubsection{App Client Architecture}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=200pt]{./images/3arch_appclient.png}
 \caption{App Client Architecture}\label{fig:3arch_appclient}
 \end{figure}
@@ -1160,7 +1169,7 @@ App Client is responsible for serving the user interface to users and handling u
 
 \subsubsection{Recommender Architecture}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=200pt]{./images/3arch_recommender.png}
 \caption{Recommender Architecture}\label{fig:3arch_recommender}
 \end{figure}
@@ -1176,7 +1185,7 @@ Recommender implemented using Python which can easily communicate with the model
 
 \subsubsection{Data Service Architecture}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=200pt]{./images/3arch_dataservice.png}
 \caption{Data Service Architecture}\label{fig:3arch_dataservice}
 \end{figure}
@@ -1186,7 +1195,7 @@ Data Service is responsible for collecting restaurant information from an extern
 
 \subsubsection{Database Architecture}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/3arch_database.png}
 \caption{App Server Architecture}\label{fig:3arch_database}
 \end{figure}
@@ -1201,7 +1210,7 @@ Database is responsible for storing all data in our system. We choose to have No
 
 \subsubsection{Registration}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=400pt]{./images/3actdiagram_register.png}
 \caption{Registration Activity Diagram}\label{fig:3actdiagram_register}
 \end{figure}
@@ -1211,7 +1220,7 @@ When users open a registration page, they will be asked to input their new usern
 \newpage
 \subsubsection{Individual Restaurant Recommendation}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=400pt]{./images/3actdiagram_indirec.png}
 \caption{Individual Restaurant Recommendation Activity Diagram}\label{fig:3actdiagram_indirec}
 \end{figure}
@@ -1221,7 +1230,7 @@ When users choose to start the individual recommendation, users need to allow th
 \newpage
 \subsubsection{Registration}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=400pt]{./images/3actdiagram_grouprec.png}
 \caption{Group Restaurant Recommendation Activity Diagram}\label{fig:3actdiagram_grouprec}
 \end{figure}
@@ -1234,7 +1243,7 @@ When a group of users wants to start a group recommendation, they firstly need t
 
 \subsubsection{Registration}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=400pt]{./images/3seqdiagram_register.png}
 \caption{Registration Sequence Diagram}\label{fig:3seqdiagram_register}
 \end{figure}
@@ -1250,7 +1259,7 @@ When a group of users wants to start a group recommendation, they firstly need t
 \newpage
 \subsubsection{Individual Restaurant Recommendation}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=600pt]{./images/3seqdiagram_indirec.png}
 \caption{Individual Restaurant Recommendation Sequence Diagram}\label{fig:3seqdiagram_register}
 \end{figure}
@@ -1269,7 +1278,7 @@ When a group of users wants to start a group recommendation, they firstly need t
 
 \subsubsection{Create Group}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/3seqdiagram_creategroup.png}
 \caption{Create Group Sequence Diagram}\label{fig:3seqdiagram_creategroup}
 \end{figure}
@@ -1285,7 +1294,7 @@ When a group of users wants to start a group recommendation, they firstly need t
 
 \subsubsection{Group Restaurant Recommendation}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/3seqdiagram_grouprec.png}
 \caption{Create Group Sequence Diagram}\label{fig:3seqdiagram_grouprec}
 \end{figure}
@@ -1308,7 +1317,7 @@ The user interface of our web application includes login, registration, individu
 
 \newpage
 \subsection{Login Page}
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_StartPageUserInterfaceDesign.png}
 \caption{Start Page User Interface Design}\label{fig:3ui_StartPageUserInterfaceDesign}
 \end{figure}
@@ -1321,7 +1330,7 @@ The user interface of our web application includes login, registration, individu
 When users open the application, the login page will appear first if they did not login yet. They need to input their username and password in the fields (1) then They can tap the “Login” button (2) to log in. After login, they will see the home page (Figure 3.19). If they do not have an account, they can tap on the “Register” button (3) and they will see the registration page (Figure 3.17). However, they can choose to login without any account by tapping on the “Login as Guest” button (4) and the system will directly bring them to the home page (Figure 3.19).
 \newpage
 \subsection{Registration Page}
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_RegistrationPageUserInterfaceDesign.png}
 \caption{Registration Page User Interface Design}\label{fig:3ui_RegistrationPageUserInterfaceDesign}
 \end{figure}
@@ -1331,9 +1340,9 @@ When users open the application, the login page will appear first if they did no
 \item Re-enter the password field, it needs to be matched with the password field
 \item Next button, links to a general information setup page
 \end{enumerate}
-If users choose to register, the registration page will appear and ask users to input a new username, password, and re-enter the password (1), (2), (3) respectively. If the input username is invalid or already taken, the system will alert users and let them choose a new username. If the password field and re-enter password field are mismatched, the system will also alert and tell users to input their password and re-enter password fields again. After all of the information in the fields is valid and users tap on the “Next” button (4), they will proceed to the next step which is the profile setting step stated in~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign}.
+If users choose to register, the registration page will appear and ask users to input a new username, password, and re-enter the password (1), (2), (3) respectively. If the input username is invalid or already taken, the system will alert users and let them choose a new username. If the password field and re-enter password field are mismatched, the system will also alert and tell users to input their password and re-enter password fields again. After all of the information in the fields is valid and users tap on the “Next” button (4), they will proceed to the next step which is the profile setting step stated in Figure~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign}.
 \newpage
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_ProfileSetupPageUserInterfaceDesign.png}
 \caption{Profile Setup Page User Interface Design}\label{fig:3ui_ProfileSetupPageUserInterfaceDesign}
 \end{figure}
@@ -1344,10 +1353,10 @@ If users choose to register, the registration page will appear and ask users to 
 \item Finish button, to complete the form and the registration.
 \item Skip button, lets users skip the food preference setup process.
 \end{enumerate}
-After users input the valid username and password, the next step is user profile setup. This process consists of 2 steps which are general information setup and food preferences information setup. The first one on the left of~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign} is a general information setup step. Users are required to fill in all the information in the form and accept the terms and privacy (1) then they can proceed to the next step by tapping the “Next” button (2). For the second step, preferences information set up, they will see many available categories of food. They can choose their food preferences in the form (3) and tap on “Finish” to complete the registration. However, if they do not want to set their preferences yet, they can tap on the “Skip” button (5) to skip the preferences setup process. After the registration is completed, they will see the home page (Figure 3.19) and start using our system.
+After users input the valid username and password, the next step is user profile setup. This process consists of 2 steps which are general information setup and food preferences information setup. The first one on the left of Figure~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign} is a general information setup step. Users are required to fill in all the information in the form and accept the terms and privacy (1) then they can proceed to the next step by tapping the “Next” button (2). For the second step, preferences information set up, they will see many available categories of food. They can choose their food preferences in the form (3) and tap on “Finish” to complete the registration. However, if they do not want to set their preferences yet, they can tap on the “Skip” button (5) to skip the preferences setup process. After the registration is completed, they will see the home page (Figure 3.19) and start using our system.
 \newpage
 \subsection{Individual Restaurant Recommendation Page}
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_HomePageUserInterfaceDesign.png}
 \caption{Home Page User Interface Design}\label{fig:3ui_HomePageUserInterfaceDesign}
 \end{figure}
@@ -1360,7 +1369,7 @@ After users input the valid username and password, the next step is user profile
 \item Profile button, links to the profile page.
 \end{enumerate}
 After users logged in or registered, they will see the home page. By entering the home page, the system will automatically start recommending some restaurants to users. Users will see the information of each suggested restaurant (1). They can also see some more information about each restaurant by tapping the “i” icon (2). They can filter the suggested restaurants by tapping the “Filters” button (3) and the filter window will appear (Figure 3.20). If they are satisfied with the suggested restaurant, they can tap on the “Yummy” button (4) or swipe the restaurant card to the right, and then the success page will appear (Figure 3.21). Otherwise, if they are not satisfied with that restaurant, they can tap on the “Nah” button (5) or swipe the restaurant card to the left, and then the system will show the next suggested restaurant to users and let them consider it again. Users can see their profile by tapping the profile picture button (6) and the profile management page will appear (Figure 3.25).
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_FilterWindowUserInterfaceDesign.png}
 \caption{Filter Window User Interface Design}\label{fig:3ui_FilterWindowUserInterfaceDesign}
 \end{figure}
@@ -1370,9 +1379,9 @@ After users logged in or registered, they will see the home page. By entering th
 \item Filter button with applied filter tags, users can open the filter window again by tapping this button.
 \item Reset button, will remove all the applied filters.
 \end{enumerate}
-After users tap on the “Filter” button on the home page (number 3 on~\ref{fig:3ui_HomePageUserInterfaceDesign}), the filter window will appear. Users can filter restaurants by choosing the available options that appear on the filter window (1). After finishing choosing the filtering option, they can tap on the arrow icon (2) to apply the filter and the filter window will be minimized. They can see the applied filters at the bottom of the screen (3). They can change their filtering by tapping on the bottom bar (3) to bring the filter window up again. They can tap on the “Reset” button (4) to remove all of the applied filters. After applying any filters, the system will suggest the restaurant that matches its filtering condition.
+After users tap on the “Filter” button on the home page (number 3 on Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}), the filter window will appear. Users can filter restaurants by choosing the available options that appear on the filter window (1). After finishing choosing the filtering option, they can tap on the arrow icon (2) to apply the filter and the filter window will be minimized. They can see the applied filters at the bottom of the screen (3). They can change their filtering by tapping on the bottom bar (3) to bring the filter window up again. They can tap on the “Reset” button (4) to remove all of the applied filters. After applying any filters, the system will suggest the restaurant that matches its filtering condition.
 \newpage
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_RecommendationSuccessPageUserInterfaceDesign.png}
 \caption{Recommendation Success Page User Interface Design}\label{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}
 \end{figure}
@@ -1382,10 +1391,10 @@ After users tap on the “Filter” button on the home page (number 3 on~\ref{fi
 \item Restaurant card showing general information about the liked restaurant.
 \item Recommendation rating, let users rate satisfaction with their current recommendation.
 \end{enumerate}
-On the home page which users see the suggested restaurant, if users are satisfied with the suggested restaurant, they can swipe right (1) or tap on the “Yummy” button (2). After that, the recommendation success page will appear (the right picture in~\ref{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}). On the success page, users can see the restaurant information in the center of the screen (3). They can give a rating score for the recommendation from 1 star to 5 stars (4). After they are done seeing the information, they can tap on the “Done” button (5) to close the success page and they will see the home page (Figure 3.19) again.
+On the home page which users see the suggested restaurant, if users are satisfied with the suggested restaurant, they can swipe right (1) or tap on the “Yummy” button (2). After that, the recommendation success page will appear (the right picture in Figure~\ref{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}). On the success page, users can see the restaurant information in the center of the screen (3). They can give a rating score for the recommendation from 1 star to 5 stars (4). After they are done seeing the information, they can tap on the “Done” button (5) to close the success page and they will see the home page (Figure 3.19) again.
 \newpage
 \subsection{Group Restaurant Recommendation Page}
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_GroupJoiningUserInterfaceDesign.png}
 \caption{Group Joining User Interface Design}\label{fig:3ui_GroupJoiningUserInterfaceDesign}
 \end{figure}
@@ -1395,9 +1404,9 @@ On the home page which users see the suggested restaurant, if users are satisfie
 \item Group pin code input field, let users input the group pin code.
 \item Join button which lets users join their existing group without input the group pin code again.
 \end{enumerate}
-In the following section, we will walk through the group recommendation process. On the home page (the left picture in~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}), it will show the group pin on the top of the screen (1). To start the group recommendation, the user has to share this pin code with other members in the group and this will make the pin code owner be the head of the group. Other members can join the group by tapping on the “Join” button (2) and the joining dialog will appear (the right picture in~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}). In the joining dialog, other members can input the pin that appeared on the group head’s device (1). Moreover, users can join the previously joined group, which will be shown as favorites. They can directly join their favorite group by tapping the “Join” button (4) in the group they want to join without input the pin code again. After someone joins the group the group recommendation will be initialized and all members that joined the group will see the group confirmation page next (Figure 3.23).
+In the following section, we will walk through the group recommendation process. On the home page (the left picture in Figure~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}), it will show the group pin on the top of the screen (1). To start the group recommendation, the user has to share this pin code with other members in the group and this will make the pin code owner be the head of the group. Other members can join the group by tapping on the “Join” button (2) and the joining dialog will appear (the right picture in Figure~\ref{fig:3ui_GroupJoiningUserInterfaceDesign}). In the joining dialog, other members can input the pin that appeared on the group head’s device (1). Moreover, users can join the previously joined group, which will be shown as favorites. They can directly join their favorite group by tapping the “Join” button (4) in the group they want to join without input the pin code again. After someone joins the group the group recommendation will be initialized and all members that joined the group will see the group confirmation page next (Figure 3.23).
 \newpage
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_GroupConfirmationPageUserInterfaceDesign.png}
 \caption{Group Confirmation Page User Interface Design}\label{fig:3ui_GroupConfirmationPageUserInterfaceDesign}
 \end{figure}
@@ -1409,7 +1418,7 @@ In the following section, we will walk through the group recommendation process.
 \end{enumerate}
 After someone joins the group, all joined members will see this group confirmation page. On the top, there is a group pin code that the members in the group can share with other people if they want to join this eating group. The head of the group will have a crown icon (2) and they can manage the members in the group. If the head wants to remove some of the members, they can do it by tapping the 3 dots icon (3) followed by tapping the “Kick” button, after that the kicked member will no longer be in the party. When all members are joined and ready, the head will tap on the “Start” button to begin the group recommendation.
 \newpage
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_GroupRecommendationPageUserInterfaceDesign.png}
 \caption{Group Recommendation Page User Interface Design}\label{fig:3ui_GroupRecommendationPageUserInterfaceDesign}
 \end{figure}
@@ -1422,7 +1431,7 @@ After someone joins the group, all joined members will see this group confirmati
 After the group has been created and confirmed, the group recommendation will begin. All members will see the same suggested set of restaurants. Each member will choose whether they like or not but tapping “Yummy” and “Nah” or swiping (1) is the same as in individual recommendation. The group recommendation will be finished after all members like the same restaurant. The top bar (2) indicates the highest number of members that agree on the same restaurant, when it is full, it means everybody agrees on the same restaurant and the recommendation is finished. Users can see the members by tapping the “Member” button (3). Users still can set the filter by tapping the “Filter” button (4) but this time the filters will be applied to every member in the group.
 \newpage
 \subsection{Profile Page}
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_ProfileManagementPageUserInterfaceDesign.png}
 \caption{Profile Management Page User Interface Design}\label{fig:3ui_ProfileManagementPageUserInterfaceDesign}
 \end{figure}
@@ -1431,7 +1440,7 @@ After the group has been created and confirmed, the group recommendation will be
 \item Privacy button, it let users change their password and their privacy setting.
 \item Back button which brings users back to their home page.
 \end{enumerate}
-After users choose to view their profile (number 6 in~\ref{fig:3ui_HomePageUserInterfaceDesign}), they will see the left picture in~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}. They can choose to view their selected restaurant history by tapping the “History” button (1) and a list of selected restaurants will be shown (the right picture of~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}). They can also choose to edit their profile such as their name, gender, or birthdate or choose to edit their food preferences. They can reset their password and set the privacy setting under the “Privacy” section (2). They can go back to the main screen by tapping the arrow icon (3).
+After users choose to view their profile (number 6 in Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}), they will see the left picture in Figure~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}. They can choose to view their selected restaurant history by tapping the “History” button (1) and a list of selected restaurants will be shown (the right picture of Figure~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}). They can also choose to edit their profile such as their name, gender, or birthdate or choose to edit their food preferences. They can reset their password and set the privacy setting under the “Privacy” section (2). They can go back to the main screen by tapping the arrow icon (3).
 
 
 \section{Database Structure}
@@ -1439,7 +1448,7 @@ In this section, we explain our database structure in the Database component. Ou
 
 \newpage
 \subsection{Collections}
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Database Collection and Description}\label{tbl:3DatabaseCollectionandDescription}
 \begin{tabularx}{\textwidth}{l|X} \hline\hline
 Collection Name & Description \\ \hline\hline
@@ -1458,7 +1467,7 @@ Table ~\ref{tbl:3DatabaseCollectionandDescription} shows us all collections in o
 Although NoSQL does not have a fixed database schema, by using Mongoose as a MongoDB database connection framework, it provides some primary schema for data creating and reading facilitation. Having Mongoose’s schema can help us manage a uniform data format with easy schema migration. However, inserting data with a different format from Mongoose’s schema does not break the process and no part of the data will be discarded. In this section, we will show some mandatory fields for each collection.
 
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Restaurant Schema}\label{tbl:3RestaurantSchema}
 \begin{tabularx}{\textwidth}{l|l|X} \hline\hline
 Key Name & Type & Description \\ \hline\hline
@@ -1473,7 +1482,7 @@ link & String & URL link to their Facebook page. \\ \hline\hline
 \end{tabularx}
 \end{table}
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{User Schema}\label{tbl:3UserSchema}
 \begin{tabularx}{\textwidth}{l|l|X} \hline\hline
 Key Name & Type & Description \\ \hline\hline
@@ -1486,7 +1495,7 @@ profile.preference & Object & Food preferences of users. \\ \hline\hline
 \end{tabularx}
 \end{table}
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Recommendation Schema}\label{tbl:3RecommendationSchema}
 \begin{tabularx}{\textwidth}{l|l|X} \hline\hline
 Key Name & Type & Description \\ \hline\hline
@@ -1499,7 +1508,7 @@ location.coordinate & Array of Numbers & The location that this recommendation s
 \end{tabularx}
 \end{table}
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Category Schema}\label{tbl:3CategorySchema}
 \begin{tabularx}{\textwidth}{l|l|X} \hline\hline
 Key Name & Type & Description \\ \hline\hline
@@ -1508,7 +1517,7 @@ is\_common & Boolean & Whether this category is a common category. \\ \hline\hli
 \end{tabularx}
 \end{table}
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Favorite Schema}\label{tbl:3FavoriteSchema}
 \begin{tabularx}{\textwidth}{l|l|X} \hline\hline
 Key Name & Type & Description \\ \hline\hline
@@ -1524,18 +1533,18 @@ Note that we need to keep a category collection separated from restaurant inform
 
 With database indexing, we can query the data faster by storing additional information about data. Every collection has an indexed id so that we can query the data from their id faster. However, we also set more indexing on 2 collections which are restaurants and users.
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/3db_RestaurantCollectionsIndexes.png}
 \caption{Restaurant Collection’s Indexes}\label{fig:3db_RestaurantCollectionsIndexes}
 \end{figure}
 
-From~\ref{fig:3db_RestaurantCollectionsIndexes}, we can see that the restaurant collection has one more index which is the location index. This index is used for query restaurants by a distance of 2 coordinates.
-\begin{figure}[!h]\centering
+From Figure~\ref{fig:3db_RestaurantCollectionsIndexes}, we can see that the restaurant collection has one more index which is the location index. This index is used for query restaurants by a distance of 2 coordinates.
+\begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/3db_UserCollectionsIndexes.png}
 \caption{User Collection’s Indexes}\label{fig:3db_UserCollectionsIndexes}
 \end{figure}
 
-From~\ref{fig:3db_UserCollectionsIndexes}, we can see that the user collection has one more index which is the username index. This index is used for query users by username. It also helps when checking the username’s availability. The username index also applies to other collections that require finding  the record by the username which is the favorite collection.
+From Figure~\ref{fig:3db_UserCollectionsIndexes}, we can see that the user collection has one more index which is the username index. This index is used for query users by username. It also helps when checking the username’s availability. The username index also applies to other collections that require finding  the record by the username which is the favorite collection.
 
 
 \section{Restaurant Recommendation Algorithm}
@@ -1547,7 +1556,7 @@ In conclusion, we decided to use the \textit{\textbf{Genetic Algorithm}} for our
 \newpage
 \subsection{Genetic Algorithm for Individual Recommendation}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[height=600pt]{./images/3GeneticAlgorithmFlowchart.png}
 \caption{Restaurant Recommendation Process for Individual}\label{fig:3GeneticAlgorithmFlowchart}
 \end{figure}
@@ -1558,7 +1567,7 @@ Figure~\ref{fig:3GeneticAlgorithmFlowchart} displays the main process of the res
 
 One set of the restaurant recommendations consists of 10 restaurants. In the genetic algorithm, one chromosome then contains 10 genes for 10 restaurants.  Initially, restaurants are drawn from the database based on the user's surroundings or selected locations only. Then, the restaurants are randomly assigned to each gene in the chromosome. Figure 3.29 shows the example of the genes in one chromosome that has a list of restaurants R1 to R10. We set the number of chromosomes to 100. Therefore, 100 chromosomes are initialized in the same manner.
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=300pt]{./images/3ga_init.png}
 \caption{Example of Population in 1 Chromosome}\label{fig:3ga_init}
 \end{figure}
@@ -1609,7 +1618,7 @@ The algorithm will be terminated when the fitness values of 15 generations are a
 
 \subsection{Genetic Algorithm for Group Recommendation}
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=300pt]{./images/3ga_grouprecflow.png}
 \caption{Group Recommendation Flow}\label{fig:3ga_grouprecflow}
 \end{figure}
@@ -1620,7 +1629,7 @@ For the group recommendation, the same process as individual recommendation is c
 
 %TODO check for update
 
-\begin{figure}[!h]\centering
+\begin{figure}[H]\centering
 \includegraphics[width=300pt]{./images/3ga_rankagg.png}
 \caption{Rank Aggregation}\label{fig:3ga_rankagg}
 \end{figure}
@@ -1671,65 +1680,774 @@ The performance of main components, App Client, App Server, and Recommender, wil
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Proposed Work}
+\chapter{Results and Discussion}
 
-Explain the design (how you plan to implement your work) of your project. Adjust the section titles below to suit the types of your work. Detailed physical design like circuits and source codes should be placed in the appendix.
+\section{Restaurant Data Collection}
 
-\section{System Architecture}
+\subsection{Collection Process}
 
-\begin{table}[!h]
-\centering
-\caption{test table x1}\label{tbl:symbols}
-\begin{tabular}{@{}p{0.07\textwidth}|p{0.7\textwidth}p{0.1\textwidth}}\hline
-\multicolumn{2}{l}{\textbf{SYMBOL}}  & \textbf{UNIT} \\ \hline 
-$\alpha$ & Test variable\hfill & m$^2$ \\
-$\lambda$ & Interarrival rate\hfill &  jobs/second\\
-$\mu$ & Service rate\hfill & jobs/second \\ \hline
-\end{tabular}
-%\begin{tabular}{c|c} \hline
-% $\alpha$ & $\beta$ \\ \hline
-% $\delta$ & $\mu$ \\ \hline
-%\end{tabular}
+
+Our system needs to recommend restaurants to users, so restaurant data is crucial data for our system. First, we obtained general restaurant information from the Thai Chana platform via their API endpoint, ‘https://api-search.thaichana.com/’, that information includes the name and coordinates of restaurants.
+
+\begin{figure}[H]\centering
+\includegraphics[width=400pt]{./images/4ThaiChanasRestaurantDataExample.png}
+\caption{Thai Chana’s Restaurant Data Example}\label{fig:4ThaiChanasRestaurantDataExample}
+\end{figure}
+
+Figure~\ref{fig:4ThaiChanasRestaurantDataExample} shows an example of Thai Chana’s restaurant data. However, there is one issue with this data which is it does not contain information about the categories of restaurants which we need to use in the data analytic and machine learning part. To overcome this issue, we will use Facebook Graph API for additional information. We used names of restaurants from Thai Chana data to query new restaurant information from Facebook Graph API which contains tags about restaurant categories.
+
+\newpage
+\begin{figure}[H]\centering
+\includegraphics[width=400pt]{./images/4FacebooksRestaurantDataExample.png}
+\caption{Facebook’s Restaurant Data Example}\label{fig:4FacebooksRestaurantDataExample}
+\end{figure}
+
+Figure~\ref{fig:4FacebooksRestaurantDataExample} shows an example of Facebook Graph API data. The data contains all information we need such as name, coordinate and restaurant profile such as restaurant categories, price range, and engagement. Moreover, some restaurant data contains image URLs for the restaurant which is very useful for users’ consideration.
+
+\subsection{Preprocessing Process}
+
+For restaurant data preprocessing, it consists of mainly 2 processes which are data transforming and restaurant duplication checking.
+
+In data transformation, we format our collected data into the right format from our database schema. This transformation process happens in the Data Service component and then it will send each restaurant to App Server. Consequently, App Server has a logic for solving restaurant duplication problems that we have faced. This issue is very common because some restaurants may create multiple Facebook pages. So, Facebook data did not guarantee that all of the restaurants in the data is unique. To fix this problem, App Server detects the duplicated restaurant.
+
+\newpage
+\begin{figure}[H]\centering
+\includegraphics[width=250pt]{./images/4RestaurantDuplicationChecking.png}
+\caption{Restaurant Duplication Checking}\label{fig:4RestaurantDuplicationChecking}
+\end{figure}
+
+The restaurant duplication checking is done by checking their name’s similarity with a ratio of 0.65 and their distance from the new incoming restaurant with all of the existing restaurants in the 200 meters range from our database. The system will choose to store only the restaurant that contains more information.
+
+Figure~\ref{fig:4RestaurantDuplicationChecking} shows an example of restaurant duplication checking. We can see that “McDonald’s PARAGON” and “McDonald’s SiamParagon” are very close to each other and the name similarity is more than our threshold. Therefore, the system will classify one of the restaurants as a duplicate and choose to store only one that contains more information. However, “McDonald’s MBK” has a similar name with “McDonald’s PARAGON” but it is not in the range of 200 meters. The system then will not detect this restaurant as a duplicate, which is correct because it is a different branch.
+
+\subsection{Result}
+
+After the restaurant data has been collected, transformed, and cleaned, we got a total of 11,175 restaurants over Bangkok. The visualization of the restaurant data will be described in the following section.
+
+\begin{figure}[H]\centering
+\includegraphics[width=250pt]{./images/4RestaurantsLocationinMap.png}
+\caption{Restaurant’s Location in Map}\label{fig:4RestaurantsLocationinMap}
+\end{figure}
+
+Figure~\ref{fig:4RestaurantsLocationinMap} illustrates the distribution of the restaurant’s locations in our data. The data contains restaurants distributed around Bangkok and spread a little bit to the perimeters. Most of the restaurants are located in the center of Bangkok.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4RestaurantsCategoryDistribution.png}
+\caption{Restaurant’s Category Distribution}\label{fig:4RestaurantsCategoryDistribution}
+\end{figure}
+
+Figure~\ref{fig:4RestaurantsCategoryDistribution} shows the distribution of the restaurant category in our data. The top restaurant categories are Restaurant, Thai Restaurant, Food \& Beverage, and Fast Food Restaurant. However, we cannot use the tag Restaurant because it does not give any information about the restaurant. Our data contains restaurants that have only one Restaurant tag around 3,000 restaurants. We still need to include this information but it might not be accurate when we recommend restaurants to users.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4RestaurantsPriceRangeDistribution.png}
+\caption{Restaurant’s Price Range Distribution}\label{fig:4RestaurantsPriceRangeDistribution}
+\end{figure}
+
+Figure~\ref{fig:4RestaurantsPriceRangeDistribution} shows the distribution of restaurants' price range. Price range level 2, 100 - 250 baht, is found in most restaurants, followed by level 1, lower than 100 baht, and level 3, 251 - 500 baht. The least price range found in our data is level 4, more than 500 baht. However, only 5,561 restaurants in our data specified their price range which is around 50\% of total restaurants.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4ExampleofRestaurantPicturefromFacebookPage.jpeg}
+\captionsource{Example of Restaurant Picture from Facebook Page}{https://www.facebook.com/100170491339440}\label{fig:4ExampleofRestaurantPicturefromFacebookPage}
+\end{figure}
+
+
+Figure~\ref{fig:4ExampleofRestaurantPicturefromFacebookPage} is an example of a restaurant picture in our data. The picture came from the restaurant's Facebook page photo cover image. The image is a crucial part of considering a restaurant from our feedback. However, only 3,513 restaurants in our data contain pictures which are around only 30\%. This is also one issue that we need to improve in order to make users’ restaurant consideration easier.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4ExampleofUnrelatedRestaurantPicturefromFacebookPage.jpeg}
+\captionsource{Example of Unrelated Restaurant Picture from Facebook Page}{https://www.facebook.com/100940911628308}\label{fig:4ExampleofUnrelatedRestaurantPicturefromFacebookPage}
+\end{figure}
+
+However, from 3,513 restaurants in our data that contain images, their image is not quite related to the restaurant as the example in Figure~\ref{fig:4ExampleofUnrelatedRestaurantPicturefromFacebookPage}. This happens very commonly since all of the Facebook page data is user-generated data. We might overcome this problem by trying to get restaurant images from other sources.
+
+
+\section{User Data Collection}
+
+\subsection{Collection Process}
+
+Our system needs to do data analysis and we need user behavior data for training our model. From the previous step, we already got restaurant data, but we did not have user interaction data. The user interaction data needs to include user information, restaurant information, and an interaction between user and restaurant which is a rating of each user to restaurants.
+
+To collect this data, we implemented a data collection tool that lets users register and rate the appeared restaurant from the system.
+
+\begin{figure}[H]\centering
+\includegraphics[height=350pt]{./images/4RegistrationPageoftheDataCollectionTool.png}
+\caption{Registration Page of the Data Collection Tool}\label{fig:4RegistrationPageoftheDataCollectionTool}
+\end{figure}
+
+Figure~\ref{fig:4RegistrationPageoftheDataCollectionTool} shows the registration page of the data collection tool. This is the first page that interviewees see. They need to input their new username, general profile information such as gender and birthdate and food preference which let users select from hate to love.
+
+\newpage
+\begin{figure}[H]\centering
+\includegraphics[height=400pt]{./images/4RatingPageoftheDataCollectionTool.png}
+\caption{Rating Page of the Data Collection Tool}\label{fig:4RatingPageoftheDataCollectionTool}
+\end{figure}
+
+After interviewees registered, they will see 20 restaurants one by one filtered by their food preferences on the registration page and nearby restaurants. They have to rate each restaurant from their opinion whether that restaurant is interesting or not. The user interface of the rating process is shown in Figure~\ref{fig:4RatingPageoftheDataCollectionTool}. After they finished rating 20 restaurants, they can choose to have more suggestions or logout from the system.
+
+After the tool is developed, we planned to separate the interview into 3 methods which are face-to-face interview, virtual interview, and an online survey. We set a goal to have a minimum of 100 people.
+
+\newpage
+\begin{figure}[H]\centering
+\includegraphics[width=300pt]{./images/4FacetofaceInterviewProcess.png}
+\caption{Face-to-face Interview Process}\label{fig:4FacetofaceInterviewProcess}
+\end{figure}
+
+For the first method, face-to-face interview, we do it in 2 different locations which are in KMUTT and Siam Square One to have a different demographic. The second method which is virtual interviewing, we held an interview via online calling. For the last method, we sent a survey link to other people and also posted it on social media.
+
+We have a total of 143 interviewees, 22 people from face-to-face interviews which are 10 people from KMUTT and 12 people from Siam Square One, 12 people from virtual interviews, and 109 people from online surveys. The users' feedback from face-to-face interviews and virtual interviews are also collected.
+
+\subsection{Preprocessing Process}
+
+After data has been collected, we clean out the data from users that do not live in Bangkok because we only have Bangkok restaurants. Those users might come from the online survey that we posted on social media.
+
+\subsection{Results}
+
+
+We collected data from 143 people which contains 5,102 interaction data. The data include user demographics, restaurant information, and their rating for each restaurant. The visualizations of the collected data are described in the following section.
+
+\begin{figure}[H]\centering
+\includegraphics[width=450pt]{./images/4DistributionofPeoplesLocation.png}
+\caption{Distribution of People’s Location}\label{fig:4DistributionofPeoplesLocation}
+\end{figure}
+
+Figure~\ref{fig:4DistributionofPeoplesLocation} shows the distribution of people’s location while doing the survey. The top 2 most locations are Thung Khru district which mainly KMUTT students and Pathum Wan district which is the center of Bangkok.
+
+\begin{figure}[H]\centering
+\includegraphics[width=250pt]{./images/4TotalNumberofInteractedRestaurantsperPerson.png}
+\caption{Total Number of Interacted Restaurants per Person}\label{fig:4TotalNumberofInteractedRestaurantsperPerson}
+\end{figure}
+
+Figure~\ref{fig:4TotalNumberofInteractedRestaurantsperPerson} shows the total number of interacted restaurants per person. Most people interact with 20 restaurants, which is the minimum number, but there are a lot of people who kindly do 60 interactions. The average number of interactions is 36 restaurants. In total, we got a total of 5,102 interactions from this survey.
+
+\begin{figure}[H]\centering
+\includegraphics[width=250pt]{./images/4VisualizationofPeoplesDemographic.png}
+\caption{Visualization of People’s Demographic}\label{fig:4VisualizationofPeoplesDemographic}
+\end{figure}
+
+Figure~\ref{fig:4VisualizationofPeoplesDemographic} shows the summary of demographics in our data. The left visualization in Figure~\ref{fig:4VisualizationofPeoplesDemographic} shows the gender distribution which is almost half-and-half for males and females. The right visualization shows the age distribution. The highest age range in our data is the age of 20 to 25 years old. There are also a few people aged around 30 to 35 years old and more than 50 years old only a little.
+
+\begin{figure}[H]\centering
+\includegraphics[width=250pt]{./images/4AverageScoreofEachRestaurantCategoryfromPeople.png}
+\caption{Average Score of Each Restaurant Category from People}\label{fig:4AverageScoreofEachRestaurantCategoryfromPeople}
+\end{figure}
+
+Figure~\ref{fig:4AverageScoreofEachRestaurantCategoryfromPeople} shows the average restaurant category score from all of our people. The score ranges from 0 to 100 which refers to hate and love respectively. The top three most favorite categories are Japanese restaurant, Thai restaurant, and shabu shabu restaurant respectively. The least favorite restaurant category is Chinese restaurants.
+
+\begin{figure}[H]\centering
+\includegraphics[width=200pt]{./images/4DistributionofUsersRatings.png}
+\caption{Distribution of User’s Ratings}\label{fig:4DistributionofUsersRatings}
+\end{figure}
+
+Figure~\ref{fig:4DistributionofUsersRatings} shows the distribution of the user’s rating in our data from -2 which means the user is not interested in the restaurant to 2 which the user is interested in that restaurant. The most rated score is 0 which is a neutral score.
+
+This collected user behavior data will be used to be our data set for training the models in our system.
+
+
+\subsection{Feedback}
+
+Other than collecting the user behavior data, we also get the users’ feedback after they use our data collection tool in order to understand and get insight from each user in detail. We obtained feedback on our tool by asking face-to-face.
+
+Firstly, we ask them about the pattern of their rating, what are the criteria to rate. From 22 people, most of them rated based on their preferences and the restaurant that they have visited. Furthermore, some of them rate a high score to an interesting restaurant that sometimes they have never visited before. Here is an example of feedback from a real user:
+
+\begin{quote}{Pai, 20 years old}
+“ My rating is based on the feeling of being like this restaurant is delicious while playing this application or click to the Facebook page and find that it looks good to me. Moreover, some restaurants I have visited before, I will give it a high score.
+
+Most of 5, it is my interest restaurants and has visited before. For an interesting restaurant but I have not visited yet, I will rate around 3 to 4.
+
+For 1, in my point of view, the name of that restaurant not interest to me or some of the restaurant didn’t have a picture, so I don’t want to give it a high score ”
+\end{quote}
+
+Besides this, most of our users have similar scoring behaviors as this user which we can conclude and assume that if a user rating with 5 means that he/she has visited that restaurant already. By this assumption there will be implicit feedback for our recommendation system.
+
+Then, we continue to ask that from our simple algorithm to recommend a restaurant, is there any interesting restaurant that matches your style. Surprisingly, 99\% of face-to-face users said that it can recommend a restaurant that matches their mind and if they are hungry, they will go to that restaurant. Below is the user that tends to go to the restaurant which comes from our suggestion.
+
+\begin{quote}{Waranya, 23 years old}
+“ I would like to go to the suggested restaurant, which is the first one from the system that recommended it to me. Moreover, for me, the picture of the restaurant plays a big role in restaurant consideration ”
+\end{quote}
+
+Lastly, we ask them if they have any suggestions for our system. We can conclude that they want to see more pictures of the restaurant with the recommended menu. So, we have to find another way to find a picture of the restaurant that has no picture. Also, for the restaurant’s menu problem, we currently cannot find a solution to this problem. Furthermore, the price preference in the registration part usually confuses them, so we already changed from only the Thai Baht (฿) interface to the Thai Baht with a price range for better understanding.
+
+\subsection{Training Data Usage}
+
+From our first plan in the first semester, we need to collect user behavior data for our model training process. We used this data to do an experiment on a collaborative filtering approach. However, we decided to change our recommendation system implementation to use the genetic algorithm in the second semester. This approach does not need any data to learn, so we did not use this training dataset for our final recommendation system.
+
+
+\section{User Journey Finalization}
+
+After we have done research, tested our user journey designed in the first semester, and received suggestions from our committees and our advisor, our user journey has been changed. Our final user journey of our application has been modified in 4 main aspects: login and registration, home screen, individual recommendation, and group recommendation.
+
+
+\subsection{Login and Registration}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4LoginandRegistrationUserJourneyChanges.png}
+\caption{Login and Registration User Journey Changes}\label{fig:4LoginandRegistrationUserJourneyChanges}
+\end{figure}
+
+The main change in the login and registration process is our system requires food preference information in order to generate the suggestion. In the first semester, we plan to do login as a guest which users are not required to set their preference and they can skip the preference setting in the registration, so we need to eliminate those flow out. As a result of the final user journey, users who want to register for an account must set their food preference before using our system.
+
+\subsection{Home Screen}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4HomeScreenUserJourneyChanges.png}
+\caption{Home Screen User Journey Changes}\label{fig:4HomeScreenUserJourneyChanges}
+\end{figure}
+
+In the previous semester, we assumed that users need to access the recommendation as fast as possible. We then designed it to have an individual recommendation as a home screen and users have to put a group pin code to enter a group recommendation. However, our advisor suggested that it will be confusing when people want to do a group recommendation and we all agreed that it is too hard to navigate to each functionality. As a result for the final user journey, we decided to add a home screen to our system which will help users use our application easier and eliminate the confusing navigation problem.
+
+\subsection{Individual Recommendation}
+
+\begin{figure}[H]\centering
+\includegraphics[width=280pt]{./images/4IndividualRecommendationUserJourneyChanges.png}
+\caption{Individual Recommendation User Journey Changes}\label{fig:4IndividualRecommendationUserJourneyChanges}
+\end{figure}
+
+In the first semester, the individual recommendation process is that users will see one suggested restaurant at a time and they have to select whether to go or not go to that shown restaurant. However, since we collected the feedback from users, we found that they wanted to see all of the suggested choices before selecting their final restaurant that they wanted to go to. As a result, we change the recommendation process to show all suggested restaurants at a time to users. Users then have to choose only one of the suggested choices as a final restaurant.
+
+\subsection{Group Recommendation}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4GroupRecommendationUserJourneyChanges.png}
+\caption{Group Recommendation User Journey Changes}\label{fig:4GroupRecommendationUserJourneyChanges}
+\end{figure}
+
+In our first design of the group recommendation, each member will see the same set of suggested restaurants and they have to select whether to go or not one by one. The recommendation will be finished when every member agrees to go to the same restaurant. However, our committees suggested that the recommendation might require group discussion. Therefore, they might need to see all of their choices for their group instead of individually choosing the restaurant one by one. The designed process also makes the decision time much longer if the group is too large and no one agrees on the same restaurant. As a result, we decided to change the process. The new process lets users see the same fixed-sized set of restaurants and they will see all of the suggested restaurants instead of one by one. The system will ask everyone to rank the restaurants by their preferences. After every member finishes ranking restaurants, the system will finalize a final decision to the group.
+
+
+\section{Web Application Result}
+
+\subsection{Server-side Result}
+
+\subsection{Data Service}
+
+\begin{figure}[H]\centering
+\includegraphics[width=200pt]{./images/4result_dataservice.png}
+\caption{Restaurant Local Data from Facebook}\label{fig:4result_dataservice}
+\end{figure}
+
+This data service component is implemented as Python scripts. Figure~\ref{fig:4result_dataservice} shows the information about the local fetched data from Facebook. This data will be read and transformed into the right format before sending it to the App Server to create a restaurant in the system.
+
+\subsection{App Server}
+
+App Server is implemented with TypeScript with Express web framework and has been deployed on Google Cloud App Engine. This component needs to listen to other components’ requests. The API specification is described in Table~\ref{tbl:4AppServerAPISpecification} below.
+
+\begin{table}[H]
+\caption{App Server API Specification}\label{tbl:4AppServerAPISpecification}
+\begin{tabularx}{\textwidth}{l|l|X} \hline\hline
+Method & Path & Description \\ \hline\hline
+\multicolumn{3}{l}{\textbf{Authentication}} \\ \hline\hline
+POST & /api/auth & Request for authentication token for user login\\ \hline\hline
+\multicolumn{3}{l}{\textbf{Users}}\\ \hline\hline
+GET & /api/users/<id> & Get user profile from user object id \\ \hline
+PUT & /api/users/<id> & Update user information \\ \hline
+PUT & /api/users/<id>/profile\_weight & Update user preference weights \\ \hline
+POST & /api/users & Create a new user \\ \hline
+GET & /api/users/has/<username> & Check whether is username is already existed in the system\\ \hline\hline
+\multicolumn{3}{l}{\textbf{Restaurants}}\\ \hline\hline
+GET & /api/restaurants/nearby & Get nearby restaurant by specifying coordination \\ \hline
+GET & /api/restaurants/search & Get restaurant by search query string \\ \hline
+POST & /api/restaurants & Create a new restaurant \\ \hline
+PUT & /api/restaurants/<id> & Update restaurant information \\ \hline\hline
+\multicolumn{3}{l}{\textbf{Restaurant’s Categories}}\\ \hline\hline
+GET & /api/categories/search & Get category by search query string \\ \hline
+PUT & /api/categories/<id> & Update category information \\ \hline
+POST & /api/categories & Create a new category \\ \hline\hline
+\multicolumn{3}{l}{\textbf{Recommendations}}\\ \hline\hline
+POST & /api/recommendations/init & Request for recommendation initialization this has to be called before getting the recommendation. \\ \hline
+POST & /api/recommendations/request & Get recommendation \\ \hline\hline
+\end{tabularx}
 \end{table}
 
-\section{System Specifications and Requirements}
+\subsection{Recommender}
 
-\section{Hardware Module 1}
-\subsection{Component 1}
-\subsection{Logical Circuit Diagram}
+Recommender is implemented with Python with Flask web framework and has been deployed on Google Cloud App Engine. This component needs to listen to other App Server’s requests. The API specification is described in Table~\ref{tbl:4RecommenderAPISpecification} below.
 
-\section{Hardware Module 2}
-\subsection{Component 1}
-\subsection{Component 2}
+\begin{table}[H]
+\caption{Recommender API Specification}\label{tbl:4RecommenderAPISpecification}
+\begin{tabularx}{\textwidth}{l|l|X} \hline\hline
+Method & Path & Description \\ \hline\hline
+POST & /recommend/<type> & Request a set of suggested restaurants. “type” is needed to specify a different version of the recommendation model. \\ \hline\hline
+\end{tabularx}
+\end{table}
 
-\section{Path Finding Algorithm}
+\subsection{Database}
 
-\section{Database Design}
+\begin{figure}[H]\centering
+\includegraphics[width=400pt]{./images/4mongodashboard.png}
+\caption{Group Recommendation User Journey Changes}\label{fig:4mongodashboard}
+\end{figure}
 
-\section{GUI Design}
+Our NoSQL database is deployed on MongoDB Atlas which is an official cloud deployment tool for MongoDB. Figure~\ref{fig:4mongodashboard} shows the monitoring dashboard of our database.
+
+
+\subsection{User Interface Result}
+
+Our user interface implementation has a lot of changes from our design since we do the testing from our design and committees’ suggestions. The main changes are recommendation flow and home screen. The recommendation flow is changed both for individual and group. In the individual flow, the application will show multiple restaurants instead of show it one-by-one. In the group flow, every member needs to rank the shown restaurant instead of keep finding the restaurant that they all agreed on. Lastly, in the first design, users will see an individual recommendation right away when they are logged in, so in the final implementation, we add a home screen for better navigation for users and easier to understand.
+
+In the following sections, we will present our final user interface implementation including login, registration, home screen, individual recommendation, group recommendation, and favorite list.
+
+
+\newpage
+\subsubsection{Login}
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_LoginPageUserInterface.png}
+\caption{Login Page User Interface}\label{fig:4ui_LoginPageUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Username and password fields let users type their account’s username and password.
+\item Login button lets users confirm their login information.
+\item Register link button takes users to the registration page.
+\end{enumerate}
+
+When users open the application for the first time, they will see the login page. On this page, users can put their username and password in the above fields (1). After that, they can tap on the Login button (2) to continue. The system will validate the input information and let the user see the home screen. However, if they do not have any account yet, they can tap on the Register link button (3) to go to the registration page.
+
+\newpage
+\subsubsection{Registration}
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_RegistrationUserInterface.png}
+\caption{Registration User Interface}\label{fig:4ui_RegistrationUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item New username and password input field.
+\item Next button lets users continue the registration process.
+\item Login link button takes users to the previous login page.
+\item Food preference page lets users set their food preference.
+\item Food preference ranking box let users reordering their food preference by dragging each food preference displayed in the list.
+\item Done button lets users finish their registration process and access the home screen.
+\end{enumerate}
+
+The page is for users that do not have an account yet. They can choose their new username and password by inputting in the fields (1). They can tap on the Next button (2) to continue the process or go back to the login page by tapping the Login link button (3). After they tapped on the Next button (2), the food preference page (4) will be shown to the user. They need to rearrange the food preference items in the list to the love box (5) by dragging each item with a total of 5 selected items. After they select exactly 5 items, they can tap on the Done button (6) to finish the registration and they will be redirected to the home screen.
+
+\newpage
+\subsubsection{Home Screen}
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_HomeScreenUserInterface.png}
+\caption{Home Screen User Interface}\label{fig:4ui_HomeScreenUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Individual Eating button takes users to individual recommendation confirmation pages.
+\item Group Eating section lets users create and join groups for a group recommendation.
+\item Your Favorite button takes users to their favorite restaurant list page.
+\item Edit Preference button takes users to the previous food preference page to edit their preference again.
+\item About button takes users to the about section.
+\item Logout Button let users sign out from the system.
+\end{enumerate}
+
+After users are logged in or complete the registration, they will see the home screen page shown in Figure~\ref{fig:4ui_HomeScreenUserInterface}. In this page, users can navigate to individual eating (1), group eating (2), favorite restaurant list (3), edit preference page (4) and about page (5). Users can log out by tapping on the Logout button (6).
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_LanguageSwitchingUserInterface.png}
+\caption{Language Switching User Interface}\label{fig:4ui_LanguageSwitchingUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Switch language button lets users change the display language for an entire application.
+\end{enumerate}
+
+Our application supports multiple display languages which include Thai and English. Users can switch the display language with the home screen from the top button labelled “ไทย” or “EN”. Note that when switching the language, not only the home screen display language will be changed, but also an entire application.
+
+\newpage
+\subsubsection{Individual Recommendation}
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_IndividualRecommendationConfirmationUserInterface.png}
+\caption{Individual Recommendation Confirmation User Interface}\label{fig:4ui_IndividualRecommendationConfirmationUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Map lets users see the recommendation location or change the pin to desired location. It can be zoomed in and out and panned to any direction.
+\item Search location button lets users search a location by keyword.
+\item Target recommendation type selection includes restaurant, dessert shop and bar.
+\item Prefer price selection includes cheaper than 100 baht, 100 - 250 baht, 250 - 500 baht, and more than 500 baht.
+\item Next button lets users start an individual recommendation with the current setting.
+\end{enumerate}
+
+When users tap on the individual eating button in the home screen, users will see this individual confirmation page before starting the recommendation. In this confirmation page, users can change the recommendation location in the map (1) by panning to the target location or search location by keyword (2), change target recommendation type (3), and their preferred price (4). If users are satisfied with their setting, they can tap on the Start button (5) to start an individual recommendation.
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_IndividualRecommendationUserInterface.png}
+\caption{Individual Recommendation User Interface}\label{fig:4ui_IndividualRecommendationUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Recommended restaurant list.
+\item Detail of each restaurant. When users tap on each restaurant, the restaurant item will be expanded to show more information.
+\item Save to your favorite button lets users save each restaurant to their favorite list.
+\end{enumerate}
+
+When users start the individual recommendation, they will see 10 suggested restaurants shown in the list (1). They can choose to see an additional 10 restaurants at the end of the list. They can tap on each restaurant to see the details (2) and tap it again to collapse it. Moreover, they can add each restaurant to their favorite restaurant list by tapping the save button (3).
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_IndividualRecommendationSelectionUserInterface.png}
+\caption{Individual Recommendation Selection User Interface}\label{fig:4ui_IndividualRecommendationSelectionUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Users can choose their target restaurant by dragging them into the Love box.
+\item Finish button lets users finish the recommendation. This button will be available only if users select exactly 1 restaurant.
+\end{enumerate}
+
+The goal of the individual recommendation page is to choose exactly one restaurant to be the target restaurant. The process can be done by dragging the restaurant that users want into the Love box. They can select more than 1 restaurant from the box above, but ultimately, they need to clear the selected list to have only 1 restaurant in order to finish the recommendation. Finally, if they want to finish the recommendation, they can tap on Finish button (2) to complete the current recommendation.
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_IndividualRecommendationSuccessUserInterface.png}
+\caption{Individual Recommendation Success User Interface}\label{fig:4ui_IndividualRecommendationSuccessUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Recommendation rating dialog lets users rate how satisfied they were with the recommendation.
+\item Restaurant detail of the final restaurant.
+\item Home button takes users back to the home screen.
+\end{enumerate}
+
+After users finish the recommendation, the system will show the recommendation success page. The recommendation rating dialog will be prompted to let users rate the recommendation and use this score for the model's further improvement. Users can see the details of the selected restaurant (2) and go back to the home screen by tapping the Home button (3).
+
+\newpage
+\subsubsection{Group Recommendation}
+\begin{figure}[H]\centering
+\includegraphics[height=250pt]{./images/4ui_GroupCreatingUserInterface.png}
+\caption{Group Creating User Interface}\label{fig:4ui_GroupCreatingUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Create Group button lets users create an eating group that other people can join.
+\item Pin Code used for group joining for other people.
+\item Share button lets users use QR code or a link to invite other people.
+\item Group customization lets users who are a head of the group change the group setting.
+\item Members list shows current members who are in the group. The crown icon indicates that the person is a head of the group.
+\item QR code for invite other people
+\item Copy link button lets users quickly share an invitation through the link.
+\end{enumerate}
+
+When a group of people want to start a group recommendation, they need to firstly create a group. Creating a group can be done by tapping the Create Group button (1) on the home screen. After that, the person who creates a group will see a group confirmation page (the middle screen on Figure~\ref{fig:4ui_GroupCreatingUserInterface}). The page contains group pin code (2) that lets other people join the group, group customization setting (4) that lets a head of the group change the group setting, and member list (5) that shows all current members on the group. Moreover, users can tap on the Share button (3) to open a share sheet which contains a QR code (6) and the copy link button (7), so that other members can join the group easier. However, this group cannot be started yet, because there is only one member, so users need to wait for the other members.
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_GroupJoiningUserInterface.png}
+\caption{Group Joining User Interface}\label{fig:4ui_GroupJoiningUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Join Group button makes a join group dialog appear to users.
+\item Pin code input field lets users put their group pin code that they want to join.
+\item Join button lets users join the group with the input pin code.
+\end{enumerate}
+
+Next, if other users want to join the created group, they can tap on the Join Group button (1) and the join group dialog will be prompted. The dialog lets users input the group pin code obtained from the created group. Lastly, users can tap on the Join button to enter the group if the group pin code is valid.
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_JoinedGroupUserInterface.png}
+\caption{Joined Group User Interface}\label{fig:4ui_JoinedGroupUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Updated member list.
+\item Start button
+\end{enumerate}
+
+After other people have joined the group, the member list will be updated (1). Each member can set their own preferred price (2), however, one the head of the group can change the group setting. When all members join and  are ready to start a group recommendation, the head can tap on the Start button to start the group recommendation.
+\begin{figure}[H]\centering
+\includegraphics[height=250pt]{./images/4ui_GroupRecommendationUserInterface.png}
+\caption{Group Recommendation User Interface}\label{fig:4ui_GroupRecommendationUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Drag the item to the box above and rearrange them by users preference.
+\item Finish button for users who finished rearranging already.
+\item Waiting dialog.
+\end{enumerate}
+
+When the group recommendation is started, every member will see the same set of the suggested restaurants. The goal of this group recommendation page is that every member needs to rearrange the shown restaurants by dragging the restaurant up and down (1) according to their preference. After users rearrange all of the 6 restaurants, they can tap on the Finish button (2) to submit their information. However, since the system needs to collect every member’s information, if there is someone who has not finished their rearranging yet, the waiting dialog will be shown (3).
+\begin{figure}[H]\centering
+\includegraphics[height=300pt]{./images/4ui_GroupRecommendationSuccessUserInterface.png}
+\caption{Group Recommendation Success User Interface}\label{fig:4ui_GroupRecommendationSuccessUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Summary button brings up the summary of the recommendation.
+\item Home button takes users back to the home screen.
+\end{enumerate}
+
+When every member taps on the Finish button on the previous page, the group recommendation success screen will be shown. This page is very similar to individual recommendations, but it has the Summary button (1) that shows the summary of ranking for each restaurant. Lastly, users can go back to the home screen by tapping the Home button (2).
+
+\newpage
+\subsubsection{Favorite List}
+\begin{figure}[H]\centering
+\includegraphics[height=250pt]{./images/4ui_FavoriteRestaurantListUserInterface.png}
+\caption{Favorite Restaurant List User Interface}\label{fig:4ui_FavoriteRestaurantListUserInterface}
+\end{figure}
+
+\begin{enumerate}
+\item Your Favorite button takes users to their favorite restaurant list page.
+\item Favorite restaurant list page.
+\end{enumerate}
+
+Users can view their previous saved restaurant by tapping on the Your Favorite button (1) in the home screen and the favorite restaurant list page (2) will be shown to users. Users can view the restaurant information by tapping on each restaurant.
+
+
+\section{Model Experiment}
+
+%TODO check for update
+In this first semester, we tried to use model-based recommendation which is a collaborative filtering technique. However, this technique requires a large amount of user behavior data and it is very complex for implementing group recommendation. In order to overcome this problem, we decided to change from collaborative filtering technique to genetic algorithm technique which does not require any primitive user behaviour data and it can be implemented to support both individual and group recommendation with a simpler structure. In this section, we show the first experiment with collaborative filtering which we have done in the first semester, then we show the result of the genetic algorithm approach which is the final design of our proposed algorithm.
+
+\subsection{Data Set}
+
+To conduct the experiment, we use the data from our data collection process both restaurant and user behavior data, which contains 11,175 restaurants with restaurants’ profiles and 143 users with 5,102 users’ ratings.
+
+\subsubsection{Data Preparation}
+
+We select some columns of user behavior data to be used in this experiment including 'user\_id', 'username', 'res\_id', 'res\_name', and 'rating' as the Figure~\ref{fig:4SelectedColumnsfromUserBehaviorData} below.
+
+\begin{figure}[H]\centering
+\includegraphics[width=200pt]{./images/4SelectedColumnsfromUserBehaviorData.png}
+\caption{Selected Columns from User Behavior Data}\label{fig:4SelectedColumnsfromUserBehaviorData}
+\end{figure}
+
+For ‘user\_id’ refers to the identification of the user which is in the form of object ID with a unique identifier as Figure~\ref{fig:4SelectedColumnsfromUserBehaviorData}, ‘username’ is the name of the user which cannot be duplicated, ‘res\_id’ refers to the identification of each restaurant with a unique identifier in the form of object ID as same as user\_id, ‘res\_name’ refers to the name of the restaurants which we already clean the duplicated restaurant out of a database, and ‘rating’ refers to the user’s rating for each restaurant which starts from -2 to 2 [-2, -1, 0, 1, 2].
+
+\begin{figure}[H]\centering
+\includegraphics[width=200pt]{./images/4UserIDinObjectIDPattern.png}
+\caption{User ID in Object ID Pattern}\label{fig:4UserIDinObjectIDPattern}
+\end{figure}
+
+Thus, for our convenience, we converted ‘user\_id’ from object ID to real number or integer pattern and converted ‘rating’ from -2 to 2 into 1 to 5 which is the standard pattern for better understanding. Then, we will get the dataset as Figure~\ref{fig:4SampleofSelectedUserBehaviorData} below.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4SampleofSelectedUserBehaviorData.png}
+\caption{Sample of Selected User Behavior Data}\label{fig:4SampleofSelectedUserBehaviorData}
+\end{figure}
+
+For the restaurants’ dataset, we select some related columns which are ‘id’, ‘name’, ‘cats’, ‘cats\_ids’, ‘price\_range’, ‘rating’, ‘likes’, ‘lat’, and ‘lon’ as in the Figure~\ref{fig:4SelectedColumnsfromRestaurantsData}  below.
+
+\begin{figure}[H]\centering
+\includegraphics[width=200pt]{./images/4SelectedColumnsfromRestaurantsData.png}
+\caption{Selected Columns from Restaurants Data}\label{fig:4SelectedColumnsfromRestaurantsData}
+\end{figure}
+
+In ‘id’ column refers to the unique identification of each restaurant which in object ID format, ‘name’ is the restaurants’ name, ‘cats’ refer to the category of each restaurant e.g. Thai restaurant, Korean restaurant, Fast food restaurant, etc. which ‘cat\_ids’ is the unique object ID of each category, ‘price\_range’ refers to the price of each restaurant which is -1 and 1 to 4 [-1, 1, 2, 3, 4] by -1 means there is no price preferences in that restaurant’s profile, 1 means price is lower than 100 baht, 2 means 100 - 250 baht, 3 means 251 - 500 baht, and 4 means more than 500 baht, ‘rating’ is the average rating of each restaurant which come from the Facebook page, ‘lat’ and ‘lon’ columns are the latitude and longitude of each restaurant.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4SampleofSelectedRestaurantData.png}
+\caption{Sample of Selected Restaurant Data}\label{fig:4SampleofSelectedRestaurantData}
+\end{figure}
+
+Figure~\ref{fig:4SampleofSelectedRestaurantData} is the example data of the selected restaurant that we are going to use in this experiment.
+
+\subsection{Collaborative Filtering Technique}
+
+After data preparation, we start to build a restaurant recommender for individuals by using user-based collaborative filtering which we referenced from [34]. By the way, this approach is just only one of several recommendation techniques. In user-based collaborative filtering, we assumed that if users like similar items, users are similar to each other too by we start to discover the similarity of users and then recommend the item of other similar users liked.
+
+Let us give an example similar to this technique, Alice likes to go to restaurants A, B, and C. Bob likes to go to restaurants A and B. Alice and Bob are similar due to the fact that they like restaurants A and B together and Alice has never seen restaurant C before. So, if we want to recommend a restaurant for Bob, we will recommend restaurant C.
+
+\subsubsection{Discover the Similarity of Users}
+
+We selected cosine similarities to be the methods to find the similarity. As we know that this method relies on vector representation which in this experiment will represent the users with a list of each restaurant ratings. We will represent it into a user-restaurant matrix with the rating values as Figure~\ref{fig:4SomePartoftheUser-restaurantMatrix} below.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4SomePartoftheUserrestaurantMatrix.png}
+\caption{Some Part of the User-restaurant Matrix}\label{fig:4SomePartoftheUserrestaurantMatrix}
+\end{figure}
+
+So, the more restaurants in the database, the more dimensionality per user by the value inside the matrix represents a rating from each user which 0 means that the user has not yet rated that restaurant. If the restaurants have been rated, it will show the number starting from 1 to 5 depending on the users’ rating.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4FunctiontoFindaSimilarityBetweenUser.png}
+\caption{Function to Find a Similarity Between User}\label{fig:4FunctiontoFindaSimilarityBetweenUser}
+\end{figure}
+
+Figure~\ref{fig:4FunctiontoFindaSimilarityBetweenUser} is a function to find a user similarity with cosine similarity by selecting only the top 3 users that have the most similarity to the target user. From this function, it will return the user ID of the top 3 users with a similarity score of each user with the target user as the example in Figure~\ref{fig:4ReturnValuefromsimilaruesrFunction} below.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4ReturnValuefromsimilar_uesrFunction.png}
+\caption{Return Value from similar\_user Function}\label{fig:4ReturnValuefromsimilaruesrFunction}
+\end{figure}
+
+From Figure~\ref{fig:4ReturnValuefromsimilaruesrFunction}, we try to find the similarity of users of user ID number 1. As a result, we get the top 3 user IDs with the highest similarity which is user ID numbers 3, 134, and 5 with the similarity scores of 0.8653, 0.8256, and 0.8086 respectively.
+
+\subsubsection{Recommendation}
+
+After we get the top 3 users that have the most similarity with the target user, next, we try to recommend the restaurant through these similar users.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4RestaurantsRecommendationFunctionofUserbasedCollaborativeFilteringMethod.png}
+\caption{Restaurants Recommendation Function of User-based Collaborative Filtering Method}\label{fig:4RestaurantsRecommendationFunctionofUserbasedCollaborativeFilteringMethod}
+\end{figure}
+
+We create a function to make a restaurant recommendation through a user-based collaborative filtering method as Figure~\ref{fig:4RestaurantsRecommendationFunctionofUserbasedCollaborativeFilteringMethod} by setting the function to recommend the top 10 recommended restaurants to users. We start to create a user-restaurant matrix of the top 3 users and then calculate the average ratings of each restaurant across 3 users. Moving on to our target user, we start to create a matrix similar to similar users and then generate a list of restaurants that the user has not seen yet which represent the value of 0.
+
+Lastly, we get the average ratings from similar users to filter only restaurants that the target user has not seen but have ratings from the top 3 similar users. After that, we bring only the top 10 restaurants to recommend.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4ExampleofTop10RecommendedRestaurantsforUser.png}
+\caption{Example of Top 10 Recommended Restaurants for User}\label{fig:4ExampleofTop10RecommendedRestaurantsforUser}
+\end{figure}
+
+Figure~\ref{fig:4ExampleofTop10RecommendedRestaurantsforUser} is the final result from the recommend\_item function which recommends user ID number 1 by sorting the average ratings of the top 3 similar users from highest to lowest. As you can see from the figure, the category of each restaurant is in the same direction e.g. Thai restaurant category which occurs 3 times, or noodle house category which occurs 2 times.
+
+\begin{figure}[H]\centering
+\includegraphics[width=200pt]{./images/4AverageRatingsofTop10RecommendedRestaurants.png}
+\caption{Average Ratings of Top 10 Recommended Restaurants}\label{fig:4AverageRatingsofTop10RecommendedRestaurants}
+\end{figure}
+
+Here are the average ratings of the top 10 restaurants for user ID number 1 as shown in Figure~\ref{fig:4AverageRatingsofTop10RecommendedRestaurants}. From our observation, we found that this user loves to eat noodles and usually gives the restaurant in this category a high score. So, our assumption that was mentioned in the theory of collaborative filtering, a group of people with similar tastes often tend to like similar items, is true.
+
+However, the user-based collaborative filtering cannot serve our desires due to its limitation which is about the cold-start problem. New users in our platform cannot get a suitable recommendation for their preferences because this user has an empty list of preferences. Moreover, we discovered that this algorithm cannot recommend based on the location of the user, it just recommends based on the similarity of the user. For example, user A wants to get a recommendation from the Siam Paragon area, but her/his preference never rate the Siam Paragon area before and always rate the restaurant around KMUTT. As a result, the similarity of users to user A will be around KMUTT which cannot be recommended in the Siam Paragon area.
+
+\subsection{Genetic Algorithm Technique}
+
+%TODO check for update
+
+Since our project recommends restaurants for both individuals and groups, we need to examine how well this algorithm works for both of them. The algorithm is implemented with Python by ourselves. The full code is provided in the appendix. In this section, we show the result of individual and group recommendation generation and rank aggregation in group recommendation.
+
+\subsubsection{Individual Recommendation Result}
+
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4SampleofIndividualsPreferences.png}
+\caption{Sample of Individual’s Preferences}\label{fig:4SampleofIndividualsPreferences}
+\end{figure}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4ResultofIndividualRecommendationAlgorithm.png}
+\caption{Result of Individual Recommendation Algorithm}\label{fig:4ResultofIndividualRecommendationAlgorithm}
+\end{figure}
+
+For individual recommendation results, we tested the algorithm with the sample of user’s preferences as Figure~\ref{fig:4SampleofIndividualsPreferences}. Besides, we selected Siam Paragon as a restaurant's recommendation location for this sample. The result after testing is not very effective as we can see from Figure~\ref{fig:4ResultofIndividualRecommendationAlgorithm} which this user gave Thai restaurants the first rank but the system recommends Thai restaurants only one restaurant. Nevertheless, the system recommends Japanese restaurants the most, including Sushi restaurants, which is the second rank of this user. To sum up, this restaurant recommendation algorithm is not very effective due to the restaurant data problems whether there is not enough type of restaurant around that location or incorrect restaurant tag.
+
+\subsubsection{Group Recommendation Result}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4SampleGroupofTwosPreferences.png}
+\caption{Sample Group of Two’s Preferences}\label{fig:4SampleGroupofTwosPreferences}
+\end{figure}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4ResultofGroupRecommendationAlgorithm.png}
+\caption{Result of Group Recommendation Algorithm}\label{fig:4ResultofGroupRecommendationAlgorithm}
+\end{figure}
+
+As a part of the group recommendation, developers tested the algorithm using a 2-member group with restaurant preferences as shown in  Figure~\ref{fig:4SampleGroupofTwosPreferences} and using Siam Paragon as a restaurant's recommendation location as well as individual recommendation. The system can recommend 6 restaurants according to the preferences of the members as shown in Figure~\ref{fig:4ResultofGroupRecommendationAlgorithm}. From the figure, we can see that all restaurants match with the users preferences including Korean, Thai and Japanese restaurants. Moreover, the fitness value of the generation dramatically increased to 75.
+
+\subsubsection{Rank Aggregation Result}
+
+%TODO check for update
+\begin{figure}[H]\centering
+\includegraphics[width=400pt]{./images/4SampleofSuggestedRestaurantsandRanksfromUsers.png}
+\caption{Sample of Suggested Restaurants and Ranks from Users}\label{fig:4SampleofSuggestedRestaurantsandRanksfromUsers}
+\end{figure}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4FinalScorefromtheSample.png}
+\caption{Final Score from the Sample}\label{fig:4FinalScorefromtheSample}
+\end{figure}
+
+After the genetic algorithm generates a set of suggested restaurants and lets each user rank the restaurants based on their preferences, rank aggregation finalizes that information to show the most suitable final restaurant for that group by computing the score for each restaurant. Figure~\ref{fig:4SampleofSuggestedRestaurantsandRanksfromUsers} shows the sample of generated restaurants that has shown to users and how each user ranks their restaurant. After that the rank aggregation algorithm calculates the score for each restaurant as stated in Figure~\ref{fig:4FinalScorefromtheSample}. As a result, the final restaurant for this input is a restaurant named Hua Pla Chongnonsea with a highest score of 3.4. This result shows that our finalization process considers not only users’ ranking but also restaurant’s type and cost.
+
+
+\section{Evaluation Result}
+
+\subsection{User Evaluation}
+%TODO
+
+\subsection{Application Performance Evaluation}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4ApplicationPerformanceEvaluationRequest.png}
+\caption{Application Performance Evaluation Request}\label{fig:4ApplicationPerformanceEvaluationRequest}
+\end{figure}
+
+For the application performance evaluation, we do the load test and monitor the latency of our main components: App Client, App Server, and Recommender. The load test is performed with 100 concurrent requests which simulate the scenario that 100 users are using the application at the exact same time.
+
+Figure~\ref{fig:4ApplicationPerformanceEvaluationRequest} shows a request of application performance evaluation. All 3 services can handle 100 concurrent requests without errors and have an average response time of 4,747.69 milliseconds. Recommender takes the longest response time which is 11,243 milliseconds. Note that this is a scenario where 100 users request for a recommendation at the same time, if the number of concurrent users is lower, the response time will be decreased dramatically. It also has the highest sent data size which is 873.33 KB per second because it needs a set of available nearby restaurants from the server. On the other hand, App Client has the highest received data size because servers send entire reference pages, related scripts and assets to users.
+
+All of our evaluation is tested with the production server deployment and database. However, since we use Google Cloud Platform for our deployment, it supports auto scaling and it manages all of the network traffic for us. So, it can support more concurrent users and give us a better performance. Although the auto scaling setup is very easy, the deployment cost will be charged considerably higher. The other factor we cannot test with multiple instances is Google Cloud Platform gives us a quota of 1 instance per service and our request to increase the quota is ungranted due to a minimal usage.
+
+Although a number of 100 concurrent requests is too small to conclude the services’ performance, it is sufficient for the current development process. We can use the deployed services to do an open beta testing without any issue. After we gain a larger number of usage from users, we can request more number of instance quota from Google Cloud so that our services can serve a higher number of concurrent requests.
+
+\subsection{Recommendation Evaluation}
+
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4LineGraphbetweenGenerationandFitnessValueofGeneticAlgorithm.png}
+\caption{Line Graph between Generation and Fitness Value of Genetic Algorithm}\label{fig:4LineGraphbetweenGenerationandFitnessValueofGeneticAlgorithm}
+\end{figure}
+
+We evaluated our recommendation algorithm by observing and analyzing the performance from the line graph as shown in Figure~\ref{fig:4LineGraphbetweenGenerationandFitnessValueofGeneticAlgorithm}. Each line in the figure represents each fitness generation by running ten times to compare each run time and check the existence of the local maximum problem. The results present that all run times can increase their fitness through generation continuously even though each run time does not start at the same value. Besides that not once was stuck at the local maximum as we can see from this graph that all of them terminate themselves after reaching fitness value equal to 66. So, we will continue to stick with these parameters as represented in Figure~\ref{fig:4ParametersofGeneticAlgorithminthisRecommender}.
+
+\begin{figure}[H]\centering
+\includegraphics[width=200pt]{./images/4ParametersofGeneticAlgorithminthisRecommender.png}
+\caption{Parameters of Genetic Algorithm in this Recommender}\label{fig:4ParametersofGeneticAlgorithminthisRecommender}
+\end{figure}
+
+We set up for one generation to have 100 chromosomes by selecting the top 30 chromosomes to be paired up 50 pairs for reproduction. Moreover, the rate of crossover and mutation are 0.7 and 0.5 respectively. We keep this number to balance the exploration and exploitation which are able to make the performance better.
+
+However, the results from this graph show us that we can reduce the number of termination conditions which is 15 to lower.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4GeneticAlgorithmExecutionTimewith6Genes.png}
+\caption{Genetic Algorithm Execution Time with 6 Genes}\label{fig:4GeneticAlgorithmExecutionTimewith6Genes}
+\end{figure}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/4GeneticAlgorithmExecutionTimewith10Genes.png}
+\caption{Genetic Algorithm Execution Time with 10 Genes}\label{fig:4GeneticAlgorithmExecutionTimewith10Genes}
+\end{figure}
+
+We measure the execution time of our genetic algorithm implementation. Figure~\ref{fig:4GeneticAlgorithmExecutionTimewith6Genes} shows the execution time with the total number of 6 genes in each chromosome which is used in group recommendation. The average execution time is 81 milliseconds. Figure~\ref{fig:4GeneticAlgorithmExecutionTimewith10Genes} shows the execution time with the total number of 10 genes in each chromosome which is used in individual recommendation. The average execution time is 165 milliseconds. We can conclude that the algorithm can deliver a fast suggestion generation with less than 1 second of both individual and group recommendations. Moreover, if we reduce the number of termination conditions, we can save even more execution time.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%% Experiments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Implementation Results}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-You can title this chapter as \textbf{Preliminary Results} or \textbf{Work Progress} for the progress reports. Present implementation or experimental results here and discuss them.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%% Conclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusions}
 
-This chapter is optional for proposal and progress reports but 
-is required for the final report.\cite{shen04}
-
 \section{Problems and Solutions}
-State your problems and how you fixed them.
+
+\subsection{User and Restaurant Data}
+
+Our project heavily relies on dataset both restaurant and user behavior data. However, the data we need for this project is not publicly available. Most of the dataset we found is from other countries, but we aim to develop this system for Thai people. The information about restaurant categories and user behavior of Thai people and other countries is different from each other.
+
+To solve this problem, we need to collect the data by ourselves which takes much longer than we expected. We try to find the public data that serves our system requirement. The restaurant data can be obtained by using Thai Chana and Facebook Graph API. The user behavior is collected by face-to-face and online interviews and online surveys.
+
+Even though we can find public restaurant data, the data is not large enough to cover all of the restaurants in Bangkok. The restaurant data outside the center of Bangkok is still insufficient. From our tested results at KMUTT location, there are only 15 restaurants in a range of 1 kilometer. To solve this problem, we expanded the nearby range to be 3 kilometers which can find many more restaurants. However, in order to solve the insufficient data problem, we might need to find other data sources that can give us a higher number of restaurants.
+
+\subsection{Restaurant Images from Facebook Page}
+From our survey, we found that restaurant images are a major factor in restaurant consideration. People tend to choose restaurants from their photos which can show how tasty the food and restaurant environment are. However, only 30\% of restaurants in our database have images. Moreover, 30\% of restaurants contain unrelated images. Thus, only a few restaurants in our database have meaningful images that represent the food and their restaurant.
+
+We cannot find the best approach to solve this problem yet. We try to add a default icon for the restaurants that do not have an image. However, adding a default icon does not help in the restaurant consideration process. Another approach is to use additional external services such as Google Place API to obtain images.
+
+\subsection{Restaurant Duplication}
+Since the restaurant data collected from Facebook page data, it does not guarantee that one restaurant can have only one Facebook page because it is user generated data. Because of that, our database contains duplicate restaurant data which is the problem. Users should not see the duplicate data in their suggestion.
+
+To solve this issue, we create a duplication checking process to check the distance between 2 restaurants and the name similarity. The process will keep only more detailed restaurants in the database. This process can eliminate up to 2,000 restaurants which can clear almost all of the duplication. However, due to a human error in user generated data, some of the duplicated restaurants have incorrect location data which our checking process cannot detect because it is still out of checking distance range. So, there is some restaurant duplication in our database but it is very few which is acceptable.
+
+\subsection{Restaurant Category Information}
+The most important information needed in our system is restaurant categories such as Thai, Japanese and Korean restaurants. However, since we use Facebook page data which is user generated data to be our restaurant data, it has a main problem which is incorrect information. From our further investigation, we found that many restaurants in our database have incorrect restaurant category data. There is some restaurant that does not have a main category tag, for example, it has a sushi tag but it does not have a Japanese restaurant tag.
+
+We solved a missing main tag problem by inserting the main tag for the related tags. For example, if the restaurant has a sushi tag, the system will insert Japanese tag automatically. However, with this solution, the system inserts the main tag for only 400 restaurants which is too less from our expectation. Thus, the restaurant category information is still an issue and the misinformation cannot be solved for all restaurants in our database.
+
+\subsection{Restaurant Distance Information}
+%TODO check for update
+Currently, we calculate distance between users and restaurants using displacement from 2 coordinates. The problem from this calculation is that the calculated distance does not mean the actual route distance because the calculation does not consider the actual possible route in the map. Users frequently face the situation where the shown distance is very small but when they choose to see the actual route to the restaurant, it is a much longer distance.
+
+To solve this problem, we can use additional route generating API such as Google Map API. But since we want to keep a simple structure for a current development phrase and keep our billing cost to a minimum, this solution is planned to be our future work.
 
 \section{Future Works}
-What could be done in the future to make your projects better.
+
+We can divide our future works into 3 parts which are dataset, web application and recommendation improvement. In the dataset improvement, we could improve the restaurant image problem by using other external services or try to find alternative data sources that provide us more accurate information. In web application improvement, we plan to add a group chat feature to improve the discussion process in group recommendation. Lastly, in the recommendation improvement, we can try to tune the parameters and do more experiments of our genetic algorithm, so the performance and users’ satisfaction will be increased.
+
+\begin{figure}[H]\centering
+\includegraphics[width=400pt]{./images/5LINEMiniAppIntegration.png}
+\caption{LINE Mini App Integration}\label{fig:5LINEMiniAppIntegration}
+\end{figure}
+
+%TODO check for update
+Moreover, in the web application improvement, we could integrate our existing application with LINE Mini App. Figure~\ref{fig:5LINEMiniAppIntegration} shows the 3 main benefits from this integration. The first one is, users can easily add the application to their LINE home screen without any installation. For the next one, users can invite friends via individual and group LINE chat. Lastly, users can easily see and join a group within LINE chat.
+
+\section{Conclusion}
+
+Restaurant recommendation system for individuals and groups is a web application with a recommendation system which supports Thai restaurants located in Bangkok. The web application makes users access and use the recommendation system at ease. It provides a friendly user interface to people. The recommendation system is implemented with the genetic algorithm which supports both individual and group recommendation with a simple structure. It can generate a decent suggestion and consume only little execution time. Our system can reduce time taken for restaurant decision making. From our feedback gathering, people are mostly satisfied with our recommendation. For further improvement, we could improve our restaurant dataset and tune our genetic algorithm to generate even more pleasant suggestions.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1737,7 +2455,7 @@ What could be done in the future to make your projects better.
 
 %%%% Comment this in your report to show only references you have
 %%%% cited. Otherwise, all the references below will be shown.
-\nocite{*}
+%\nocite{*}
 %% Use the kmutt.bst for bibtex bibliography style 
 %% You must have cpe.bib and string.bib in your current directory.
 %% You may go to file .bbl to manually edit the bib items.

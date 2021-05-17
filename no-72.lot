@@ -6,14 +6,13 @@
 \contentsline {table}{\numberline {2.3}{\ignorespaces NoSQL Types and Description}}{20}{table.2.3}%
 \contentsline {table}{\numberline {2.4}{\ignorespaces Mongoose’ Schema Types}}{21}{table.2.4}%
 \addvspace {0em}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Database Collection and Description}}{60}{table.3.1}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Restaurant Schema}}{60}{table.3.2}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces User Schema}}{60}{table.3.3}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Recommendation Schema}}{61}{table.3.4}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Category Schema}}{61}{table.3.5}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Favorite Schema}}{61}{table.3.6}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces test table method1}}{68}{table.3.7}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Database Collection and Description}}{61}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Restaurant Schema}}{61}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces User Schema}}{61}{table.3.3}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Recommendation Schema}}{62}{table.3.4}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Category Schema}}{62}{table.3.5}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Favorite Schema}}{62}{table.3.6}%
 \addvspace {0em}
-\contentsline {table}{\numberline {4.1}{\ignorespaces test table x1}}{69}{table.4.1}%
-\addvspace {0em}
+\contentsline {table}{\numberline {4.1}{\ignorespaces App Server API Specification}}{85}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Recommender API Specification}}{85}{table.4.2}%
 \addvspace {0em}

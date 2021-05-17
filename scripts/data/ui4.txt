@@ -1,0 +1,26 @@
+Figure 4.48: Sample of Individual’s Preferences
+
+
+Figure 4.49: Result of Individual Recommendation Algorithm
+
+For individual recommendation results, we tested the algorithm with the sample of user’s preferences as Figure 4.48. Besides, we selected Siam Paragon as a restaurant's recommendation location for this sample. The result after testing is not very effective as we can see from Figure 4.49 which this user gave Thai restaurants the first rank but the system recommends Thai restaurants only one restaurant. Nevertheless, the system recommends Japanese restaurants the most, including Sushi restaurants, which is the second rank of this user. To sum up, this restaurant recommendation algorithm is not very effective due to the restaurant data problems whether there is not enough type of restaurant around that location or incorrect restaurant tag.
+
+Group Recommendation Result
+
+Figure 4.50: Sample Group of Two’s Preferences
+
+
+Figure 4.51: Result of Group Recommendation Algorithm
+
+As a part of the group recommendation, developers tested the algorithm using a 2-member group with restaurant preferences as shown in  Figure 4.50 and using Siam Paragon as a restaurant's recommendation location as well as individual recommendation. The system can recommend 6 restaurants according to the preferences of the members as shown in Figure 4.51. From the figure, we can see that all restaurants match with the users preferences including Korean, Thai and Japanese restaurants. Moreover, the fitness value of the generation dramatically increased to 75.
+
+Rank Aggregation Result
+
+
+Figure X1: Sample of Suggested Restaurants and Ranks from Users
+
+
+
+Figure X2: Final Score from the Sample
+
+After the genetic algorithm generates a set of suggested restaurants and lets each user rank the restaurants based on their preferences, rank aggregation finalizes that information to show the most suitable final restaurant for that group by computing the score for each restaurant. Figure X1 shows the sample of generated restaurants that has shown to users and how each user ranks their restaurant. After that the rank aggregation algorithm calculates the score for each restaurant as stated in Figure X2. As a result, the final restaurant for this input is a restaurant named Hua Pla Chongnonsea with a highest score of 3.4. This result shows that our finalization process considers not only users’ ranking but also restaurant’s type and cost.

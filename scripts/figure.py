@@ -1,6 +1,6 @@
-file_name = 'db_index'
-figure_size = 'width=400pt'
-prefix = '3db_'
+file_name = '4_resdata_result'
+figure_size = 'width=350pt'
+prefix = '5'
 
 figure_dict = {}
 
@@ -29,7 +29,7 @@ with open(f'data/{file_name}.txt') as f:
                     figure_caption = line.split(': ')[1]
                     figure_name = line.split(': ')[1].replace(' ', '').replace('\'', '').replace('’', '')
                     figure_ref_name = f'{prefix}{figure_name}'
-                    fw.write(f"\\begin{{figure}}[!h]\centering\n")
+                    fw.write(f"\n\\begin{{figure}}[H]\centering\n")
                     fw.write(f"\\includegraphics[{figure_size}]{{./images/{figure_ref_name}.png}}\n")
                     fw.write(f"\\caption{{{figure_caption}}}\label{{fig:{figure_ref_name}}}\n")
                     fw.write(f"\\end{{figure}}\n")
@@ -37,7 +37,7 @@ with open(f'data/{file_name}.txt') as f:
                     paragraph = line
                     for key in figure_dict:
                         print(f'Figure {key}')
-                        paragraph = paragraph.replace(f' Figure {key}', f"~\\ref{{fig:{figure_dict[key]}}}")
+                        paragraph = paragraph.replace(f'Figure {key}', f"Figure~\\ref{{fig:{figure_dict[key]}}}")
                     fw.write('\n' + paragraph + '\n')
                     print(paragraph)
 
