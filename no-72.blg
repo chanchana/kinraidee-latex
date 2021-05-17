@@ -5,8 +5,8 @@ The style file: kmutt.bst
 Database file #1: string.bib
 Database file #2: cpe.bib
 Warning--empty year in WhatIsWebApplicationWebAppsAndItsBenefits
-Warning--empty year in Recommendersystem
 Warning--empty year in WhatisMachineLearning
+Warning--empty year in Recommendersystem
 Warning--empty year in Collaborativefiltering
 Warning--empty year in AlgorithmsforDiscreteOptimization
 Warning--empty year in Mathematicaloptimization
@@ -14,6 +14,7 @@ Warning--empty year in Geneticalgorithm
 Warning--empty year in IntroductiontoGeneticAlgorithmsIncludingExampleCode
 Warning--empty year in HTMLHyperTextMarkupLanguage
 Warning--empty year in JavaScript
+Warning--empty year in Manipulatingdocuments
 Warning--empty year in TypeScript
 Warning--empty year in IntroductiontoNodejs
 Warning--empty year in WhydidwebuildReact
@@ -24,6 +25,8 @@ Warning--empty year in JupyterLabOverview
 Warning--empty year in WhatIsFigmaa101Intro
 Warning--empty year in AnoverviewofHTTP
 Warning--empty year in HTTPrequestmethods
+Warning--empty year in Statelessprotocol
+Warning--empty year in WhatIsWebFramework
 Warning--empty year in Express
 Warning--empty year in Flask
 Warning--empty year in WhatisNoSQL
@@ -37,45 +40,45 @@ Warning--empty year in EatseeSeeitEatit
 Warning--empty year in Tinderapp
 Warning--empty year in BuildauserbasedcollaborativefilteringrecommendationengineforAnime
 Warning--empty year in bworld
-You've used 50 entries,
+You've used 54 entries,
             2177 wiz_defined-function locations,
-            1030 strings with 15354 characters,
-and the built_in function-call counts, 13195 in all, are:
-= -- 1331
-> -- 499
+            1051 strings with 16096 characters,
+and the built_in function-call counts, 14161 in all, are:
+= -- 1426
+> -- 543
 < -- 4
-+ -- 207
-- -- 154
-* -- 914
-:= -- 2226
-add.period$ -- 50
-call.type$ -- 50
-change.case$ -- 177
++ -- 226
+- -- 168
+* -- 980
+:= -- 2397
+add.period$ -- 54
+call.type$ -- 54
+change.case$ -- 192
 chr.to.int$ -- 0
-cite$ -- 83
-duplicate$ -- 471
-empty$ -- 1151
-format.name$ -- 154
-if$ -- 2769
+cite$ -- 90
+duplicate$ -- 502
+empty$ -- 1230
+format.name$ -- 168
+if$ -- 2966
 int.to.chr$ -- 0
-int.to.str$ -- 50
-missing$ -- 18
-newline$ -- 254
-num.names$ -- 100
-pop$ -- 393
+int.to.str$ -- 54
+missing$ -- 19
+newline$ -- 274
+num.names$ -- 108
+pop$ -- 425
 preamble$ -- 1
-purify$ -- 177
+purify$ -- 192
 quote$ -- 0
-skip$ -- 346
+skip$ -- 371
 stack$ -- 0
-substring$ -- 548
-swap$ -- 86
+substring$ -- 569
+swap$ -- 90
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 198
-warning$ -- 33
-while$ -- 126
-width$ -- 52
-write$ -- 569
-(There were 33 warnings)
+type$ -- 214
+warning$ -- 36
+while$ -- 134
+width$ -- 56
+write$ -- 614
+(There were 36 warnings)

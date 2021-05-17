@@ -2,11 +2,11 @@
 \contentsline {chapterx}{\mdseries ABSTRACT}{ii}{Doc-Start}%
 \contentsline {chapterx}{\mdseries THAI ABSTRACT}{iii}{Doc-Start}%
 \contentsline {chapterx}{\mdseries ACKNOWLEDGMENTS}{iv}{Doc-Start}%
-\contentsline {chapterx}{\mdseries CONTENTS}{ix}{Doc-Start}%
-\contentsline {chapterx}{\mdseries LIST OF TABLES}{x}{Doc-Start}%
-\contentsline {chapterx}{\mdseries LIST OF FIGURES}{xi}{Doc-Start}%
-\contentsline {chapterx}{\mdseries LIST OF SYMBOLS}{xiii}{Doc-Start}%
-\contentsline {chapterx}{\mdseries LIST OF TECHNICAL VOCABULARY AND ABBREVATIONS}{xiv}{Doc-Start}%
+\contentsline {chapterx}{\mdseries CONTENTS}{x}{Doc-Start}%
+\contentsline {chapterx}{\mdseries LIST OF TABLES}{xi}{Doc-Start}%
+\contentsline {chapterx}{\mdseries LIST OF FIGURES}{xii}{Doc-Start}%
+\contentsline {chapterx}{\mdseries LIST OF SYMBOLS}{xiv}{Doc-Start}%
+\contentsline {chapterx}{\mdseries LIST OF TECHNICAL VOCABULARY AND ABBREVATIONS}{xv}{Doc-Start}%
 \contentsline {chapterxx}{\mdseries \bf CHAPTER}{1}{chapter.1}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {1.}\hskip -0.5em Introduction}}}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Keywords}{1}{section.1.1}%
@@ -50,77 +50,106 @@
 \contentsline {subsection}{\numberline {2.2.6}Optimization Techniques}{14}{subsection.2.2.6}%
 \contentsline {subsection}{\numberline {2.2.7}Genetic Algorithm}{14}{subsection.2.2.7}%
 \contentsline {section}{\numberline {2.3}Technologies}{16}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Related Research/Competing Solutions}{16}{section.2.4}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {3.}\hskip -0.5em Methodology and Design}}}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}System Functionality}{17}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Requirements}{17}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Use Case Diagram}{18}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Use Case Narrative}{19}{subsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.3.1}Login}{19}{subsubsection.3.1.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.3.2}Register}{19}{subsubsection.3.1.3.2}%
-\contentsline {subsubsection}{\numberline {3.1.3.3}Register}{19}{subsubsection.3.1.3.3}%
-\contentsline {subsubsection}{\numberline {3.1.3.4}Individual Recommendation}{20}{subsubsection.3.1.3.4}%
-\contentsline {subsubsection}{\numberline {3.1.3.5}Group Recommendation}{21}{subsubsection.3.1.3.5}%
-\contentsline {subsubsection}{\numberline {3.1.3.6}Edit the Food Preference}{21}{subsubsection.3.1.3.6}%
-\contentsline {subsubsection}{\numberline {3.1.3.7}See the Favorite List}{21}{subsubsection.3.1.3.7}%
-\contentsline {subsubsection}{\numberline {3.1.3.8}Logout}{22}{subsubsection.3.1.3.8}%
-\contentsline {subsection}{\numberline {3.1.4}Functional Breakdown Structure}{23}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}System Architecture}{24}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}System Overview}{24}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Restaurant Recommender System Architect}{25}{subsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}App Server Architecture}{26}{subsubsection.3.2.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}App Client Architecture}{27}{subsubsection.3.2.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.3}Recommender Architecture}{27}{subsubsection.3.2.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.2.4}Data Service Architecture}{28}{subsubsection.3.2.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.2.5}Database Architecture}{29}{subsubsection.3.2.2.5}%
-\contentsline {section}{\numberline {3.3}User Journey}{30}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Activity Diagrams}{30}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}Registration}{30}{subsubsection.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Individual Restaurant Recommendation}{31}{subsubsection.3.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.3.1.3}Registration}{32}{subsubsection.3.3.1.3}%
-\contentsline {subsection}{\numberline {3.3.2}Sequence Diagrams}{33}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Registration}{33}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Individual Restaurant Recommendation}{34}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}Create Group}{36}{subsubsection.3.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.3.2.4}Group Restaurant Recommendation}{37}{subsubsection.3.3.2.4}%
-\contentsline {section}{\numberline {3.4}User Interface Design}{38}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Login Page}{39}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Registration Page}{40}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Individual Restaurant Recommendation Page}{42}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Group Restaurant Recommendation Page}{45}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Profile Page}{48}{subsection.3.4.5}%
-\contentsline {section}{\numberline {3.5}Database Structure}{48}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Collections}{49}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Schema}{49}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Indexing}{50}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}Restaurant Recommendation Algorithm}{51}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Production Testing Plan}{51}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Production Deployment}{51}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}User Evaluation}{51}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Application Evaluation}{51}{subsection.3.7.3}%
-\contentsline {section}{\numberline {3.8}Recommender Systems}{51}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Text Processing Algorithms}{52}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Algorithm I}{52}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Algorithm II}{52}{subsection.3.9.2}%
-\contentsline {subsubsection}{\numberline {3.9.2.1}Algorithm SUB}{52}{subsubsection.3.9.2.1}%
-\contentsline {section}{\numberline {3.10}Development Tools}{52}{section.3.10}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Proposed Work}}}{53}{chapter.4}%
-\contentsline {section}{\numberline {4.1}System Architecture}{53}{section.4.1}%
-\contentsline {section}{\numberline {4.2}System Specifications and Requirements}{53}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Hardware Module 1}{53}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Component 1}{53}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Logical Circuit Diagram}{53}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Hardware Module 2}{53}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Component 1}{53}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Component 2}{53}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Path Finding Algorithm}{53}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Database Design}{53}{section.4.6}%
-\contentsline {section}{\numberline {4.7}GUI Design}{53}{section.4.7}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Implementation Results}}}{54}{chapter.5}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {6.}\hskip -0.5em Conclusions}}}{55}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Problems and Solutions}{55}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Future Works}{55}{section.6.2}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{56}{section.6.2}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{59}{section.6.2}%
-\contentsline {apdx}{A\hskip 1em First appendix title}{60}{section.6.2}%
-\contentsline {apdx}{B\hskip 1em Second appendix title}{62}{equation.1.2.5}%
+\contentsline {subsection}{\numberline {2.3.1}Development Tools}{16}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}HTML}{16}{subsubsection.2.3.1.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}JavaScript}{16}{subsubsection.2.3.1.2}%
+\contentsline {subsubsection}{\numberline {2.3.1.3}TypeScript}{17}{subsubsection.2.3.1.3}%
+\contentsline {subsubsection}{\numberline {2.3.1.4}Node.js}{17}{subsubsection.2.3.1.4}%
+\contentsline {subsubsection}{\numberline {2.3.1.5}React}{17}{subsubsection.2.3.1.5}%
+\contentsline {subsubsection}{\numberline {2.3.1.6}Python}{17}{subsubsection.2.3.1.6}%
+\contentsline {subsubsection}{\numberline {2.3.1.7}JupyterLab}{18}{subsubsection.2.3.1.7}%
+\contentsline {subsubsection}{\numberline {2.3.1.8}Figma}{18}{subsubsection.2.3.1.8}%
+\contentsline {subsection}{\numberline {2.3.2}HTTP}{18}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Web Application Framework}{19}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Express}{19}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Flask}{19}{subsubsection.2.3.3.2}%
+\contentsline {subsection}{\numberline {2.3.4}Database Tools}{20}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}NoSQL}{20}{subsubsection.2.3.4.1}%
+\contentsline {subsubsection}{\numberline {2.3.4.2}MongoDB}{20}{subsubsection.2.3.4.2}%
+\contentsline {subsubsection}{\numberline {2.3.4.3}Mongoose}{20}{subsubsection.2.3.4.3}%
+\contentsline {subsection}{\numberline {2.3.5}Deployment Tools}{21}{subsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.5.1}Google Cloud App Engine}{21}{subsubsection.2.3.5.1}%
+\contentsline {subsubsection}{\numberline {2.3.5.2}MongoDB Atlas}{21}{subsubsection.2.3.5.2}%
+\contentsline {subsection}{\numberline {2.3.6}External Service}{21}{subsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.6.1}Facebook Graph API}{21}{subsubsection.2.3.6.1}%
+\contentsline {subsubsection}{\numberline {2.3.6.2}Google Cloud Storage}{21}{subsubsection.2.3.6.2}%
+\contentsline {section}{\numberline {2.4}Related Research/Competing Solutions}{22}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Entrée}{22}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Eatsee}{23}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Whatever Mans}{24}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Tinder}{25}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}On the design of Individual and Group Recommender Systems for Tourism Paper}{26}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Dynamic Music Recommender System Using Genetic Algorithm}{26}{subsection.2.4.6}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {3.}\hskip -0.5em Methodology and Design}}}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}System Functionality}{28}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Requirements}{28}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Use Case Diagram}{29}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Use Case Narrative}{30}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}Login}{30}{subsubsection.3.1.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}Register}{30}{subsubsection.3.1.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.3.3}Register}{30}{subsubsection.3.1.3.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.4}Individual Recommendation}{31}{subsubsection.3.1.3.4}%
+\contentsline {subsubsection}{\numberline {3.1.3.5}Group Recommendation}{32}{subsubsection.3.1.3.5}%
+\contentsline {subsubsection}{\numberline {3.1.3.6}Edit the Food Preference}{32}{subsubsection.3.1.3.6}%
+\contentsline {subsubsection}{\numberline {3.1.3.7}See the Favorite List}{32}{subsubsection.3.1.3.7}%
+\contentsline {subsubsection}{\numberline {3.1.3.8}Logout}{33}{subsubsection.3.1.3.8}%
+\contentsline {subsection}{\numberline {3.1.4}Functional Breakdown Structure}{34}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}System Architecture}{35}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}System Overview}{35}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Restaurant Recommender System Architect}{36}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}App Server Architecture}{37}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}App Client Architecture}{38}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}Recommender Architecture}{38}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}Data Service Architecture}{39}{subsubsection.3.2.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.2.5}Database Architecture}{40}{subsubsection.3.2.2.5}%
+\contentsline {section}{\numberline {3.3}User Journey}{41}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Activity Diagrams}{41}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Registration}{41}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Individual Restaurant Recommendation}{42}{subsubsection.3.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.3.1.3}Registration}{43}{subsubsection.3.3.1.3}%
+\contentsline {subsection}{\numberline {3.3.2}Sequence Diagrams}{44}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Registration}{44}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Individual Restaurant Recommendation}{45}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}Create Group}{47}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.3.2.4}Group Restaurant Recommendation}{48}{subsubsection.3.3.2.4}%
+\contentsline {section}{\numberline {3.4}User Interface Design}{49}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Login Page}{50}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Registration Page}{51}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Individual Restaurant Recommendation Page}{53}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Group Restaurant Recommendation Page}{56}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Profile Page}{59}{subsection.3.4.5}%
+\contentsline {section}{\numberline {3.5}Database Structure}{59}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Collections}{60}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Schema}{60}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Indexing}{61}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Restaurant Recommendation Algorithm}{62}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Production Testing Plan}{62}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Production Deployment}{62}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}User Evaluation}{62}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Application Evaluation}{62}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Recommender Systems}{62}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Text Processing Algorithms}{63}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Algorithm I}{63}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Algorithm II}{63}{subsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.2.1}Algorithm SUB}{63}{subsubsection.3.9.2.1}%
+\contentsline {section}{\numberline {3.10}Development Tools}{63}{section.3.10}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Proposed Work}}}{64}{chapter.4}%
+\contentsline {section}{\numberline {4.1}System Architecture}{64}{section.4.1}%
+\contentsline {section}{\numberline {4.2}System Specifications and Requirements}{64}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Hardware Module 1}{64}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Component 1}{64}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Logical Circuit Diagram}{64}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Hardware Module 2}{64}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Component 1}{64}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Component 2}{64}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Path Finding Algorithm}{64}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Database Design}{64}{section.4.6}%
+\contentsline {section}{\numberline {4.7}GUI Design}{64}{section.4.7}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Implementation Results}}}{65}{chapter.5}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {6.}\hskip -0.5em Conclusions}}}{66}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Problems and Solutions}{66}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Future Works}{66}{section.6.2}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{67}{section.6.2}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{70}{section.6.2}%
+\contentsline {apdx}{A\hskip 1em First appendix title}{71}{section.6.2}%
+\contentsline {apdx}{B\hskip 1em Second appendix title}{73}{equation.1.2.5}%

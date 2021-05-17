@@ -1,12 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{shen04}
-C.-C. Shen, C.~Srisathapornphat, R.~Lui, Z.~Huang, C.~Jaikaeo, and E.L. Lloyd,
-\newblock  2004, ``CLTC: A Cluster-Based Topology Control Framework for Ad Hoc
-  Network,''
-\newblock {\bf IEEE Trans. Mobile Computing}, vol. 3, no. 1, pp. 18--32,
-  Jan--Mar 2004.
-
 \bibitem{WhatIsWebApplicationWebAppsAndItsBenefits}
 Margaret Rouse,
 \newblock ``{What Is Web Application (Web Apps) And Its Benefits},'' Available
@@ -14,23 +7,17 @@ Margaret Rouse,
   \url{https://searchsoftwarequality.techtarget.com/definition/Web-application-Web-app},
 \newblock [Online; accessed 28-November-2020].
 
-\bibitem{RecommendationSystemsPrinciples}
-F.O. Isinkaye, Y.O. Folajimi, and B.A. Ojokoh,
-\newblock  2015, ``Recommendation systems: Principles, methods and
-  evaluation,''
-\newblock {\bf Egyptian Informatics Journal}, vol. 16, no. 3, 2015.
+\bibitem{WhatisMachineLearning}
+Expert~System Team,
+\newblock ``{What is Machine Learning?},'' Available at
+  \url{https://expertsystem.com/machine-learning-definition/},
+\newblock [Online; accessed 26-November-2020].
 
 \bibitem{Recommendersystem}
 Wikipedia,
 \newblock ``{Recommender system},'' Available at
   \url{https://en.wikipedia.org/wiki/Recommender_system#Content-based_filtering},
 \newblock [Online; accessed 20-November-2020].
-
-\bibitem{WhatisMachineLearning}
-Expert~System Team,
-\newblock ``{What is Machine Learning?},'' Available at
-  \url{https://expertsystem.com/machine-learning-definition/},
-\newblock [Online; accessed 26-November-2020].
 
 \bibitem{Collaborativefiltering}
 Wikipedia,
@@ -74,6 +61,12 @@ MDN,
 \newblock ``{JavaScript},'' Available at
   \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript},
 \newblock [Online; accessed 26-November-2020].
+
+\bibitem{Manipulatingdocuments}
+MDN,
+\newblock ``{Manipulating documents},'' Available at
+  \url{https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents},
+\newblock [Online; accessed 30-April-2021].
 
 \bibitem{TypeScript}
 Microsoft,
@@ -135,6 +128,18 @@ MDN,
   \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods},
 \newblock [Online; accessed 28-November-2020].
 
+\bibitem{Statelessprotocol}
+Wikipedia,
+\newblock ``{Stateless protocol},'' Available at
+  \url{https://en.wikipedia.org/wiki/Stateless_protocol},
+\newblock [Online; accessed 30-April-2021].
+
+\bibitem{WhatIsWebFramework}
+GoodFirms,
+\newblock ``{What is a Web Framework?},'' Available at
+  \url{https://www.goodfirms.co/glossary/web-framework/},
+\newblock [Online; accessed 30-April-2021].
+
 \bibitem{Express}
 IBM StrongLoop,
 \newblock ``{Express},'' Available at \url{https://expressjs.com/},
@@ -161,6 +166,19 @@ Guru99,
 Mongoose,
 \newblock ``{mongoose},'' Available at \url{https://mongoosejs.com/},
 \newblock [Online; accessed 28-November-2020].
+
+\bibitem{shen04}
+C.-C. Shen, C.~Srisathapornphat, R.~Lui, Z.~Huang, C.~Jaikaeo, and E.L. Lloyd,
+\newblock  2004, ``CLTC: A Cluster-Based Topology Control Framework for Ad Hoc
+  Network,''
+\newblock {\bf IEEE Trans. Mobile Computing}, vol. 3, no. 1, pp. 18--32,
+  Jan--Mar 2004.
+
+\bibitem{RecommendationSystemsPrinciples}
+F.O. Isinkaye, Y.O. Folajimi, and B.A. Ojokoh,
+\newblock  2015, ``Recommendation systems: Principles, methods and
+  evaluation,''
+\newblock {\bf Egyptian Informatics Journal}, vol. 16, no. 3, 2015.
 
 \bibitem{GoogleAppEngineDocumentation}
 Google,
@@ -210,6 +228,13 @@ Chris I,
   for Anime},'' Available at
   \url{https://towardsdatascience.com/build-a-user-based-collaborative-filtering-recommendation-engine-for-anime-92d35921f304},
 \newblock [Online; accessed 30-August-2020].
+
+\bibitem{MusicRecommender}
+Hyun-Tae Kim, Eungyeong Kim, Jong-Hyun Lee, and Chang~Wook Ahn,
+\newblock  2010, ``A recommender system based on genetic algorithm for music
+  data,''
+\newblock {\bf ICCET 2010 - 2010 International Conference on Computer
+  Engineering and Technology, Proceedings}, vol. 6, 01 2010.
 
 \bibitem{bworld}
 L.~Bao,

@@ -1,45 +1,42 @@
-column_count = 3
+column_count = 2
 table_name_prefix = '2'
-# flex_column_index = -1
-flex_column_index = None
+flex_column_index = -1
+# flex_column_index = None
 input_text = """
 
-Table 2.1: Characteristics of Explicit and Implicit Feedback
 
 
-Implicit Feedback
+Table 2.4: Mongoose’ Schema Types
 
-Explicit Feedback
+Type
 
-Accuracy
+Description
 
-Low
+ObjectId
 
-High
+A special type typically used for unique identifiers
 
-Abundance
+String
 
-High
+A sequence of characters in string format
 
-Low
+Number
 
-Context-sensitive
+A real number which includes all types of number such as integer, float, or double.
 
-Yes
+Boolean
 
-Yes
+True or false state
 
-Expressivity of user preference
+Date
 
-Positive
+Datetime format
 
-Positive and Negative
+Object
 
-Measurement reference
+Nested object
 
-Relative
 
-Absolute
 
 
 

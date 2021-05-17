@@ -20,6 +20,11 @@
 \renewcommand{\labelenumiii}{\theenumiii}
 \renewcommand{\theenumiii}{\theenumii.\arabic{enumiii}.}
 % End set nested numuric list
+% Caption with source
+%\usepackage[justification=centering]{caption}
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{#1}\vspace{-8pt}
+  \textbf{Source:} #2}
 
 %\setmathfont(Digits)[Scale=1.0,LetterSpace=0,FakeStretch=1.0]{Times New Roman}
 
@@ -510,7 +515,8 @@ Moreover, from this approach, our project can use the algorithm to be part of ou
 
 \begin{figure}[!h]\centering
 \includegraphics[width=250pt]{./images/2cfprocess.png}
-\caption{Collaborative Filtering Process}\label{fig:2cfprocess}
+\label{fig:2cfprocess}
+\captionsource{Collaborative Filtering Process}{https://www.sciencedirect.com/science/article/pii/S1110866515000341}
 \end{figure}
 
 A collaborative filtering technique as opposed to the content-based filtering technique which collaborative filtering cannot recommend the item by using only the description of metadata. The key idea of this technique is a group of people with similar tastes, often tend to like similar items. So, collaborative filtering uses only data about rating profiles from different users or items in order to generate the recommendation. Here is the flow of this technique:
@@ -593,7 +599,7 @@ In the genetic algorithm, the optimal solution is found by replacing an existing
 
 %TODO use algorithm package
 
-\textbf{Pseudocode}\cite{IntroductiontoGeneticAlgorithmsIncludingExampleCode}\\
+\textbf{Genetic Algorithm Pseudocode}\cite{IntroductiontoGeneticAlgorithmsIncludingExampleCode}\\
 \textbf{1} START\\
 \textbf{2} Generate the initial population\\
 \textbf{3} Compute fitness\\
@@ -643,11 +649,237 @@ In this approach, we can create a recommendation system for both individuals and
 
 
 \section{Technologies}
-%TODO
+
+\subsection{Development Tools}
+
+\subsubsection{HTML}
+
+HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as <body>, <p>, <div> and many others. An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<" and ">". \cite{HTMLHyperTextMarkupLanguage}
+
+\subsubsection{JavaScript}
+
+MDN \cite{JavaScript} states that JavaScript is a programming language that enables complex feature implementation on web pages such as displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. Many modern browsers such as Google Chrome, Safari, and Firefox support JavaScript and it can run immediately within the browsers without repeatedly calling the server.
+
+%TODO check for update
+The reason that JavaScript enables those complex feature implementation mentioned above is because it support the use of Document Object Model (DOM), a set of APIs for controlling HTML and styling information. \cite{Manipulatingdocuments} With DOM, we can write JavaScript to interactively manipulate the element in HTML easily.
+
+Because our platform needs to serve an interactive user interface with a fast speed, these characteristics and advantages of JavaScript can fulfill those requirements. However, there are limitations of JavaScript which are reading and writing local files and browser interpretation. The first limitation, it lacks the feature of reading and writing local files for security reasons, which we need another server side service to handle the more complex tasks. The other one is that different browsers can sometimes interpret JavaScript code differently, but since we target to support most of the modern browsers, we do not have to worry about this limitation.
+
+\subsubsection{TypeScript}
+
+TypeScript extends JavaScript by adding types. By understanding JavaScript, TypeScript saves us time catching errors and providing fixes before we run code. \cite{TypeScript} The reason that we choose TypeScript over plain JavaScript is it makes our platform easily maintainable by adding static types and error checking.
+
+\subsubsection{Node.js}
+
+Node.js is an open-source and cross-platform JavaScript runtime environment. \cite{IntroductiontoNodejs} Because we choose to have a JavaScript web application framework, Node.js is essential for running our scripts. In the server side services, Node.js is the environment that will run the application and actively serves the request from clients while in client side services, the services might need Node.js to build the optimized bundled package which serves the client.
+
+\subsubsection{React}
+
+React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time. \cite{WhydidwebuildReact} The DA14 blog \cite{TOP10ADVANTAGESOFUSINGREACTJS} demonstrates the top 10 advantages of React including JSX syntax and reusable components. The first advantage, React uses JSX syntax which is an extension syntax to JavaScript. It makes subcomponent rendering easier by accepting HTML quoting, thus the overall process of writing components is much simpler. The other one of their best features is an ability to reuse components which makes a codebase more clean and easy to maintain. In our project, we want our development process to be simple and our codebase to be clean and maintainable, so React is the perfect solution. Moreover, React supports TypeScript that adds the static type to our JavaScript which also facilitates our development process.
+
+\subsubsection{Python}
+
+Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. \cite{PythonTutorial} According to PYPL PopularitY in November 2020, Python is the most popular programming language. Due to its popularity, Python has hundreds of different libraries and frameworks which is a great addition to your development process. \cite{Top7ReasonsWhyYouNeedtoLearnPythonasaDataScientist} Many of these libraries and frameworks are mainly focused on data analytics and machine learning. Examples of those libraries are Numpy, Pandas, and Matplotlib. Our platform not only focuses on user experience but also data analytic and machine learning, so using Python fits perfectly in those areas.
+
+\subsubsection{JupyterLab}
+
+JupyterLab enables you to work with documents and activities such as Jupyter notebooks, text editors, terminals, and custom components in a flexible, integrated, and extensible manner. \cite{JupyterLabOverview} It is flexible and easy to arrange multiple notebooks or documents by showing in the tabs pattern. So, to do the experiment and construct the model of a recommendation system whether individuals or groups approach, this platform can provide a suitable working area to us. Moreover, JupyterLab also supports a variety of data formats e.g. images, CSV, JSON, etc.
+
+\subsubsection{Figma}
+
+Figma is a cloud-based design and prototyping tool for digital projects. It’s made so that users can collaborate on projects and work pretty much anywhere. \cite{WhatIsFigmaa101Intro} We choose Figma because of their collaborative feature which allows us to work together easily. Figma also allows us to test our prototype by sharing an online link to our testers.
+
+
+\subsection{HTTP}
+
+HTTP is a protocol that allows the fetching of resources, such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. \cite{AnoverviewofHTTP}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=250pt]{./images/2http.png}
+\label{fig:2http}
+\captionsource{Communication Through an HTTP Protocol}{https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview}
+\end{figure}
+
+
+Figure~\ref{fig:2http} shows how messages are communicated via the HTTP protocol. As you can see clients and servers communicate by exchanging individual messages. \cite{AnoverviewofHTTP} The messages sent from clients are requests. and the reply messages from servers are called responses.
+
+HTTP defines a set of request methods for requests to indicate the desired action to be performed for a given resource. Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs. \cite{HTTPrequestmethods} The common HTTP verbs are shown in Table~\ref{tbl:2CommonHTTPVerbs}.
+
+\begin{table}[!h]
+\caption{Common HTTP Verbs}\label{tbl:2CommonHTTPVerbs}
+\begin{tabularx}{\textwidth}{l|l} \hline\hline
+Verb & Description \\ \hline\hline
+GET & Retrieve data. \\ \hline
+POST & Create data \\ \hline
+PUT & Update data. \\ \hline
+DELETE & Remove Data \\ \hline\hline
+\end{tabularx}
+\end{table}
+
+%TODO check for update
+One of the HTTP characteristics is HTTP is a stateless protocol in which no session information is retained by the receiver or server. Relevant session data is sent to the server by the client in such a way that every request sent can be understood in isolation, without context information from previous requests in the session. \cite{Statelessprotocol} To make servers manage and understand the session, we need to make use of Cookies which is compact-sized information sent with requests. The servers can use that information to identify the current session from every isolated request such as authentication which makes them understand who is sending the request and do not require users to login every time they need to interact with the system.
+
+
+\subsection{Web Application Framework}
+
+A web application framework is a software framework that includes a code library that makes web development quicker and easier by giving basic patterns for building reliable, scalable and maintainable web applications \cite{WhatIsWebFramework} so that we do not need to implement everything from the ground up. It can facilitate various functionalities for web development such as request handling, URL routing, transferring data phrasing and database connection configuration.
+
+In our project, we choose Express framework for JavaScript with Node.js and Flask framework for Python. Both of them have a suitable functionality for our system with a large community base.
+
+\subsubsection{Express}
+
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. \cite{Express} The main advantages of Express are scalability and the language. Express lets us scale our application easily because of the support of Node.js and its lightweight. Express also uses JavaScript with TypeScript support, so we do not need to learn another programming language as we considered using TypeScript for frontend development.
+
+\subsubsection{Flask}
+
+Flask is a lightweight web application framework for Python. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. \cite{Flask} Unlike full-stack web application frameworks such as Django, Flask offers only essential features for building a core web application, thus the performance is better and we can keep our codebase clean and simple. We need Flask in addition to Express because our project also focuses on data analytics and machine learning which also need communication to other components and implemented with Python, so Flask can seamlessly serve us those purposes.
+
+\subsection{Database Tools}
+
+\subsubsection{NoSQL}
+
+NoSQL databases are non-tabular and store data differently than relational tables. They provide flexible schemas and scale easily with large amounts of data and high user loads. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. \cite{WhatisNoSQL} The description of each type is shown in Table~\ref{tbl:2NoSQLTypesandDescription}.
+
+\begin{table}[!h]
+\caption{NoSQL Types and Description}\label{tbl:2NoSQLTypesandDescription}
+\begin{tabularx}{\textwidth}{l|X} \hline\hline
+Type & Description \\ \hline\hline
+Document & Store data in JSON-like objects, each field will have a key-value pair. Values in each field can have various types so that document-based NoSQL can be used as a general-purpose database. It also supports horizontal scaling to support a large volume of data. \\ \hline
+Key-value & Key-value based NoSQL is simpler than document-based NoSQL because it contains one key and value. It is used for a large amount of data but not for a complex query. \\ \hline
+Wide-column & Store each row of data in dynamic columns. It is suitable for data that we can predict the query pattern. \\ \hline
+Graph & Store data in nodes and edges. Nodes generally store information while edges store their relation to other nodes. \\ \hline\hline
+\end{tabularx}
+\end{table}
+
+According to Table~\ref{tbl:2NoSQLTypesandDescription}, the advantages of NoSQL which is flexible schemas and document-based NoSQL type which support complex query and horizontal scalability, we can conclude that document-based NoSQL is suitable to be our database tool because our data’s schema can easily change over time, we have a large amount of data and we need a complex query method for retrieving the data such as query objects sorted by distance from a coordinate.
+
+\subsubsection{MongoDB}
+
+%TODO check for update
+MongoDB is a document-based NoSQL database used for high volume data storage. Instead of using tables and rows as in the traditional relational databases, MongoDB makes use of collections and documents. Documents consist of key-value pairs which are the basic unit of data in MongoDB. Collections contain sets of documents and functions which are the equivalent of relational database tables. \cite{WhatisMongoDBIntroductionArchitectureFeaturesExample} We choose to use MongoDB because it is open-source software, large community based, powerful query language and natively support database cloud service. We consider using their native cloud platform, MongoDB Atlas, which will be described later, so that we do not have to deploy our own database service by ourselves and the server side services can easily connect to the database with a simpler configuration.
+
+\subsubsection{Mongoose}
+
+Mongoose is a JavaScript library which provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks, and more, out of the box. \cite{mongoose} It also provides an interface to connect to the database. Although NoSQL does not have a fixed schema, having a schema for some essential fields in the model helps in a uniform data format that facilitates database operations in our system. Mongoose provides essential types for declaring the model’s schema. The essential types are shown and described in Table~\ref{tbl:2MongooseSchemaTypes} below.
+
+\begin{table}[!h]
+\caption{Mongoose’ Schema Types}\label{tbl:2MongooseSchemaTypes}
+\begin{tabularx}{\textwidth}{l|X} \hline\hline
+Type & Description \\ \hline\hline
+ObjectId & A special type typically used for unique identifiers \\ \hline
+String & A sequence of characters in string format \\ \hline
+Number & A real number which includes all types of number such as integer, float, or double. \\ \hline
+Boolean & True or false state \\ \hline
+Date & Datetime format \\ \hline
+Object & Nested object \\ \hline\hline
+\end{tabularx}
+\end{table}
+
+
+\subsection{Deployment Tools}
+
+\subsubsection{Google Cloud App Engine}
+
+Google Cloud App Engine is a fully managed, serverless platform for developing and hosting web applications at scale. It lets you choose from several popular languages, libraries, and frameworks to develop your apps, then let Google Cloud App Engine take care of provisioning servers and scaling your app instances based on demand. \cite{GoogleAppEngineDocumentation} Google Cloud App Engine is suitable for our platform which has 2 primary programming languages. It makes the deployment process much more simple.
+
+\subsubsection{MongoDB Atlas}
+
+MongoDB Atlas is a fully-managed cloud database developed by the same people that build MongoDB. Atlas handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider. \cite{MongoDBAtlas} MongoDB Atlas is the perfect choice for us because it gives us life-time free 500 MB of storage space and all of the advantages of NoSQL stated before.
+
+
+\subsection{External Service}
+
+\subsubsection{Facebook Graph API}
+
+%TODO check for update
+Facebook Graph API is the primary way for apps to read and write to the Facebook social graph \cite{GraphAPI}. It provides a place query that we use for collecting restaurant data. Their restaurant information data includes restaurant tags which can help us in data analytics and machine learning process. We will write a script to query restaurant information from their API. Their API is free to use with the authentication token. The token is acquired by setting up the application on their platform.
+
+\subsubsection{Google Cloud Storage}
+
+Google Cloud Storage is a web service that allows storing and accessing data on a cloud. It provides a uniform process to access the static data. In our project, we need to keep the image of the restaurants and the total size of the images is too large to serve via our main server, Google Cloud Storage is the solution for this problem. Unlike Google Drive, Google Cloud Storage can set the static path for every restaurant image, but Google Drive will generate a random url to access the data. Another cloud storage service is Amazon S3, however, since we use Google Cloud Platform service which is Google Cloud App Engine for the deployment, Google Cloud Storage is a better choice for this project.
+
+
 \section{Related Research/Competing Solutions}
-%TODO
+
+\subsection{Entrée}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/2eatsee.png}
+\label{fig:2eatsee}
+\captionsource{Screenshot of Entrée Application}{https://appadvice.com/app/entr-c3-a9e-decide-your-next-meal/1037913795}
+\end{figure}
+
+Entrée aims to solve the endless problem about what to order every day, by acting as a sort of “Tinder meets Pandora” for food. The app, freely available for download on iOS, shows users high-quality images of food or meals from nearby restaurants, based on an algorithm that learns users’ preferences. It also provides contextual recommendations, based on the occasion the user is looking to eat out for, like birthdays or date nights. The app is functional in 30 cities, and in the cities where Uber is also available, it allows users to book an Uber to the restaurant, call the restaurant and place your order for delivery. The app utilizes data from Foursquare for reviews and other information. \cite{Entréechoosefromaworldofdisheswithasingletouch}
+
+Compared to our system, Entrée can suggest restaurants for only individuals, in contrast, our system support group suggestion. It supports 30 cities outside Thailand but our system has restaurants that are located in Thailand which uses Thai restaurant databases such as Wongnai and Google Places.
+
+\newpage
+\subsection{Eatsee}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/2eatseereal.png}
+\label{fig:2eatseereal}
+\captionsource{Screenshot of Eatsee Application}{https://apps.apple.com/us/app/id1202110881}
+\end{figure}
+
+Eatsee is an application that helps users find dishes that they’ll love by setting their preferences and swipe through user-tailored results, tap to find out more about the restaurant, then swipe right to save it to be favorites. Eatsee is currently available in Newcastle (New South Wales, Australia), Coffs Harbour (New South Wales, Australia), and San Francisco (California, United States). \cite{EatseeSeeitEatit}
+
+Compared to our system, Eastsee only suggests random food based on their preference setting which doesn’t learn about users’ behavior. It focuses on food, not restaurants but our system prioritizes restaurants over food. It doesn’t support group suggestions and restaurants located in Thailand.
+2whatman
+
+\newpage
+\subsection{Whatever Mans}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=250pt]{./images/2whatman.png}
+\label{fig:2whatman}
+\captionsource{Screenshot of Whatever Mans Application}{https://play.google.com/store/apps/details?id=com.DEC.Eatwhat}
+\end{figure}
+
+Whatever Mans Application is a Thai food random application that has an interaction with the user by creating an interactive animation called Pa-Man to talk with the user. Whatever Mans is available for download on Android only.
+
+Compared to our system, Whatever Mans Application supports only on an Android platform whereas our system supports both iOS and Android because of web application technology. Their suggestion isn't based on users’ profiles or preferences which means their suggestion is just randomization. Although it supports Thai food, it can suggest only food, not restaurants. It also doesn’t support group suggestions.
+
+\newpage
+\subsection{Tinder}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/2tinder.jpeg}
+\label{fig:2tinder}
+\captionsource{Screenshot of Tinder Application}{https://www.androidauthority.com/best-tinder-alternatives-android-1084559/}
+\end{figure}
+
+Tinder is a geosocial networking and online dating application that allows users to anonymously swipe to like or dislike other profiles based on their photos, a small bio, and common interests. Once two users have "matched", they can exchange messages. \cite{Tinderapp}
+
+Compared to our system, Tinder shares a similarity with our system which is a recommendation algorithm. It learns user preferences over time and suggests new people based on their preferences. However, their suggestion is based on individuals because it is a dating application.  The main contrast to our system is that Tinder focuses on suggesting new people whereas our system suggests restaurants.
+
+\newpage
+\subsection{On the design of Individual and Group Recommender Systems for Tourism Paper}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=400pt]{./images/2grsk.png}
+\label{fig:2grsk}
+\captionsource{GRSK Architecture from the Paper}{https://www.semanticscholar.org/paper/On-the-design-of-individual-and-group-recommender-Garcia-Sebastia/b367686e60db2f68102cd14b1360e9fc26a1757b}
+\end{figure}
+
+This paper presents a recommender system for tourism based on the tastes of the users, their demographic classification, and the places they have visited on former trips. The system is able to offer recommendations for a single user or a group of users. The group recommendation is elicited out of the individual personal recommendations through the application of mechanisms such as aggregation and intersection. The elicitation mechanism is implemented as an extension of e-Tourism, a user-adapted tourism and leisure application whose main component is the Generalist Recommender System Kernel (GRSK), a domain-independent taxonomy-driven recommender system. \cite{ExpertSystemsWithApplications}
+
+Compared to our system, the algorithm designed in this paper can be adapted with our group recommendation system. However, their study focuses on tourism but our system focuses on restaurant recommendation.
+
+\subsection{Dynamic Music Recommender System Using Genetic Algorithm}
+
+%TODO heck for update
+This paper represents a music recommendation system that is able to recognize and provide items corresponding with user favorites. The system is able to identify the n-number of users' preferences and adaptively recommend music tracks according to user preferences by extracting unique features of each music track. Then applying BLX-a crossover to the extracted features of each music track. \cite{MusicRecommender} The recommender is base on genetic algorithm along with content-based filtering technique for generate the initial population in genetic algorithm which can divided into 3 phase including feature extraction phase, evolution phase, and interactive Genetic algorithm phase. User favorite and user profiles are included. After that the successive page is constructed based on the user evaluation.
+
+Compared to our system, the information of this paper that uses the genetic algorithm is similar to our system which are user favorite and user profiles. But the differences are our objective function and the system architecture in which we focus on the restaurant.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \chapter{Methodology and Design}

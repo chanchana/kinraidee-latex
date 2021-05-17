@@ -4,36 +4,42 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Gantt Chart for the Second Semester}}{7}{figure.1.2}%
 \addvspace {0em}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Collaborative Filtering Process}}{12}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Communication Through an HTTP Protocol}}{18}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Screenshot of Entrée Application}}{22}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Screenshot of Eatsee Application}}{23}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Screenshot of Whatever Mans Application}}{24}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Screenshot of Tinder Application}}{25}{figure.2.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces GRSK Architecture from the Paper}}{26}{figure.2.7}%
 \addvspace {0em}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram}}{18}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Functional Breakdown Structure of the System}}{23}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces System Overview}}{24}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces System Architecture}}{25}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces App Server Architecture}}{26}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces App Client Architecture}}{27}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Recommender Architecture}}{28}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Data Service Architecture}}{28}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces App Server Architecture}}{29}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Registration Activity Diagram}}{30}{figure.3.10}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Individual Restaurant Recommendation Activity Diagram}}{31}{figure.3.11}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Group Restaurant Recommendation Activity Diagram}}{32}{figure.3.12}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Registration Sequence Diagram}}{33}{figure.3.13}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Individual Restaurant Recommendation Sequence Diagram}}{34}{figure.3.14}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Create Group Sequence Diagram}}{36}{figure.3.15}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Create Group Sequence Diagram}}{37}{figure.3.16}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Start Page User Interface Design}}{39}{figure.3.17}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Registration Page User Interface Design}}{40}{figure.3.18}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Profile Setup Page User Interface Design}}{41}{figure.3.19}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Home Page User Interface Design}}{42}{figure.3.20}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Filter Window User Interface Design}}{43}{figure.3.21}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Recommendation Success Page User Interface Design}}{44}{figure.3.22}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Group Joining User Interface Design}}{45}{figure.3.23}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Group Confirmation Page User Interface Design}}{46}{figure.3.24}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Group Recommendation Page User Interface Design}}{47}{figure.3.25}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Profile Management Page User Interface Design}}{48}{figure.3.26}%
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Restaurant Collection’s Indexes}}{50}{figure.3.27}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces User Collection’s Indexes}}{51}{figure.3.28}%
-\contentsline {figure}{\numberline {3.29}{\ignorespaces The network model}}{52}{figure.3.29}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram}}{29}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Functional Breakdown Structure of the System}}{34}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces System Overview}}{35}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces System Architecture}}{36}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces App Server Architecture}}{37}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces App Client Architecture}}{38}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Recommender Architecture}}{39}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Data Service Architecture}}{39}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces App Server Architecture}}{40}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Registration Activity Diagram}}{41}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Individual Restaurant Recommendation Activity Diagram}}{42}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Group Restaurant Recommendation Activity Diagram}}{43}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Registration Sequence Diagram}}{44}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Individual Restaurant Recommendation Sequence Diagram}}{45}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Create Group Sequence Diagram}}{47}{figure.3.15}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Create Group Sequence Diagram}}{48}{figure.3.16}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Start Page User Interface Design}}{50}{figure.3.17}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Registration Page User Interface Design}}{51}{figure.3.18}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Profile Setup Page User Interface Design}}{52}{figure.3.19}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Home Page User Interface Design}}{53}{figure.3.20}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Filter Window User Interface Design}}{54}{figure.3.21}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Recommendation Success Page User Interface Design}}{55}{figure.3.22}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Group Joining User Interface Design}}{56}{figure.3.23}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Group Confirmation Page User Interface Design}}{57}{figure.3.24}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Group Recommendation Page User Interface Design}}{58}{figure.3.25}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Profile Management Page User Interface Design}}{59}{figure.3.26}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Restaurant Collection’s Indexes}}{61}{figure.3.27}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces User Collection’s Indexes}}{62}{figure.3.28}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces The network model}}{63}{figure.3.29}%
 \addvspace {0em}
 \addvspace {0em}
 \addvspace {0em}
