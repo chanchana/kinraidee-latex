@@ -25,6 +25,12 @@
 \newcommand*{\captionsource}[2]{%
   \caption[{#1}]{#1}\vspace{-8pt}
   \textbf{Source:} #2}
+\newenvironment{blockquote}{%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=2em%
+  \noindent\ignorespaces}{%
+  \par\medskip}
 
 %\setmathfont(Digits)[Scale=1.0,LetterSpace=0,FakeStretch=1.0]{Times New Roman}
 
@@ -875,10 +881,10 @@ Compared to our system, the information of this paper that uses the genetic algo
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -1533,7 +1539,117 @@ From~\ref{fig:3db_UserCollectionsIndexes}, we can see that the user collection h
 
 
 \section{Restaurant Recommendation Algorithm}
-%TODO
+
+Since last semester, our first try was to use a user-based collaborative filtering technique for the individual’s recommendation system. The result was quite good but not enough for our objective due to its limitations which are the cold-start and location-based problem. Moreover, this technique only works with individual recommendation. So, we decided to research other recommendation techniques in order to reach the objective faster and less complicated than the collaborative filtering techniques.
+
+In conclusion, we decided to use the \textit{\textbf{Genetic Algorithm}} for our restaurant recommendation system which is able to apply to both individuals and groups by creating an objective function to maximize the user’s satisfaction.
+
+\newpage
+\subsection{Genetic Algorithm for Individual Recommendation}
+
+\begin{figure}[!h]\centering
+\includegraphics[height=600pt]{./images/3GeneticAlgorithmFlowchart.png}
+\caption{Restaurant Recommendation Process for Individual}\label{fig:3GeneticAlgorithmFlowchart}
+\end{figure}
+
+Figure~\ref{fig:3GeneticAlgorithmFlowchart} displays the main process of the restaurant recommendation by applying the principles of the Genetic Algorithm to the system.
+
+\paragraph*{1. Initial Population}\
+
+One set of the restaurant recommendations consists of 10 restaurants. In the genetic algorithm, one chromosome then contains 10 genes for 10 restaurants.  Initially, restaurants are drawn from the database based on the user's surroundings or selected locations only. Then, the restaurants are randomly assigned to each gene in the chromosome. Figure 3.29 shows the example of the genes in one chromosome that has a list of restaurants R1 to R10. We set the number of chromosomes to 100. Therefore, 100 chromosomes are initialized in the same manner.
+
+\begin{figure}[!h]\centering
+\includegraphics[width=300pt]{./images/3ga_init.png}
+\caption{Example of Population in 1 Chromosome}\label{fig:3ga_init}
+\end{figure}
+
+\paragraph*{2. Selection}\
+
+The proper selection of genes will have a selection process through objective function or fitness function. Our system wants to maximize the users’ satisfaction based on their preferences and interests. Therefore, we have formulated the equation of our objective function as follows:
+
+\begin{equation}\label{eq:maximizes}
+maximize S = \sum_{i=1}^{10}(T_i + C_i + F_i)
+\end{equation}
+
+\begin{blockquote}\leftskip=8em
+\textbf{Given}\\
+$S$; Value of user’s satisfaction\\
+$i$; Each restaurant in 1 chromosome (Gene Position)\\
+$T_i$; A score of the restaurant type that meet user’s preferences\\
+$C_i$; A score of the price range that meet user’s preferences\\
+$F_i$; A score  the restaurant that meet the user’s history selection
+
+\end{blockquote}
+
+
+\begin{blockquote}
+\textbf{With condition}
+\vspace{-12pt}
+\begin{itemize}\leftskip=2em
+\item[-] $S \geq 0$; The user’s satisfaction value must be greater than or equal to zero.
+\item[-] $T_i=0, 1, 2, \cdots, 15$; The score is based on user rankings from the preferences page by the first place equals five points and decreases accordingly where one restaurant can have a maximum of five categories, so the possible largest number of this variable is $5 + 4 + 3 + 2 + 1 = 15$.
+\item[-] $C_i=0,1,2,3,4$; The score is based on the user’s price range interest. If a restaurant price range matches with the user’s interest, it will get four points and decrease when the restaurant price range is less than the user's interest. If the restaurant price ranges greater than the user's interest, it will be all zero.
+\item[-] $F_i=0$; The score is based on the user’s history of restaurant selection. If the restaurant matches the user’s selection, it will get one point. If the restaurant doesn’t match, it will be equal to zero.
+\end{itemize}
+\end{blockquote}
+
+After the system computes all fitness values, the chromosomes will be sorted in descending order and then select individuals from the top 30 to be parents to reproduce the next generation.
+
+\paragraph*{3. Reproduction}\
+
+From the top 30 chromosomes, the system randomly matches the pair until it reaches 50 pairs. After that the crossover and mutation methods are performed in order to generate a new population with better quality and more diversity from the previous generation.
+
+In the crossover method, the developers wanted to recommend a unique restaurant all in one set of recommendations. Thus, a method of crossover executes one gene at a time with a 70\% chance of crossover. If the crossover has occurred and the restaurant is repeated, the system will skip that gene immediately.
+
+In the mutation method, the developers have set the number of chances that a chromosome in each generation will mutate to 30\%. The mutation process is performed by randomly recruiting a new restaurant from the database to provide more variety than the previous generation.
+
+\paragraph*{4. Termination}\
+
+The algorithm will be terminated when the fitness values of 15 generations are all the same which implies that the algorithm cannot find a better generation that has a higher fitness value.
+
+\subsection{Genetic Algorithm for Group Recommendation}
+
+\begin{figure}[!h]\centering
+\includegraphics[width=300pt]{./images/3ga_grouprecflow.png}
+\caption{Group Recommendation Flow}\label{fig:3ga_grouprecflow}
+\end{figure}
+
+For the group recommendation, the same process as individual recommendation is conducted. However in the group recommendation, the system suggests the restaurant in a set of six instead of ten. So, we need to change the number of genes in one chromosome from ten to six. Moreover, the group recommendation will bring each user’s maximum satisfaction value and aggregate to be the final solution of the group.
+
+\subsection{Rank Aggregation for Group Recommendation}
+
+%TODO check for update
+
+\begin{figure}[!h]\centering
+\includegraphics[width=300pt]{./images/3ga_rankagg.png}
+\caption{Rank Aggregation}\label{fig:3ga_rankagg}
+\end{figure}
+
+Rank Aggregation is a process that finalizes the suggested restaurants from every members’ ranked restaurants. Firstly, it gathers all ranked restaurants from all members, then it calculates the score for each restaurant based on the formula below. The higher score means that the restaurant is more suitable for a group, so the restaurant with the highest score is considered to be the final restaurant for the group.
+
+\begin{equation}\label{eq:rankaggscore}
+score = \left (\frac{T}{T_{max}}  \right ) + 2\cdot \left (\frac{R}{R_{max}}  \right ) + \left (\frac{C}{C_{max}}  \right )
+\end{equation}
+\begin{equation}\label{eq:rankaggscorerank}
+R = \sum_{i=1}^{n}r - \sqrt{\sum_{\substack{j=1 \\ j\neq k}}^{n}\sum_{k=1}^{n}(r_j - r_k)^2}
+\end{equation}
+
+\begin{blockquote}\leftskip=8em
+\textbf{Given}\\
+$T$; Restaurant type score\\
+$T_{max}$; Maximum restaurant type score of the set\\
+$R$; Rank score\\
+$R_{max}$; Maximum rank score of the set\\
+$C$; Restaurant cost score\\
+$C_{max}$; Maximum restaurant cost score of the set\\
+$r$; Rank score from each member, score from 1 - 6
+\end{blockquote}
+
+The score of each restaurant is calculated using the formula~\ref{eq:rankaggscore} above. The score is calculated based on 3 factors: restaurant’s category type, rank from users and restaurant’s cost. The type and cost score of each restaurant can be derived from the genetic algorithm’s fitness value calculation process. The rank score from each member $r$ is determined by the position of the restaurant of the member. The first rank restaurant gets a score of 6, the second one gets 5 and continues to decrease by 1 until the last rank which gets a score of 1. Then these rank scores are summed up to be rank score $R$, however, we need to subtract how far each restaurant ranked from each member, so that the final score will be more fair for every member.
+
+For example, Alice ranks restaurant A as her first rank and ranks restaurant B as her second rank while Bob ranks restaurant as his third rank and ranks restaurant B as his second rank as same as Alice, the score of restaurant A is $10$ ($6 + 4$) and the score of restaurant B is also $10$ ($5 + 5$). This example demonstrates that even if Bob places restaurant A on his third rank, it does not matter because the score is dominated by Alice's ranking score. So, by subtracting the rank score of restaurant A which is $10$ with how far each restaurant ranked which in this case is $2$ ($\sqrt{(6-2^2)}$), the final rank score of restaurant will be 8 which is more fair to Bob and the restaurant B still get a score of $10$ ($10-\sqrt{(5-5^2)}$).
+
+Lastly, the scores, type score, rank score and cost score, are normalized with min-max normalization, so that the scores are all between 0 and 1. However, we multiply the normalized rank score with 2 because this score needs to be dominant with how each member ranks the restaurants over the restaurant profile score. Thus, the restaurant score obtained from this algorithm is a range from 0 to 4.
 
 \section{Production Testing Plan}
 
@@ -1550,51 +1666,11 @@ We will test our application and gather feedback from 20 people. We will collect
 The performance of main components, App Client, App Server, and Recommender, will be evaluated by monitoring the response latency and doing load tests. The production application performance metrics can also be retrieved by the Google Cloud App Engine dashboard.
 
 
-
-\section{Recommender Systems}
-
-%\url{http://www.cpe.kmutt.ac.th}
-%Explain theory, algorithms, protocols, or existing research works and tools related to your work. \cite{bworld}
-
-\begin{table}[!h]
-\caption{test table method1}\label{tbl:method1}
-\begin{tabular}{c|c|l|rr} \hline\hline
-Center & Center & left aligned & Right & Right aligned \\ \hline\hline
-Center & Center & left aligned & Right & Right aligned \\ \hline
-Center & Center & left aligned & Right & Right aligned \\ 
-Center & Center & left aligned & Right & Right aligned \\ \hline
-Center & Center & left aligned & Right & Right aligned \\ \hline\hline
-\end{tabular}
-\end{table}
-
-
-\section{Text Processing Algorithms}
-\subsection{Algorithm I}
-
-% Can define this in the preamble..
-You can place the figure and refer to it as Figure~\ref{fig:model2}.
-The figure and table numbering will be run and updated automatically when you add/remove tables/figures from the document.
-
-\begin{figure}[!h]\centering
-\setlength{\fboxrule}{0.2mm} % can define this in the preamble
-\setlength{\fboxsep}{1cm}
-\fbox{\includegraphics[width=5cm]{./model2.pdf}}
-\caption{The network model}\label{fig:model2}
-\end{figure}
-
- 
-\subsection{Algorithm II}
-Add more subsections as you want.
-
-\subsubsection{Algorithm SUB}
-Add more subsections as you want.
-
-
-\section{Development Tools}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Proposed Work}
 
 Explain the design (how you plan to implement your work) of your project. Adjust the section titles below to suit the types of your work. Detailed physical design like circuits and source codes should be placed in the appendix.

@@ -123,33 +123,36 @@
 \contentsline {subsection}{\numberline {3.5.2}Schema}{60}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Indexing}{61}{subsection.3.5.3}%
 \contentsline {section}{\numberline {3.6}Restaurant Recommendation Algorithm}{62}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Production Testing Plan}{62}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Production Deployment}{62}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}User Evaluation}{62}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Application Evaluation}{62}{subsection.3.7.3}%
-\contentsline {section}{\numberline {3.8}Recommender Systems}{62}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Text Processing Algorithms}{63}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Algorithm I}{63}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Algorithm II}{63}{subsection.3.9.2}%
-\contentsline {subsubsection}{\numberline {3.9.2.1}Algorithm SUB}{63}{subsubsection.3.9.2.1}%
-\contentsline {section}{\numberline {3.10}Development Tools}{63}{section.3.10}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Proposed Work}}}{64}{chapter.4}%
-\contentsline {section}{\numberline {4.1}System Architecture}{64}{section.4.1}%
-\contentsline {section}{\numberline {4.2}System Specifications and Requirements}{64}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Hardware Module 1}{64}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Component 1}{64}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Logical Circuit Diagram}{64}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Hardware Module 2}{64}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Component 1}{64}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Component 2}{64}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Path Finding Algorithm}{64}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Database Design}{64}{section.4.6}%
-\contentsline {section}{\numberline {4.7}GUI Design}{64}{section.4.7}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Implementation Results}}}{65}{chapter.5}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {6.}\hskip -0.5em Conclusions}}}{66}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Problems and Solutions}{66}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Future Works}{66}{section.6.2}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{67}{section.6.2}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{70}{section.6.2}%
-\contentsline {apdx}{A\hskip 1em First appendix title}{71}{section.6.2}%
-\contentsline {apdx}{B\hskip 1em Second appendix title}{73}{equation.1.2.5}%
+\contentsline {subsection}{\numberline {3.6.1}Genetic Algorithm for Individual Recommendation}{63}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Genetic Algorithm for Group Recommendation}{65}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Rank Aggregation for Group Recommendation}{66}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Production Testing Plan}{67}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Production Deployment}{67}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}User Evaluation}{67}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Application Evaluation}{67}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Recommender Systems}{67}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Text Processing Algorithms}{68}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Algorithm I}{68}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Algorithm II}{68}{subsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.2.1}Algorithm SUB}{68}{subsubsection.3.9.2.1}%
+\contentsline {section}{\numberline {3.10}Development Tools}{68}{section.3.10}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Proposed Work}}}{69}{chapter.4}%
+\contentsline {section}{\numberline {4.1}System Architecture}{69}{section.4.1}%
+\contentsline {section}{\numberline {4.2}System Specifications and Requirements}{69}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Hardware Module 1}{69}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Component 1}{69}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Logical Circuit Diagram}{69}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Hardware Module 2}{69}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Component 1}{69}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Component 2}{69}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Path Finding Algorithm}{69}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Database Design}{69}{section.4.6}%
+\contentsline {section}{\numberline {4.7}GUI Design}{69}{section.4.7}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Implementation Results}}}{70}{chapter.5}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {6.}\hskip -0.5em Conclusions}}}{71}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Problems and Solutions}{71}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Future Works}{71}{section.6.2}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{72}{section.6.2}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{75}{section.6.2}%
+\contentsline {apdx}{A\hskip 1em First appendix title}{76}{section.6.2}%
+\contentsline {apdx}{B\hskip 1em Second appendix title}{78}{equation.1.2.5}%
