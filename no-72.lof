@@ -19,7 +19,7 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces App Client Architecture}}{38}{figure.3.6}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Recommender Architecture}}{39}{figure.3.7}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Data Service Architecture}}{40}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces App Server Architecture}}{41}{figure.3.9}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces App Server Architecture}}{40}{figure.3.9}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Registration Activity Diagram}}{42}{figure.3.10}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Individual Restaurant Recommendation Activity Diagram}}{43}{figure.3.11}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Group Restaurant Recommendation Activity Diagram}}{44}{figure.3.12}%
@@ -63,67 +63,68 @@
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Login and Registration User Journey Changes}}{81}{figure.4.17}%
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Home Screen User Journey Changes}}{81}{figure.4.18}%
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Individual Recommendation User Journey Changes}}{82}{figure.4.19}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Group Recommendation User Journey Changes}}{83}{figure.4.20}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Restaurant Local Data from Facebook}}{84}{figure.4.21}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Group Recommendation User Journey Changes}}{86}{figure.4.22}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Login Page User Interface}}{87}{figure.4.23}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Registration User Interface}}{88}{figure.4.24}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Home Screen User Interface}}{89}{figure.4.25}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Language Switching User Interface}}{90}{figure.4.26}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Individual Recommendation Confirmation User Interface}}{91}{figure.4.27}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Individual Recommendation User Interface}}{92}{figure.4.28}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Individual Recommendation Selection User Interface}}{93}{figure.4.29}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Individual Recommendation Success User Interface}}{94}{figure.4.30}%
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Group Creating User Interface}}{95}{figure.4.31}%
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Group Joining User Interface}}{96}{figure.4.32}%
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Joined Group User Interface}}{97}{figure.4.33}%
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Group Recommendation User Interface}}{98}{figure.4.34}%
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Group Recommendation Success User Interface}}{99}{figure.4.35}%
-\contentsline {figure}{\numberline {4.36}{\ignorespaces Favorite Restaurant List User Interface}}{100}{figure.4.36}%
-\contentsline {figure}{\numberline {4.37}{\ignorespaces Selected Columns from User Behavior Data}}{101}{figure.4.37}%
-\contentsline {figure}{\numberline {4.38}{\ignorespaces User ID in Object ID Pattern}}{101}{figure.4.38}%
-\contentsline {figure}{\numberline {4.39}{\ignorespaces Sample of Selected User Behavior Data}}{101}{figure.4.39}%
-\contentsline {figure}{\numberline {4.40}{\ignorespaces Selected Columns from Restaurants Data}}{102}{figure.4.40}%
-\contentsline {figure}{\numberline {4.41}{\ignorespaces Sample of Selected Restaurant Data}}{102}{figure.4.41}%
-\contentsline {figure}{\numberline {4.42}{\ignorespaces Some Part of the User-restaurant Matrix}}{103}{figure.4.42}%
-\contentsline {figure}{\numberline {4.43}{\ignorespaces Function to Find a Similarity Between User}}{103}{figure.4.43}%
-\contentsline {figure}{\numberline {4.44}{\ignorespaces Return Value from similar\_user Function}}{103}{figure.4.44}%
-\contentsline {figure}{\numberline {4.45}{\ignorespaces Restaurants Recommendation Function of User-based Collaborative Filtering Method}}{104}{figure.4.45}%
-\contentsline {figure}{\numberline {4.46}{\ignorespaces Example of Top 10 Recommended Restaurants for User}}{104}{figure.4.46}%
-\contentsline {figure}{\numberline {4.47}{\ignorespaces Average Ratings of Top 10 Recommended Restaurants}}{105}{figure.4.47}%
-\contentsline {figure}{\numberline {4.48}{\ignorespaces Sample of Individual’s Preferences}}{105}{figure.4.48}%
-\contentsline {figure}{\numberline {4.49}{\ignorespaces Result of Individual Recommendation Algorithm}}{106}{figure.4.49}%
-\contentsline {figure}{\numberline {4.50}{\ignorespaces Sample Group of Two’s Preferences}}{106}{figure.4.50}%
-\contentsline {figure}{\numberline {4.51}{\ignorespaces Result of Group Recommendation Algorithm}}{107}{figure.4.51}%
-\contentsline {figure}{\numberline {4.52}{\ignorespaces Sample of Suggested Restaurants and Ranks from Users}}{108}{figure.4.52}%
-\contentsline {figure}{\numberline {4.53}{\ignorespaces Final Score from the Sample}}{109}{figure.4.53}%
-\contentsline {figure}{\numberline {4.54}{\ignorespaces Application Performance Evaluation Request}}{110}{figure.4.54}%
-\contentsline {figure}{\numberline {4.55}{\ignorespaces Line Graph between Generation and Fitness Value of Genetic Algorithm}}{111}{figure.4.55}%
-\contentsline {figure}{\numberline {4.56}{\ignorespaces Parameters of Genetic Algorithm in this Recommender}}{111}{figure.4.56}%
-\contentsline {figure}{\numberline {4.57}{\ignorespaces Genetic Algorithm Execution Time with 6 Genes}}{112}{figure.4.57}%
-\contentsline {figure}{\numberline {4.58}{\ignorespaces Genetic Algorithm Execution Time with 10 Genes}}{112}{figure.4.58}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Group Recommendation User Journey Changes}}{82}{figure.4.20}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Restaurant Local Data from Facebook}}{83}{figure.4.21}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Group Recommendation User Journey Changes}}{85}{figure.4.22}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Login Page User Interface}}{86}{figure.4.23}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Registration User Interface}}{87}{figure.4.24}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Home Screen User Interface}}{88}{figure.4.25}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Language Switching User Interface}}{89}{figure.4.26}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Individual Recommendation Confirmation User Interface}}{90}{figure.4.27}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Individual Recommendation User Interface}}{91}{figure.4.28}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Individual Recommendation Selection User Interface}}{92}{figure.4.29}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Individual Recommendation Success User Interface}}{93}{figure.4.30}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Group Creating User Interface}}{94}{figure.4.31}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Group Joining User Interface}}{95}{figure.4.32}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Joined Group User Interface}}{96}{figure.4.33}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Group Recommendation User Interface}}{97}{figure.4.34}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Group Recommendation Success User Interface}}{98}{figure.4.35}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Favorite Restaurant List User Interface}}{99}{figure.4.36}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Selected Columns from User Behavior Data}}{100}{figure.4.37}%
+\contentsline {figure}{\numberline {4.38}{\ignorespaces User ID in Object ID Pattern}}{100}{figure.4.38}%
+\contentsline {figure}{\numberline {4.39}{\ignorespaces Sample of Selected User Behavior Data}}{100}{figure.4.39}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Selected Columns from Restaurants Data}}{101}{figure.4.40}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Sample of Selected Restaurant Data}}{101}{figure.4.41}%
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Some Part of the User-restaurant Matrix}}{102}{figure.4.42}%
+\contentsline {figure}{\numberline {4.43}{\ignorespaces Function to Find a Similarity Between User}}{102}{figure.4.43}%
+\contentsline {figure}{\numberline {4.44}{\ignorespaces Return Value from similar\_user Function}}{102}{figure.4.44}%
+\contentsline {figure}{\numberline {4.45}{\ignorespaces Restaurants Recommendation Function of User-based Collaborative Filtering Method}}{103}{figure.4.45}%
+\contentsline {figure}{\numberline {4.46}{\ignorespaces Example of Top 10 Recommended Restaurants for User}}{103}{figure.4.46}%
+\contentsline {figure}{\numberline {4.47}{\ignorespaces Average Ratings of Top 10 Recommended Restaurants}}{104}{figure.4.47}%
+\contentsline {figure}{\numberline {4.48}{\ignorespaces Sample of Individual’s Preferences}}{104}{figure.4.48}%
+\contentsline {figure}{\numberline {4.49}{\ignorespaces Result of Individual Recommendation Algorithm}}{105}{figure.4.49}%
+\contentsline {figure}{\numberline {4.50}{\ignorespaces Sample Group of Two’s Preferences}}{105}{figure.4.50}%
+\contentsline {figure}{\numberline {4.51}{\ignorespaces Result of Group Recommendation Algorithm}}{106}{figure.4.51}%
+\contentsline {figure}{\numberline {4.52}{\ignorespaces Sample of Suggested Restaurants and Ranks from Users}}{107}{figure.4.52}%
+\contentsline {figure}{\numberline {4.53}{\ignorespaces Final Score from the Sample}}{108}{figure.4.53}%
+\contentsline {figure}{\numberline {4.54}{\ignorespaces Revised an Individual Recommendation System Interface}}{109}{figure.4.54}%
+\contentsline {figure}{\numberline {4.55}{\ignorespaces Application Performance Evaluation Request}}{111}{figure.4.55}%
+\contentsline {figure}{\numberline {4.56}{\ignorespaces Line Graph between Generation and Fitness Value of Genetic Algorithm}}{112}{figure.4.56}%
+\contentsline {figure}{\numberline {4.57}{\ignorespaces Parameters of Genetic Algorithm in this Recommender}}{112}{figure.4.57}%
+\contentsline {figure}{\numberline {4.58}{\ignorespaces Genetic Algorithm Execution Time with 6 Genes}}{113}{figure.4.58}%
+\contentsline {figure}{\numberline {4.59}{\ignorespaces Genetic Algorithm Execution Time with 10 Genes}}{113}{figure.4.59}%
 \addvspace {0em}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces LINE Mini App Integration}}{115}{figure.5.1}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Restaurant Consideration Survey in Google form}}{119}{figure.1.2}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Gender of Respondents}}{119}{figure.1.3}%
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Distribution of Respondents’ Age}}{120}{figure.1.4}%
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Occupation of Respondents}}{120}{figure.1.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces LINE Mini App Integration}}{116}{figure.5.1}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Restaurant Consideration Survey in Google form}}{120}{figure.1.2}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Gender of Respondents}}{120}{figure.1.3}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Distribution of Respondents’ Age}}{121}{figure.1.4}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Occupation of Respondents}}{121}{figure.1.5}%
 \contentsline {figure}{\numberline {A.6}{\ignorespaces Estimated Daily Cost of Eating}}{121}{figure.1.6}%
-\contentsline {figure}{\numberline {A.7}{\ignorespaces The Application or Platform that Respondent Usually Use to Find the Restaurants}}{121}{figure.1.7}%
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Top 3 Conditions to Find the Restaurant when Eating Alone}}{122}{figure.1.8}%
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Average Time to Select the Restaurant Alone}}{122}{figure.1.9}%
-\contentsline {figure}{\numberline {A.10}{\ignorespaces Number of Respondents Thinking that Restaurant Selection is Their Pain}}{122}{figure.1.10}%
-\contentsline {figure}{\numberline {A.11}{\ignorespaces Which Meal Has Problem the Most}}{123}{figure.1.11}%
-\contentsline {figure}{\numberline {A.12}{\ignorespaces Problem Between Dine-in and Delivery}}{123}{figure.1.12}%
-\contentsline {figure}{\numberline {A.13}{\ignorespaces Average Time to Select the Restaurant in Group}}{124}{figure.1.13}%
-\contentsline {figure}{\numberline {A.14}{\ignorespaces Number of Respondents Thinking that Restaurant Selection in Group is Their Pain}}{124}{figure.1.14}%
-\contentsline {figure}{\numberline {A.15}{\ignorespaces The Frequency of Group Eating Problems}}{125}{figure.1.15}%
-\contentsline {figure}{\numberline {A.16}{\ignorespaces The Most Type of Group that Usually Occur Group Eating Problem}}{125}{figure.1.16}%
-\contentsline {figure}{\numberline {A.17}{\ignorespaces Top 3 Conditions to Find the Restaurant when Eating with Group of Friends}}{125}{figure.1.17}%
-\contentsline {figure}{\numberline {A.18}{\ignorespaces Top 3 Conditions to Find the Restaurant when Eating with Family}}{126}{figure.1.18}%
-\contentsline {figure}{\numberline {A.19}{\ignorespaces Top 3 Conditions to Find the Restaurant when Eating with Girlfriend/boyfriend}}{126}{figure.1.19}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces The Application or Platform that Respondent Usually Use to Find the Restaurants}}{122}{figure.1.7}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Top 3 Conditions to Find the Restaurant when Eating Alone}}{123}{figure.1.8}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Average Time to Select the Restaurant Alone}}{123}{figure.1.9}%
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Number of Respondents Thinking that Restaurant Selection is Their Pain}}{123}{figure.1.10}%
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Which Meal Has Problem the Most}}{124}{figure.1.11}%
+\contentsline {figure}{\numberline {A.12}{\ignorespaces Problem Between Dine-in and Delivery}}{124}{figure.1.12}%
+\contentsline {figure}{\numberline {A.13}{\ignorespaces Average Time to Select the Restaurant in Group}}{125}{figure.1.13}%
+\contentsline {figure}{\numberline {A.14}{\ignorespaces Number of Respondents Thinking that Restaurant Selection in Group is Their Pain}}{125}{figure.1.14}%
+\contentsline {figure}{\numberline {A.15}{\ignorespaces The Frequency of Group Eating Problems}}{126}{figure.1.15}%
+\contentsline {figure}{\numberline {A.16}{\ignorespaces The Most Type of Group that Usually Occur Group Eating Problem}}{126}{figure.1.16}%
+\contentsline {figure}{\numberline {A.17}{\ignorespaces Top 3 Conditions to Find the Restaurant when Eating with Group of Friends}}{126}{figure.1.17}%
+\contentsline {figure}{\numberline {A.18}{\ignorespaces Top 3 Conditions to Find the Restaurant when Eating with Family}}{127}{figure.1.18}%
+\contentsline {figure}{\numberline {A.19}{\ignorespaces Top 3 Conditions to Find the Restaurant when Eating with Girlfriend/boyfriend}}{127}{figure.1.19}%
 \contentsline {figure}{\numberline {A.20}{\ignorespaces Reason of Problem that Frequently Occurs when Eating in Group}}{127}{figure.1.20}%
-\contentsline {figure}{\numberline {A.21}{\ignorespaces How Involved Are You in Making Restaurant Decisions}}{127}{figure.1.21}%
+\contentsline {figure}{\numberline {A.21}{\ignorespaces How Involved Are You in Making Restaurant Decisions}}{128}{figure.1.21}%
 \contentsline {figure}{\numberline {A.22}{\ignorespaces Solution to Solve Group Eating Problems}}{128}{figure.1.22}%
 \contentsline {figure}{\numberline {A.23}{\ignorespaces Percentage of Respondents that Using Recommendation Applications}}{129}{figure.1.23}%
 \contentsline {figure}{\numberline {A.24}{\ignorespaces Recommendation Applications}}{129}{figure.1.24}%

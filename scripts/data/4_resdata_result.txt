@@ -1,8 +1,12 @@
-We can divide our future works into 3 parts which are dataset, web application and recommendation improvement. In the dataset improvement, we could improve the restaurant image problem by using other external services or try to find alternative data sources that provide us more accurate information. In web application improvement, we plan to add a group chat feature to improve the discussion process in group recommendation. Lastly, in the recommendation improvement, we can try to tune the parameters and do more experiments of our genetic algorithm, so the performance and users’ satisfaction will be increased.
+For the individual part, we let users get the restaurant recommendation from their own location and we found that there are very few restaurants to recommend to that area, if not in downtown such as Siam Square. However, after we get feedback from users, most users still can receive restaurant recommendations that match with their preferences but it is not as much as they expected. So, our quick solution is to extend the distance between the restaurant and the user more from 1 kilometer to 3 kilometers.
 
 
+Figure 4.52: Revised an Individual Recommendation System Interface
 
+The next issue is about the individual recommendation interface as shown in  Figure 4.52 on the left. Most users said that they do not want to choose and stop immediately because they would rather have the previous restaurant but cannot go back anymore. In short, they want to compare the recommended restaurants. So, we revised the user interface of this page as shown in Figure 4.52 on the right. The new one can let the user compare each restaurant easily by recommending 10 restaurants per set.
 
-Figure 5.X: LINE Mini App Integration
+Other feedback of the user interface is about the “Craving for...” selection bar from the settings page. Some users said that this interface looks quite confusing to them which leads to misunderstanding such as this bar can select all categories, not just one. Thus, we decided to change from this interface to the dropdown menu instead for both individual and group recommendation.
 
-        Moreover, in the web application improvement, we could integrate our existing application with LINE Mini App. Figure 5.X shows the 3 main benefits from this integration. The first one is, users can easily add the application to their LINE home screen without any installation. For the next one, users can invite friends via individual and group LINE chat. Lastly, users can easily see and join a group within LINE chat.
+Last topic to concern is about the distance between users and recommended restaurants. At the moment, the system represents the distance by calculating the displacement but most users felt that it was too close than in reality. Our solution is to change the calculation method by calculating from the path of the car travelling e.g. Google Maps.
+
+In summary, we need to change the user interface of the recommendation and preferences page for ease of use and change the distance calculation method to the path of car travelling instead.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  17 MAY 2021 20:36
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  17 MAY 2021 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1071,7 +1071,7 @@ File: ./images/2whatman.png Graphic file (type bmp)
 File: ./images/2tinder.jpeg Graphic file (type bmp)
 <./images/2tinder.jpeg>
  [25]
-Overfull \hbox (12.03842pt too wide) in paragraph at lines 895--895
+Overfull \hbox (12.03842pt too wide) in paragraph at lines 899--899
 []\TU/TimesNewRoman(0)/b/n/13 On the design of Individual and Group Recommender
  Systems for Tourism
  []
@@ -1083,7 +1083,7 @@ Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 923.
+(hyperref)                removed on input line 929.
 
 [28
 
@@ -1091,7 +1091,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: ./images/3usecase.png Graphic file (type bmp)
 <./images/3usecase.png>
 
-Overfull \hbox (6.38pt too wide) in paragraph at lines 948--949
+Overfull \hbox (6.38pt too wide) in paragraph at lines 954--955
  [][] 
  []
 
@@ -1134,7 +1134,7 @@ File: ./images/3seqdiagram_register.png Graphic file (type bmp)
 File: ./images/3seqdiagram_indirec.png Graphic file (type bmp)
 <./images/3seqdiagram_indirec.png>
 
-Overfull \hbox (13.52638pt too wide) in paragraph at lines 1286--1287
+Overfull \hbox (13.52638pt too wide) in paragraph at lines 1292--1293
  [][] 
  []
 
@@ -1147,7 +1147,7 @@ File: ./images/3seqdiagram_grouprec.png Graphic file (type bmp)
  [49] [50]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1340.
+(hyperref)                than one, level fixed on input line 1346.
 
 File: ./images/3ui_StartPageUserInterfaceDesign.png Graphic file (type bmp)
 <./images/3ui_StartPageUserInterfaceDesign.png>
@@ -1191,9 +1191,9 @@ File: ./images/3db_UserCollectionsIndexes.png Graphic file (type bmp)
 <./images/3db_UserCollectionsIndexes.png>
  [62]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 1605.
+(Font)              scaled to size 10.0pt on input line 1611.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 1605.
+(Font)              scaled to size 10.0pt on input line 1611.
  [63]
 File: ./images/3GeneticAlgorithmFlowchart.png Graphic file (type bmp)
 <./images/3GeneticAlgorithmFlowchart.png>
@@ -1211,7 +1211,7 @@ Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 1734.
+(hyperref)                removed on input line 1740.
 
 File: ./images/4ThaiChanasRestaurantDataExample.png Graphic file (type bmp)
 <./images/4ThaiChanasRestaurantDataExample.png>
@@ -1224,7 +1224,7 @@ File: ./images/4FacebooksRestaurantDataExample.png Graphic file (type bmp)
 File: ./images/4RestaurantDuplicationChecking.png Graphic file (type bmp)
 <./images/4RestaurantDuplicationChecking.png>
 
-Overfull \hbox (2.0803pt too wide) in paragraph at lines 1772--1773
+Overfull \hbox (2.0803pt too wide) in paragraph at lines 1778--1779
 \TU/TimesNewRoman(0)/m/n/10 contains more information. However, “McDonald’s MBK
 ” has a similar name with “McDonald’s PARAGON”
  []
@@ -1236,10 +1236,10 @@ File: ./images/4RestaurantsCategoryDistribution.png Graphic file (type bmp)
 [71]
 File: ./images/4RestaurantsPriceRangeDistribution.png Graphic file (type bmp)
 <./images/4RestaurantsPriceRangeDistribution.png>
- [72]
 File: ./images/4ExampleofRestaurantPicturefromFacebookPage.jpeg Graphic file (t
 ype bmp)
 <./images/4ExampleofRestaurantPicturefromFacebookPage.jpeg>
+ [72]
 File: ./images/4ExampleofUnrelatedRestaurantPicturefromFacebookPage.jpeg Graphi
 c file (type bmp)
 <./images/4ExampleofUnrelatedRestaurantPicturefromFacebookPage.jpeg>
@@ -1256,7 +1256,7 @@ File: ./images/4FacetofaceInterviewProcess.png Graphic file (type bmp)
 File: ./images/4DistributionofPeoplesLocation.png Graphic file (type bmp)
 <./images/4DistributionofPeoplesLocation.png>
 
-Overfull \hbox (16.38pt too wide) in paragraph at lines 1860--1861
+Overfull \hbox (16.38pt too wide) in paragraph at lines 1867--1868
  [][] 
  []
 
@@ -1270,10 +1270,9 @@ File: ./images/4VisualizationofPeoplesDemographic.png Graphic file (type bmp)
 File: ./images/4AverageScoreofEachRestaurantCategoryfromPeople.png Graphic file
  (type bmp)
 <./images/4AverageScoreofEachRestaurantCategoryfromPeople.png>
- [78]
 File: ./images/4DistributionofUsersRatings.png Graphic file (type bmp)
 <./images/4DistributionofUsersRatings.png>
- [79]
+ [78] [79]
 Missing character: There is no ฿ (U+0E3F) in font Times New Roman/OT:script=lat
 n;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
 File: ./images/4LoginandRegistrationUserJourneyChanges.png Graphic file (type b
@@ -1292,85 +1291,85 @@ p)
  [82]
 File: ./images/4result_dataservice.png Graphic file (type bmp)
 <./images/4result_dataservice.png>
- [83] [84]
+ [83]
 File: ./images/4mongodashboard.png Graphic file (type bmp)
 <./images/4mongodashboard.png>
- [85] [86]
+ [84] [85]
 File: ./images/4ui_LoginPageUserInterface.png Graphic file (type bmp)
 <./images/4ui_LoginPageUserInterface.png>
- [87]
+ [86]
 File: ./images/4ui_RegistrationUserInterface.png Graphic file (type bmp)
 <./images/4ui_RegistrationUserInterface.png>
- [88]
+ [87]
 File: ./images/4ui_HomeScreenUserInterface.png Graphic file (type bmp)
 <./images/4ui_HomeScreenUserInterface.png>
 File: ./images/4ui_LanguageSwitchingUserInterface.png Graphic file (type bmp)
 <./images/4ui_LanguageSwitchingUserInterface.png>
- [89]
+ [88]
 Missing character: There is no ไ (U+0E44) in font Times New Roman/OT:script=lat
 n;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
 Missing character: There is no ท (U+0E17) in font Times New Roman/OT:script=lat
 n;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
 Missing character: There is no ย (U+0E22) in font Times New Roman/OT:script=lat
 n;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
- [90]
+ [89]
 File: ./images/4ui_IndividualRecommendationConfirmationUserInterface.png Graphi
 c file (type bmp)
 <./images/4ui_IndividualRecommendationConfirmationUserInterface.png>
 File: ./images/4ui_IndividualRecommendationUserInterface.png Graphic file (type
  bmp)
 <./images/4ui_IndividualRecommendationUserInterface.png>
-
-[91]
+ [90]
 File: ./images/4ui_IndividualRecommendationSelectionUserInterface.png Graphic f
 ile (type bmp)
 <./images/4ui_IndividualRecommendationSelectionUserInterface.png>
- [92]
+
+[91]
 File: ./images/4ui_IndividualRecommendationSuccessUserInterface.png Graphic fil
 e (type bmp)
 <./images/4ui_IndividualRecommendationSuccessUserInterface.png>
- [93] [94]
+ [92] [93]
 File: ./images/4ui_GroupCreatingUserInterface.png Graphic file (type bmp)
 <./images/4ui_GroupCreatingUserInterface.png>
 File: ./images/4ui_GroupJoiningUserInterface.png Graphic file (type bmp)
 <./images/4ui_GroupJoiningUserInterface.png>
- [95]
+ [94]
 File: ./images/4ui_JoinedGroupUserInterface.png Graphic file (type bmp)
 <./images/4ui_JoinedGroupUserInterface.png>
- [96]
+ [95]
 File: ./images/4ui_GroupRecommendationUserInterface.png Graphic file (type bmp)
 
 <./images/4ui_GroupRecommendationUserInterface.png>
- [97]
+ [96]
 File: ./images/4ui_GroupRecommendationSuccessUserInterface.png Graphic file (ty
 pe bmp)
 <./images/4ui_GroupRecommendationSuccessUserInterface.png>
- [98] [99]
+ [97] [98]
 File: ./images/4ui_FavoriteRestaurantListUserInterface.png Graphic file (type b
 mp)
 <./images/4ui_FavoriteRestaurantListUserInterface.png>
 File: ./images/4SelectedColumnsfromUserBehaviorData.png Graphic file (type bmp)
 
 <./images/4SelectedColumnsfromUserBehaviorData.png>
- [100]
+ [99]
 File: ./images/4UserIDinObjectIDPattern.png Graphic file (type bmp)
 <./images/4UserIDinObjectIDPattern.png>
 File: ./images/4SampleofSelectedUserBehaviorData.png Graphic file (type bmp)
 <./images/4SampleofSelectedUserBehaviorData.png>
 
-Overfull \hbox (18.68805pt too wide) in paragraph at lines 2266--2267
+Overfull \hbox (18.68805pt too wide) in paragraph at lines 2273--2274
 []\TU/TimesNewRoman(0)/m/n/10 For the restaurants’ dataset, we select some rela
 ted columns which are ‘id’, ‘name’, ‘cats’, ‘cats_ids’, ‘price_range’,
  []
 
 File: ./images/4SelectedColumnsfromRestaurantsData.png Graphic file (type bmp)
 <./images/4SelectedColumnsfromRestaurantsData.png>
-[101]
+[100]
 File: ./images/4SampleofSelectedRestaurantData.png Graphic file (type bmp)
 <./images/4SampleofSelectedRestaurantData.png>
 File: ./images/4SomePartoftheUserrestaurantMatrix.png Graphic file (type bmp)
 <./images/4SomePartoftheUserrestaurantMatrix.png>
- [102]
+ [101]
 File: ./images/4FunctiontoFindaSimilarityBetweenUser.png Graphic file (type bmp
 )
 <./images/4FunctiontoFindaSimilarityBetweenUser.png>
@@ -1381,64 +1380,67 @@ File: ./images/4RestaurantsRecommendationFunctionofUserbasedCollaborativeFilter
 ingMethod.png Graphic file (type bmp)
 <./images/4RestaurantsRecommendationFunctionofUserbasedCollaborativeFilteringMe
 thod.png>
- [103]
+ [102]
 File: ./images/4ExampleofTop10RecommendedRestaurantsforUser.png Graphic file (t
 ype bmp)
 <./images/4ExampleofTop10RecommendedRestaurantsforUser.png>
 File: ./images/4AverageRatingsofTop10RecommendedRestaurants.png Graphic file (t
 ype bmp)
 <./images/4AverageRatingsofTop10RecommendedRestaurants.png>
- [104]
+ [103]
 File: ./images/4SampleofIndividualsPreferences.png Graphic file (type bmp)
 <./images/4SampleofIndividualsPreferences.png>
 File: ./images/4ResultofIndividualRecommendationAlgorithm.png Graphic file (typ
 e bmp)
 <./images/4ResultofIndividualRecommendationAlgorithm.png>
- [105]
+ [104]
 File: ./images/4SampleGroupofTwosPreferences.png Graphic file (type bmp)
 <./images/4SampleGroupofTwosPreferences.png>
 File: ./images/4ResultofGroupRecommendationAlgorithm.png Graphic file (type bmp
 )
 <./images/4ResultofGroupRecommendationAlgorithm.png>
- [106]
+ [105]
 File: ./images/4SampleofSuggestedRestaurantsandRanksfromUsers.png Graphic file 
 (type bmp)
 <./images/4SampleofSuggestedRestaurantsandRanksfromUsers.png>
- [107]
+ [106]
 File: ./images/4FinalScorefromtheSample.png Graphic file (type bmp)
 <./images/4FinalScorefromtheSample.png>
- [108]
+ [107] [108]
+File: ./images/4usereva1.jpg Graphic file (type bmp)
+<./images/4usereva1.jpg>
+ [109] [110]
 File: ./images/4ApplicationPerformanceEvaluationRequest.png Graphic file (type 
 bmp)
 <./images/4ApplicationPerformanceEvaluationRequest.png>
- [109]
+ [111]
 File: ./images/4LineGraphbetweenGenerationandFitnessValueofGeneticAlgorithm.png
  Graphic file (type bmp)
 <./images/4LineGraphbetweenGenerationandFitnessValueofGeneticAlgorithm.png>
- [110]
 File: ./images/4ParametersofGeneticAlgorithminthisRecommender.png Graphic file 
 (type bmp)
 <./images/4ParametersofGeneticAlgorithminthisRecommender.png>
 File: ./images/4GeneticAlgorithmExecutionTimewith6Genes.png Graphic file (type 
 bmp)
 <./images/4GeneticAlgorithmExecutionTimewith6Genes.png>
- [111]
+
+[112]
 File: ./images/4GeneticAlgorithmExecutionTimewith10Genes.png Graphic file (type
  bmp)
 <./images/4GeneticAlgorithmExecutionTimewith10Genes.png>
- [112]
+ [113]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 2453.
+(hyperref)                removed on input line 2513.
 
-[113
+[114
 
 ]
 File: ./images/5LINEMiniAppIntegration.png Graphic file (type bmp)
 <./images/5LINEMiniAppIntegration.png>
- [114] (./no-72.bbl [115]
+ [115] (./no-72.bbl [116]
 Underfull \hbox (badness 10000) in paragraph at lines 17--21
 []\TU/TimesNewRoman(0)/m/n/10 Wikipedia,  “Recommender system,” Available at []
 []$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] []
@@ -1517,7 +1519,7 @@ Underfull \hbox (badness 1264) in paragraph at lines 132--136
 [][][][][][][] []
  []
 
-[116
+[117
 
 ]
 Underfull \hbox (badness 3375) in paragraph at lines 171--175
@@ -1531,17 +1533,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--181
 [][][][][] [] [] [] [][][][] [] [][][][][] [] [][][][][][][] [] [][][] []
  []
 
-) [117] [118]
+) [118] [119]
 
 Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2519.
+(hyperref)                replaced by space on input line 2579.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2520--2521
+Underfull \hbox (badness 10000) in paragraph at lines 2580--2581
 
  []
 
@@ -1552,17 +1554,16 @@ File: ./images/A1GenderofRespondents.png Graphic file (type bmp)
 <./images/A1GenderofRespondents.png>
 File: ./images/A1DistributionofRespondentsAge.png Graphic file (type bmp)
 <./images/A1DistributionofRespondentsAge.png>
-[119]
+[120]
 File: ./images/A1OccupationofRespondents.png Graphic file (type bmp)
 <./images/A1OccupationofRespondents.png>
 File: ./images/A1EstimatedDailyCostofEating.png Graphic file (type bmp)
 <./images/A1EstimatedDailyCostofEating.png>
- [120]
 File: ./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheResta
 urants.png Graphic file (type bmp)
 <./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheRestaurant
 s.png>
- [121]
+ [121] [122]
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingAlone.png Graphic f
 ile (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingAlone.png>
@@ -1574,10 +1575,10 @@ png Graphic file (type bmp)
 <./images/A1NumberofRespondentsThinkingthatRestaurantSelectionisTheirPain.png>
 File: ./images/A1WhichMealHasProblemtheMost.png Graphic file (type bmp)
 <./images/A1WhichMealHasProblemtheMost.png>
- [122]
+ [123]
 File: ./images/A1ProblemBetweenDine-inandDelivery.png Graphic file (type bmp)
 <./images/A1ProblemBetweenDine-inandDelivery.png>
- [123]
+ [124]
 File: ./images/A1AverageTimetoSelecttheRestaurantinGroup.png Graphic file (type
  bmp)
 <./images/A1AverageTimetoSelecttheRestaurantinGroup.png>
@@ -1587,7 +1588,7 @@ irPain.png Graphic file (type bmp)
 n.png>
 File: ./images/A1TheFrequencyofGroupEatingProblems.png Graphic file (type bmp)
 <./images/A1TheFrequencyofGroupEatingProblems.png>
- [124]
+ [125]
 File: ./images/A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem.png Graph
 ic file (type bmp)
 <./images/A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem.png>
@@ -1597,21 +1598,21 @@ png Graphic file (type bmp)
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily.png Grap
 hic file (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily.png>
- [125]
+ [126]
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend.png 
 Graphic file (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend.png>
 File: ./images/A1ReasonofProblemthatFrequentlyOccurswhenEatinginGroup.png Graph
 ic file (type bmp)
 <./images/A1ReasonofProblemthatFrequentlyOccurswhenEatinginGroup.png>
- [126]
 File: ./images/A1HowInvolvedAreYouinMakingRestaurantDecisions.png Graphic file 
 (type bmp)
 <./images/A1HowInvolvedAreYouinMakingRestaurantDecisions.png>
+ [127]
 File: ./images/A1SolutiontoSolveGroupEatingProblems.png Graphic file (type bmp)
 
 <./images/A1SolutiontoSolveGroupEatingProblems.png>
- [127] [128]
+ [128]
 File: ./images/A1PercentageofRespondentsthatUsingRecommendationApplications.png
  Graphic file (type bmp)
 <./images/A1PercentageofRespondentsthatUsingRecommendationApplications.png>
@@ -1620,28 +1621,27 @@ File: ./images/A1RecommendationApplications.png Graphic file (type bmp)
 File: ./images/A1UsageProblemofExistingRecommendationApplication.png Graphic fi
 le (type bmp)
 <./images/A1UsageProblemofExistingRecommendationApplication.png>
- [129] [130]
-[131]
+ [129] [130] [131]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2712.
+(hyperref)                replaced by space on input line 2772.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2713--2714
+Underfull \hbox (badness 10000) in paragraph at lines 2773--2774
 
  []
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 2715.
+(Font)              scaled to size 9.0pt on input line 2775.
 [132] [133] [134] [135]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2856.
+(hyperref)                replaced by space on input line 2916.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2857--2858
+Underfull \hbox (badness 10000) in paragraph at lines 2917--2918
 
  []
 
@@ -1704,13 +1704,13 @@ LaTeX Info: Redefining \ttfamily on input line 19.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `no-72.out' has not changed.
-(rerunfilecheck)             Checksum: A607AD3F2403848A3EC02EEFF4EE0549;30260.
+(rerunfilecheck)             Checksum: 6F4703DB8CC26704E876C3884E05B1DC;30628.
  ) 
 Here is how much of TeX's memory you used:
- 18782 strings out of 478436
- 363494 string characters out of 5853929
+ 18790 strings out of 478436
+ 363663 string characters out of 5853929
  945112 words of memory out of 5000000
- 38261 multiletter control sequences out of 15000+600000
+ 38268 multiletter control sequences out of 15000+600000
  406119 words of font info for 78 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  110i,10n,117p,1219b,1858s stack positions out of 5000i,500n,10000p,200000b,80000s
