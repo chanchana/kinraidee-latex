@@ -241,26 +241,26 @@ In addition, we would like to thank our parents for their wise counsel and sympa
 %%%%%%%%%%%%%%%%%%%%% List of symbols page %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % You have to add this manually..
-\listofsymbols
-\begin{flushleft}
-\begin{tabular}{@{}p{0.07\textwidth}p{0.7\textwidth}p{0.1\textwidth}}
-\textbf{SYMBOL}  & & \textbf{UNIT} \\[0.2cm]
-$\alpha$ & Test variable\hfill & m$^2$ \\
-$\lambda$ & Interarival rate\hfill &  jobs/second\\
-$\mu$ & Service rate\hfill & jobs/second\\
-\end{tabular}
-\end{flushleft}
+%\listofsymbols
+%\begin{flushleft}
+%\begin{tabular}{@{}p{0.07\textwidth}p{0.7\textwidth}p{0.1\textwidth}}
+%\textbf{SYMBOL}  & & \textbf{UNIT} \\[0.2cm]
+%$\alpha$ & Test variable\hfill & m$^2$ \\
+%$\lambda$ & Interarival rate\hfill &  jobs/second\\
+%$\mu$ & Service rate\hfill & jobs/second\\
+%\end{tabular}
+%\end{flushleft}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%% List of vocabs & terms %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % You also have to add this manually..
-\listofvocab
-\begin{flushleft}
-\begin{tabular}{@{}p{1in}@{=\extracolsep{0.5in}}l}
-ABC & Adaptive Bandwidth Control \\
-MANET & Mobile Ad Hoc Network 
-\end{tabular}
-\end{flushleft}
+%\listofvocab
+%\begin{flushleft}
+%\begin{tabular}{@{}p{1in}@{=\extracolsep{0.5in}}l}
+%ABC & Adaptive Bandwidth Control \\
+%MANET & Mobile Ad Hoc Network 
+%\end{tabular}
+%\end{flushleft}
 
 %\setlength{\parskip}{1.2mm}
 
@@ -877,7 +877,7 @@ Compared to our system, Eastsee only suggests random food based on their prefere
 \end{figure}\vspace{-24pt}
 \vspace{1em}
 
-Whatever Mans Application is a Thai food random application that has an interaction with the user by creating an interactive animation called Pa-Man to talk with the user. Whatever Mans is available for download on Android only.
+Whatever Mans Application  ({\thaifont เที่ยงนี้กินไรดี}) is a Thai food random application that has an interaction with the user by creating an interactive animation called Pa-Man ({\thaifont ป้าแม้น}) to talk with the user. Whatever Mans is available for download on Android only.
 
 Compared to our system, Whatever Mans Application supports only on an Android platform whereas our system supports both iOS and Android because of web application technology. Their suggestion isn't based on users’ profiles or preferences which means their suggestion is just randomization. Although it supports Thai food, it can suggest only food, not restaurants. It also doesn’t support group suggestions.
 
@@ -1517,7 +1517,7 @@ favorites & Keep the information about the favorite list of restaurants for each
 \end{tabularx}
 \end{table}
 
-Table ~\ref{tbl:3DatabaseCollectionandDescription} shows us all collections in our NoSQL database, their collection’s name, and their description. Our database contains mainly 5 collections including restaurants, users, recommendations, categories, and favorites.
+Table~\ref{tbl:3DatabaseCollectionandDescription} shows us all collections in our NoSQL database, their collection’s name, and their description. Our database contains mainly 5 collections including restaurants, users, recommendations, categories, and favorites.
 
 \subsection{Schema}
 
@@ -1923,7 +1923,7 @@ Then, we continue to ask that from our simple algorithm to recommend a restauran
 “ I would like to go to the suggested restaurant, which is the first one from the system that recommended it to me. Moreover, for me, the picture of the restaurant plays a big role in restaurant consideration ”
 \end{quote}
 
-Lastly, we ask them if they have any suggestions for our system. We can conclude that they want to see more pictures of the restaurant with the recommended menu. So, we have to find another way to find a picture of the restaurant that has no picture. Also, for the restaurant’s menu problem, we currently cannot find a solution to this problem. Furthermore, the price preference in the registration part usually confuses them, so we already changed from only the Thai Baht (฿) interface to the Thai Baht with a price range for better understanding.
+Lastly, we ask them if they have any suggestions for our system. We can conclude that they want to see more pictures of the restaurant with the recommended menu. So, we have to find another way to find a picture of the restaurant that has no picture. Also, for the restaurant’s menu problem, we currently cannot find a solution to this problem. Furthermore, the price preference in the registration part usually confuses them, so we already changed from only the Thai Baht ({\thaifont ฿}) interface to the Thai Baht with a price range for better understanding.
 
 \subsection{Training Data Usage}
 
@@ -1974,9 +1974,11 @@ In our first design of the group recommendation, each member will see the same s
 
 \section{Web Application Result}
 
-\subsection{Server-side Result}
+The web application result includes server-side services result and user interface result or client-side service. The server-side services consist of 4 components which are Data Service, App Server, Recommender and Database, where the user interface result is a result from App Client. The full source code is available at \url{https://github.com/restaurant-recommender}.
 
-\subsection{Data Service}
+\subsection{Server-side Services Result}
+
+\subsubsection{Data Service}
 
 \begin{figure}[H]\centering
 \includegraphics[width=200pt]{./images/4result_dataservice.png}
@@ -1985,7 +1987,7 @@ In our first design of the group recommendation, each member will see the same s
 
 This data service component is implemented as Python scripts. Figure~\ref{fig:4result_dataservice} shows the information about the local fetched data from Facebook. This data will be read and transformed into the right format before sending it to the App Server to create a restaurant in the system.
 
-\subsection{App Server}
+\subsubsection{App Server}
 
 App Server is implemented with TypeScript with Express web framework and has been deployed on Google Cloud App Engine. This component needs to listen to other components’ requests. The API specification is described in Table~\ref{tbl:4AppServerAPISpecification} below.
 
@@ -2016,7 +2018,7 @@ POST & /api/recommendations/request & Get recommendation \\ \hline\hline
 \end{tabularx}
 \end{table}
 
-\subsection{Recommender}
+\subsubsection{Recommender}
 
 Recommender is implemented with Python with Flask web framework and has been deployed on Google Cloud App Engine. This component needs to listen to other App Server’s requests. The API specification is described in Table~\ref{tbl:4RecommenderAPISpecification} below.
 
@@ -2028,7 +2030,7 @@ POST & /recommend/<type> & Request a set of suggested restaurants. “type” is
 \end{tabularx}
 \end{table}
 
-\subsection{Database}
+\subsubsection{Database}
 
 \begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/4mongodashboard.png}
@@ -2104,7 +2106,7 @@ After users are logged in or complete the registration, they will see the home s
 \item Switch language button lets users change the display language for an entire application.
 \end{enumerate}
 
-Our application supports multiple display languages which include Thai and English. Users can switch the display language with the home screen from the top button labelled “ไทย” or “EN”. Note that when switching the language, not only the home screen display language will be changed, but also an entire application.
+Our application supports multiple display languages which include Thai and English. Users can switch the display language with the home screen from the top button labelled “{\thaifont ไทย}” or “EN”. Note that when switching the language, not only the home screen display language will be changed, but also an entire application.
 
 \newpage
 \subsubsection{Individual Recommendation}
@@ -2288,7 +2290,7 @@ Figure~\ref{fig:4SampleofSelectedRestaurantData} is the example data of the sele
 
 \subsection{Collaborative Filtering Technique}
 
-After data preparation, we start to build a restaurant recommender for individuals by using user-based collaborative filtering which we referenced from [34]. By the way, this approach is just only one of several recommendation techniques. In user-based collaborative filtering, we assumed that if users like similar items, users are similar to each other too by we start to discover the similarity of users and then recommend the item of other similar users liked.
+After data preparation, we start to build a restaurant recommender for individuals by using user-based collaborative filtering which we referenced from  \cite{BuildauserbasedcollaborativefilteringrecommendationengineforAnime}. By the way, this approach is just only one of several recommendation techniques. In user-based collaborative filtering, we assumed that if users like similar items, users are similar to each other too by we start to discover the similarity of users and then recommend the item of other similar users liked.
 
 Let us give an example similar to this technique, Alice likes to go to restaurants A, B, and C. Bob likes to go to restaurants A and B. Alice and Bob are similar due to the fact that they like restaurants A and B together and Alice has never seen restaurant C before. So, if we want to recommend a restaurant for Bob, we will recommend restaurant C.
 
@@ -2764,6 +2766,115 @@ There are a variety of ways for the recommendation system from excel to the rand
 Even there’s a lot of recommendations, it is still randomized, the menu is not updated, and most applications just recommend common food, not restaurants. Moreover, some of the applications are too complex to use.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix{Restaurant Recommendation System for Individuals and Groups Satisfaction Survey}
+\noindent{\large\bf Restaurant Recommendation System for Individuals and Groups Satisfaction Survey} \\
+
+
+This survey was conducted to collect user’s feedback and satisfaction to our recommendation. This form includes 4 parts: basic information, individual recommendation satisfaction, group recommendation satisfaction, and overall satisfaction with the application.
+
+We surveyed by sharing the Google Forms through social media platforms e.g. Facebook, etc. and direct message in person. This survey had 41 respondents.
+
+\textbf{Part 1: Basic Information}
+
+This part we didn’t require the answer from the respondents.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2AgeofRespondents.png}
+\caption{Age of Respondents}\label{fig:A2AgeofRespondents}
+\end{figure}\vspace{-24pt}
+
+From Figure~\ref{fig:A2AgeofRespondents}, 41.5\% of the respondents are 22 years old which is the largest number of this survey. Followed by at the age of 21, with 29.3\%. In conclusion, most of the respondents are students which we can see from the Figure~\ref{fig:A2OccupationofRespondents} below.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2OccupationofRespondents.png}
+\caption{Occupation of Respondents}\label{fig:A2OccupationofRespondents}
+\end{figure}\vspace{-24pt}
+
+The most occupation of our respondents are students with 82.9\% and followed by office workers 12.2\%. The rest are doing personal business and freelancing.
+
+\newpage
+\textbf{Part 2: Individual Recommendation Satisfaction}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2NumberofRespondentsthatusingIndividualRecommendation.png}
+\caption{Number of Respondents that using Individual Recommendation}\label{fig:A2NumberofRespondentsthatusingIndividualRecommendation}
+\end{figure}\vspace{-24pt}
+
+As we can see from Figure~\ref{fig:A2NumberofRespondentsthatusingIndividualRecommendation} above, all of the respondents are using an individual recommendation.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2SatisfactionofRestaurantRecommendationforIndividual.png}
+\caption{Satisfaction of Restaurant Recommendation for Individual}\label{fig:A2SatisfactionofRestaurantRecommendationforIndividual}
+\end{figure}\vspace{-24pt}
+
+In this section, we created 5 questions to collect the satisfaction which are:
+\begin{enumerate}
+\item Suggested restaurant types match your interests
+\item Suggested restaurant prices match your interests
+\item Able to decide the restaurant more easily
+\item The restaurant has accurate details
+\item Fast recommendation system
+\end{enumerate}
+
+These questions are collected in the pattern of score 1 to 5. As we can see from the figure, we found that the average score of all answers is around 4-5 scores which can conclude that most users are quite satisfied with this individual recommendation result.
+
+\newpage
+\textbf{Part 3: Group Recommendation Satisfaction}
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2NumberofRespondentsthatusingGroupRecommendation.png}
+\caption{Number of Respondents that using Group Recommendation}\label{fig:A2NumberofRespondentsthatusingGroupRecommendation}
+\end{figure}\vspace{-24pt}
+
+There are only 34.1\% from all respondents that use a group recommendation which is expected to be caused by the COVID-19 situation.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2SatisfactionofRestaurantRecommendationforGroup.png}
+\caption{Satisfaction of Restaurant Recommendation for Group}\label{fig:A2SatisfactionofRestaurantRecommendationforGroup}
+\end{figure}\vspace{-24pt}
+
+The questions are the same as Satisfaction of Restaurant Recommendation for Individual. we found that the average score of all answers is around 4-5 scores which is the same as individual. So, we can conclude that most users are quite satisfied with this group recommendation result too.
+
+\newpage
+\textbf{Part 4: Overall Satisfaction}\
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2ApplicationUsability.png}
+\caption{Application Usability}\label{fig:A2ApplicationUsability}
+\end{figure}\vspace{-24pt}
+
+53.7\% felt that this application was easy to use and not complicated to use, with 5 out of 5 scores.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2UserInterfaceofthisapplication.png}
+\caption{User Interface of this application}\label{fig:A2UserInterfaceofthisapplication}
+\end{figure}\vspace{-24pt}
+
+Most users felt that the interface was beautiful and comfortable to use as you can see from the figure that more than half gave 5 scores.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2OverallSatisfaction.png}
+\caption{Overall Satisfaction}\label{fig:A2OverallSatisfaction}
+\end{figure}\vspace{-24pt}
+
+From this figure, we can conclude that users satisfied with our application by the average score is 4.2 out of 5.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2ChanceofUsersReturningtoUseAgain.png}
+\caption{Chance of Users Returning to Use Again}\label{fig:A2ChanceofUsersReturningtoUseAgain}
+\end{figure}\vspace{-24pt}
+
+With 86.8\% of respondents said that they will come back to use the recommendation again for their next meals.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2OtherFeedbacksandSuggestions.png}
+\caption{Other Feedbacks and S}\label{fig:A2OtherFeedbacksandSuggestions}
+\end{figure}\vspace{-24pt}
+
+In summary, lots of feedback wants more pictures and details of each restaurant, less process before getting to the recommendation page and some suggestions of the user interface. Moreover, with some feedback we can bring the idea to our future works.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,105 @@
+
+This survey was conducted to collect user’s feedback and satisfaction to our recommendation. This form includes 4 parts: basic information, individual recommendation satisfaction, group recommendation satisfaction, and overall satisfaction with the application.
+
+We surveyed by sharing the Google Forms through social media platforms e.g. Facebook, etc. and direct message in person. This survey had 41 respondents.
+
+Part 1: Basic Information
+
+This part we didn’t require the answer from the respondents.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2AgeofRespondents.png}
+\caption{Age of Respondents}\label{fig:A2AgeofRespondents}
+\end{figure}space{-24pt}
+
+From Figure~\ref{fig:A2AgeofRespondents}, 41.5% of the respondents are 22 years old which is the largest number of this survey. Followed by at the age of 21, with 29.3%. In conclusion, most of the respondents are students which we can see from the Figure~\ref{fig:A2OccupationofRespondents} below.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2OccupationofRespondents.png}
+\caption{Occupation of Respondents}\label{fig:A2OccupationofRespondents}
+\end{figure}space{-24pt}
+
+The most occupation of our respondents are students with 82.9% and followed by office workers 12.2%. The rest are doing personal business and freelancing.
+
+Part 2: Individual Recommendation Satisfaction
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2NumberofRespondentsthatusingIndividualRecommendation.png}
+\caption{Number of Respondents that using Individual Recommendation}\label{fig:A2NumberofRespondentsthatusingIndividualRecommendation}
+\end{figure}space{-24pt}
+
+As we can see from Figure~\ref{fig:A2NumberofRespondentsthatusingIndividualRecommendation} above, all of the respondents are using an individual recommendation.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2SatisfactionofRestaurantRecommendationforIndividual.png}
+\caption{Satisfaction of Restaurant Recommendation for Individual}\label{fig:A2SatisfactionofRestaurantRecommendationforIndividual}
+\end{figure}space{-24pt}
+
+In this section, we created 5 questions to collect the satisfaction which are:
+
+Suggested restaurant types match your interests
+
+Suggested restaurant prices match your interests
+
+Able to decide the restaurant more easily
+
+The restaurant has accurate details
+
+Fast recommendation system
+
+These questions are collected in the pattern of score 1 to 5. As we can see from the figure, we found that the average score of all answers is around 4-5 scores which can conclude that most users are quite satisfied with this individual recommendation result.
+
+Part 3: Group Recommendation Satisfaction
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2NumberofRespondentsthatusingGroupRecommendation.png}
+\caption{Number of Respondents that using Group Recommendation}\label{fig:A2NumberofRespondentsthatusingGroupRecommendation}
+\end{figure}space{-24pt}
+
+There are only 34.1% from all respondents that use a group recommendation which is expected to be caused by the COVID-19 situation.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2SatisfactionofRestaurantRecommendationforGroup.png}
+\caption{Satisfaction of Restaurant Recommendation for Group}\label{fig:A2SatisfactionofRestaurantRecommendationforGroup}
+\end{figure}space{-24pt}
+
+The questions are the same as Satisfaction of Restaurant Recommendation for Individual. we found that the average score of all answers is around 4-5 scores which is the same as individual. So, we can conclude that most users are quite satisfied with this group recommendation result too.
+
+Part 4: Overall Satisfaction
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2ApplicationUsability.png}
+\caption{Application Usability}\label{fig:A2ApplicationUsability}
+\end{figure}space{-24pt}
+
+53.7% felt that this application was easy to use and not complicated to use, with 5 out of 5 scores.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2UserInterfaceofthisapplication.png}
+\caption{User Interface of this application}\label{fig:A2UserInterfaceofthisapplication}
+\end{figure}space{-24pt}
+
+Most users felt that the interface was beautiful and comfortable to use as you can see from the figure that more than half gave 5 scores.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2OverallSatisfaction.png}
+\caption{Overall Satisfaction}\label{fig:A2OverallSatisfaction}
+\end{figure}space{-24pt}
+
+From this figure, we can conclude that users satisfied with our application by the average score is 4.2 out of 5.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2ChanceofUsersReturningtoUseAgain.png}
+\caption{Chance of Users Returning to Use Again}\label{fig:A2ChanceofUsersReturningtoUseAgain}
+\end{figure}space{-24pt}
+
+With 86.8% of respondents said that they will come back to use the recommendation again for their next meals.
+
+\begin{figure}[H]\centering
+\includegraphics[width=350pt]{./images/A2OtherFeedbacksandSuggestions.png}
+\caption{Other Feedbacks and S}\label{fig:A2OtherFeedbacksandSuggestions}
+\end{figure}space{-24pt}
+
+
+
+In summary, lots of feedback wants more pictures and details of each restaurant, less process before getting to the recommendation page and some suggestions of the user interface. Moreover, with some feedback we can bring the idea to our future works.

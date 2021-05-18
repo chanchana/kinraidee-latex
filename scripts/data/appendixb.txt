@@ -1,0 +1,68 @@
+This survey was conducted to collect user’s feedback and satisfaction to our recommendation. This form includes 4 parts: basic information, individual recommendation satisfaction, group recommendation satisfaction, and overall satisfaction with the application.
+
+We surveyed by sharing the Google Forms through social media platforms e.g. Facebook, etc. and direct message in person. This survey had 41 respondents.
+
+Part 1: Basic Information
+
+This part we didn’t require the answer from the respondents.
+
+Figure 1: Age of Respondents
+
+        From Figure 1, 41.5% of the respondents are 22 years old which is the largest number of this survey. Followed by at the age of 21, with 29.3%. In conclusion, most of the respondents are students which we can see from the Figure 2 below.
+
+Figure 2: Occupation of Respondents
+
+        The most occupation of our respondents are students with 82.9% and followed by office workers 12.2%. The rest are doing personal business and freelancing.
+
+        Part 2: Individual Recommendation Satisfaction
+
+Figure 3: Number of Respondents that using Individual Recommendation
+
+        As we can see from Figure 3 above, all of the respondents are using an individual recommendation.
+
+Figure 4: Satisfaction of Restaurant Recommendation for Individual
+
+        In this section, we created 5 questions to collect the satisfaction which are:
+
+Suggested restaurant types match your interests
+Suggested restaurant prices match your interests
+Able to decide the restaurant more easily
+The restaurant has accurate details
+Fast recommendation system
+These questions are collected in the pattern of score 1 to 5. As we can see from the figure, we found that the average score of all answers is around 4-5 scores which can conclude that most users are quite satisfied with this individual recommendation result.
+
+Part 3: Group Recommendation Satisfaction
+
+
+Figure 5: Number of Respondents that using Group Recommendation
+
+        There are only 34.1% from all respondents that use a group recommendation which is expected to be caused by the COVID-19 situation.
+
+Figure 6: Satisfaction of Restaurant Recommendation for Group
+
+        The questions are the same as Satisfaction of Restaurant Recommendation for Individual. we found that the average score of all answers is around 4-5 scores which is the same as individual. So, we can conclude that most users are quite satisfied with this group recommendation result too.
+
+Part 4: Overall Satisfaction
+
+Figure 7: Application Usability
+
+        53.7% felt that this application was easy to use and not complicated to use, with 5 out of 5 scores.
+
+Figure 8: User Interface of this application
+
+        Most users felt that the interface was beautiful and comfortable to use as you can see from the figure that more than half gave 5 scores.
+
+Figure 9: Overall Satisfaction
+
+        From this figure, we can conclude that users satisfied with our application by the average score is 4.2 out of 5.
+
+Figure 10: Chance of Users Returning to Use Again
+
+        With 86.8% of respondents said that they will come back to use the recommendation again for their next meals.
+
+
+
+Figure 11: Other Feedbacks and S
+uggestions
+
+        In summary, lots of feedback wants more pictures and details of each restaurant, less process before getting to the recommendation page and some suggestions of the user interface. Moreover, with some feedback we can bring the idea to our future works.

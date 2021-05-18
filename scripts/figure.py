@@ -1,6 +1,6 @@
-file_name = 'a1'
+file_name = 'appendixb'
 figure_size = 'width=350pt'
-prefix = 'A1'
+prefix = 'A2'
 
 figure_dict = {}
 
@@ -32,7 +32,7 @@ with open(f'data/{file_name}.txt') as f:
                     fw.write(f"\n\\begin{{figure}}[H]\centering\n")
                     fw.write(f"\\includegraphics[{figure_size}]{{./images/{figure_ref_name}.png}}\n")
                     fw.write(f"\\caption{{{figure_caption}}}\label{{fig:{figure_ref_name}}}\n")
-                    fw.write(f"\\end{{figure}}\n")
+                    fw.write(f"\\end{{figure}}\vspace{{-24pt}}\n")
                 else:
                     paragraph = line
                     for key in figure_dict:

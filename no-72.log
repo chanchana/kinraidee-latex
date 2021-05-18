@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  17 MAY 2021 22:47
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  18 MAY 2021 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -952,54 +952,23 @@ eciation to our committees, Asst.Prof.Dr. Rajchawit Sarochawik-
 
 [4
 
-] (./no-72.toc
-LaTeX Info: Redefining \rmfamily on input line 1.
-LaTeX Info: Redefining \sffamily on input line 1.
-LaTeX Info: Redefining \ttfamily on input line 1.
- [5
-
-] [6] [7] [8] [9] [10])
+] (./no-72.toc)
 \tf@toc=\write4
 \openout4 = `no-72.toc'.
 
- [11] (./no-72.lot
-LaTeX Info: Redefining \rmfamily on input line 1.
-LaTeX Info: Redefining \sffamily on input line 1.
-LaTeX Info: Redefining \ttfamily on input line 1.
-)
+ [5
+
+] (./no-72.lot)
 \tf@lot=\write5
 \openout5 = `no-72.lot'.
 
- [12
+ [6
 
-] (./no-72.lof
-LaTeX Info: Redefining \rmfamily on input line 1.
-LaTeX Info: Redefining \sffamily on input line 1.
-LaTeX Info: Redefining \ttfamily on input line 1.
-[13
-
-] [14] [15] [16])
+] (./no-72.lof)
 \tf@lof=\write6
 \openout6 = `no-72.lof'.
 
- [17]
-Overfull \hbox (12.98328pt too wide) in paragraph at lines 247--247
-[]|\TU/TimesNewRoman(0)/b/n/10 SYMBOL| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
-[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
- []
-
-[18
-
-] [19
+ [7
 
 ]
 Chapter 1.
@@ -1040,37 +1009,203 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
 (hyperref)                removed on input line 476.
 
+
+LaTeX Warning: Citation `WhatIsWebApplicationWebAppsAndItsBenefits' on page 9 u
+ndefined on input line 489.
+
+
+LaTeX Warning: Citation `WhatisMachineLearning' on page 9 undefined on input li
+ne 496.
+
 [9
 
-] [10]
+]
+
+LaTeX Warning: Citation `Recommendersystem' on page 10 undefined on input line 
+501.
+
+
+LaTeX Warning: Citation `Recommendersystem' on page 10 undefined on input line 
+505.
+
+
+LaTeX Warning: Citation `WhatisMachineLearning' on page 10 undefined on input l
+ine 531.
+
+[10]
+
+LaTeX Warning: Citation `Collaborativefiltering' on page 11 undefined on input 
+line 544.
+
 File: ./images/2cfprocess.png Graphic file (type bmp)
 <./images/2cfprocess.png>
- [11] [12] [13] [14]
+[11] [12]
+
+LaTeX Warning: Citation `Recommendersystem' on page 13 undefined on input line 
+599.
+
+
+LaTeX Warning: Citation `Recommendersystem' on page 13 undefined on input line 
+605.
+
+[13]
+
+LaTeX Warning: Citation `AlgorithmsforDiscreteOptimization' on page 14 undefine
+d on input line 628.
+
+
+LaTeX Warning: Citation `Mathematicaloptimization' on page 14 undefined on inpu
+t line 628.
+
+
+LaTeX Warning: Citation `Geneticalgorithm' on page 14 undefined on input line 6
+34.
+
+[14]
+
+LaTeX Warning: Citation `IntroductiontoGeneticAlgorithmsIncludingExampleCode' o
+n page 15 undefined on input line 640.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 640--650
 
  []
 
-[15] [16] [17]
+
+LaTeX Warning: Citation `IntroductiontoGeneticAlgorithmsIncludingExampleCode' o
+n page 15 undefined on input line 667.
+
+[15]
+
+LaTeX Warning: Citation `Geneticalgorithm' on page 16 undefined on input line 6
+69.
+
+
+LaTeX Warning: Citation `HTMLHyperTextMarkupLanguage' on page 16 undefined on i
+nput line 695.
+
+
+LaTeX Warning: Citation `JavaScript' on page 16 undefined on input line 699.
+
+
+LaTeX Warning: Citation `Manipulatingdocuments' on page 16 undefined on input l
+ine 702.
+
+[16]
+
+LaTeX Warning: Citation `TypeScript' on page 17 undefined on input line 708.
+
+
+LaTeX Warning: Citation `IntroductiontoNodejs' on page 17 undefined on input li
+ne 712.
+
+
+LaTeX Warning: Citation `WhydidwebuildReact' on page 17 undefined on input line
+ 716.
+
+
+LaTeX Warning: Citation `TOP10ADVANTAGESOFUSINGREACTJS' on page 17 undefined on
+ input line 716.
+
+
+LaTeX Warning: Citation `PythonTutorial' on page 17 undefined on input line 720
+.
+
+
+LaTeX Warning: Citation `Top7ReasonsWhyYouNeedtoLearnPythonasaDataScientist' on
+ page 17 undefined on input line 720.
+
+[17]
+
+LaTeX Warning: Citation `JupyterLabOverview' on page 18 undefined on input line
+ 724.
+
+
+LaTeX Warning: Citation `WhatIsFigmaa101Intro' on page 18 undefined on input li
+ne 728.
+
+
+LaTeX Warning: Citation `AnoverviewofHTTP' on page 18 undefined on input line 7
+33.
+
 File: ./images/2http.png Graphic file (type bmp)
 <./images/2http.png>
+
+LaTeX Warning: Citation `AnoverviewofHTTP' on page 18 undefined on input line 7
+42.
+
+
+LaTeX Warning: Citation `HTTPrequestmethods' on page 18 undefined on input line
+ 744.
+
 
 Underfull \hbox (badness 10000) in alignment at lines 754--754
 [][] 
  []
 
-[18] [19] [20]
+[18]
+
+LaTeX Warning: Citation `Statelessprotocol' on page 19 undefined on input line 
+758.
+
+
+LaTeX Warning: Citation `WhatIsWebFramework' on page 19 undefined on input line
+ 763.
+
+
+LaTeX Warning: Citation `Express' on page 19 undefined on input line 769.
+
+
+LaTeX Warning: Citation `Flask' on page 19 undefined on input line 773.
+
+
+LaTeX Warning: Citation `WhatisNoSQL' on page 19 undefined on input line 779.
+
+[19]
+
+LaTeX Warning: Citation `WhatisMongoDBIntroductionArchitectureFeaturesExample' 
+on page 20 undefined on input line 797.
+
+
+LaTeX Warning: Citation `mongoose' on page 20 undefined on input line 801.
+
+[20]
+
+LaTeX Warning: Citation `GoogleAppEngineDocumentation' on page 21 undefined on 
+input line 821.
+
+
+LaTeX Warning: Citation `MongoDBAtlas' on page 21 undefined on input line 825.
+
+
+LaTeX Warning: Citation `GraphAPI' on page 21 undefined on input line 833.
+
 File: ./images/2eatsee.png Graphic file (type bmp)
 <./images/2eatsee.png>
- [21] [22]
+[21]
+
+LaTeX Warning: Citation `Entréechoosefromaworldofdisheswithasingletouch' on pag
+e 22 undefined on input line 851.
+
+[22]
 File: ./images/2eatseereal.png Graphic file (type bmp)
 <./images/2eatseereal.png>
- [23]
+
+
+LaTeX Warning: Citation `EatseeSeeitEatit' on page 23 undefined on input line 8
+65.
+
+[23]
 File: ./images/2whatman.png Graphic file (type bmp)
 <./images/2whatman.png>
  [24]
 File: ./images/2tinder.jpeg Graphic file (type bmp)
 <./images/2tinder.jpeg>
- [25]
+
+
+LaTeX Warning: Citation `Tinderapp' on page 25 undefined on input line 894.
+
+[25]
 Overfull \hbox (12.03842pt too wide) in paragraph at lines 899--899
 []\TU/TimesNewRoman(0)/b/n/13 On the design of Individual and Group Recommender
  Systems for Tourism
@@ -1078,7 +1213,16 @@ Overfull \hbox (12.03842pt too wide) in paragraph at lines 899--899
 
 File: ./images/2grsk.png Graphic file (type bmp)
 <./images/2grsk.png>
-[26] [27]
+
+LaTeX Warning: Citation `ExpertSystemsWithApplications' on page 26 undefined on
+ input line 908.
+
+[26]
+
+LaTeX Warning: Citation `MusicRecommender' on page 27 undefined on input line 9
+16.
+
+[27]
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1184,29 +1328,56 @@ File: ./images/3ui_GroupRecommendationPageUserInterfaceDesign.png Graphic file
 File: ./images/3ui_ProfileManagementPageUserInterfaceDesign.png Graphic file (t
 ype bmp)
 <./images/3ui_ProfileManagementPageUserInterfaceDesign.png>
- [60] [61]
+ [60]
+
+LaTeX Warning: Reference `tbl:3DatabaseCollectionandDescription' on page 61 und
+efined on input line 1520.
+
+[61]
 File: ./images/3db_RestaurantCollectionsIndexes.png Graphic file (type bmp)
 <./images/3db_RestaurantCollectionsIndexes.png>
+
+
+LaTeX Warning: Reference `fig:3db_RestaurantCollectionsIndexes' on page 62 unde
+fined on input line 1598.
+
 File: ./images/3db_UserCollectionsIndexes.png Graphic file (type bmp)
 <./images/3db_UserCollectionsIndexes.png>
- [62]
+[62]
+
+LaTeX Warning: Reference `fig:3db_UserCollectionsIndexes' on page 63 undefined 
+on input line 1604.
+
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 1611.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/it' will be
 (Font)              scaled to size 10.0pt on input line 1611.
- [63]
+[63]
 File: ./images/3GeneticAlgorithmFlowchart.png Graphic file (type bmp)
 <./images/3GeneticAlgorithmFlowchart.png>
- [64]
+
+
+LaTeX Warning: Reference `fig:3GeneticAlgorithmFlowchart' on page 64 undefined 
+on input line 1621.
+
+[64]
+
+LaTeX Warning: Reference `fig:3ga_init' on page 65 undefined on input line 1625
+.
+
 File: ./images/3ga_init.png Graphic file (type bmp)
 <./images/3ga_init.png>
- [65]
+[65]
 File: ./images/3ga_grouprecflow.png Graphic file (type bmp)
 <./images/3ga_grouprecflow.png>
 File: ./images/3ga_rankagg.png Graphic file (type bmp)
 <./images/3ga_rankagg.png>
+ [66]
 
-[66] [67] [68]
+LaTeX Warning: Reference `eq:rankaggscore' on page 67 undefined on input line 1
+714.
+
+[67] [68]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1215,14 +1386,28 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 File: ./images/4ThaiChanasRestaurantDataExample.png Graphic file (type bmp)
 <./images/4ThaiChanasRestaurantDataExample.png>
+
+LaTeX Warning: Reference `fig:4ThaiChanasRestaurantDataExample' on page 69 unde
+fined on input line 1754.
+
 [69
 
 ]
 File: ./images/4FacebooksRestaurantDataExample.png Graphic file (type bmp)
 <./images/4FacebooksRestaurantDataExample.png>
- [70]
+
+
+LaTeX Warning: Reference `fig:4FacebooksRestaurantDataExample' on page 70 undef
+ined on input line 1762.
+
+[70]
 File: ./images/4RestaurantDuplicationChecking.png Graphic file (type bmp)
 <./images/4RestaurantDuplicationChecking.png>
+
+
+LaTeX Warning: Reference `fig:4RestaurantDuplicationChecking' on page 71 undefi
+ned on input line 1778.
+
 
 Overfull \hbox (2.0803pt too wide) in paragraph at lines 1778--1779
 \TU/TimesNewRoman(0)/m/n/10 contains more information. However, “McDonald’s MBK
@@ -1231,26 +1416,56 @@ Overfull \hbox (2.0803pt too wide) in paragraph at lines 1778--1779
 
 File: ./images/4RestaurantsLocationinMap.png Graphic file (type bmp)
 <./images/4RestaurantsLocationinMap.png>
+
+LaTeX Warning: Reference `fig:4RestaurantsLocationinMap' on page 71 undefined o
+n input line 1789.
+
 File: ./images/4RestaurantsCategoryDistribution.png Graphic file (type bmp)
 <./images/4RestaurantsCategoryDistribution.png>
 [71]
+
+LaTeX Warning: Reference `fig:4RestaurantsCategoryDistribution' on page 72 unde
+fined on input line 1796.
+
 File: ./images/4RestaurantsPriceRangeDistribution.png Graphic file (type bmp)
 <./images/4RestaurantsPriceRangeDistribution.png>
+
+LaTeX Warning: Reference `fig:4RestaurantsPriceRangeDistribution' on page 72 un
+defined on input line 1803.
+
 File: ./images/4ExampleofRestaurantPicturefromFacebookPage.jpeg Graphic file (t
 ype bmp)
 <./images/4ExampleofRestaurantPicturefromFacebookPage.jpeg>
- [72]
+[72]
+
+LaTeX Warning: Reference `fig:4ExampleofRestaurantPicturefromFacebookPage' on p
+age 73 undefined on input line 1811.
+
 File: ./images/4ExampleofUnrelatedRestaurantPicturefromFacebookPage.jpeg Graphi
 c file (type bmp)
 <./images/4ExampleofUnrelatedRestaurantPicturefromFacebookPage.jpeg>
- [73]
+
+LaTeX Warning: Reference `fig:4ExampleofUnrelatedRestaurantPicturefromFacebookP
+age' on page 73 undefined on input line 1819.
+
+[73]
 File: ./images/4RegistrationPageoftheDataCollectionTool.png Graphic file (type 
 bmp)
 <./images/4RegistrationPageoftheDataCollectionTool.png>
- [74]
+
+
+LaTeX Warning: Reference `fig:4RegistrationPageoftheDataCollectionTool' on page
+ 74 undefined on input line 1835.
+
+[74]
 File: ./images/4RatingPageoftheDataCollectionTool.png Graphic file (type bmp)
 <./images/4RatingPageoftheDataCollectionTool.png>
- [75]
+
+
+LaTeX Warning: Reference `fig:4RatingPageoftheDataCollectionTool' on page 75 un
+defined on input line 1843.
+
+[75]
 File: ./images/4FacetofaceInterviewProcess.png Graphic file (type bmp)
 <./images/4FacetofaceInterviewProcess.png>
 File: ./images/4DistributionofPeoplesLocation.png Graphic file (type bmp)
@@ -1261,20 +1476,43 @@ Overfull \hbox (16.38pt too wide) in paragraph at lines 1867--1868
  []
 
 [76]
+
+LaTeX Warning: Reference `fig:4DistributionofPeoplesLocation' on page 77 undefi
+ned on input line 1871.
+
 File: ./images/4TotalNumberofInteractedRestaurantsperPerson.png Graphic file (t
 ype bmp)
 <./images/4TotalNumberofInteractedRestaurantsperPerson.png>
- [77]
+[77]
+
+LaTeX Warning: Reference `fig:4TotalNumberofInteractedRestaurantsperPerson' on 
+page 78 undefined on input line 1878.
+
 File: ./images/4VisualizationofPeoplesDemographic.png Graphic file (type bmp)
 <./images/4VisualizationofPeoplesDemographic.png>
+
+LaTeX Warning: Reference `fig:4VisualizationofPeoplesDemographic' on page 78 un
+defined on input line 1885.
+
+
+LaTeX Warning: Reference `fig:4VisualizationofPeoplesDemographic' on page 78 un
+defined on input line 1885.
+
 File: ./images/4AverageScoreofEachRestaurantCategoryfromPeople.png Graphic file
  (type bmp)
 <./images/4AverageScoreofEachRestaurantCategoryfromPeople.png>
+
+LaTeX Warning: Reference `fig:4AverageScoreofEachRestaurantCategoryfromPeople' 
+on page 78 undefined on input line 1892.
+
 File: ./images/4DistributionofUsersRatings.png Graphic file (type bmp)
 <./images/4DistributionofUsersRatings.png>
- [78] [79]
-Missing character: There is no ฿ (U+0E3F) in font Times New Roman/OT:script=lat
-n;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
+[78]
+
+LaTeX Warning: Reference `fig:4DistributionofUsersRatings' on page 79 undefined
+ on input line 1899.
+
+[79]
 File: ./images/4LoginandRegistrationUserJourneyChanges.png Graphic file (type b
 mp)
 <./images/4LoginandRegistrationUserJourneyChanges.png>
@@ -1291,10 +1529,28 @@ p)
  [82]
 File: ./images/4result_dataservice.png Graphic file (type bmp)
 <./images/4result_dataservice.png>
- [83]
+
+
+LaTeX Warning: Reference `fig:4result_dataservice' on page 83 undefined on inpu
+t line 1988.
+
+
+LaTeX Warning: Reference `tbl:4AppServerAPISpecification' on page 83 undefined 
+on input line 1992.
+
+[83]
+
+LaTeX Warning: Reference `tbl:4RecommenderAPISpecification' on page 84 undefine
+d on input line 2023.
+
 File: ./images/4mongodashboard.png Graphic file (type bmp)
 <./images/4mongodashboard.png>
- [84] [85]
+[84]
+
+LaTeX Warning: Reference `fig:4mongodashboard' on page 85 undefined on input li
+ne 2040.
+
+[85]
 File: ./images/4ui_LoginPageUserInterface.png Graphic file (type bmp)
 <./images/4ui_LoginPageUserInterface.png>
  [86]
@@ -1303,16 +1559,14 @@ File: ./images/4ui_RegistrationUserInterface.png Graphic file (type bmp)
  [87]
 File: ./images/4ui_HomeScreenUserInterface.png Graphic file (type bmp)
 <./images/4ui_HomeScreenUserInterface.png>
+
+
+LaTeX Warning: Reference `fig:4ui_HomeScreenUserInterface' on page 88 undefined
+ on input line 2099.
+
 File: ./images/4ui_LanguageSwitchingUserInterface.png Graphic file (type bmp)
 <./images/4ui_LanguageSwitchingUserInterface.png>
- [88]
-Missing character: There is no ไ (U+0E44) in font Times New Roman/OT:script=lat
-n;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
-Missing character: There is no ท (U+0E17) in font Times New Roman/OT:script=lat
-n;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
-Missing character: There is no ย (U+0E22) in font Times New Roman/OT:script=lat
-n;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
- [89]
+[88] [89]
 File: ./images/4ui_IndividualRecommendationConfirmationUserInterface.png Graphi
 c file (type bmp)
 <./images/4ui_IndividualRecommendationConfirmationUserInterface.png>
@@ -1323,17 +1577,21 @@ File: ./images/4ui_IndividualRecommendationUserInterface.png Graphic file (type
 File: ./images/4ui_IndividualRecommendationSelectionUserInterface.png Graphic f
 ile (type bmp)
 <./images/4ui_IndividualRecommendationSelectionUserInterface.png>
-
-[91]
+ [91]
 File: ./images/4ui_IndividualRecommendationSuccessUserInterface.png Graphic fil
 e (type bmp)
 <./images/4ui_IndividualRecommendationSuccessUserInterface.png>
  [92] [93]
 File: ./images/4ui_GroupCreatingUserInterface.png Graphic file (type bmp)
 <./images/4ui_GroupCreatingUserInterface.png>
+
+
+LaTeX Warning: Reference `fig:4ui_GroupCreatingUserInterface' on page 94 undefi
+ned on input line 2180.
+
 File: ./images/4ui_GroupJoiningUserInterface.png Graphic file (type bmp)
 <./images/4ui_GroupJoiningUserInterface.png>
- [94]
+[94]
 File: ./images/4ui_JoinedGroupUserInterface.png Graphic file (type bmp)
 <./images/4ui_JoinedGroupUserInterface.png>
  [95]
@@ -1348,16 +1606,33 @@ pe bmp)
 File: ./images/4ui_FavoriteRestaurantListUserInterface.png Graphic file (type b
 mp)
 <./images/4ui_FavoriteRestaurantListUserInterface.png>
+
+
+LaTeX Warning: Reference `fig:4SelectedColumnsfromUserBehaviorData' on page 99 
+undefined on input line 2254.
+
 File: ./images/4SelectedColumnsfromUserBehaviorData.png Graphic file (type bmp)
 
 <./images/4SelectedColumnsfromUserBehaviorData.png>
- [99]
+[99]
+
+LaTeX Warning: Reference `fig:4SelectedColumnsfromUserBehaviorData' on page 100
+ undefined on input line 2261.
+
 File: ./images/4UserIDinObjectIDPattern.png Graphic file (type bmp)
 <./images/4UserIDinObjectIDPattern.png>
+
+LaTeX Warning: Reference `fig:4SampleofSelectedUserBehaviorData' on page 100 un
+defined on input line 2268.
+
 File: ./images/4SampleofSelectedUserBehaviorData.png Graphic file (type bmp)
 <./images/4SampleofSelectedUserBehaviorData.png>
 
-Overfull \hbox (18.68805pt too wide) in paragraph at lines 2273--2274
+LaTeX Warning: Reference `fig:4SelectedColumnsfromRestaurantsData' on page 100 
+undefined on input line 2275.
+
+
+Overfull \hbox (18.68805pt too wide) in paragraph at lines 2275--2276
 []\TU/TimesNewRoman(0)/m/n/10 For the restaurants’ dataset, we select some rela
 ted columns which are ‘id’, ‘name’, ‘cats’, ‘cats_ids’, ‘price_range’,
  []
@@ -1367,80 +1642,179 @@ File: ./images/4SelectedColumnsfromRestaurantsData.png Graphic file (type bmp)
 [100]
 File: ./images/4SampleofSelectedRestaurantData.png Graphic file (type bmp)
 <./images/4SampleofSelectedRestaurantData.png>
+
+
+LaTeX Warning: Reference `fig:4SampleofSelectedRestaurantData' on page 101 unde
+fined on input line 2289.
+
+
+LaTeX Warning: Citation `Buildauserbasedcollaborativefilteringrecommendationeng
+ineforAnime' on page 101 undefined on input line 2293.
+
+
+LaTeX Warning: Reference `fig:4SomePartoftheUserrestaurantMatrix' on page 101 u
+ndefined on input line 2299.
+
 File: ./images/4SomePartoftheUserrestaurantMatrix.png Graphic file (type bmp)
 <./images/4SomePartoftheUserrestaurantMatrix.png>
- [101]
+[101]
 File: ./images/4FunctiontoFindaSimilarityBetweenUser.png Graphic file (type bmp
 )
 <./images/4FunctiontoFindaSimilarityBetweenUser.png>
+
+
+LaTeX Warning: Reference `fig:4FunctiontoFindaSimilarityBetweenUser' on page 10
+2 undefined on input line 2313.
+
+
+LaTeX Warning: Reference `fig:4ReturnValuefromsimilaruesrFunction' on page 102 
+undefined on input line 2313.
+
 File: ./images/4ReturnValuefromsimilar_uesrFunction.png Graphic file (type bmp)
 
 <./images/4ReturnValuefromsimilar_uesrFunction.png>
+
+LaTeX Warning: Reference `fig:4ReturnValuefromsimilaruesrFunction' on page 102 
+undefined on input line 2320.
+
 File: ./images/4RestaurantsRecommendationFunctionofUserbasedCollaborativeFilter
 ingMethod.png Graphic file (type bmp)
 <./images/4RestaurantsRecommendationFunctionofUserbasedCollaborativeFilteringMe
 thod.png>
- [102]
+[102]
+
+LaTeX Warning: Reference `fig:4RestaurantsRecommendationFunctionofUserbasedColl
+aborativeFilteringMethod' on page 103 undefined on input line 2331.
+
 File: ./images/4ExampleofTop10RecommendedRestaurantsforUser.png Graphic file (t
 ype bmp)
 <./images/4ExampleofTop10RecommendedRestaurantsforUser.png>
+
+LaTeX Warning: Reference `fig:4ExampleofTop10RecommendedRestaurantsforUser' on 
+page 103 undefined on input line 2340.
+
 File: ./images/4AverageRatingsofTop10RecommendedRestaurants.png Graphic file (t
 ype bmp)
 <./images/4AverageRatingsofTop10RecommendedRestaurants.png>
- [103]
+[103]
+
+LaTeX Warning: Reference `fig:4AverageRatingsofTop10RecommendedRestaurants' on 
+page 104 undefined on input line 2347.
+
 File: ./images/4SampleofIndividualsPreferences.png Graphic file (type bmp)
 <./images/4SampleofIndividualsPreferences.png>
 File: ./images/4ResultofIndividualRecommendationAlgorithm.png Graphic file (typ
 e bmp)
 <./images/4ResultofIndividualRecommendationAlgorithm.png>
- [104]
+[104]
+
+LaTeX Warning: Reference `fig:4SampleofIndividualsPreferences' on page 105 unde
+fined on input line 2370.
+
+
+LaTeX Warning: Reference `fig:4ResultofIndividualRecommendationAlgorithm' on pa
+ge 105 undefined on input line 2370.
+
 File: ./images/4SampleGroupofTwosPreferences.png Graphic file (type bmp)
 <./images/4SampleGroupofTwosPreferences.png>
 File: ./images/4ResultofGroupRecommendationAlgorithm.png Graphic file (type bmp
 )
 <./images/4ResultofGroupRecommendationAlgorithm.png>
- [105]
+[105]
+
+LaTeX Warning: Reference `fig:4SampleGroupofTwosPreferences' on page 106 undefi
+ned on input line 2384.
+
+
+LaTeX Warning: Reference `fig:4ResultofGroupRecommendationAlgorithm' on page 10
+6 undefined on input line 2384.
+
 File: ./images/4SampleofSuggestedRestaurantsandRanksfromUsers.png Graphic file 
 (type bmp)
 <./images/4SampleofSuggestedRestaurantsandRanksfromUsers.png>
- [106]
+[106]
 File: ./images/4FinalScorefromtheSample.png Graphic file (type bmp)
 <./images/4FinalScorefromtheSample.png>
- [107] [108]
+ [107]
+
+LaTeX Warning: Reference `fig:4SampleofSuggestedRestaurantsandRanksfromUsers' o
+n page 108 undefined on input line 2399.
+
+
+LaTeX Warning: Reference `fig:4FinalScorefromtheSample' on page 108 undefined o
+n input line 2399.
+
+[108]
 File: ./images/4usereva1.jpg Graphic file (type bmp)
 <./images/4usereva1.jpg>
- [109] [110]
+
+
+LaTeX Warning: Reference `fig:4usereva_1' on page 109 undefined on input line 2
+423.
+
+
+LaTeX Warning: Reference `fig:4usereva_1' on page 109 undefined on input line 2
+423.
+
+[109] [110]
 File: ./images/4ApplicationPerformanceEvaluationRequest.png Graphic file (type 
 bmp)
 <./images/4ApplicationPerformanceEvaluationRequest.png>
- [111]
+
+
+LaTeX Warning: Reference `fig:4ApplicationPerformanceEvaluationRequest' on page
+ 111 undefined on input line 2469.
+
+[111]
 File: ./images/4LineGraphbetweenGenerationandFitnessValueofGeneticAlgorithm.png
  Graphic file (type bmp)
 <./images/4LineGraphbetweenGenerationandFitnessValueofGeneticAlgorithm.png>
+
+
+LaTeX Warning: Reference `fig:4LineGraphbetweenGenerationandFitnessValueofGenet
+icAlgorithm' on page 112 undefined on input line 2483.
+
+
+LaTeX Warning: Reference `fig:4ParametersofGeneticAlgorithminthisRecommender' o
+n page 112 undefined on input line 2483.
+
 File: ./images/4ParametersofGeneticAlgorithminthisRecommender.png Graphic file 
 (type bmp)
 <./images/4ParametersofGeneticAlgorithminthisRecommender.png>
 File: ./images/4GeneticAlgorithmExecutionTimewith6Genes.png Graphic file (type 
 bmp)
 <./images/4GeneticAlgorithmExecutionTimewith6Genes.png>
-
 [112]
 File: ./images/4GeneticAlgorithmExecutionTimewith10Genes.png Graphic file (type
  bmp)
 <./images/4GeneticAlgorithmExecutionTimewith10Genes.png>
- [113]
+
+
+LaTeX Warning: Reference `fig:4GeneticAlgorithmExecutionTimewith6Genes' on page
+ 113 undefined on input line 2504.
+
+
+LaTeX Warning: Reference `fig:4GeneticAlgorithmExecutionTimewith10Genes' on pag
+e 113 undefined on input line 2504.
+
+[113]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 2513.
+(hyperref)                removed on input line 2515.
 
 [114
 
 ]
 File: ./images/5LINEMiniAppIntegration.png Graphic file (type bmp)
 <./images/5LINEMiniAppIntegration.png>
- [115] (./no-72.bbl [116]
+ [115]
+
+LaTeX Warning: Reference `fig:5LINEMiniAppIntegration' on page 116 undefined on
+ input line 2558.
+
+(./no-72.bbl [116]
 Underfull \hbox (badness 10000) in paragraph at lines 17--21
 []\TU/TimesNewRoman(0)/m/n/10 Wikipedia,  “Recommender system,” Available at []
 []$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] []
@@ -1540,10 +1914,10 @@ Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2579.
+(hyperref)                replaced by space on input line 2581.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2580--2581
+Underfull \hbox (badness 10000) in paragraph at lines 2582--2583
 
  []
 
@@ -1555,50 +1929,82 @@ File: ./images/A1GenderofRespondents.png Graphic file (type bmp)
 File: ./images/A1DistributionofRespondentsAge.png Graphic file (type bmp)
 <./images/A1DistributionofRespondentsAge.png>
 [120]
+
+LaTeX Warning: Reference `fig:A1DistributionofRespondentsAge' on page 121 undef
+ined on input line 2609.
+
 File: ./images/A1OccupationofRespondents.png Graphic file (type bmp)
 <./images/A1OccupationofRespondents.png>
 File: ./images/A1EstimatedDailyCostofEating.png Graphic file (type bmp)
 <./images/A1EstimatedDailyCostofEating.png>
+
+LaTeX Warning: Reference `fig:A1EstimatedDailyCostofEating' on page 121 undefin
+ed on input line 2624.
+
 File: ./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheResta
 urants.png Graphic file (type bmp)
 <./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheRestaurant
 s.png>
- [121] [122]
+[121] [122]
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingAlone.png Graphic f
 ile (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingAlone.png>
+
+
+LaTeX Warning: Reference `fig:A1Top3ConditionstoFindtheRestaurantwhenEatingAlon
+e' on page 123 undefined on input line 2641.
+
 File: ./images/A1AverageTimetoSelecttheRestaurantAlone.png Graphic file (type b
 mp)
 <./images/A1AverageTimetoSelecttheRestaurantAlone.png>
+
+LaTeX Warning: Reference `fig:A1AverageTimetoSelecttheRestaurantAlone' on page 
+123 undefined on input line 2648.
+
 File: ./images/A1NumberofRespondentsThinkingthatRestaurantSelectionisTheirPain.
 png Graphic file (type bmp)
 <./images/A1NumberofRespondentsThinkingthatRestaurantSelectionisTheirPain.png>
 File: ./images/A1WhichMealHasProblemtheMost.png Graphic file (type bmp)
 <./images/A1WhichMealHasProblemtheMost.png>
- [123]
+[123]
 File: ./images/A1ProblemBetweenDine-inandDelivery.png Graphic file (type bmp)
 <./images/A1ProblemBetweenDine-inandDelivery.png>
- [124]
+
+
+LaTeX Warning: Reference `fig:A1RestaurantConsiderationSurveyinGoogleform' on p
+age 124 undefined on input line 2669.
+
+[124]
 File: ./images/A1AverageTimetoSelecttheRestaurantinGroup.png Graphic file (type
  bmp)
 <./images/A1AverageTimetoSelecttheRestaurantinGroup.png>
+
+
+LaTeX Warning: Reference `fig:A1RestaurantConsiderationSurveyinGoogleform' on p
+age 125 undefined on input line 2679.
+
 File: ./images/A1NumberofRespondentsThinkingthatRestaurantSelectioninGroupisThe
 irPain.png Graphic file (type bmp)
 <./images/A1NumberofRespondentsThinkingthatRestaurantSelectioninGroupisTheirPai
 n.png>
 File: ./images/A1TheFrequencyofGroupEatingProblems.png Graphic file (type bmp)
 <./images/A1TheFrequencyofGroupEatingProblems.png>
- [125]
+[125]
 File: ./images/A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem.png Graph
 ic file (type bmp)
 <./images/A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem.png>
+
+
+LaTeX Warning: Reference `fig:A1RestaurantConsiderationSurveyinGoogleform' on p
+age 126 undefined on input line 2700.
+
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGroupofFriends.
 png Graphic file (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGroupofFriends.png>
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily.png Grap
 hic file (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily.png>
- [126]
+[126]
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend.png 
 Graphic file (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend.png>
@@ -1632,16 +2038,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 2773--2774
 
  []
 
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 2775.
-[132] [133] [134] [135]
+File: ./images/A2AgeofRespondents.png Graphic file (type bmp)
+<./images/A2AgeofRespondents.png>
+
+LaTeX Warning: Reference `fig:A2AgeofRespondents' on page 132 undefined on inpu
+t line 2789.
+
+
+LaTeX Warning: Reference `fig:A2OccupationofRespondents' on page 132 undefined 
+on input line 2789.
+
+File: ./images/A2OccupationofRespondents.png Graphic file (type bmp)
+<./images/A2OccupationofRespondents.png>
+[132]
+File: ./images/A2NumberofRespondentsthatusingIndividualRecommendation.png Graph
+ic file (type bmp)
+<./images/A2NumberofRespondentsthatusingIndividualRecommendation.png>
+
+
+LaTeX Warning: Reference `fig:A2NumberofRespondentsthatusingIndividualRecommend
+ation' on page 133 undefined on input line 2806.
+
+File: ./images/A2SatisfactionofRestaurantRecommendationforIndividual.png Graphi
+c file (type bmp)
+<./images/A2SatisfactionofRestaurantRecommendationforIndividual.png>
+[133]
+File: ./images/A2NumberofRespondentsthatusingGroupRecommendation.png Graphic fi
+le (type bmp)
+<./images/A2NumberofRespondentsthatusingGroupRecommendation.png>
+File: ./images/A2SatisfactionofRestaurantRecommendationforGroup.png Graphic fil
+e (type bmp)
+<./images/A2SatisfactionofRestaurantRecommendationforGroup.png>
+ [134]
+File: ./images/A2ApplicationUsability.png Graphic file (type bmp)
+<./images/A2ApplicationUsability.png>
+File: ./images/A2UserInterfaceofthisapplication.png Graphic file (type bmp)
+<./images/A2UserInterfaceofthisapplication.png>
+File: ./images/A2OverallSatisfaction.png Graphic file (type bmp)
+<./images/A2OverallSatisfaction.png>
+File: ./images/A2ChanceofUsersReturningtoUseAgain.png Graphic file (type bmp)
+<./images/A2ChanceofUsersReturningtoUseAgain.png>
+ [135]
+File: ./images/A2OtherFeedbacksandSuggestions.png Graphic file (type bmp)
+<./images/A2OtherFeedbacksandSuggestions.png>
+ [136] [137]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2916.
+(hyperref)                replaced by space on input line 2883.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2917--2918
+Underfull \hbox (badness 10000) in paragraph at lines 2884--2885
+
+ []
+
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 2886.
+[138] [139] [140] [141]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.0pt
+(hyperref)                replaced by space on input line 3027.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3028--3029
 
  []
 
@@ -1695,24 +2155,33 @@ braces):
 >  {thai/babelname}  =>  {thai}
 >  {thai/localnumeral}  =>  {thainumerals}
 >  {thai/Localnumeral}  =>  {thainumerals}.
-[136] (./no-72.aux
+[142] (./no-72.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
 )
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `no-72.out' has not changed.
-(rerunfilecheck)             Checksum: 6F4703DB8CC26704E876C3884E05B1DC;30628.
+
+Package rerunfilecheck Warning: File `no-72.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `no-72.out':
+(rerunfilecheck)             Before: C25974A19B81B1C4C0E10C5B1F466E7A;18490
+(rerunfilecheck)             After:  7BE14779FDF4E084CCEA8DA074689526;30784.
  ) 
 Here is how much of TeX's memory you used:
- 18790 strings out of 478436
- 363663 string characters out of 5853929
+ 18849 strings out of 478436
+ 367070 string characters out of 5853929
  945112 words of memory out of 5000000
- 38268 multiletter control sequences out of 15000+600000
+ 38316 multiletter control sequences out of 15000+600000
  406119 words of font info for 78 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  110i,10n,117p,1219b,1858s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on no-72.pdf (156 pages).
+Output written on no-72.pdf (150 pages).
