@@ -10,8 +10,8 @@
 \contentsline {section}{\numberline {1.1}Keywords}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement, Motivation, and Potential Benefits}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Project Type}{1}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Proposed Method}{1}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Approach}{1}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.4}Proposed Method}{2}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Approach}{2}{subsection.1.4.1}%
 \contentsline {subsubsection}{\numberline {1.4.1.1}Literature Review and Survey}{2}{subsubsection.1.4.1.1}%
 \contentsline {subsubsection}{\numberline {1.4.1.2}Data Collection}{2}{subsubsection.1.4.1.2}%
 \contentsline {subsubsection}{\numberline {1.4.1.3}Data Preparation}{2}{subsubsection.1.4.1.3}%
@@ -19,15 +19,15 @@
 \contentsline {subsubsection}{\numberline {1.4.1.5}Design User Interface}{2}{subsubsection.1.4.1.5}%
 \contentsline {subsubsection}{\numberline {1.4.1.6}Build a Web Application}{2}{subsubsection.1.4.1.6}%
 \contentsline {subsubsection}{\numberline {1.4.1.7}Validation}{2}{subsubsection.1.4.1.7}%
-\contentsline {subsection}{\numberline {1.4.2}Objectives}{2}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.2}Objectives}{3}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Scope}{3}{subsection.1.4.3}%
 \contentsline {section}{\numberline {1.5}Original Engineering Content}{3}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Web Application}{3}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}Customer Behavior Dataset}{3}{subsection.1.5.2}%
 \contentsline {subsection}{\numberline {1.5.3}Group Recommendation Algorithm}{3}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6}Task Breakdown and Draft Schedule}{3}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Semester 1}{3}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Semester 2}{4}{subsection.1.6.2}%
+\contentsline {section}{\numberline {1.6}Task Breakdown and Draft Schedule}{4}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Semester 1}{4}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Semester 2}{5}{subsection.1.6.2}%
 \contentsline {section}{\numberline {1.7}Deliverables for Term 1}{8}{section.1.7}%
 \contentsline {section}{\numberline {1.8}Deliverables for Term 2}{8}{section.1.8}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {2.}\hskip -0.5em Background Theory and Related Work}}}{9}{chapter.2}%
@@ -53,14 +53,14 @@
 \contentsline {subsubsection}{\numberline {2.3.1.4}Node.js}{17}{subsubsection.2.3.1.4}%
 \contentsline {subsubsection}{\numberline {2.3.1.5}React}{17}{subsubsection.2.3.1.5}%
 \contentsline {subsubsection}{\numberline {2.3.1.6}Python}{17}{subsubsection.2.3.1.6}%
-\contentsline {subsubsection}{\numberline {2.3.1.7}JupyterLab}{18}{subsubsection.2.3.1.7}%
+\contentsline {subsubsection}{\numberline {2.3.1.7}JupyterLab}{17}{subsubsection.2.3.1.7}%
 \contentsline {subsubsection}{\numberline {2.3.1.8}Figma}{18}{subsubsection.2.3.1.8}%
 \contentsline {subsection}{\numberline {2.3.2}HTTP}{18}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Web Application Framework}{19}{subsection.2.3.3}%
 \contentsline {subsubsection}{\numberline {2.3.3.1}Express}{19}{subsubsection.2.3.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.3.2}Flask}{19}{subsubsection.2.3.3.2}%
-\contentsline {subsection}{\numberline {2.3.4}Database Tools}{20}{subsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.4.1}NoSQL}{20}{subsubsection.2.3.4.1}%
+\contentsline {subsection}{\numberline {2.3.4}Database Tools}{19}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}NoSQL}{19}{subsubsection.2.3.4.1}%
 \contentsline {subsubsection}{\numberline {2.3.4.2}MongoDB}{20}{subsubsection.2.3.4.2}%
 \contentsline {subsubsection}{\numberline {2.3.4.3}Mongoose}{20}{subsubsection.2.3.4.3}%
 \contentsline {subsection}{\numberline {2.3.5}Deployment Tools}{21}{subsection.2.3.5}%
@@ -95,82 +95,82 @@
 \contentsline {subsection}{\numberline {3.2.2}Restaurant Recommender System Architect}{36}{subsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.2.1}App Server Architecture}{37}{subsubsection.3.2.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2.2}App Client Architecture}{38}{subsubsection.3.2.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.3}Recommender Architecture}{39}{subsubsection.3.2.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.2.4}Data Service Architecture}{40}{subsubsection.3.2.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}Recommender Architecture}{38}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}Data Service Architecture}{39}{subsubsection.3.2.2.4}%
 \contentsline {subsubsection}{\numberline {3.2.2.5}Database Architecture}{40}{subsubsection.3.2.2.5}%
-\contentsline {section}{\numberline {3.3}User Journey}{42}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Activity Diagrams}{42}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}Registration}{42}{subsubsection.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Individual Restaurant Recommendation}{43}{subsubsection.3.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.3.1.3}Registration}{44}{subsubsection.3.3.1.3}%
-\contentsline {subsection}{\numberline {3.3.2}Sequence Diagrams}{45}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Registration}{45}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Individual Restaurant Recommendation}{46}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}Create Group}{48}{subsubsection.3.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.3.2.4}Group Restaurant Recommendation}{49}{subsubsection.3.3.2.4}%
-\contentsline {section}{\numberline {3.4}User Interface Design}{50}{section.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.0.1}Login Page}{51}{subsubsection.3.4.0.1}%
-\contentsline {subsubsection}{\numberline {3.4.0.2}Registration Page}{52}{subsubsection.3.4.0.2}%
-\contentsline {subsubsection}{\numberline {3.4.0.3}Individual Restaurant Recommendation Page}{54}{subsubsection.3.4.0.3}%
-\contentsline {subsubsection}{\numberline {3.4.0.4}Group Restaurant Recommendation Page}{57}{subsubsection.3.4.0.4}%
-\contentsline {subsubsection}{\numberline {3.4.0.5}Profile Page}{60}{subsubsection.3.4.0.5}%
-\contentsline {section}{\numberline {3.5}Database Structure}{60}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Collections}{61}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Schema}{61}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Indexing}{62}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}Restaurant Recommendation Algorithm}{63}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Genetic Algorithm for Individual Recommendation}{64}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Genetic Algorithm for Group Recommendation}{66}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Rank Aggregation for Group Recommendation}{67}{subsection.3.6.3}%
-\contentsline {section}{\numberline {3.7}Production Testing Plan}{68}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Production Deployment}{68}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}User Evaluation}{68}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Application Evaluation}{68}{subsection.3.7.3}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Results and Discussion}}}{69}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Restaurant Data Collection}{69}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Collection Process}{69}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Preprocessing Process}{70}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Result}{71}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}User Data Collection}{74}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Collection Process}{74}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Preprocessing Process}{76}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Results}{76}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Feedback}{79}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Training Data Usage}{80}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}User Journey Finalization}{80}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Login and Registration}{81}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Home Screen}{81}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Individual Recommendation}{82}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Group Recommendation}{82}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Web Application Result}{83}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Server-side Services Result}{83}{subsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.1}Data Service}{83}{subsubsection.4.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.2}App Server}{83}{subsubsection.4.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.4.1.3}Recommender}{84}{subsubsection.4.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.4.1.4}Database}{85}{subsubsection.4.4.1.4}%
-\contentsline {subsection}{\numberline {4.4.2}User Interface Result}{85}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Login}{86}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Registration}{87}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.3}Home Screen}{88}{subsubsection.4.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.4.2.4}Individual Recommendation}{90}{subsubsection.4.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.4.2.5}Group Recommendation}{94}{subsubsection.4.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.4.2.6}Favorite List}{99}{subsubsection.4.4.2.6}%
-\contentsline {section}{\numberline {4.5}Model Experiment}{99}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Data Set}{99}{subsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.1.1}Data Preparation}{100}{subsubsection.4.5.1.1}%
-\contentsline {subsection}{\numberline {4.5.2}Collaborative Filtering Technique}{101}{subsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.2.1}Discover the Similarity of Users}{101}{subsubsection.4.5.2.1}%
-\contentsline {subsubsection}{\numberline {4.5.2.2}Recommendation}{102}{subsubsection.4.5.2.2}%
-\contentsline {subsection}{\numberline {4.5.3}Genetic Algorithm Technique}{104}{subsection.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.3.1}Individual Recommendation Result}{104}{subsubsection.4.5.3.1}%
-\contentsline {subsubsection}{\numberline {4.5.3.2}Group Recommendation Result}{105}{subsubsection.4.5.3.2}%
-\contentsline {subsubsection}{\numberline {4.5.3.3}Rank Aggregation Result}{107}{subsubsection.4.5.3.3}%
-\contentsline {section}{\numberline {4.6}Evaluation Result}{108}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}User Evaluation}{108}{subsection.4.6.1}%
-\contentsline {subsubsection}{\numberline {4.6.1.1}First User Evaluation}{108}{subsubsection.4.6.1.1}%
-\contentsline {subsubsection}{\numberline {4.6.1.2}Final User Evaluation}{110}{subsubsection.4.6.1.2}%
-\contentsline {subsection}{\numberline {4.6.2}Application Performance Evaluation}{111}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Recommendation Evaluation}{112}{subsection.4.6.3}%
+\contentsline {section}{\numberline {3.3}User Journey}{41}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Activity Diagrams}{41}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Registration}{41}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Individual Restaurant Recommendation}{42}{subsubsection.3.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.3.1.3}Registration}{43}{subsubsection.3.3.1.3}%
+\contentsline {subsection}{\numberline {3.3.2}Sequence Diagrams}{44}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Registration}{44}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Individual Restaurant Recommendation}{45}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}Create Group}{47}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.3.2.4}Group Restaurant Recommendation}{48}{subsubsection.3.3.2.4}%
+\contentsline {section}{\numberline {3.4}User Interface Design}{49}{section.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.0.1}Login Page}{50}{subsubsection.3.4.0.1}%
+\contentsline {subsubsection}{\numberline {3.4.0.2}Registration Page}{51}{subsubsection.3.4.0.2}%
+\contentsline {subsubsection}{\numberline {3.4.0.3}Individual Restaurant Recommendation Page}{53}{subsubsection.3.4.0.3}%
+\contentsline {subsubsection}{\numberline {3.4.0.4}Group Restaurant Recommendation Page}{56}{subsubsection.3.4.0.4}%
+\contentsline {subsubsection}{\numberline {3.4.0.5}Profile Page}{59}{subsubsection.3.4.0.5}%
+\contentsline {section}{\numberline {3.5}Database Structure}{59}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Collections}{60}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Schema}{60}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Indexing}{61}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Restaurant Recommendation Algorithm}{62}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Genetic Algorithm for Individual Recommendation}{63}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Genetic Algorithm for Group Recommendation}{65}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Rank Aggregation for Group Recommendation}{66}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Production Testing Plan}{67}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Production Deployment}{67}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}User Evaluation}{67}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Application Evaluation}{67}{subsection.3.7.3}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Results and Discussion}}}{68}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Restaurant Data Collection}{68}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Collection Process}{68}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Preprocessing Process}{69}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Result}{70}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}User Data Collection}{73}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Collection Process}{73}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Preprocessing Process}{75}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Results}{75}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Feedback}{78}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Training Data Usage}{79}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}User Journey Finalization}{79}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Login and Registration}{80}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Home Screen}{80}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Individual Recommendation}{81}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Group Recommendation}{81}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Web Application Result}{82}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Server-side Services Result}{82}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}Data Service}{82}{subsubsection.4.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.2}App Server}{82}{subsubsection.4.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.4.1.3}Recommender}{83}{subsubsection.4.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.4.1.4}Database}{84}{subsubsection.4.4.1.4}%
+\contentsline {subsection}{\numberline {4.4.2}User Interface Result}{84}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Login}{85}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Registration}{86}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}Home Screen}{87}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}Individual Recommendation}{89}{subsubsection.4.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.4.2.5}Group Recommendation}{93}{subsubsection.4.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.4.2.6}Favorite List}{98}{subsubsection.4.4.2.6}%
+\contentsline {section}{\numberline {4.5}Model Experiment}{98}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Data Set}{98}{subsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.1}Data Preparation}{99}{subsubsection.4.5.1.1}%
+\contentsline {subsection}{\numberline {4.5.2}Collaborative Filtering Technique}{100}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}Discover the Similarity of Users}{100}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}Recommendation}{101}{subsubsection.4.5.2.2}%
+\contentsline {subsection}{\numberline {4.5.3}Genetic Algorithm Technique}{103}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}Individual Recommendation Result}{103}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}Group Recommendation Result}{104}{subsubsection.4.5.3.2}%
+\contentsline {subsubsection}{\numberline {4.5.3.3}Rank Aggregation Result}{106}{subsubsection.4.5.3.3}%
+\contentsline {section}{\numberline {4.6}Evaluation Result}{107}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}User Evaluation}{107}{subsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.1}First User Interface Evaluation}{107}{subsubsection.4.6.1.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.2}Final User Evaluation}{109}{subsubsection.4.6.1.2}%
+\contentsline {subsection}{\numberline {4.6.2}Application Performance Evaluation}{110}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Recommendation Evaluation}{111}{subsection.4.6.3}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{114}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Problems and Solutions}{114}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}User and Restaurant Data}{114}{subsection.5.1.1}%

@@ -216,4 +216,11 @@ Hyun-Tae Kim, Eungyeong Kim, Jong-Hyun Lee, and Chang~Wook Ahn,
 \newblock {\bf ICCET 2010 - 2010 International Conference on Computer
   Engineering and Technology, Proceedings}, vol. 6, 01 2010.
 
+\bibitem{BuildauserbasedcollaborativefilteringrecommendationengineforAnime}
+Chris I,
+\newblock ``{Build a user-based collaborative filtering recommendation engine
+  for Anime},'' Available at
+  \url{https://towardsdatascience.com/build-a-user-based-collaborative-filtering-recommendation-engine-for-anime-92d35921f304},
+\newblock [Online; accessed 30-August-2020].
+
 \end{thebibliography}

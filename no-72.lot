@@ -2,17 +2,17 @@
 \addvspace {0em}
 \addvspace {0em}
 \contentsline {table}{\numberline {2.1}{\ignorespaces Characteristics of Explicit and Implicit Feedback}}{10}{table.2.1}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Common HTTP Verbs}}{19}{table.2.2}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Common HTTP Verbs}}{18}{table.2.2}%
 \contentsline {table}{\numberline {2.3}{\ignorespaces NoSQL Types and Description}}{20}{table.2.3}%
 \contentsline {table}{\numberline {2.4}{\ignorespaces Mongoose’ Schema Types}}{21}{table.2.4}%
 \addvspace {0em}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Database Collection and Description}}{61}{table.3.1}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Restaurant Schema}}{61}{table.3.2}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces User Schema}}{61}{table.3.3}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Recommendation Schema}}{62}{table.3.4}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Category Schema}}{62}{table.3.5}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Favorite Schema}}{62}{table.3.6}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Database Collection and Description}}{60}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Restaurant Schema}}{60}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces User Schema}}{60}{table.3.3}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Recommendation Schema}}{61}{table.3.4}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Category Schema}}{61}{table.3.5}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Favorite Schema}}{61}{table.3.6}%
 \addvspace {0em}
-\contentsline {table}{\numberline {4.1}{\ignorespaces App Server API Specification}}{84}{table.4.1}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Recommender API Specification}}{84}{table.4.2}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces App Server API Specification}}{83}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Recommender API Specification}}{83}{table.4.2}%
 \addvspace {0em}

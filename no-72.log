@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  18 MAY 2021 22:34
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1027,7 +1027,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: ./images/2cfprocess.png Graphic file (type bmp)
 <./images/2cfprocess.png>
  [11] [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 640--650
+Underfull \hbox (badness 10000) in paragraph at lines 637--647
 
  []
 
@@ -1035,7 +1035,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 640--650
 File: ./images/2http.png Graphic file (type bmp)
 <./images/2http.png>
 
-Underfull \hbox (badness 10000) in alignment at lines 754--754
+Underfull \hbox (badness 10000) in alignment at lines 746--746
 [][] 
  []
 
@@ -1048,11 +1048,15 @@ File: ./images/2eatseereal.png Graphic file (type bmp)
  [23]
 File: ./images/2whatman.png Graphic file (type bmp)
 <./images/2whatman.png>
- [24]
+
+
+LaTeX Warning: Citation `Whatevermans' on page 24 undefined on input line 872.
+
+[24]
 File: ./images/2tinder.jpeg Graphic file (type bmp)
 <./images/2tinder.jpeg>
  [25]
-Overfull \hbox (12.03842pt too wide) in paragraph at lines 899--899
+Overfull \hbox (12.03842pt too wide) in paragraph at lines 891--891
 []\TU/TimesNewRoman(0)/b/n/13 On the design of Individual and Group Recommender
  Systems for Tourism
  []
@@ -1064,7 +1068,7 @@ Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 929.
+(hyperref)                removed on input line 921.
 
 [28
 
@@ -1072,7 +1076,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: ./images/3usecase.png Graphic file (type bmp)
 <./images/3usecase.png>
 
-Overfull \hbox (6.38pt too wide) in paragraph at lines 954--955
+Overfull \hbox (6.38pt too wide) in paragraph at lines 946--947
  [][] 
  []
 
@@ -1087,125 +1091,124 @@ File: ./images/3architect.png Graphic file (type bmp)
  [36]
 File: ./images/3arch_appserver.png Graphic file (type bmp)
 <./images/3arch_appserver.png>
- [37]
 File: ./images/3arch_appclient.png Graphic file (type bmp)
 <./images/3arch_appclient.png>
+ [37]
 File: ./images/3arch_recommender.png Graphic file (type bmp)
 <./images/3arch_recommender.png>
  [38]
 File: ./images/3arch_dataservice.png Graphic file (type bmp)
 <./images/3arch_dataservice.png>
- [39]
 File: ./images/3arch_database.png Graphic file (type bmp)
 <./images/3arch_database.png>
- [40] [41]
+ [39] [40]
 File: ./images/3actdiagram_register.png Graphic file (type bmp)
 <./images/3actdiagram_register.png>
- [42]
+ [41]
 File: ./images/3actdiagram_indirec.png Graphic file (type bmp)
 <./images/3actdiagram_indirec.png>
- [43]
+ [42]
 File: ./images/3actdiagram_grouprec.png Graphic file (type bmp)
 <./images/3actdiagram_grouprec.png>
-
-[44]
+ [43]
 File: ./images/3seqdiagram_register.png Graphic file (type bmp)
 <./images/3seqdiagram_register.png>
- [45]
+
+[44]
 File: ./images/3seqdiagram_indirec.png Graphic file (type bmp)
 <./images/3seqdiagram_indirec.png>
 
-Overfull \hbox (13.52638pt too wide) in paragraph at lines 1292--1293
+Overfull \hbox (13.52638pt too wide) in paragraph at lines 1282--1283
  [][] 
  []
 
-[46] [47]
+[45] [46]
 File: ./images/3seqdiagram_creategroup.png Graphic file (type bmp)
 <./images/3seqdiagram_creategroup.png>
- [48]
+ [47]
 File: ./images/3seqdiagram_grouprec.png Graphic file (type bmp)
 <./images/3seqdiagram_grouprec.png>
- [49] [50]
+ [48] [49]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1346.
+(hyperref)                than one, level fixed on input line 1336.
 
 File: ./images/3ui_StartPageUserInterfaceDesign.png Graphic file (type bmp)
 <./images/3ui_StartPageUserInterfaceDesign.png>
-[51]
+[50]
 File: ./images/3ui_RegistrationPageUserInterfaceDesign.png Graphic file (type b
 mp)
 <./images/3ui_RegistrationPageUserInterfaceDesign.png>
- [52]
+ [51]
 File: ./images/3ui_ProfileSetupPageUserInterfaceDesign.png Graphic file (type b
 mp)
 <./images/3ui_ProfileSetupPageUserInterfaceDesign.png>
- [53]
+ [52]
 File: ./images/3ui_HomePageUserInterfaceDesign.png Graphic file (type bmp)
 <./images/3ui_HomePageUserInterfaceDesign.png>
- [54]
+ [53]
 File: ./images/3ui_FilterWindowUserInterfaceDesign.png Graphic file (type bmp)
 <./images/3ui_FilterWindowUserInterfaceDesign.png>
- [55]
+ [54]
 File: ./images/3ui_RecommendationSuccessPageUserInterfaceDesign.png Graphic fil
 e (type bmp)
 <./images/3ui_RecommendationSuccessPageUserInterfaceDesign.png>
- [56]
+ [55]
 File: ./images/3ui_GroupJoiningUserInterfaceDesign.png Graphic file (type bmp)
 <./images/3ui_GroupJoiningUserInterfaceDesign.png>
- [57]
+ [56]
 File: ./images/3ui_GroupConfirmationPageUserInterfaceDesign.png Graphic file (t
 ype bmp)
 <./images/3ui_GroupConfirmationPageUserInterfaceDesign.png>
- [58]
+ [57]
 File: ./images/3ui_GroupRecommendationPageUserInterfaceDesign.png Graphic file 
 (type bmp)
 <./images/3ui_GroupRecommendationPageUserInterfaceDesign.png>
- [59]
+ [58]
 File: ./images/3ui_ProfileManagementPageUserInterfaceDesign.png Graphic file (t
 ype bmp)
 <./images/3ui_ProfileManagementPageUserInterfaceDesign.png>
- [60] [61]
+ [59] [60]
 File: ./images/3db_RestaurantCollectionsIndexes.png Graphic file (type bmp)
 <./images/3db_RestaurantCollectionsIndexes.png>
 File: ./images/3db_UserCollectionsIndexes.png Graphic file (type bmp)
 <./images/3db_UserCollectionsIndexes.png>
- [62]
+ [61]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 1611.
+(Font)              scaled to size 10.0pt on input line 1601.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 1611.
- [63]
+(Font)              scaled to size 10.0pt on input line 1601.
+ [62]
 File: ./images/3GeneticAlgorithmFlowchart.png Graphic file (type bmp)
 <./images/3GeneticAlgorithmFlowchart.png>
- [64]
+ [63]
 File: ./images/3ga_init.png Graphic file (type bmp)
 <./images/3ga_init.png>
- [65]
+ [64]
 File: ./images/3ga_grouprecflow.png Graphic file (type bmp)
 <./images/3ga_grouprecflow.png>
 File: ./images/3ga_rankagg.png Graphic file (type bmp)
 <./images/3ga_rankagg.png>
 
-[66] [67] [68]
+[65] [66] [67]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 1740.
+(hyperref)                removed on input line 1730.
 
 File: ./images/4ThaiChanasRestaurantDataExample.png Graphic file (type bmp)
 <./images/4ThaiChanasRestaurantDataExample.png>
-[69
+[68
 
 ]
 File: ./images/4FacebooksRestaurantDataExample.png Graphic file (type bmp)
 <./images/4FacebooksRestaurantDataExample.png>
- [70]
+ [69]
 File: ./images/4RestaurantDuplicationChecking.png Graphic file (type bmp)
 <./images/4RestaurantDuplicationChecking.png>
 
-Overfull \hbox (2.0803pt too wide) in paragraph at lines 1778--1779
+Overfull \hbox (2.0803pt too wide) in paragraph at lines 1768--1769
 \TU/TimesNewRoman(0)/m/n/10 contains more information. However, “McDonald’s MBK
 ” has a similar name with “McDonald’s PARAGON”
  []
@@ -1214,38 +1217,38 @@ File: ./images/4RestaurantsLocationinMap.png Graphic file (type bmp)
 <./images/4RestaurantsLocationinMap.png>
 File: ./images/4RestaurantsCategoryDistribution.png Graphic file (type bmp)
 <./images/4RestaurantsCategoryDistribution.png>
-[71]
+[70]
 File: ./images/4RestaurantsPriceRangeDistribution.png Graphic file (type bmp)
 <./images/4RestaurantsPriceRangeDistribution.png>
 File: ./images/4ExampleofRestaurantPicturefromFacebookPage.jpeg Graphic file (t
 ype bmp)
 <./images/4ExampleofRestaurantPicturefromFacebookPage.jpeg>
- [72]
+ [71]
 File: ./images/4ExampleofUnrelatedRestaurantPicturefromFacebookPage.jpeg Graphi
 c file (type bmp)
 <./images/4ExampleofUnrelatedRestaurantPicturefromFacebookPage.jpeg>
- [73]
+ [72]
 File: ./images/4RegistrationPageoftheDataCollectionTool.png Graphic file (type 
 bmp)
 <./images/4RegistrationPageoftheDataCollectionTool.png>
- [74]
+ [73]
 File: ./images/4RatingPageoftheDataCollectionTool.png Graphic file (type bmp)
 <./images/4RatingPageoftheDataCollectionTool.png>
- [75]
+ [74]
 File: ./images/4FacetofaceInterviewProcess.png Graphic file (type bmp)
 <./images/4FacetofaceInterviewProcess.png>
 File: ./images/4DistributionofPeoplesLocation.png Graphic file (type bmp)
 <./images/4DistributionofPeoplesLocation.png>
 
-Overfull \hbox (16.38pt too wide) in paragraph at lines 1867--1868
+Overfull \hbox (16.38pt too wide) in paragraph at lines 1857--1858
  [][] 
  []
 
-[76]
+[75]
 File: ./images/4TotalNumberofInteractedRestaurantsperPerson.png Graphic file (t
 ype bmp)
 <./images/4TotalNumberofInteractedRestaurantsperPerson.png>
- [77]
+ [76]
 File: ./images/4VisualizationofPeoplesDemographic.png Graphic file (type bmp)
 <./images/4VisualizationofPeoplesDemographic.png>
 File: ./images/4AverageScoreofEachRestaurantCategoryfromPeople.png Graphic file
@@ -1253,100 +1256,106 @@ File: ./images/4AverageScoreofEachRestaurantCategoryfromPeople.png Graphic file
 <./images/4AverageScoreofEachRestaurantCategoryfromPeople.png>
 File: ./images/4DistributionofUsersRatings.png Graphic file (type bmp)
 <./images/4DistributionofUsersRatings.png>
- [78] [79]
+ [77] [78]
 File: ./images/4LoginandRegistrationUserJourneyChanges.png Graphic file (type b
 mp)
 <./images/4LoginandRegistrationUserJourneyChanges.png>
- [80]
+ [79]
 File: ./images/4HomeScreenUserJourneyChanges.png Graphic file (type bmp)
 <./images/4HomeScreenUserJourneyChanges.png>
 File: ./images/4IndividualRecommendationUserJourneyChanges.png Graphic file (ty
 pe bmp)
 <./images/4IndividualRecommendationUserJourneyChanges.png>
- [81]
+ [80]
 File: ./images/4GroupRecommendationUserJourneyChanges.png Graphic file (type bm
 p)
 <./images/4GroupRecommendationUserJourneyChanges.png>
- [82]
+ [81]
 File: ./images/4result_dataservice.png Graphic file (type bmp)
 <./images/4result_dataservice.png>
- [83]
+ [82]
 File: ./images/4mongodashboard.png Graphic file (type bmp)
 <./images/4mongodashboard.png>
- [84] [85]
+ [83] [84]
 File: ./images/4ui_LoginPageUserInterface.png Graphic file (type bmp)
 <./images/4ui_LoginPageUserInterface.png>
- [86]
+ [85]
 File: ./images/4ui_RegistrationUserInterface.png Graphic file (type bmp)
 <./images/4ui_RegistrationUserInterface.png>
- [87]
+ [86]
 File: ./images/4ui_HomeScreenUserInterface.png Graphic file (type bmp)
 <./images/4ui_HomeScreenUserInterface.png>
 File: ./images/4ui_LanguageSwitchingUserInterface.png Graphic file (type bmp)
 <./images/4ui_LanguageSwitchingUserInterface.png>
- [88] [89]
+ [87] [88]
 File: ./images/4ui_IndividualRecommendationConfirmationUserInterface.png Graphi
 c file (type bmp)
 <./images/4ui_IndividualRecommendationConfirmationUserInterface.png>
 File: ./images/4ui_IndividualRecommendationUserInterface.png Graphic file (type
  bmp)
 <./images/4ui_IndividualRecommendationUserInterface.png>
- [90]
+ [89]
 File: ./images/4ui_IndividualRecommendationSelectionUserInterface.png Graphic f
 ile (type bmp)
 <./images/4ui_IndividualRecommendationSelectionUserInterface.png>
 
-[91]
+[90]
 File: ./images/4ui_IndividualRecommendationSuccessUserInterface.png Graphic fil
 e (type bmp)
 <./images/4ui_IndividualRecommendationSuccessUserInterface.png>
- [92] [93]
+ [91] [92]
 File: ./images/4ui_GroupCreatingUserInterface.png Graphic file (type bmp)
 <./images/4ui_GroupCreatingUserInterface.png>
 File: ./images/4ui_GroupJoiningUserInterface.png Graphic file (type bmp)
 <./images/4ui_GroupJoiningUserInterface.png>
- [94]
+ [93]
 File: ./images/4ui_JoinedGroupUserInterface.png Graphic file (type bmp)
 <./images/4ui_JoinedGroupUserInterface.png>
- [95]
+ [94]
 File: ./images/4ui_GroupRecommendationUserInterface.png Graphic file (type bmp)
 
 <./images/4ui_GroupRecommendationUserInterface.png>
- [96]
+ [95]
 File: ./images/4ui_GroupRecommendationSuccessUserInterface.png Graphic file (ty
 pe bmp)
 <./images/4ui_GroupRecommendationSuccessUserInterface.png>
- [97] [98]
+ [96] [97]
 File: ./images/4ui_FavoriteRestaurantListUserInterface.png Graphic file (type b
 mp)
 <./images/4ui_FavoriteRestaurantListUserInterface.png>
+
+
+LaTeX Warning: Reference `sec:dataset' on page 98 undefined on input line 2235.
+
+
+
+LaTeX Warning: Reference `sec:cf' on page 98 undefined on input line 2235.
+
+
+LaTeX Warning: Reference `sec:ga' on page 98 undefined on input line 2235.
+
 File: ./images/4SelectedColumnsfromUserBehaviorData.png Graphic file (type bmp)
 
 <./images/4SelectedColumnsfromUserBehaviorData.png>
- [99]
+[98]
 File: ./images/4UserIDinObjectIDPattern.png Graphic file (type bmp)
 <./images/4UserIDinObjectIDPattern.png>
 File: ./images/4SampleofSelectedUserBehaviorData.png Graphic file (type bmp)
 <./images/4SampleofSelectedUserBehaviorData.png>
 
-Overfull \hbox (18.68805pt too wide) in paragraph at lines 2275--2276
+Overfull \hbox (18.68805pt too wide) in paragraph at lines 2264--2265
 []\TU/TimesNewRoman(0)/m/n/10 For the restaurants’ dataset, we select some rela
 ted columns which are ‘id’, ‘name’, ‘cats’, ‘cats_ids’, ‘price_range’,
  []
 
 File: ./images/4SelectedColumnsfromRestaurantsData.png Graphic file (type bmp)
 <./images/4SelectedColumnsfromRestaurantsData.png>
-[100]
+[99]
 File: ./images/4SampleofSelectedRestaurantData.png Graphic file (type bmp)
 <./images/4SampleofSelectedRestaurantData.png>
-
-
-LaTeX Warning: Citation `Buildauserbasedcollaborativefilteringrecommendationeng
-ineforAnime' on page 101 undefined on input line 2293.
-
 File: ./images/4SomePartoftheUserrestaurantMatrix.png Graphic file (type bmp)
 <./images/4SomePartoftheUserrestaurantMatrix.png>
-[101]
+ [100]
 File: ./images/4FunctiontoFindaSimilarityBetweenUser.png Graphic file (type bmp
 )
 <./images/4FunctiontoFindaSimilarityBetweenUser.png>
@@ -1357,60 +1366,60 @@ File: ./images/4RestaurantsRecommendationFunctionofUserbasedCollaborativeFilter
 ingMethod.png Graphic file (type bmp)
 <./images/4RestaurantsRecommendationFunctionofUserbasedCollaborativeFilteringMe
 thod.png>
- [102]
+ [101]
 File: ./images/4ExampleofTop10RecommendedRestaurantsforUser.png Graphic file (t
 ype bmp)
 <./images/4ExampleofTop10RecommendedRestaurantsforUser.png>
 File: ./images/4AverageRatingsofTop10RecommendedRestaurants.png Graphic file (t
 ype bmp)
 <./images/4AverageRatingsofTop10RecommendedRestaurants.png>
- [103]
+ [102]
 File: ./images/4SampleofIndividualsPreferences.png Graphic file (type bmp)
 <./images/4SampleofIndividualsPreferences.png>
 File: ./images/4ResultofIndividualRecommendationAlgorithm.png Graphic file (typ
 e bmp)
 <./images/4ResultofIndividualRecommendationAlgorithm.png>
- [104]
+ [103]
 File: ./images/4SampleGroupofTwosPreferences.png Graphic file (type bmp)
 <./images/4SampleGroupofTwosPreferences.png>
 File: ./images/4ResultofGroupRecommendationAlgorithm.png Graphic file (type bmp
 )
 <./images/4ResultofGroupRecommendationAlgorithm.png>
- [105]
+ [104]
 File: ./images/4SampleofSuggestedRestaurantsandRanksfromUsers.png Graphic file 
 (type bmp)
 <./images/4SampleofSuggestedRestaurantsandRanksfromUsers.png>
- [106]
+ [105]
 File: ./images/4FinalScorefromtheSample.png Graphic file (type bmp)
 <./images/4FinalScorefromtheSample.png>
- [107] [108]
+ [106] [107]
 File: ./images/4usereva1.jpg Graphic file (type bmp)
 <./images/4usereva1.jpg>
- [109] [110]
+ [108] [109]
 File: ./images/4ApplicationPerformanceEvaluationRequest.png Graphic file (type 
 bmp)
 <./images/4ApplicationPerformanceEvaluationRequest.png>
- [111]
+ [110]
 File: ./images/4LineGraphbetweenGenerationandFitnessValueofGeneticAlgorithm.png
  Graphic file (type bmp)
 <./images/4LineGraphbetweenGenerationandFitnessValueofGeneticAlgorithm.png>
 File: ./images/4ParametersofGeneticAlgorithminthisRecommender.png Graphic file 
 (type bmp)
 <./images/4ParametersofGeneticAlgorithminthisRecommender.png>
+ [111]
 File: ./images/4GeneticAlgorithmExecutionTimewith6Genes.png Graphic file (type 
 bmp)
 <./images/4GeneticAlgorithmExecutionTimewith6Genes.png>
- [112]
 File: ./images/4GeneticAlgorithmExecutionTimewith10Genes.png Graphic file (type
  bmp)
 <./images/4GeneticAlgorithmExecutionTimewith10Genes.png>
 
-[113]
+[112] [113]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 2515.
+(hyperref)                removed on input line 2500.
 
 [114
 
@@ -1510,6 +1519,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--181
 [][][][][] [] [] [] [][][][] [] [][][][][] [] [][][][][][][] [] [][][] []
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--225
+[]\TU/TimesNewRoman(0)/m/n/10 Chris I,  “Build a user-based collaborative filte
+ring recommendation en-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--225
+\TU/TimesNewRoman(0)/m/n/10 gine for Anime,” Available at [][]$[][][][][] [] []
+ [] [][][][][][][][][][][][][][][][][][] [] [][][] []
+ []
+
+
+Overfull \hbox (48.13pt too wide) in paragraph at lines 220--225
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][]$[][]\TU/TimesNewRoman(0)/m/n/10 ,
+ []
+
 ) [118] [119]
 
 Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
@@ -1517,10 +1545,10 @@ Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2581.
+(hyperref)                replaced by space on input line 2565.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2582--2583
+Underfull \hbox (badness 10000) in paragraph at lines 2566--2567
 
  []
 
@@ -1602,10 +1630,10 @@ le (type bmp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2772.
+(hyperref)                replaced by space on input line 2756.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2773--2774
+Underfull \hbox (badness 10000) in paragraph at lines 2757--2758
 
  []
 
@@ -1643,23 +1671,23 @@ File: ./images/A2OtherFeedbacksandSuggestions.png Graphic file (type bmp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2883.
+(hyperref)                replaced by space on input line 2867.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2884--2885
+Underfull \hbox (badness 10000) in paragraph at lines 2868--2869
 
  []
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 2886.
+(Font)              scaled to size 9.0pt on input line 2870.
 [138] [139] [140] [141]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 3027.
+(hyperref)                replaced by space on input line 3011.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3028--3029
+Underfull \hbox (badness 10000) in paragraph at lines 3012--3013
 
  []
 
@@ -1724,14 +1752,20 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `no-72.out' has not changed.
-(rerunfilecheck)             Checksum: 7BE14779FDF4E084CCEA8DA074689526;30784.
+
+Package rerunfilecheck Warning: File `no-72.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `no-72.out':
+(rerunfilecheck)             Before: 7BE14779FDF4E084CCEA8DA074689526;30784
+(rerunfilecheck)             After:  C0471A7DE42F02A895E68A6B42623BA2;30837.
  ) 
 Here is how much of TeX's memory you used:
- 18868 strings out of 478436
- 367340 string characters out of 5853929
+ 18872 strings out of 478436
+ 367436 string characters out of 5853929
  945112 words of memory out of 5000000
- 38335 multiletter control sequences out of 15000+600000
+ 38339 multiletter control sequences out of 15000+600000
  406119 words of font info for 78 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  110i,10n,117p,1219b,1858s stack positions out of 5000i,500n,10000p,200000b,80000s

@@ -281,7 +281,7 @@ Genetic Algorithm, Optimization Problem, Decision Making Process, Group Recommen
 
 From the problems online survey, it revealed that 62\% of the respondents, 93 out of 148, felt restaurant selection in each meal is their main problem which up to 65.5 \% faced the pain about restaurant selection in a group by occurring frequently in a group of friends. The major issue comes from a variety of factors and conditions which lead to the inability to decide. From further inquiries about how they solved the problem, we found that very few people will find a restaurant that matches the conditions of their group. They usually select the restaurant according to the majority which cannot serve everyone’s satisfaction. Some of them use the recommendation application to be their alternative way to decide. Moreover, in the worst case, they just eat separately. 
 
-Even though various applications can suggest food to users, almost all of them just randomize the suggestions without any logic which is known from the problem validation survey and additional related research. Moreover, many of them suggest only food, not a restaurant. Based on our research, some applications that can suggest a restaurant based on their users’ preference still cannot support a suggestion for a group.
+Even though various applications can suggest food to users, almost all of them just randomize the suggestions without any logic which is known from the problem validation survey and additional related research. Example of randomized applications is Whatever Mans. Moreover, many of them suggest only food, not a restaurant. Based on our research, some applications that can suggest a restaurant based on their users’ preference still cannot support a suggestion for a group.
 
 In this project, we will implement a web application that can solve the mentioned problems and improve the existing solutions. Our application will recommend a restaurant based on individual or group preferences, behaviors, and customizations. We hope that the application will be able to reduce time-wasting in choosing restaurants and give us no more frustration.
 
@@ -493,8 +493,9 @@ Because our platform needs to be easily accessible for users not only individual
 
 \subsection{Information Collection}
 
-This collects relevant information of users to generate a user profile or model for the prediction tasks including the user’s attributes, behaviors, or content of the resources the user accesses. \cite{WhatisMachineLearning} We need to do this process due to the recommender cannot provide results accurately until the users’ profile and preferences have been constructed. So, there are several types of information/feedback that can be captured and studied including explicit and implicit feedback.
+This collects relevant information of users to generate a user profile or model for the prediction tasks including the user’s attributes, behaviors, or content of the resources the user accesses. \cite{WhatisMachineLearning} We need to do this process due to the recommender cannot provide results accurately until the users’ profile and preferences have been constructed. However, the information we collected includes username, password, and their users’ restaurant preference where all of them do not relate to personal information. So, PDPA or Personal Data Protection Act does not need to be concerned in our project.
 
+There are several types of information/feedback that can be captured and studied including explicit and implicit feedback.
 
 \subsubsection{Explicit Feedback}
 
@@ -521,10 +522,6 @@ Source: https://core.ac.uk/download/pdf/207051652.pdf
 
 
 From Table~\ref{tbl:2CharacteristicsofExplicitandImplicitFeedback}, the accuracy of implicit feedback is lower than explicit feedback due to system monitoring only (indirect way). But with this approach, we can get abundant feedback whereas explicit feedback is scarce. Moreover, implicit feedback can capture only positive e.g. if a user never visits restaurant A that does not mean he/she does not like that restaurant. Although implicit feedback tends to be relative such as if a user visited restaurant B 10 times and restaurant C 100 times, then we can conclude that he/she has a higher preference for C than B. Lastly, as we can see from the table, one thing that is similar to each other is both are sensitive to the context
-
-
-%TODO check update
-In this project, the PDPA or Personal Data Protection Act is not related to us. This rule mentioned about the protection of personal information. Any app that needs access to that data needs consent from the owner by informing the purpose of what information is collected and using that information for what purpose. However, we collected user information including username, password, and user profile: food preference where all of them do not relate to personal information.
 
 \subsection{Overview of Machine Learning}
 
@@ -619,7 +616,7 @@ According to both techniques which are content-based and collaborative filtering
 
 \subsection{Aggregation Mechanism}
 
-Since this project aims to recommend the restaurant to users both individuals and groups, we need to aggregate individual preferences into group preferences before recommending to a group of users. There are many existing strategies for aggregation but the key idea of this approach is how the individual group members’ preferences are combined into a group preference.
+Since this project aims to recommend the restaurant to users both individuals and groups, we need to aggregate individual preferences into group preferences before recommending restaurants to a group of users. There are many existing strategies for aggregation but the key idea of this approach is how the individual group members’ preferences are combined into a group preference.
 
 For the aggregating preferences strategy, the individual preferences will be aggregated into groups by combining the user’s preferences/ratings of each item and let this be the group rating. Then, group recommendations will be based on this preference and offer only the top N recommendations list to the group which N refers to the number of items that will be recommended to a group.
 
@@ -633,7 +630,7 @@ In this project, we have adopted a method of optimization to define the objectiv
 
 The genetic algorithm (GA) is a metaheuristic method inspired by the process of natural selection that belongs to the larger class of evolutionary algorithms (EA). Genetic algorithms are commonly used to generate high-quality solutions to optimization and search problems by relying on biologically inspired operators such as mutation, crossover, and selection. \cite{Geneticalgorithm}
 
-In the genetic algorithm, the optimal solution is found by replacing an existing set of parameters in the form of chromosomes. Each parameter in the chromosome is known as a gene which is usually replaced with binary numbers by encoding methods. Encoding of chromosomes is the first step in solving the problem and it depends on the problem. The initial population will be random values. To find the fitness solution, each generation will either mutate or switch genes between each other until a new generation of population with more fitness is obtained, this evolving process will continue until a suitable answer is found. The overall process of genetic algorithms is shown in the following pseudocode.
+In the genetic algorithm, the optimal solution is found by replacing an existing set of parameters in the form of chromosomes. Each parameter in the chromosome is known as a gene which is usually replaced with numbers by encoding methods.  The first step in solving a problem is chromosome encoding, which varies depending on the problem. The initial population will be random values. To find the fitness solution, each generation will either mutate or switch genes between each other until a new generation of population with more fitness is obtained, this evolving process will continue until a suitable answer is found. The overall process of genetic algorithms is shown in the following pseudocode.
 
 %TODO use algorithm package
 
@@ -653,14 +650,11 @@ The genetic algorithm consists of 4 main phases: Initial Population, Selection, 
 
 \paragraph*{1. Initial Population}\
 
-%TODO check for update
-Before getting the population, the problem needs to go through the encoding methods which can be binary, permutation, or value encoding. Binary encoding is the most common method that represents the solution in strings of 1s and 0s. Permutation encoding is usually used for Travelling Salesman Problem which every chromosome is a string of numbers. Value encoding is used in the problem where complicated values and binary method would not be sufficient, so that it is necessary to develop a specific crossover and mutation method.
-
-Population comes from the set of chromosomes which each chromosome is a solution to a problem that needs to be solved. Genes can combine to be a chromosome which is known as the solution. The value of genes is randomized, with the initial number of genes dependent on the problem and sometimes can be significantly randomized to get closer to the answer.
+A population is made up of chromosomes. Each chromosome, which is a set of genes, represents a solution to a problem that needs to be solved. The chromosome encoding process must start at the beginning. The dimensions of a problem solution must be encoded in a string of genes using some encoding techniques. The most popular approach is binary encoding, which defines the solution as sequences of 1s and 0s. Then, the value of genes is randomized.
 
 \paragraph*{2. Selection}\
 
-The idea of selection is to select the appropriate chromosomes or the fitter chromosomes measured by a fitness function and pass them to the next generation to be able to get a more optimal answer to the problem. Generally, chromosomes with higher fitness have more chances than lower fitness to reproduction.
+The idea of selection is to select the appropriate chromosomes or the fitter chromosomes measured by a fitness function and pass them to the next generation to be able to get a more optimal answer to the problem. Generally, chromosomes with higher fitness have more chances than lower fitness to reproduce.
 
 \paragraph*{3. Reproduction}\
 
@@ -698,10 +692,8 @@ HTML (HyperText Markup Language) is the most basic building block of the Web. It
 
 MDN \cite{JavaScript} states that JavaScript is a programming language that enables complex feature implementation on web pages such as displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. Many modern browsers such as Google Chrome, Safari, and Firefox support JavaScript and it can run immediately within the browsers without repeatedly calling the server.
 
-%TODO check for update
-The reason that JavaScript enables those complex feature implementation mentioned above is because it support the use of Document Object Model (DOM), a set of APIs for controlling HTML and styling information. \cite{Manipulatingdocuments} With DOM, we can write JavaScript to interactively manipulate the element in HTML easily.
-
-Because our platform needs to serve an interactive user interface with a fast speed, these characteristics and advantages of JavaScript can fulfill those requirements. However, there are limitations of JavaScript which are reading and writing local files and browser interpretation. The first limitation, it lacks the feature of reading and writing local files for security reasons, which we need another server side service to handle the more complex tasks. The other one is that different browsers can sometimes interpret JavaScript code differently, but since we target to support most of the modern browsers, we do not have to worry about this limitation.
+JavaScript is able to implement those complex features described above because it supports the use of the Document Object Model (DOM), a collection of APIs for controlling HTML and styling details \cite{Manipulatingdocuments}. With DOM, we can easily write JavaScript to modify HTML elements interactively.
+Because our platform needs to serve an interactive user interface with a fast speed, these characteristics and advantages of JavaScript can fulfill those requirements. However, there are limitations of JavaScript. The first limitation is that it lacks the feature of reading and writing local files for security reasons, which needs the use of another server-side service to handle more complex tasks. The other limitation is that different browsers can sometimes interpret JavaScript code differently. However, since we aim to support most of the modern browsers, we do not have to worry about this limitation.
 
 \subsubsection{TypeScript}
 
@@ -709,7 +701,7 @@ TypeScript extends JavaScript by adding types. By understanding JavaScript, Type
 
 \subsubsection{Node.js}
 
-Node.js is an open-source and cross-platform JavaScript runtime environment. \cite{IntroductiontoNodejs} Because we choose to have a JavaScript web application framework, Node.js is essential for running our scripts. In the server side services, Node.js is the environment that will run the application and actively serves the request from clients while in client side services, the services might need Node.js to build the optimized bundled package which serves the client.
+Node.js is an open-source and cross-platform JavaScript runtime environment. \cite{IntroductiontoNodejs} Because we choose to have a JavaScript web application framework, Node.js is essential for running our scripts. In the server side services, Node.js is the environment that runs the application and actively serves the clients request, while in the client side services, Node.js may be used to build the optimized bundled package that serves the client.
 
 \subsubsection{React}
 
@@ -877,7 +869,7 @@ Compared to our system, Eastsee only suggests random food based on their prefere
 \end{figure}\vspace{-24pt}
 \vspace{1em}
 
-Whatever Mans Application  ({\thaifont เที่ยงนี้กินไรดี}) is a Thai food random application that has an interaction with the user by creating an interactive animation called Pa-Man ({\thaifont ป้าแม้น}) to talk with the user. Whatever Mans is available for download on Android only.
+Whatever Mans Application  ({\thaifont เที่ยงนี้กินไรดี}) is a Thai food random application that has an interaction with the user by creating an interactive animation called Pa-Man ({\thaifont ป้าแม้น}) to talk with the user. \cite{Whatevermans} Whatever Mans is available for download on Android only.
 
 Compared to our system, Whatever Mans Application supports only on an Android platform whereas our system supports both iOS and Android because of web application technology. Their suggestion isn't based on users’ profiles or preferences which means their suggestion is just randomization. Although it supports Thai food, it can suggest only food, not restaurants. It also doesn’t support group suggestions.
 
@@ -1160,8 +1152,7 @@ We separate these components into 2 sides which are the backend side and the fro
 \caption{System Architecture}\label{fig:3architect}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:3architect} shows the detailed architecture of our system. As we mentioned before, our system consists of 5 components. Each of these components communicates via HTTP request and response. All of the components except Database are deployed using Google Cloud App Engine and Database is deployed via MongoDB Atlas. There are 2 external services that our system needs to be interacted with which are Google Cloud Storage for storing restaurant’s images and Facebook Graph API for querying primary restaurant information. We will walk through each component in detail in the following section.
-
+Figure~\ref{fig:3architect} shows the detailed architecture of our system. As we mentioned before, our system consists of 5 components. Each of these components communicates via HTTP request and response. All of the components except Database are deployed using Google Cloud App Engine and Database is deployed via MongoDB Atlas. There are 3 external services that our system needs to be interacted with which are Google Cloud Storage, Facebook Graph API and Longdo Map API. Google Cloud Storage is used for storing restaurant’s images. Facebook Graph API is used for querying primary restaurant information. Longdo Map API is used to query places by keywords. We will walk through each component in detail in the following section.
 
 \newpage
 \subsubsection{App Server Architecture}
@@ -1181,7 +1172,7 @@ For a Data Service communication, Data Service generates processed restaurant da
 
 For a Recommender communication, App Server needs to send requests to Recommender for restaurant suggestion generation and model training. Recommender also needs to send a request to App Server to get restaurant information and user information.
 
-There is also one external system that App Server needs to communicate with which is Google Cloud Storage. App Server will send a request to store the restaurant’s images and get the existing image from that service.
+There are also two external services that App Server needs to communicate with which are Google Cloud Storage and Longdo Map API. With Google Cloud Storage service, App Server will send a request to store the restaurant’s images and get the existing image from that service. With Longdo Map API, App Server will send places query requests with specific keywords from users. 
 
 App Server is implemented using TypeScript and Express framework which is a web application framework and deployed on Google Cloud App Engine service.
 
@@ -1218,9 +1209,8 @@ Recommender implemented using Python which can easily communicate with the model
 \includegraphics[width=200pt]{./images/3arch_dataservice.png}
 \caption{Data Service Architecture}\label{fig:3arch_dataservice}
 \end{figure}\vspace{-24pt}
-%TODO Check for update
-Data Service is responsible for collecting restaurant information from an external source. This component has 3 modules which are Data Fetcher which collect the restaurant information from Facebook Graph API and save it to the local raw files, Data Reader which will read the files and process that data into the correct format and Data Feeder will send the processed data to App Server to create restaurants in the system. Currently, it is designed to collect the restaurant data manually, so if we want to update or collect more restaurants, we need to trigger the task in this service again. Data Service is implemented as a simple Python script without any web framework because no components need to send a request to Data Service.
 
+Data Service is responsible for collecting restaurant information from an external source. This component has 3 modules which are Data Fetcher which collect the restaurant information from Facebook Graph API and save it to the local raw files, Data Reader which will read the files and process that data into the correct format and Data Feeder will send the processed data to App Server to create restaurants in the system. Currently, it is designed to collect the restaurant data manually. Therefore, if we want to update or collect more restaurants, we need to trigger the task in this service again. Data Service is implemented as a simple Python script without any web framework because no components need to send a request to Data Service.
 
 \subsubsection{Database Architecture}
 
@@ -1691,7 +1681,7 @@ For the group recommendation, the same process as individual recommendation is c
 \caption{Rank Aggregation}\label{fig:3ga_rankagg}
 \end{figure}\vspace{-24pt}
 
-Rank Aggregation is a process that finalizes the suggested restaurants from every members’ ranked restaurants. Firstly, it gathers all ranked restaurants from all members, then it calculates the score for each restaurant based on the formula below. The higher score means that the restaurant is more suitable for a group, so the restaurant with the highest score is considered to be the final restaurant for the group.
+Rank Aggregation is a process that finalizes the suggested restaurants from every members’ ranked restaurants. Firstly, it gathers all ranked restaurants from all members. Then, it calculates the score for each restaurant based on the formula below. The higher score means that the restaurant is more suitable for the group. Therefore, the restaurant with the highest score is considered to be the final restaurant for the group.
 
 \begin{equation}\label{eq:rankaggscore}
 score = \left (\frac{T}{T_{max}}  \right ) + 2\cdot \left (\frac{R}{R_{max}}  \right ) + \left (\frac{C}{C_{max}}  \right )
@@ -1711,11 +1701,11 @@ $C_{max}$; Maximum restaurant cost score of the set\\
 $r$; Rank score from each member, score from 1 - 6
 \end{blockquote}
 
-The score of each restaurant is calculated using the formula~\ref{eq:rankaggscore} above. The score is calculated based on 3 factors: restaurant’s category type, rank from users and restaurant’s cost. The type and cost score of each restaurant can be derived from the genetic algorithm’s fitness value calculation process. The rank score from each member $r$ is determined by the position of the restaurant of the member. The first rank restaurant gets a score of 6, the second one gets 5 and continues to decrease by 1 until the last rank which gets a score of 1. Then these rank scores are summed up to be rank score $R$, however, we need to subtract how far each restaurant ranked from each member, so that the final score will be more fair for every member.
+The score of each restaurant is calculated using the formula~\ref{eq:rankaggscore} based on 3 factors: restaurant’s category type, rank from users and restaurant’s cost. The type and cost scores of each restaurant can be derived from the user’s preference. genetic algorithm’s fitness value calculation process. The rank score from each member $r$ is determined by the position of the restaurant of the member.  The first rank restaurant receives a score of 6, the second receives a score of 5, and so on until the last rank receives a score of 1. Then, these rank scores are summed up to be rank score $R$. However, we need to subtract how far each restaurant ranked from each member in order for the final score to be more fair for all members. 
 
-For example, Alice ranks restaurant A as her first rank and ranks restaurant B as her second rank while Bob ranks restaurant as his third rank and ranks restaurant B as his second rank as same as Alice, the score of restaurant A is $10$ ($6 + 4$) and the score of restaurant B is also $10$ ($5 + 5$). This example demonstrates that even if Bob places restaurant A on his third rank, it does not matter because the score is dominated by Alice's ranking score. So, by subtracting the rank score of restaurant A which is $10$ with how far each restaurant ranked which in this case is $2$ ($\sqrt{(6-2^2)}$), the final rank score of restaurant will be 8 which is more fair to Bob and the restaurant B still get a score of $10$ ($10-\sqrt{(5-5^2)}$).
+For example, Alice ranked the top three restaurants as A, F, and C, while Bob ranked them C, F, and A. The score of restaurant A is $10$, from $6 + 4$, and the score of restaurant B is also $10$, from $5 + 5$. This example demonstrates that even if Bob placed restaurant A on his third rank, it does not matter because the score is dominated by Alice's ranking score. So, by subtracting the rank score of restaurant A, which is $10$, with how far each restaurant ranked which in this case is $2$, from $\sqrt{(6-2^2)}$, the final rank score of restaurant A will be $8$ which is more fair to Bob and the restaurant B still gets a score of $10$, from $10-\sqrt{(5-5^2)}$.
 
-Lastly, the scores, type score, rank score and cost score, are normalized with min-max normalization, so that the scores are all between 0 and 1. However, we multiply the normalized rank score with 2 because this score needs to be dominant with how each member ranks the restaurants over the restaurant profile score. Thus, the restaurant score obtained from this algorithm is a range from 0 to 4.
+Lastly, the type score, rank score and cost score, are normalized with min-max normalization, so that the scores are all between 0 and 1. However, we multiply the normalized rank score with 2 because this score needs to be dominant with how each member ranks the restaurants over the restaurant profile score. Thus, the restaurant score obtained from this algorithm is a range from 0 to 4.
 
 \section{Production Testing Plan}
 
@@ -1896,7 +1886,7 @@ Figure~\ref{fig:4AverageScoreofEachRestaurantCategoryfromPeople} shows the avera
 \caption{Distribution of User’s Ratings}\label{fig:4DistributionofUsersRatings}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4DistributionofUsersRatings} shows the distribution of the user’s rating in our data from -2 which means the user is not interested in the restaurant to 2 which the user is interested in that restaurant. The most rated score is 0 which is a neutral score.
+Figure~\ref{fig:4DistributionofUsersRatings} shows the distribution of the user’s rating in our data from -2 which means the user is not interested in the restaurant to 2 which means the user is interested in that restaurant. The most rated score is 0 which is a neutral score.
 
 This collected user behavior data will be used to be our data set for training the models in our system.
 
@@ -1908,9 +1898,9 @@ Other than collecting the user behavior data, we also get the users’ feedback 
 Firstly, we ask them about the pattern of their rating, what are the criteria to rate. From 22 people, most of them rated based on their preferences and the restaurant that they have visited. Furthermore, some of them rate a high score to an interesting restaurant that sometimes they have never visited before. Here is an example of feedback from a real user:
 
 \begin{quote}{Pai, 20 years old}
-“ My rating is based on the feeling of being like this restaurant is delicious while playing this application or click to the Facebook page and find that it looks good to me. Moreover, some restaurants I have visited before, I will give it a high score.
+“ My rating is based on the feeling of being like this restaurant is delicious while playing this application or clicking to the Facebook page and finding that it looks good to me. Moreover, some restaurants I have visited before, I will give it a high score.
 
-Most of 5, it is my interest restaurants and has visited before. For an interesting restaurant but I have not visited yet, I will rate around 3 to 4.
+Most of the 5 are my favorite restaurants and I have visited before. For an interesting restaurant but I have not visited yet, I will rate around 3 to 4.
 
 For 1, in my point of view, the name of that restaurant not interest to me or some of the restaurant didn’t have a picture, so I don’t want to give it a high score ”
 \end{quote}
@@ -1974,7 +1964,7 @@ In our first design of the group recommendation, each member will see the same s
 
 \section{Web Application Result}
 
-The web application result includes server-side services result and user interface result or client-side service. The server-side services consist of 4 components which are Data Service, App Server, Recommender and Database, where the user interface result is a result from App Client. The full source code is available at \url{https://github.com/restaurant-recommender}.
+The web application result includes the results of server-side services as well as the results of the user interface or client-side service. The server-side services consist of 4 components: Data Service, App Server, Recommender, and Database, where the user interface result is from App Client. The full source code is available at \url{https://github.com/restaurant-recommender}.
 
 \subsection{Server-side Services Result}
 
@@ -2242,10 +2232,9 @@ Users can view their previous saved restaurant by tapping on the Your Favorite b
 
 \section{Model Experiment}
 
-%TODO check for update
-In this first semester, we tried to use model-based recommendation which is a collaborative filtering technique. However, this technique requires a large amount of user behavior data and it is very complex for implementing group recommendation. In order to overcome this problem, we decided to change from collaborative filtering technique to genetic algorithm technique which does not require any primitive user behaviour data and it can be implemented to support both individual and group recommendation with a simpler structure. In this section, we show the first experiment with collaborative filtering which we have done in the first semester, then we show the result of the genetic algorithm approach which is the final design of our proposed algorithm.
+In this first semester, we tried to use model-based recommendation which is a collaborative filtering technique. However, this technique requires a large amount of user behavior data and it is very complex for implementing group recommendation. In order to overcome this problem, we decided to change from collaborative filtering technique to genetic algorithm technique which does not require any primitive user behaviour data and it can be implemented to support both individual and group recommendation with a simpler structure. In sections~\ref{sec:dataset} -~\ref{sec:cf}, we describe the data set and present the first experiment with collaborative filtering that we did in the first semester. After that, the results of the genetic algorithm approach, which is the final design of our proposed algorithm, is presented in section~\ref{sec:ga}.
 
-\subsection{Data Set}
+\subsection{Data Set} \label{sec:dataset}
 
 To conduct the experiment, we use the data from our data collection process both restaurant and user behavior data, which contains 11,175 restaurants with restaurants’ profiles and 143 users with 5,102 users’ ratings.
 
@@ -2288,7 +2277,7 @@ In ‘id’ column refers to the unique identification of each restaurant which 
 
 Figure~\ref{fig:4SampleofSelectedRestaurantData} is the example data of the selected restaurant that we are going to use in this experiment.
 
-\subsection{Collaborative Filtering Technique}
+\subsection{Collaborative Filtering Technique} \label{sec:cf}
 
 After data preparation, we start to build a restaurant recommender for individuals by using user-based collaborative filtering which we referenced from  \cite{BuildauserbasedcollaborativefilteringrecommendationengineforAnime}. By the way, this approach is just only one of several recommendation techniques. In user-based collaborative filtering, we assumed that if users like similar items, users are similar to each other too by we start to discover the similarity of users and then recommend the item of other similar users liked.
 
@@ -2348,11 +2337,9 @@ Here are the average ratings of the top 10 restaurants for user ID number 1 as s
 
 However, the user-based collaborative filtering cannot serve our desires due to its limitation which is about the cold-start problem. New users in our platform cannot get a suitable recommendation for their preferences because this user has an empty list of preferences. Moreover, we discovered that this algorithm cannot recommend based on the location of the user, it just recommends based on the similarity of the user. For example, user A wants to get a recommendation from the Siam Paragon area, but her/his preference never rate the Siam Paragon area before and always rate the restaurant around KMUTT. As a result, the similarity of users to user A will be around KMUTT which cannot be recommended in the Siam Paragon area.
 
-\subsection{Genetic Algorithm Technique}
+\subsection{Genetic Algorithm Technique} \label{sec:ga}
 
-%TODO check for update
-
-Since our project recommends restaurants for both individuals and groups, we need to examine how well this algorithm works for both of them. The algorithm is implemented with Python by ourselves. The full code is provided in the appendix. In this section, we show the result of individual and group recommendation generation and rank aggregation in group recommendation.
+Since our project recommends restaurants for both individuals and groups, we need to examine how well the genetic algorithm works for both of them. The algorithm is implemented with Python by ourselves. The full code is provided in the appendix. In this section, we show the result of individual and group recommendation generation with rank aggregation in the group recommendation.
 
 \subsubsection{Individual Recommendation Result}
 
@@ -2385,7 +2372,6 @@ As a part of the group recommendation, developers tested the algorithm using a 2
 
 \subsubsection{Rank Aggregation Result}
 
-%TODO check for update
 \begin{figure}[H]\centering
 \includegraphics[width=400pt]{./images/4SampleofSuggestedRestaurantsandRanksfromUsers.png}
 \caption{Sample of Suggested Restaurants and Ranks from Users}\label{fig:4SampleofSuggestedRestaurantsandRanksfromUsers}
@@ -2402,13 +2388,12 @@ After the genetic algorithm generates a set of suggested restaurants and lets ea
 \section{Evaluation Result}
 
 \subsection{User Evaluation}
-%TODO check update
 
 We divided the user evaluation into two rounds. In the first user evaluation, we rather focus on the user interface in order to modify it before the final evaluation while in the final user evaluation we focus on both the user interface and the recommendation algorithm.
 
-\subsubsection{First User Evaluation}
+\subsubsection{First User Interface Evaluation}
 
-Developers have tested a restaurant recommendation system for both individuals and groups with some group of users and it has been found that most of the users say the system is easy to use and can recommend a restaurant that meets their interests well. Thus, it is quite satisfying to users but there are still some parts that need to be resolved e.g. revised user interface for more ease to use, etc.
+Developers have tested a restaurant recommendation system for both individuals and groups with some groups of users and it has been found that most of the users say the system is easy to use and can recommend a restaurant that meets their interests well. Thus, it is quite satisfying to users but there are still some parts that need to be resolved e.g. revised user interface for more ease to use, etc.
 
 \textbf{Individual Recommendation Feedback}\par
 
@@ -2430,32 +2415,32 @@ In summary, we need to change the user interface of the recommendation and prefe
 
 \textbf{Group Recommendation Feedback}\par
 
-For group recommendation feedback, most users said that the recommended restaurants can match with their preferences and interests as well as individual recommendation. For user interface feedback, there is one part of the recommendation process that needs to be changed which is the user’s waiting action. We found that a lot of users did not notice that they need to wait for all members in the group to finish their ranking. They seem confused about what to do next. So, we need to change by giving them more interaction or create a pop-up to notify them more clearly.
+For group recommendation feedback, most users said that the recommended restaurants can match with their preferences and interests as well as individual recommendation. For user interface feedback, there is one part of the recommendation process that needs to be changed which is the user’s waiting action. We found that a lot of users did not notice that they needed to wait for all members in the group to finish their ranking. They seem confused about what to do next. So, we need to change by giving them more interaction or creating a pop-up to notify them more clearly.
 
 \subsubsection{Final User Evaluation}
 
-%TODO check for update
-After the first user evaluation, we revised some user interface both individual and group recommendation interfaces for more understanding and ease to use. This time developers have tested a restaurant recommendation system from 41 people by using Google Forms to gather all feedback. This survey will collect the user satisfaction with our recommendation including the chance of a return to using our recommender again.
+After the first user evaluation, we revised some user interface both individual and group recommendation interfaces for more understanding and ease to use. This time, we tested a restaurant recommendation system on 41 users, using Google Forms to gather all feedback. This survey collected the user satisfaction with our recommendation, as well as the chance of  returning to use our recommender again.
 
-In Google Forms, we separated into 4 parts which are basic information, individual recommendation satisfaction, group recommendation satisfaction, and overall satisfaction with the application.  In all satisfaction sections, we collect as a format of scores 1 to 5 which 5 referred to as most satisfied.
+We separated our Google Forms into 4 sections:basic information, individual recommendation satisfaction, group recommendation satisfaction, and overall satisfaction with the application.  In all satisfaction sections, we collect scores ranging from 1 to 5, with 5 indicating the most satisfied.
 
 \textbf{Individual Recommendation Feedback}\par
 
-From 41 people, more than half said that the recommended restaurants matched their preferences for both food and price which are 88\% and 76\% respectively. Moreover, it has been found that around 63\% of the respondents are able to decide which restaurants to eat easier than before.
+More than half of the 41 people polled said that the recommended restaurants matched their preferences for both food and price, with 88\% and 76\%, respectively. Moreover, it has been found that around 63\% of the respondents can now decide which restaurant to eat more easily than before.
 
-The detail of the recommended restaurant in the individual recommendation part is quite good. However, most of the respondents said that they would prefer more topics such as reviews of that restaurant, etc. Overall feedback in the individual recommendation part is easy to use and very useful.
+The detail of the recommended restaurant in the individual recommendation section is faultless. However, most of the respondents said that they would prefer more topics such as reviews of that restaurant. Overall feedback in the individual recommendation section is easy to use and can solve user’s pain more or less.
 
 \textbf{Group Recommendation Feedback}\par
 
-Due to the COVID-19 situation in Thailand, a lot of people cannot go out and eat in groups. From further inquiries most of the respondents are students living alone in the dormitory. So, the number of respondents that can evaluate the group recommendation is less than the individual recommendation.
+Due to the COVID-19 situation in Thailand, a lot of people are unable to go out and eat in groups. According to  further inquiries, most of the respondents are students who live alone in the dormitory. As a result, the number of respondents who can evaluate the group recommendation is lower than the number of respondents who can evaluate the individual recommendation. The group recommendation feedback has 14 respondents among 41.
 
-From the evaluation, around 82\% of the respondents showed us that the system can recommend the restaurant that matches their food and price preference. Most users are able to decide which restaurants to eat at with their own group. Moreover, the system can recommend a restaurant to a group of users at a glance.
+From the evaluation, around 82\% of the respondents indicated that the system can recommend the restaurant that matches their food and price preferences. The majority of users are able to decide which restaurant to eat at with their own group. Moreover, the system can recommend a restaurant to a group of users at a glance.
+
 
 \textbf{Conclusion}\par
 
-In summary of this evaluation, 90.3\% of users said that this application is easy to use and not complicated due to the tutorial before use which makes a lot of users easy to follow. In terms of the application interface, 87.9\% felt that the interface was beautiful and comfortable to use. The rest of the respondents felt that it is quite good to use which there is no bad scoring on this topic. Moreover, around 95\% said that this application can recommend the restaurant to both individuals and groups quickly. They don't need to wait for a long time. However, a lot of feedback wants more pictures and details of each restaurant and less process before getting to the recommendation page too or in short is to reduce human effort.
+In summary, 90.3\% of users said that this application is easy to use and not complicated due to the tutorial before use, which makes a lot of users easy to follow. In terms of the application interface, 87.9\% thought it is beautiful and convenient to use. The rest of the respondents thought it is quite good to use, and there was no negative feedback on this topic. Moreover, approximately 95\% said that this application can recommend the restaurant to both individuals and groups quickly. They do not have to wait too long. However, many people want more pictures and information about each restaurant, as well as a shorter process before reaching the recommendation page, or, in other words, to reduce human effort.
 
-For overall satisfaction, the average score is 4.2 out of 5. We can conclude that most users felt satisfied with the restaurant recommendation system for individuals and groups. More than that around 87\% of users said that they will come back to use this application again for their next meals.
+The average score for overall satisfaction is 4.2 out of 5. We can conclude that the restaurant recommendation system for individuals and groups was well-liked by the majority of users. Furthermore, approximately 87\% of users stated that they will return to use this application for their next meals.
 
 \subsection{Application Performance Evaluation}
 
@@ -2466,11 +2451,11 @@ For overall satisfaction, the average score is 4.2 out of 5. We can conclude tha
 
 For the application performance evaluation, we do the load test and monitor the latency of our main components: App Client, App Server, and Recommender. The load test is performed with 100 concurrent requests which simulate the scenario that 100 users are using the application at the exact same time.
 
-Figure~\ref{fig:4ApplicationPerformanceEvaluationRequest} shows a request of application performance evaluation. All 3 services can handle 100 concurrent requests without errors and have an average response time of 4,747.69 milliseconds. Recommender takes the longest response time which is 11,243 milliseconds. Note that this is a scenario where 100 users request for a recommendation at the same time, if the number of concurrent users is lower, the response time will be decreased dramatically. It also has the highest sent data size which is 873.33 KB per second because it needs a set of available nearby restaurants from the server. On the other hand, App Client has the highest received data size because servers send entire reference pages, related scripts and assets to users.
+Figure~\ref{fig:4ApplicationPerformanceEvaluationRequest} shows a request for application performance evaluation. All 3 services can handle 100 concurrent requests without errors and have an average response time of 4,747.69 milliseconds. The longest response time is taken by Recommender, which is 11,243 milliseconds. Note that this is a scenario in which 100 users request a recommendation at the same time. If the number of concurrent users is reduced, the response time will be significantly decreased. Recommender also has the largest sent data size, which is 873.33 KB per second, because it needs a set of available nearby restaurants from the server. On the other hand, App Client has the largest received data size since servers send entire reference pages, related scripts, and assets to users.
 
-All of our evaluation is tested with the production server deployment and database. However, since we use Google Cloud Platform for our deployment, it supports auto scaling and it manages all of the network traffic for us. So, it can support more concurrent users and give us a better performance. Although the auto scaling setup is very easy, the deployment cost will be charged considerably higher. The other factor we cannot test with multiple instances is Google Cloud Platform gives us a quota of 1 instance per service and our request to increase the quota is ungranted due to a minimal usage.
+All of our evaluation is tested with the production server deployment and database. However, since we use Google Cloud Platform for our deployment, it supports auto scaling and manages all of the network traffic for us. As a result, it can accomodate more concurrent users and have improved performance. Although the auto scaling setup is very easy, the deployment cost would be charged considerably higher. Another reason we cannot test with multiple instances is that Google Cloud Platform only allows us to run 1 instance per service, and our request to increase the quota was denied due to low utilization.
 
-Although a number of 100 concurrent requests is too small to conclude the services’ performance, it is sufficient for the current development process. We can use the deployed services to do an open beta testing without any issue. After we gain a larger number of usage from users, we can request more number of instance quota from Google Cloud so that our services can serve a higher number of concurrent requests.
+Although 100 concurrent requests is insufficient to conclude the efficiency of the services, it is adequate for the current development phase. We can use the deployed services to conduct open beta testing with no issues. Once we gain a larger number of usage from users, we can request more number of instance quotas from Google Cloud so that our services can serve a higher number of concurrent requests.
 
 \subsection{Recommendation Evaluation}
 
@@ -2540,10 +2525,10 @@ The most important information needed in our system is restaurant categories suc
 We solved a missing main tag problem by inserting the main tag for the related tags. For example, if the restaurant has a sushi tag, the system will insert Japanese tag automatically. However, with this solution, the system inserts the main tag for only 400 restaurants which is too less from our expectation. Thus, the restaurant category information is still an issue and the misinformation cannot be solved for all restaurants in our database.
 
 \subsection{Restaurant Distance Information}
-%TODO check for update
-Currently, we calculate distance between users and restaurants using displacement from 2 coordinates. The problem from this calculation is that the calculated distance does not mean the actual route distance because the calculation does not consider the actual possible route in the map. Users frequently face the situation where the shown distance is very small but when they choose to see the actual route to the restaurant, it is a much longer distance.
 
-To solve this problem, we can use additional route generating API such as Google Map API. But since we want to keep a simple structure for a current development phrase and keep our billing cost to a minimum, this solution is planned to be our future work.
+Currently, we calculate distance between users and restaurants using displacement from 2 coordinates. The problem with this calculation is that the calculated distance does not equal the actual route distance because the calculation does not consider the actual possible route on the map. Users frequently face the situation in which the shown distance is very short, but when they choose to see the actual route to the restaurant, it is much longer.
+
+To solve this problem, we can use additional route generating API, such as Google Map API. However, since we want to keep a simple structure for a current development phase and keep our billing costs as low as possible, this solution is planned to be our future work.
 
 \section{Future Works}
 
@@ -2554,8 +2539,7 @@ We can divide our future works into 3 parts which are dataset, web application a
 \caption{LINE Mini App Integration}\label{fig:5LINEMiniAppIntegration}
 \end{figure}\vspace{-24pt}
 
-%TODO check for update
-Moreover, in the web application improvement, we could integrate our existing application with LINE Mini App. Figure~\ref{fig:5LINEMiniAppIntegration} shows the 3 main benefits from this integration. The first one is, users can easily add the application to their LINE home screen without any installation. For the next one, users can invite friends via individual and group LINE chat. Lastly, users can easily see and join a group within LINE chat.
+Moreover, in the web application improvement, we could integrate our existing application with LINE Mini App. Figure~\ref{fig:5LINEMiniAppIntegration} shows the 3 main benefits from this integration. The first is that users can easily add our application to their LINE home screen without any installation. Next, users can invite friends via individual and group LINE chat. Lastly, users can easily see and join a group within LINE chat.
 
 \section{Conclusion}
 
