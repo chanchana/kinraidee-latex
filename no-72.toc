@@ -183,6 +183,6 @@
 \contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{116}{section.5.3}%
 \contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{118}{section.5.3}%
 \contentsline {apdx}{A\hskip 1em Restaurant Considerations Survey}{119}{section.5.3}%
-\contentsline {apdx}{B\hskip 1em Restaurant Recommendation System for Individuals and Groups Satisfaction Survey}{131}{figure.1.25}%
-\contentsline {apdx}{C\hskip 1em Genetic Algorithm Code}{137}{figure.2.36}%
+\contentsline {apdx}{B\hskip 1em Restaurant Recommendation System for Individuals and Groups Satisfaction Survey}{131}{figure.1.24}%
+\contentsline {apdx}{C\hskip 1em Genetic Algorithm Code}{137}{figure.2.11}%
 \contentsline {apdx}{D\hskip 1em Genetic Algorithm Test Code}{141}{lstnumber.-1.134}%

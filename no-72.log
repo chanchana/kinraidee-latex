@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 13:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1520,7 +1520,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                replaced by space on input line 2556.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2557--2558
+Underfull \hbox (badness 10000) in paragraph at lines 2558--2559
 
  []
 
@@ -1602,10 +1602,10 @@ le (type bmp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2747.
+(hyperref)                replaced by space on input line 2748.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2748--2749
+Underfull \hbox (badness 10000) in paragraph at lines 2750--2751
 
  []
 
@@ -1643,23 +1643,23 @@ File: ./images/A2OtherFeedbacksandSuggestions.png Graphic file (type bmp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2858.
+(hyperref)                replaced by space on input line 2860.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2859--2860
+Underfull \hbox (badness 10000) in paragraph at lines 2861--2862
 
  []
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 2861.
+(Font)              scaled to size 9.0pt on input line 2863.
 [137] [138] [139] [140]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 3002.
+(hyperref)                replaced by space on input line 3004.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3003--3004
+Underfull \hbox (badness 10000) in paragraph at lines 3005--3006
 
  []
 
@@ -1721,8 +1721,14 @@ LaTeX Info: Redefining \ttfamily on input line 19.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `no-72.out' has not changed.
-(rerunfilecheck)             Checksum: C0471A7DE42F02A895E68A6B42623BA2;30837.
+
+Package rerunfilecheck Warning: File `no-72.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `no-72.out':
+(rerunfilecheck)             Before: F9AAEDF7A0EA7FA54BFAAE80AC3F2FC4;30837
+(rerunfilecheck)             After:  B5A8868867B07E46990DBE0F13FAC8EB;30837.
  ) 
 Here is how much of TeX's memory you used:
  18876 strings out of 478436
