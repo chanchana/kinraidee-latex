@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 11:57
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,23 +556,48 @@ braces):
 )
 
 Package fontspec Info: Font family 'THSarabunNew(0)' created for font 'TH
-(fontspec)             Sarabun New' with options [Script=Thai,Scale=1.23].
+(fontspec)             Sarabun New' with options
+(fontspec)             [Scale=1.23,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0]
+.
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.23]"TH
-(fontspec)             Sarabun New/OT:script=thai;language=dflt;"
+(fontspec)             Sarabun
+(fontspec)             New/OT:script=latn;language=dflt;letterspace=0;extend=1.
+0;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
 (fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.23]"TH Sarabun
-(fontspec)             New/B/OT:script=thai;language=dflt;"
+(fontspec)             New/B/OT:script=latn;language=dflt;letterspace=0;extend=
+1.0;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1.23]"TH
-(fontspec)             Sarabun New/I/OT:script=thai;language=dflt;"
+(fontspec)             Sarabun
+(fontspec)             New/I/OT:script=latn;language=dflt;letterspace=0;extend=
+1.0;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->s*[1.23]"TH
-(fontspec)             Sarabun New/BI/OT:script=thai;language=dflt;"
+(fontspec)             Sarabun
+(fontspec)             New/BI/OT:script=latn;language=dflt;letterspace=0;extend
+=1.0;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
 
 
 Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
@@ -999,30 +1024,20 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [9
 
-] [10] [11]
+] [10]
 File: ./images/2cfprocess.png Graphic file (type bmp)
 <./images/2cfprocess.png>
- [12]
+ [11] [12]
 Overfull \hbox (6.44763pt too wide) in paragraph at lines 592--593
 \TU/TimesNewRoman(0)/m/n/10 vector-space model by measuring the similarity betw
 een dimensional vectors based on the angle which $\OML/cmm/m/it/10 cos\OT1/cmr/
 m/n/10 ([]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 )$
  []
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 638--648
-
- []
-
-[15] [16] [17]
+[13] [14] [15] [16]
 File: ./images/2http.png Graphic file (type bmp)
 <./images/2http.png>
-
-Underfull \hbox (badness 10000) in alignment at lines 747--747
-[][] 
- []
-
-[18] [19] [20]
+ [17] [18] [19] [20]
 File: ./images/2eatsee.png Graphic file (type bmp)
 <./images/2eatsee.png>
  [21] [22]
@@ -1035,7 +1050,7 @@ File: ./images/2whatman.png Graphic file (type bmp)
 File: ./images/2tinder.jpeg Graphic file (type bmp)
 <./images/2tinder.jpeg>
  [25]
-Overfull \hbox (12.03842pt too wide) in paragraph at lines 892--892
+Overfull \hbox (12.03842pt too wide) in paragraph at lines 886--886
 []\TU/TimesNewRoman(0)/b/n/13 On the design of Individual and Group Recommender
  Systems for Tourism
  []
@@ -1047,7 +1062,7 @@ Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 922.
+(hyperref)                removed on input line 916.
 
 [28
 
@@ -1055,7 +1070,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: ./images/3usecase.png Graphic file (type bmp)
 <./images/3usecase.png>
 
-Overfull \hbox (6.38pt too wide) in paragraph at lines 947--948
+Overfull \hbox (6.38pt too wide) in paragraph at lines 941--942
  [][] 
  []
 
@@ -1066,7 +1081,7 @@ File: ./images/3system_overview.png Graphic file (type bmp)
 <./images/3system_overview.png>
  [34]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 1134.
+(Font)              scaled to size 10.0pt on input line 1128.
  [35]
 File: ./images/3architect.png Graphic file (type bmp)
 <./images/3architect.png>
@@ -1100,7 +1115,7 @@ File: ./images/3seqdiagram_register.png Graphic file (type bmp)
 File: ./images/3seqdiagram_indirec.png Graphic file (type bmp)
 <./images/3seqdiagram_indirec.png>
 
-Overfull \hbox (13.52638pt too wide) in paragraph at lines 1283--1284
+Overfull \hbox (13.52638pt too wide) in paragraph at lines 1273--1274
  [][] 
  []
 
@@ -1113,7 +1128,7 @@ File: ./images/3seqdiagram_grouprec.png Graphic file (type bmp)
  [48] [49]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1337.
+(hyperref)                than one, level fixed on input line 1327.
 
 File: ./images/3ui_StartPageUserInterfaceDesign.png Graphic file (type bmp)
 <./images/3ui_StartPageUserInterfaceDesign.png>
@@ -1157,7 +1172,7 @@ File: ./images/3db_UserCollectionsIndexes.png Graphic file (type bmp)
 <./images/3db_UserCollectionsIndexes.png>
  [61]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 1602.
+(Font)              scaled to size 10.0pt on input line 1592.
  [62]
 File: ./images/3GeneticAlgorithmFlowchart.png Graphic file (type bmp)
 <./images/3GeneticAlgorithmFlowchart.png>
@@ -1175,7 +1190,7 @@ Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 1731.
+(hyperref)                removed on input line 1721.
 
 File: ./images/4ThaiChanasRestaurantDataExample.png Graphic file (type bmp)
 <./images/4ThaiChanasRestaurantDataExample.png>
@@ -1214,7 +1229,7 @@ File: ./images/4FacetofaceInterviewProcess.png Graphic file (type bmp)
 File: ./images/4DistributionofPeoplesLocation.png Graphic file (type bmp)
 <./images/4DistributionofPeoplesLocation.png>
 
-Overfull \hbox (16.38pt too wide) in paragraph at lines 1858--1859
+Overfull \hbox (16.38pt too wide) in paragraph at lines 1848--1849
  [][] 
  []
 
@@ -1371,19 +1386,19 @@ bmp)
 File: ./images/4GeneticAlgorithmExecutionTimewith10Genes.png Graphic file (type
  bmp)
 <./images/4GeneticAlgorithmExecutionTimewith10Genes.png>
- [112] [113]
+ [112]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 2501.
+(hyperref)                removed on input line 2491.
 
-[114
+[113
 
 ]
 File: ./images/5LINEMiniAppIntegration.png Graphic file (type bmp)
 <./images/5LINEMiniAppIntegration.png>
- [115] (./no-72.bbl [116]
+ [114] (./no-72.bbl [115]
 Underfull \hbox (badness 10000) in paragraph at lines 17--21
 []\TU/TimesNewRoman(0)/m/n/10 Wikipedia,  “Recommender system,” Available at []
 []$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] []
@@ -1462,7 +1477,7 @@ Underfull \hbox (badness 1264) in paragraph at lines 132--136
 [][][][][][][] []
  []
 
-[117
+[116
 
 ]
 Underfull \hbox (badness 3375) in paragraph at lines 171--175
@@ -1495,17 +1510,17 @@ Overfull \hbox (48.13pt too wide) in paragraph at lines 226--231
 [][][][][][][][][][][][][][][][][][]$[][]\TU/TimesNewRoman(0)/m/n/10 ,
  []
 
-) [118] [119]
+) [117] [118]
 
 Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2566.
+(hyperref)                replaced by space on input line 2556.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2567--2568
+Underfull \hbox (badness 10000) in paragraph at lines 2557--2558
 
  []
 
@@ -1516,7 +1531,7 @@ File: ./images/A1GenderofRespondents.png Graphic file (type bmp)
 <./images/A1GenderofRespondents.png>
 File: ./images/A1DistributionofRespondentsAge.png Graphic file (type bmp)
 <./images/A1DistributionofRespondentsAge.png>
-[120]
+[119]
 File: ./images/A1OccupationofRespondents.png Graphic file (type bmp)
 <./images/A1OccupationofRespondents.png>
 File: ./images/A1EstimatedDailyCostofEating.png Graphic file (type bmp)
@@ -1525,7 +1540,7 @@ File: ./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheResta
 urants.png Graphic file (type bmp)
 <./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheRestaurant
 s.png>
- [121] [122]
+ [120] [121]
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingAlone.png Graphic f
 ile (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingAlone.png>
@@ -1537,10 +1552,10 @@ png Graphic file (type bmp)
 <./images/A1NumberofRespondentsThinkingthatRestaurantSelectionisTheirPain.png>
 File: ./images/A1WhichMealHasProblemtheMost.png Graphic file (type bmp)
 <./images/A1WhichMealHasProblemtheMost.png>
- [123]
+ [122]
 File: ./images/A1ProblemBetweenDine-inandDelivery.png Graphic file (type bmp)
 <./images/A1ProblemBetweenDine-inandDelivery.png>
- [124]
+ [123]
 File: ./images/A1AverageTimetoSelecttheRestaurantinGroup.png Graphic file (type
  bmp)
 <./images/A1AverageTimetoSelecttheRestaurantinGroup.png>
@@ -1550,7 +1565,7 @@ irPain.png Graphic file (type bmp)
 n.png>
 File: ./images/A1TheFrequencyofGroupEatingProblems.png Graphic file (type bmp)
 <./images/A1TheFrequencyofGroupEatingProblems.png>
- [125]
+ [124]
 File: ./images/A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem.png Graph
 ic file (type bmp)
 <./images/A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem.png>
@@ -1560,7 +1575,7 @@ png Graphic file (type bmp)
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily.png Grap
 hic file (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily.png>
- [126]
+ [125]
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend.png 
 Graphic file (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend.png>
@@ -1570,11 +1585,11 @@ ic file (type bmp)
 File: ./images/A1HowInvolvedAreYouinMakingRestaurantDecisions.png Graphic file 
 (type bmp)
 <./images/A1HowInvolvedAreYouinMakingRestaurantDecisions.png>
- [127]
+ [126]
 File: ./images/A1SolutiontoSolveGroupEatingProblems.png Graphic file (type bmp)
 
 <./images/A1SolutiontoSolveGroupEatingProblems.png>
- [128]
+ [127]
 File: ./images/A1PercentageofRespondentsthatUsingRecommendationApplications.png
  Graphic file (type bmp)
 <./images/A1PercentageofRespondentsthatUsingRecommendationApplications.png>
@@ -1583,14 +1598,14 @@ File: ./images/A1RecommendationApplications.png Graphic file (type bmp)
 File: ./images/A1UsageProblemofExistingRecommendationApplication.png Graphic fi
 le (type bmp)
 <./images/A1UsageProblemofExistingRecommendationApplication.png>
- [129] [130] [131]
+ [128] [129] [130]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2757.
+(hyperref)                replaced by space on input line 2747.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2758--2759
+Underfull \hbox (badness 10000) in paragraph at lines 2748--2749
 
  []
 
@@ -1598,21 +1613,21 @@ File: ./images/A2AgeofRespondents.png Graphic file (type bmp)
 <./images/A2AgeofRespondents.png>
 File: ./images/A2OccupationofRespondents.png Graphic file (type bmp)
 <./images/A2OccupationofRespondents.png>
-[132]
+[131]
 File: ./images/A2NumberofRespondentsthatusingIndividualRecommendation.png Graph
 ic file (type bmp)
 <./images/A2NumberofRespondentsthatusingIndividualRecommendation.png>
 File: ./images/A2SatisfactionofRestaurantRecommendationforIndividual.png Graphi
 c file (type bmp)
 <./images/A2SatisfactionofRestaurantRecommendationforIndividual.png>
- [133]
+ [132]
 File: ./images/A2NumberofRespondentsthatusingGroupRecommendation.png Graphic fi
 le (type bmp)
 <./images/A2NumberofRespondentsthatusingGroupRecommendation.png>
 File: ./images/A2SatisfactionofRestaurantRecommendationforGroup.png Graphic fil
 e (type bmp)
 <./images/A2SatisfactionofRestaurantRecommendationforGroup.png>
- [134]
+ [133]
 File: ./images/A2ApplicationUsability.png Graphic file (type bmp)
 <./images/A2ApplicationUsability.png>
 File: ./images/A2UserInterfaceofthisapplication.png Graphic file (type bmp)
@@ -1621,30 +1636,30 @@ File: ./images/A2OverallSatisfaction.png Graphic file (type bmp)
 <./images/A2OverallSatisfaction.png>
 File: ./images/A2ChanceofUsersReturningtoUseAgain.png Graphic file (type bmp)
 <./images/A2ChanceofUsersReturningtoUseAgain.png>
- [135]
+ [134]
 File: ./images/A2OtherFeedbacksandSuggestions.png Graphic file (type bmp)
 <./images/A2OtherFeedbacksandSuggestions.png>
- [136] [137]
+ [135] [136]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2868.
+(hyperref)                replaced by space on input line 2858.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2869--2870
+Underfull \hbox (badness 10000) in paragraph at lines 2859--2860
 
  []
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 2871.
-[138] [139] [140] [141]
+(Font)              scaled to size 9.0pt on input line 2861.
+[137] [138] [139] [140]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 3012.
+(hyperref)                replaced by space on input line 3002.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3013--3014
+Underfull \hbox (badness 10000) in paragraph at lines 3003--3004
 
  []
 
@@ -1698,7 +1713,7 @@ braces):
 >  {thai/babelname}  =>  {thai}
 >  {thai/localnumeral}  =>  {thainumerals}
 >  {thai/Localnumeral}  =>  {thainumerals}.
-[142] (./no-72.aux
+[141] (./no-72.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
@@ -1710,12 +1725,12 @@ Package rerunfilecheck Info: File `no-72.out' has not changed.
 (rerunfilecheck)             Checksum: C0471A7DE42F02A895E68A6B42623BA2;30837.
  ) 
 Here is how much of TeX's memory you used:
- 18874 strings out of 478436
- 367473 string characters out of 5853929
- 945112 words of memory out of 5000000
+ 18876 strings out of 478436
+ 367659 string characters out of 5853929
+ 945432 words of memory out of 5000000
  38341 multiletter control sequences out of 15000+600000
  406119 words of font info for 78 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  110i,10n,117p,1219b,1860s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on no-72.pdf (160 pages).
+Output written on no-72.pdf (159 pages).

@@ -4,23 +4,43 @@ flex_column_index = -1
 # flex_column_index = None
 input_text = """
 
+Table X: asd
 
+X
 
+Implicit Feedback
 
-Table 4.2: Recommender API Specification
+Explicit Feedback
 
-Method
+Accuracy
 
-Path
+Low
 
-Description
+High
 
-POST
+Abundance
 
-/recommend/<type>
+High
 
-Request a set of suggested restaurants. “type” is needed to specify a different version of the recommendation model.
+Low
 
+Context-sensitive
+
+Yes
+
+Yes
+
+Expressivity of user preference
+
+Positive
+
+Positive and Negative
+
+Measurement reference
+
+Relative
+
+Absolute
 
 
 

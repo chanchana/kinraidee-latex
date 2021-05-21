@@ -9,7 +9,7 @@
 %\usepackage{algorithm}
 \setdefaultlanguage{english}
 \setotherlanguage{thai}
-\newfontfamily\thaifont[Script=Thai,Scale=1.23]{TH Sarabun New}
+\newfontfamily\thaifont[Scale=1.23,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0]{TH Sarabun New}
 \defaultfontfeatures{Mapping=tex-text,Scale=1.0,LetterSpace=0.0}
 \setmainfont[Scale=1.0,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0]{Times New Roman}
 
@@ -509,17 +509,17 @@ The system automatically infers the user’s preferences by monitoring the diffe
 
 \begin{table}[H]
 \caption{Characteristics of Explicit and Implicit Feedback}\label{tbl:2CharacteristicsofExplicitandImplicitFeedback}
-\begin{tabular}{l|l|l} \hline\hline
-Implicit Feedback & Explicit Feedback & Accuracy \\ \hline\hline
-Low & High & Abundance \\ \hline
-High & Low & Context-sensitive \\ \hline
-Yes & Yes & Expressivity of user preference \\ \hline
-Positive & Positive and Negative & Measurement reference \\ \hline
-Relative & Absolute \\ \hline\hline
-\end{tabular}\par
+\begin{tabularx}{\textwidth}{X|X|X} \hline\hline
+& Implicit Feedback & Explicit Feedback \\ \hline\hline
+Accuracy & Low & High \\ \hline
+Abundance & High & Low \\ \hline
+Context-sensitive & Yes & Yes \\ \hline
+Expressivity of user preference & Positive & Positive and Negative \\ \hline
+Measurement reference & Relative & Absolute \\ \hline\hline
+\end{tabularx}\par
 \smallskip
-Source: https://core.ac.uk/download/pdf/207051652.pdf
-\end{table}
+\textbf{Source}: https://core.ac.uk/download/pdf/207051652.pdf
+\end{table}\vspace{-1em}
 
 
 From Table~\ref{tbl:2CharacteristicsofExplicitandImplicitFeedback}, the accuracy of implicit feedback is lower than explicit feedback due to system monitoring only (indirect way). But with this approach, we can get abundant feedback whereas explicit feedback is scarce. Moreover, implicit feedback can capture only positive e.g. if a user never visits restaurant A that does not mean he/she does not like that restaurant. Although implicit feedback tends to be relative such as if a user visited restaurant B 10 times and restaurant C 100 times, then we can conclude that he/she has a higher preference for C than B. Lastly, as we can see from the table, one thing that is similar to each other is both are sensitive to the context
@@ -633,35 +633,32 @@ The genetic algorithm (GA) is a metaheuristic method inspired by the process of 
 
 In the genetic algorithm, the optimal solution is found by replacing an existing set of parameters in the form of chromosomes. Each parameter in the chromosome is known as a gene which is usually replaced with numbers by encoding methods.  The first step in solving a problem is chromosome encoding, which varies depending on the problem. The initial population will be random values. To find the fitness solution, each generation will either mutate or switch genes between each other until a new generation of population with more fitness is obtained, this evolving process will continue until a suitable answer is found. The overall process of genetic algorithms is shown in the following pseudocode.
 
-%TODO use algorithm package
-
 \textbf{Genetic Algorithm Pseudocode}\cite{IntroductiontoGeneticAlgorithmsIncludingExampleCode}\\
-\textbf{1} START\\
-\textbf{2} Generate the initial population\\
-\textbf{3} Compute fitness\\
-\textbf{4} REPEAT\\
-\textbf{5} \quad Parent Selection\\
-\textbf{6} \quad Crossover/Mutation\\
-\textbf{7} \quad Compute fitness\\
-\textbf{8} UNTIL population has converged\\
-\textbf{9} STOP\\
+\indent\textbf{1} START\\
+\indent\textbf{2} Generate the initial population\\
+\indent\textbf{3} Compute fitness\\
+\indent\textbf{4} REPEAT\\
+\indent\textbf{5} \quad Parent Selection\\
+\indent\textbf{6} \quad Crossover/Mutation\\
+\indent\textbf{7} \quad Compute fitness\\
+\indent\textbf{8} UNTIL population has converged\\
+\indent\textbf{9} STOP\
 
 The genetic algorithm consists of 4 main phases: Initial Population, Selection, Reproduction, and Termination. The details of each phase are as follows.
 
-
-\paragraph*{1. Initial Population}\
+\textbf{1. Initial Population}\par
 
 A population is made up of chromosomes. Each chromosome, which is a set of genes, represents a solution to a problem that needs to be solved. The chromosome encoding process must start at the beginning. The dimensions of a problem solution must be encoded in a string of genes using some encoding techniques. The most popular approach is binary encoding, which defines the solution as sequences of 1s and 0s. Then, the value of genes is randomized.
 
-\paragraph*{2. Selection}\
+\textbf{2. Selection}\par
 
 The idea of selection is to select the appropriate chromosomes or the fitter chromosomes measured by a fitness function and pass them to the next generation to be able to get a more optimal answer to the problem. Generally, chromosomes with higher fitness have more chances than lower fitness to reproduce.
 
-\paragraph*{3. Reproduction}\
+\textbf{3. Reproduction}\par
 
 After the selection process, this process will use those chromosomes to generate the next generation by either crossover or mutation. Crossover is the most significant phase in a genetic algorithm. For each pair of parents to be mated, a crossover point is chosen at random from within the genes. \cite{IntroductiontoGeneticAlgorithmsIncludingExampleCode} After that, offspring will be created and added to the population of next generation. For mutation, it occurs when new offspring are formed by flipped some bits. This process exists to maintain the diversity of population and prevent premature convergence.
 
-\paragraph*{4. Termination}\cite{Geneticalgorithm}
+\textbf{4. Termination}\cite{Geneticalgorithm}\par
 
 This generational process is repeated until a termination condition has been reached. Common terminating conditions are:
 
@@ -673,8 +670,6 @@ This generational process is repeated until a termination condition has been rea
 \item Manual inspection
 \item Combinations of the above
 \end{itemize}
-
-\
 
 In this approach, we can create a recommendation system for both individuals and groups which is based on users’ preferences along with the user's restaurant selection history. Genetic algorithms approach is the most likely to be able to serve our objective which is to maximize the satisfaction of users.
 
@@ -738,7 +733,7 @@ HTTP defines a set of request methods for requests to indicate the desired actio
 
 \begin{table}[H]
 \caption{Common HTTP Verbs}\label{tbl:2CommonHTTPVerbs}
-\begin{tabularx}{\textwidth}{l|l} \hline\hline
+\begin{tabularx}{\textwidth}{l|X} \hline\hline
 Verb & Description \\ \hline\hline
 GET & Retrieve data. \\ \hline
 POST & Create data \\ \hline
@@ -747,7 +742,6 @@ DELETE & Remove Data \\ \hline\hline
 \end{tabularx}
 \end{table}
 
-%TODO check for update
 One of the HTTP characteristics is HTTP is a stateless protocol in which no session information is retained by the receiver or server. Relevant session data is sent to the server by the client in such a way that every request sent can be understood in isolation, without context information from previous requests in the session. \cite{Statelessprotocol} To make servers manage and understand the session, we need to make use of Cookies which is compact-sized information sent with requests. The servers can use that information to identify the current session from every isolated request such as authentication which makes them understand who is sending the request and do not require users to login every time they need to interact with the system.
 
 
@@ -1191,15 +1185,11 @@ There are also two external services that \textit{App Server} needs to communica
 \subsubsection{Recommender Architecture}
 
 \begin{figure}[H]\centering
-\includegraphics[width=200pt]{./images/3arch_recommender.png}
+\includegraphics[width=150pt]{./images/3arch_recommender.png}
 \caption{Recommender Architecture}\label{fig:3arch_recommender}
 \end{figure}\vspace{-24pt}
 
-\textit{Recommender} is responsible for restaurant suggestion generation. There are 2 modules in this component which are Suggestion Generator and Model Manger.
-
-Suggestion Generator will receive a recommendation request from \textit{App Server}, generate one set of restaurants using a local model, and send that response back to \textit{App Server}. In this process, \textit{Recommender} also needs to get some information about restaurants and users from \textit{App Server} for the generation.
-
-Model Manager will manage the local model. It is waiting for a training request from \textit{App Server} to train a new local model. It also sends the training information request back to \textit{App Server} after the training process is finished.
+\textit{Recommender} is responsible for restaurant suggestion generation. A module in this component is Suggestion Generator which is an interface for Genetic Algorithm. Suggestion Generator will receive a recommendation request from \textit{App Server} with restaurant and user information, generate one set of restaurants using a Genetic Algorithm process, and send that response back to \textit{App Server}.
 
 \textit{Recommender} implemented using Python which can easily communicate with the model because many libraries are supporting the machine learning process. It also uses the Flask framework to make them listen for requests from \textit{App Server}. It is deployed on the Google Cloud App Engine service.
 
@@ -2478,12 +2468,12 @@ We set up for one generation to have 100 chromosomes by selecting the top 30 chr
 However, the results from this graph show us that we can reduce the number of termination conditions which is 15 to lower.
 
 \begin{figure}[H]\centering
-\includegraphics[width=350pt]{./images/4GeneticAlgorithmExecutionTimewith6Genes.png}
+\includegraphics[width=320pt]{./images/4GeneticAlgorithmExecutionTimewith6Genes.png}
 \caption{Genetic Algorithm Execution Time with 6 Genes}\label{fig:4GeneticAlgorithmExecutionTimewith6Genes}
 \end{figure}\vspace{-24pt}
 
 \begin{figure}[H]\centering
-\includegraphics[width=350pt]{./images/4GeneticAlgorithmExecutionTimewith10Genes.png}
+\includegraphics[width=320pt]{./images/4GeneticAlgorithmExecutionTimewith10Genes.png}
 \caption{Genetic Algorithm Execution Time with 10 Genes}\label{fig:4GeneticAlgorithmExecutionTimewith10Genes}
 \end{figure}\vspace{-24pt}
 
