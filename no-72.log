@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 16:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1027,14 +1027,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ] [10]
 File: ./images/2cfprocess.png Graphic file (type bmp)
 <./images/2cfprocess.png>
- [11] [12]
-Overfull \hbox (6.44763pt too wide) in paragraph at lines 592--593
-\TU/TimesNewRoman(0)/m/n/10 vector-space model by measuring the similarity betw
-een dimensional vectors based on the angle which $\OML/cmm/m/it/10 cos\OT1/cmr/
-m/n/10 ([]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 )$
- []
-
-[13] [14] [15] [16]
+ [11] [12] [13] [14] [15] [16]
 File: ./images/2http.png Graphic file (type bmp)
 <./images/2http.png>
  [17] [18] [19] [20]
@@ -1046,11 +1039,12 @@ File: ./images/2eatseereal.png Graphic file (type bmp)
  [23]
 File: ./images/2whatman.png Graphic file (type bmp)
 <./images/2whatman.png>
- [24]
+
+[24]
 File: ./images/2tinder.jpeg Graphic file (type bmp)
 <./images/2tinder.jpeg>
  [25]
-Overfull \hbox (12.03842pt too wide) in paragraph at lines 886--886
+Overfull \hbox (12.03842pt too wide) in paragraph at lines 887--887
 []\TU/TimesNewRoman(0)/b/n/13 On the design of Individual and Group Recommender
  Systems for Tourism
  []
@@ -1721,14 +1715,8 @@ LaTeX Info: Redefining \ttfamily on input line 19.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `no-72.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `no-72.out':
-(rerunfilecheck)             Before: F9AAEDF7A0EA7FA54BFAAE80AC3F2FC4;30837
-(rerunfilecheck)             After:  B5A8868867B07E46990DBE0F13FAC8EB;30837.
+Package rerunfilecheck Info: File `no-72.out' has not changed.
+(rerunfilecheck)             Checksum: 19F47F4976344FABE50CBF1C7CD0CF4D;31001.
  ) 
 Here is how much of TeX's memory you used:
  18876 strings out of 478436

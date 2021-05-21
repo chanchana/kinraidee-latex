@@ -69,6 +69,7 @@
 \contentsline {subsection}{\numberline {2.3.6}External Service}{21}{subsection.2.3.6}%
 \contentsline {subsubsection}{\numberline {2.3.6.1}Facebook Graph API}{21}{subsubsection.2.3.6.1}%
 \contentsline {subsubsection}{\numberline {2.3.6.2}Google Cloud Storage}{21}{subsubsection.2.3.6.2}%
+\contentsline {subsubsection}{\numberline {2.3.6.3}Longdo Map Search}{21}{subsubsection.2.3.6.3}%
 \contentsline {section}{\numberline {2.4}Related Research/Competing Solutions}{22}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Entrée}{22}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Eatsee}{23}{subsection.2.4.2}%

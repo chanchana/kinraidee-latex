@@ -282,7 +282,7 @@ Genetic Algorithm, Optimization Problem, Decision Making Process, Group Recommen
 
 From the problems online survey, it revealed that 62\% of the respondents, 93 out of 148, felt restaurant selection in each meal is their main problem which up to 65.5 \% faced the pain about restaurant selection in a group by occurring frequently in a group of friends. The major issue comes from a variety of factors and conditions which lead to the inability to decide. From further inquiries about how they solved the problem, we found that very few people will find a restaurant that matches the conditions of their group. They usually select the restaurant according to the majority which cannot serve everyone’s satisfaction. Some of them use the recommendation application to be their alternative way to decide. Moreover, in the worst case, they just eat separately. 
 
-Even though various applications can suggest food to users, almost all of them just randomize the suggestions without any logic which is known from the problem validation survey and additional related research. Example of randomized applications is Whatever Mans. Moreover, many of them suggest only food, not a restaurant. Based on our research, some applications that can suggest a restaurant based on their users’ preference still cannot support a suggestion for a group.
+Even though various applications can suggest food to users, almost all of them just randomize the suggestions without any logic.Whatever Mans is one of the randomized applications, as described in the details of their application. Moreover, many of them suggest only food, not a restaurant. Based on our research, some applications that can suggest a restaurant based on their users’ preference still cannot support a suggestion for a group.
 
 In this project, we will implement a web application that can solve the mentioned problems and improve the existing solutions. Our application will recommend a restaurant based on individual or group preferences, behaviors, and customizations. We hope that the application will be able to reduce time-wasting in choosing restaurants and give us no more frustration.
 
@@ -489,12 +489,11 @@ We brought this problem up to solve it since it is a common problem that everyon
 
 A web application is an application program that is stored on a remote server and delivered over the internet through a browser interface. \cite{WhatIsWebApplicationWebAppsAndItsBenefits} Because web applications are delivered through the internet, users do not need to install the application and it also allows multiple users access to the application at the same time on the same version. Moreover, running web applications require only an internet browser, so a web application is a platform and operating system independent.
 
-Because our platform needs to be easily accessible for users not only individual users but also every member in the group of users, having a web application that does not require any installation and platform independence is a perfect solution. Users can easily access our platform via their mobile internet browser and all of them will see the same version of the application. A web application also accommodates the development process since we do not need to implement the different versions for different platforms.
-
+Since our platform needs to be easily accessible not only to individual users but also to all members in the group of users, having a web application that does not require any installation and is platform independence is the perfect solution. Users can easily access our platform via their mobile internet browser and all of them will see the same version of the application. A web application also accommodates the development process since we do not need to implement the different versions for different platforms.
 
 \subsection{Information Collection}
 
-This collects relevant information of users to generate a user profile or model for the prediction tasks including the user’s attributes, behaviors, or content of the resources the user accesses. \cite{WhatisMachineLearning} We need to do this process due to the recommender cannot provide results accurately until the users’ profile and preferences have been constructed. However, the information we collected includes username, password, and their users’ restaurant preference where all of them do not relate to personal information. So, PDPA or Personal Data Protection Act does not need to be concerned in our project.
+This collects relevant information of users to generate a user profile or model for the prediction tasks including the user’s attributes, behaviors, or content of the resources the user accesses. \cite{WhatisMachineLearning} We need to do this process due to the recommender cannot provide results accurately until the users’ profile and preferences have been constructed. However, the information we collected includes usernames, passwords, and restaurant preferences for users, none of which apply to personal information. Thus, PDPA, or Personal Data Protection Act, does not need to be concerned in our project. 
 
 There are several types of information/feedback that can be captured and studied including explicit and implicit feedback.
 
@@ -565,6 +564,7 @@ A collaborative filtering technique as opposed to the content-based filtering te
 
 To recommend, it works by creating a user-item matrix of preferences for items by users, as Figure~\ref{fig:2cfprocess} above which represents the process start from the matrix to the output of this system, and then calculating the similarity between profiles to get the relevant item that matches the user. Thus, the user will be able to get the items that he/she has not rated yet but already rated from a similar user. This approach can produce the output either prediction or recommendation by prediction represented as a score of an item for the user whereas recommendation is represented as a top N list of items as mentioned in Figure~\ref{fig:2cfprocess}. Collaborative filtering techniques can separate into 2 main categories: memory-based and model-based.
 
+\begin{blockquote}\leftskip=3em\rightskip=0em
 
 \textbf{1. Memory-based}\par
 
@@ -594,11 +594,9 @@ For cosine similarity~\ref{eq:cos}, it is different from Pearson correlation coe
 
 \textbf{2. Model-based}\par
 
-This approach is able to improve the performance of collaborative filtering by constructing the model which is done by using machine learning or data mining techniques. Moreover, with this approach, dimensionality reduction methods are mostly being used as complementary techniques to improve the robustness and accuracy of the memory-based approach. \cite{Recommendersystem}
+This approach is able to improve the performance of collaborative filtering by constructing the model which is done by using machine learning or data mining techniques. Moreover, with this approach, dimensionality reduction methods are mostly being used as complementary techniques to improve the robustness and accuracy of the memory-based approach. \cite{Recommendersystem} For example, this technique is matrix factorization which is able to discover hidden concepts and their relationship with users and items.
 
-For example, this technique is matrix factorization which is able to discover hidden concepts and their relationship with users and items.
-
-\
+\end{blockquote}
 
 The advantage of the collaborative filtering technique is performed in domains where there is not much content associated with items and where content is difficult for a computer system to analyze such as opinions and ideas. \cite{Recommendersystem} But there is some disadvantage which is about the cold-start problem which refers to the new user or item that comes with the empty profile since the user has not rated any item yet. Moreover, a memory-based approach has a problem with scalability. This issue can be solved by the model-based approach.
 
@@ -646,6 +644,8 @@ In the genetic algorithm, the optimal solution is found by replacing an existing
 
 The genetic algorithm consists of 4 main phases: Initial Population, Selection, Reproduction, and Termination. The details of each phase are as follows.
 
+\begin{blockquote}\leftskip=3em\rightskip=0em
+
 \textbf{1. Initial Population}\par
 
 A population is made up of chromosomes. Each chromosome, which is a set of genes, represents a solution to a problem that needs to be solved. The chromosome encoding process must start at the beginning. The dimensions of a problem solution must be encoded in a string of genes using some encoding techniques. The most popular approach is binary encoding, which defines the solution as sequences of 1s and 0s. Then, the value of genes is randomized.
@@ -662,7 +662,7 @@ After the selection process, this process will use those chromosomes to generate
 
 This generational process is repeated until a termination condition has been reached. Common terminating conditions are:
 
-\begin{itemize}
+\begin{itemize}\leftskip=5em
 \item A solution is found that satisfies minimum criteria
 \item Fixed number of generations reached
 \item Allocated budget (computation time/money) reached
@@ -671,10 +671,9 @@ This generational process is repeated until a termination condition has been rea
 \item Combinations of the above
 \end{itemize}
 
+\end{blockquote}
+
 In this approach, we can create a recommendation system for both individuals and groups which is based on users’ preferences along with the user's restaurant selection history. Genetic algorithms approach is the most likely to be able to serve our objective which is to maximize the satisfaction of users.
-
-
-
 
 \section{Technologies}
 
@@ -742,14 +741,14 @@ DELETE & Remove Data \\ \hline\hline
 \end{tabularx}
 \end{table}
 
-One of the HTTP characteristics is HTTP is a stateless protocol in which no session information is retained by the receiver or server. Relevant session data is sent to the server by the client in such a way that every request sent can be understood in isolation, without context information from previous requests in the session. \cite{Statelessprotocol} To make servers manage and understand the session, we need to make use of Cookies which is compact-sized information sent with requests. The servers can use that information to identify the current session from every isolated request such as authentication which makes them understand who is sending the request and do not require users to login every time they need to interact with the system.
+One of the HTTP characteristics is HTTP is a stateless protocol in which no session information is retained by the receiver or server. Relevant session data is sent to the server by the client in such a way that every request sent can be understood in isolation, without context information from previous requests in the session.  \cite{Statelessprotocol} To make servers manage and understand the session, we need to make use of Cookies which is compact-sized information sent with requests. The servers can use that information to identify the current session from every isolated request such as authentication which makes them understand who is sending the request and do not require users to login every time they need to interact with the system.
 
 
 \subsection{Web Application Framework}
 
 A web application framework is a software framework that includes a code library that makes web development quicker and easier by giving basic patterns for building reliable, scalable and maintainable web applications \cite{WhatIsWebFramework} so that we do not need to implement everything from the ground up. It can facilitate various functionalities for web development such as request handling, URL routing, transferring data phrasing and database connection configuration.
 
-In our project, we choose Express framework for JavaScript with Node.js and Flask framework for Python. Both of them have a suitable functionality for our system with a large community base.
+In our project, we choose Express framework for JavaScript with Node.js and Flask framework for Python. Both of them have a suitable functionality for our system with a large community base. 
 
 \subsubsection{Express}
 
@@ -816,13 +815,15 @@ MongoDB Atlas is a fully-managed cloud database developed by the same people tha
 
 \subsubsection{Facebook Graph API}
 
-%TODO check for update
-Facebook Graph API is the primary way for apps to read and write to the Facebook social graph \cite{GraphAPI}. It provides a place query that we use for collecting restaurant data. Their restaurant information data includes restaurant tags which can help us in data analytics and machine learning process. We will write a script to query restaurant information from their API. Their API is free to use with the authentication token. The token is acquired by setting up the application on their platform.
+Facebook Graph API is the primary way for apps to read and write to the Facebook social graph \cite{GraphAPI}. It provides a place query that we use for collecting restaurant data. Their restaurant information data includes restaurant tags which can help us in data analytics and machine learning process. We wrote a script to query restaurant information from their API. Their API is free to use with the authentication token. The token is acquired by setting up the application on their platform.
 
 \subsubsection{Google Cloud Storage}
 
 Google Cloud Storage is a web service that allows storing and accessing data on a cloud. It provides a uniform process to access the static data. In our project, we need to keep the image of the restaurants and the total size of the images is too large to serve via our main server, Google Cloud Storage is the solution for this problem. Unlike Google Drive, Google Cloud Storage can set the static path for every restaurant image, but Google Drive will generate a random url to access the data. Another cloud storage service is Amazon S3, however, since we use Google Cloud Platform service which is Google Cloud App Engine for the deployment, Google Cloud Storage is a better choice for this project.
 
+\subsubsection{Longdo Map Search}
+
+Longdo Map Search is a map service developed by Thai people. This service allows us to query the location of places in Thailand by keywords. The information includes location coordinates and place’s name. By using this service, it can make users search for places by keywords and change the location of them. This service offers a free tier with a request limit. However, since the number of users in our project is not too large to exceed the request limit, we do not have to worry about billing issues with this service. Their request limit for free tier is higher than other competitor services such as Google Mapi API, and it heavily focuses on location in Thailand. Therefore, this service is more suitable for our project.
 
 \section{Related Research/Competing Solutions}
 
@@ -899,10 +900,9 @@ Compared to our system, the algorithm designed in this paper can be adapted with
 \newpage
 \subsection{Dynamic Music Recommender System Using Genetic Algorithm}
 
-%TODO heck for update
-This paper represents a music recommendation system that is able to recognize and provide items corresponding with user favorites. The system is able to identify the n-number of users' preferences and adaptively recommend music tracks according to user preferences by extracting unique features of each music track. Then applying BLX-a crossover to the extracted features of each music track. \cite{MusicRecommender} The recommender is base on genetic algorithm along with content-based filtering technique for generate the initial population in genetic algorithm which can divided into 3 phase including feature extraction phase, evolution phase, and interactive Genetic algorithm phase. User favorite and user profiles are included. After that the successive page is constructed based on the user evaluation.
+This paper presented a music recommendation system that can recognize and provide items corresponding to user favorites. The system is able to identify the n-number of users' preferences and adaptively recommend music tracks based on those preferences by extracting unique features from each music track. Then, BLX-a crossover is applied to extract features of each music track. \cite{MusicRecommender} The recommender is based on the genetic algorithm that uses the content-based filtering technique to generate the initial population. The recommender can be divided into 3 phases: feature extraction, evolution, and interactive Genetic algorithm. User favorites and user profiles are included.
 
-Compared to our system, the information of this paper that uses the genetic algorithm is similar to our system which are user favorite and user profiles. But the differences are our objective function and the system architecture in which we focus on the restaurant.
+The knowledge in this paper that used the genetic algorithm is close to our system in terms of user favorites and user profiles. However, our objective function and the system architecture, in which we concentrate on the restaurant, are the key differences.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1167,7 +1167,7 @@ For a \textit{Data Service} communication, \textit{Data Service} generates proce
 
 For a \textit{Recommender} communication, \textit{App Server} needs to send requests to \textit{Recommender} for restaurant suggestion generation and model training. \textit{Recommender} also needs to send a request to \textit{App Server} to get restaurant information and user information.
 
-There are also two external services that \textit{App Server} needs to communicate with which are Google Cloud Storage and Longdo Map API. With Google Cloud Storage service, \textit{App Server} will send a request to store the restaurant’s images and get the existing image from that service. With Longdo Map API, \textit{App Server} will send places query requests with specific keywords from users. 
+\textit{App Server} also needs to communicate with two external services: Google Cloud Storage and Longdo Map API. With Google Cloud Storage service, \textit{App Server} will send a request to store the restaurant’s images and get the existing image from that service. With Longdo Map API, \textit{App Server} will send places query requests with specific keywords from users. 
 
 \textit{App Server} is implemented using TypeScript and Express framework which is a web application framework and deployed on Google Cloud App Engine service.
 
@@ -1692,7 +1692,7 @@ $C_{max}$; Maximum restaurant cost score of the set\\
 $r$; Rank score from each member, score from 1 - 6
 \end{blockquote}
 
-The score of each restaurant is calculated using the formula~\ref{eq:rankaggscore} based on 3 factors: restaurant’s category type, rank from users and restaurant’s cost. The type and cost scores of each restaurant can be derived from the user’s preference. genetic algorithm’s fitness value calculation process. The rank score from each member $r$ is determined by the position of the restaurant of the member.  The first rank restaurant receives a score of 6, the second receives a score of 5, and so on until the last rank receives a score of 1. Then, these rank scores are summed up to be rank score $R$. However, we need to subtract how far each restaurant ranked from each member in order for the final score to be more fair for all members. 
+The score of each restaurant is calculated using the formula~\ref{eq:rankaggscore} based on 3 factors: restaurant’s category type, rank from users and restaurant’s cost. The type and cost scores of each restaurant can be derived from the user’s preference. The rank score from each member $r$ is determined by the position of the restaurant of the member.  The first rank restaurant receives a score of 6, the second receives a score of 5, and so on until the last rank receives a score of 1. Then, these rank scores are summed up to be rank score $R$. However, we need to subtract how far each restaurant ranked from each member in order for the final score to be more fair for all members.
 
 For example, Alice ranked the top three restaurants as A, F, and C, while Bob ranked them C, F, and A. The score of restaurant A is $10$, from $6 + 4$, and the score of restaurant B is also $10$, from $5 + 5$. This example demonstrates that even if Bob placed restaurant A on his third rank, it does not matter because the score is dominated by Alice's ranking score. So, by subtracting the rank score of restaurant A, which is $10$, with how far each restaurant ranked which in this case is $2$, from $\sqrt{(6-2^2)}$, the final rank score of restaurant A will be $8$ which is more fair to Bob and the restaurant B still gets a score of $10$, from $10-\sqrt{(5-5^2)}$.
 
@@ -2756,7 +2756,7 @@ We surveyed by sharing the Google Forms through social media platforms e.g. Face
 
 \textbf{Part 1: Basic Information}
 
-This part we didn’t require the answer from the respondents.
+This part we did not require the answer from the respondents.
 
 \begin{figure}[H]\centering
 \includegraphics[width=350pt]{./images/A2AgeofRespondents.png}
