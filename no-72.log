@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 10:50
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,11 +1048,7 @@ File: ./images/2eatseereal.png Graphic file (type bmp)
  [23]
 File: ./images/2whatman.png Graphic file (type bmp)
 <./images/2whatman.png>
-
-
-LaTeX Warning: Citation `Whatevermans' on page 24 undefined on input line 872.
-
-[24]
+ [24]
 File: ./images/2tinder.jpeg Graphic file (type bmp)
 <./images/2tinder.jpeg>
  [25]
@@ -1085,7 +1081,10 @@ File: ./images/3functional_breakdown.png Graphic file (type bmp)
 <./images/3functional_breakdown.png>
 File: ./images/3system_overview.png Graphic file (type bmp)
 <./images/3system_overview.png>
- [34] [35]
+ [34]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 1133.
+ [35]
 File: ./images/3architect.png Graphic file (type bmp)
 <./images/3architect.png>
  [36]
@@ -1174,8 +1173,6 @@ File: ./images/3db_RestaurantCollectionsIndexes.png Graphic file (type bmp)
 File: ./images/3db_UserCollectionsIndexes.png Graphic file (type bmp)
 <./images/3db_UserCollectionsIndexes.png>
  [61]
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 1601.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/it' will be
 (Font)              scaled to size 10.0pt on input line 1601.
  [62]
@@ -1323,21 +1320,10 @@ pe bmp)
 File: ./images/4ui_FavoriteRestaurantListUserInterface.png Graphic file (type b
 mp)
 <./images/4ui_FavoriteRestaurantListUserInterface.png>
-
-
-LaTeX Warning: Reference `sec:dataset' on page 98 undefined on input line 2235.
-
-
-
-LaTeX Warning: Reference `sec:cf' on page 98 undefined on input line 2235.
-
-
-LaTeX Warning: Reference `sec:ga' on page 98 undefined on input line 2235.
-
 File: ./images/4SelectedColumnsfromUserBehaviorData.png Graphic file (type bmp)
 
 <./images/4SelectedColumnsfromUserBehaviorData.png>
-[98]
+ [98]
 File: ./images/4UserIDinObjectIDPattern.png Graphic file (type bmp)
 <./images/4UserIDinObjectIDPattern.png>
 File: ./images/4SampleofSelectedUserBehaviorData.png Graphic file (type bmp)
@@ -1520,19 +1506,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--181
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--225
+Underfull \hbox (badness 10000) in paragraph at lines 226--231
 []\TU/TimesNewRoman(0)/m/n/10 Chris I,  “Build a user-based collaborative filte
 ring recommendation en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--225
+Underfull \hbox (badness 10000) in paragraph at lines 226--231
 \TU/TimesNewRoman(0)/m/n/10 gine for Anime,” Available at [][]$[][][][][] [] []
  [] [][][][][][][][][][][][][][][][][][] [] [][][] []
  []
 
 
-Overfull \hbox (48.13pt too wide) in paragraph at lines 220--225
+Overfull \hbox (48.13pt too wide) in paragraph at lines 226--231
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][]$[][]\TU/TimesNewRoman(0)/m/n/10 ,
@@ -1747,25 +1733,16 @@ LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
 )
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `no-72.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `no-72.out':
-(rerunfilecheck)             Before: 7BE14779FDF4E084CCEA8DA074689526;30784
-(rerunfilecheck)             After:  C0471A7DE42F02A895E68A6B42623BA2;30837.
+Package rerunfilecheck Info: File `no-72.out' has not changed.
+(rerunfilecheck)             Checksum: C0471A7DE42F02A895E68A6B42623BA2;30837.
  ) 
 Here is how much of TeX's memory you used:
- 18872 strings out of 478436
- 367436 string characters out of 5853929
+ 18874 strings out of 478436
+ 367473 string characters out of 5853929
  945112 words of memory out of 5000000
- 38339 multiletter control sequences out of 15000+600000
+ 38341 multiletter control sequences out of 15000+600000
  406119 words of font info for 78 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  110i,10n,117p,1219b,1858s stack positions out of 5000i,500n,10000p,200000b,80000s

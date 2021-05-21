@@ -37,47 +37,48 @@ Warning--empty year in MongoDBAtlas
 Warning--empty year in GraphAPI
 Warning--empty year in Entréechoosefromaworldofdisheswithasingletouch
 Warning--empty year in EatseeSeeitEatit
+Warning--empty year in Whatevermans
 Warning--empty year in Tinderapp
 Warning--empty year in BuildauserbasedcollaborativefilteringrecommendationengineforAnime
-You've used 37 entries,
+You've used 38 entries,
             2177 wiz_defined-function locations,
-            961 strings with 13778 characters,
-and the built_in function-call counts, 8155 in all, are:
-= -- 826
-> -- 286
+            966 strings with 13917 characters,
+and the built_in function-call counts, 8370 in all, are:
+= -- 848
+> -- 293
 < -- 0
-+ -- 122
-- -- 84
-* -- 478
-:= -- 1420
-add.period$ -- 37
-call.type$ -- 37
-change.case$ -- 116
++ -- 125
+- -- 86
+* -- 490
+:= -- 1457
+add.period$ -- 38
+call.type$ -- 38
+change.case$ -- 119
 chr.to.int$ -- 0
-cite$ -- 72
-duplicate$ -- 265
-empty$ -- 739
-format.name$ -- 84
-if$ -- 1695
+cite$ -- 74
+duplicate$ -- 272
+empty$ -- 759
+format.name$ -- 86
+if$ -- 1740
 int.to.chr$ -- 0
-int.to.str$ -- 37
+int.to.str$ -- 38
 missing$ -- 2
-newline$ -- 188
-num.names$ -- 74
-pop$ -- 324
+newline$ -- 193
+num.names$ -- 76
+pop$ -- 333
 preamble$ -- 1
-purify$ -- 116
+purify$ -- 119
 quote$ -- 0
-skip$ -- 222
+skip$ -- 228
 stack$ -- 0
-substring$ -- 186
-swap$ -- 37
+substring$ -- 191
+swap$ -- 38
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 148
-warning$ -- 35
-while$ -- 74
-width$ -- 39
-write$ -- 411
-(There were 35 warnings)
+type$ -- 152
+warning$ -- 36
+while$ -- 76
+width$ -- 40
+write$ -- 422
+(There were 36 warnings)

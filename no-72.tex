@@ -1130,18 +1130,18 @@ Our system consists of 5 functional components which are:
 
 In this section, we will give an overview of our system about their responsibility and we will discuss each component in detail in the next section.
 
-From Figure~\ref{fig:3system_overview}, we can see the relationship between each component. Our system consists of mainly 5 components which are Database, App Server, App Client, Recommender, and Data Service.
+From Figure~\ref{fig:3system_overview}, we can see the relationship between each component. Our system consists of mainly 5 components which are \textit{Database}, \textit{App Server}, \textit{App Client}, \textit{Recommender}, and \textit{Data Service}.
 
 %TODO Italic specific name
 \begin{itemize}
-\item Database: store all of the data of our system.
-\item App Server: handle all server-side processes including restaurant data management, group management, recommendation request handling, and authentication system. This component acts as a center of the system.
-\item App Client: serve the user interface to users via a web application.
-\item Recommender: handle the restaurant's suggestion. This component will receive the recommendation request from App Server and return the suggestion result back to App Server.
-\item Data Service: collect restaurant data from external sources, preprocess the data, and feed the data into App Server.
+\item \textit{Database}: store all of the data of our system.
+\item \textit{App Server}: handle all server-side processes including restaurant data management, group management, recommendation request handling, and authentication system. This component acts as a center of the system.
+\item \textit{App Client}: serve the user interface to users via a web application.
+\item \textit{Recommender}: handle the restaurant's suggestion. This component will receive the recommendation request from \textit{App Server} and return the suggestion result back to \textit{App Server}.
+\item \textit{Data Service}: collect restaurant data from external sources, preprocess the data, and feed the data into \textit{App Server}.
 \end{itemize}
 
-We separate these components into 2 sides which are the backend side and the frontend side. The backend side includes Database, App Server, Recommender, and Data Service. The frontend side is only App Client.
+We separate these components into 2 sides which are the backend side and the frontend side. The backend side includes \textit{Database}, \textit{App Server}, \textit{Recommender}, and \textit{Data Service}. The frontend side is only \textit{App Client}.
 
 
 \newpage
@@ -1152,7 +1152,7 @@ We separate these components into 2 sides which are the backend side and the fro
 \caption{System Architecture}\label{fig:3architect}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:3architect} shows the detailed architecture of our system. As we mentioned before, our system consists of 5 components. Each of these components communicates via HTTP request and response. All of the components except Database are deployed using Google Cloud App Engine and Database is deployed via MongoDB Atlas. There are 3 external services that our system needs to be interacted with which are Google Cloud Storage, Facebook Graph API and Longdo Map API. Google Cloud Storage is used for storing restaurant’s images. Facebook Graph API is used for querying primary restaurant information. Longdo Map API is used to query places by keywords. We will walk through each component in detail in the following section.
+Figure~\ref{fig:3architect} shows the detailed architecture of our system. As we mentioned before, our system consists of 5 components. Each of these components communicates via HTTP request and response. All of the components except \textit{Database} are deployed using Google Cloud App Engine and \textit{Database} is deployed via MongoDB Atlas. There are 3 external services that our system needs to be interacted with which are Google Cloud Storage, Facebook Graph API and Longdo Map API. Google Cloud Storage is used for storing restaurant’s images. Facebook Graph API is used for querying primary restaurant information. Longdo Map API is used to query places by keywords. We will walk through each component in detail in the following section.
 
 \newpage
 \subsubsection{App Server Architecture}
@@ -1162,19 +1162,19 @@ Figure~\ref{fig:3architect} shows the detailed architecture of our system. As we
 \caption{App Server Architecture}\label{fig:3arch_appserver}
 \end{figure}\vspace{-24pt}
 
-App Server is responsible for handling all server-side processes. The processes include authentication, user management, group management, recommendation management, restaurant management, and model management. This component acts as a center of our system that lets all other components communicate with them.
+\textit{App Server} is responsible for handling all server-side processes. The processes include authentication, user management, group management, recommendation management, restaurant management, and model management. This component acts as a center of our system that lets all other components communicate with them.
 
-For database communication, this is the only component that allows access to the database, so any components needed to access any data must communicate through App Server. The database connection module acts as an interface to the database for App Server.
+For database communication, this is the only component that allows access to the database, so any components needed to access any data must communicate through \textit{App Server}. The database connection module acts as an interface to the database for \textit{App Server}.
 
-For an App Client communication, App Client needs to send a request to App Server in order to complete a task. The requests include authentication requests, create and update a recommendation request, get, create, and update group requests and get, create, and update user information requests.
+For an \textit{App Client} communication, \textit{App Client} needs to send a request to \textit{App Server} in order to complete a task. The requests include authentication requests, create and update a recommendation request, get, create, and update group requests and get, create, and update user information requests.
 
-For a Data Service communication, Data Service generates processed restaurant data and it sends those data to App Server to create a restaurant and store them in the database.
+For a \textit{Data Service} communication, \textit{Data Service} generates processed restaurant data and it sends those data to \textit{App Server} to create a restaurant and store them in the database.
 
-For a Recommender communication, App Server needs to send requests to Recommender for restaurant suggestion generation and model training. Recommender also needs to send a request to App Server to get restaurant information and user information.
+For a \textit{Recommender} communication, \textit{App Server} needs to send requests to \textit{Recommender} for restaurant suggestion generation and model training. \textit{Recommender} also needs to send a request to \textit{App Server} to get restaurant information and user information.
 
-There are also two external services that App Server needs to communicate with which are Google Cloud Storage and Longdo Map API. With Google Cloud Storage service, App Server will send a request to store the restaurant’s images and get the existing image from that service. With Longdo Map API, App Server will send places query requests with specific keywords from users. 
+There are also two external services that \textit{App Server} needs to communicate with which are Google Cloud Storage and Longdo Map API. With Google Cloud Storage service, \textit{App Server} will send a request to store the restaurant’s images and get the existing image from that service. With Longdo Map API, \textit{App Server} will send places query requests with specific keywords from users. 
 
-App Server is implemented using TypeScript and Express framework which is a web application framework and deployed on Google Cloud App Engine service.
+\textit{App Server} is implemented using TypeScript and Express framework which is a web application framework and deployed on Google Cloud App Engine service.
 
 
 \subsubsection{App Client Architecture}
@@ -1184,7 +1184,7 @@ App Server is implemented using TypeScript and Express framework which is a web 
 \caption{App Client Architecture}\label{fig:3arch_appclient}
 \end{figure}\vspace{-24pt}
 
-App Client is responsible for serving the user interface to users and handling user interactions. There are 2 modules in this component which are User Interface that serves as an interface to users and Server Client that handles user’s tasks and communicates with App Server. App Client is implemented using TypeScript and React framework and deployed on Google Cloud App Engine service.
+\textit{App Client} is responsible for serving the user interface to users and handling user interactions. There are 2 modules in this component which are User Interface that serves as an interface to users and Server Client that handles user’s tasks and communicates with \textit{App Server}. \textit{App Client} is implemented using TypeScript and React framework and deployed on Google Cloud App Engine service.
 
 
 \subsubsection{Recommender Architecture}
@@ -1194,13 +1194,13 @@ App Client is responsible for serving the user interface to users and handling u
 \caption{Recommender Architecture}\label{fig:3arch_recommender}
 \end{figure}\vspace{-24pt}
 
-Recommender is responsible for restaurant suggestion generation. There are 2 modules in this component which are Suggestion Generator and Model Manger.
+\textit{Recommender} is responsible for restaurant suggestion generation. There are 2 modules in this component which are Suggestion Generator and Model Manger.
 
-Suggestion Generator will receive a recommendation request from App Server, generate one set of restaurants using a local model, and send that response back to App Server. In this process, Recommender also needs to get some information about restaurants and users from App Server for the generation.
+Suggestion Generator will receive a recommendation request from \textit{App Server}, generate one set of restaurants using a local model, and send that response back to \textit{App Server}. In this process, \textit{Recommender} also needs to get some information about restaurants and users from \textit{App Server} for the generation.
 
-Model Manager will manage the local model. It is waiting for a training request from App Server to train a new local model. It also sends the training information request back to App Server after the training process is finished.
+Model Manager will manage the local model. It is waiting for a training request from \textit{App Server} to train a new local model. It also sends the training information request back to \textit{App Server} after the training process is finished.
 
-Recommender implemented using Python which can easily communicate with the model because many libraries are supporting the machine learning process. It also uses the Flask framework to make them listen for requests from App Server. It is deployed on the Google Cloud App Engine service.
+\textit{Recommender} implemented using Python which can easily communicate with the model because many libraries are supporting the machine learning process. It also uses the Flask framework to make them listen for requests from \textit{App Server}. It is deployed on the Google Cloud App Engine service.
 
 
 \subsubsection{Data Service Architecture}
@@ -1210,7 +1210,7 @@ Recommender implemented using Python which can easily communicate with the model
 \caption{Data Service Architecture}\label{fig:3arch_dataservice}
 \end{figure}\vspace{-24pt}
 
-Data Service is responsible for collecting restaurant information from an external source. This component has 3 modules which are Data Fetcher which collect the restaurant information from Facebook Graph API and save it to the local raw files, Data Reader which will read the files and process that data into the correct format and Data Feeder will send the processed data to App Server to create restaurants in the system. Currently, it is designed to collect the restaurant data manually. Therefore, if we want to update or collect more restaurants, we need to trigger the task in this service again. Data Service is implemented as a simple Python script without any web framework because no components need to send a request to Data Service.
+\textit{Data Service} is responsible for collecting restaurant information from an external source. This component has 3 modules which are Data Fetcher which collect the restaurant information from Facebook Graph API and save it to the local raw files, Data Reader which will read the files and process that data into the correct format and Data Feeder will send the processed data to \textit{App Server} to create restaurants in the system. Currently, it is designed to collect the restaurant data manually. Therefore, if we want to update or collect more restaurants, we need to trigger the task in this service again. \textit{Data Service} is implemented as a simple Python script without any web framework because no components need to send a request to \textit{Data Service}.
 
 \subsubsection{Database Architecture}
 
@@ -1219,7 +1219,7 @@ Data Service is responsible for collecting restaurant information from an extern
 \caption{App Server Architecture}\label{fig:3arch_database}
 \end{figure}\vspace{-24pt}
 
-Database is responsible for storing all data in our system. We choose to have NoSQL for our database because the schema of the data can change quickly, having a flexible schema can make our system adapt to the change in data format more easily. We will discuss the database structure in section 3.5 Database Structure. To access the data in the database, App Server will send a query command via the database connection module in App Server. The database is implemented using MongoDB and deployed using their official cloud service, MongoDB Atlas.
+\textit{Database} is responsible for storing all data in our system. We choose to have NoSQL for our database because the schema of the data can change quickly, having a flexible schema can make our system adapt to the change in data format more easily. We will discuss the database structure in section~\ref{sec:databasestructure} Database Structure. To access the data in the database, \textit{App Server} will send a query command via the database connection module in \textit{App Server}. The database is implemented using MongoDB and deployed using their official cloud service, MongoDB Atlas.
 
 
 \newpage
@@ -1269,8 +1269,8 @@ When a group of users wants to start a group recommendation, they firstly need t
 
 \textbf{Scenario}: Users register for a new account.
 \begin{enumerate}
-\item Users open the registration page and App Client shows the registration form to users.
-\item Once users fill in their new username and password, App Client will validate the username format (2.1). If they are valid, App Client will send those fields to the app server (2.2). Next, App Server will query the username from the database (2.2.1). If the username does not exist in the database, the new user will be created (2.2.4) and sent back to App Client (2.3). The App Client will send a food preference setting form to the users (2.4).
+\item Users open the registration page and \textit{App Client} shows the registration form to users.
+\item Once users fill in their new username and password, \textit{App Client} will validate the username format (2.1). If they are valid, \textit{App Client} will send those fields to the app server (2.2). Next, \textit{App Server} will query the username from the database (2.2.1). If the username does not exist in the database, the new user will be created (2.2.4) and sent back to \textit{App Client} (2.3). The \textit{App Client} will send a food preference setting form to the users (2.4).
 \item Once users fill the food preferences setting form, the user profile in the database will be updated (3.1.2) and the registration will be completed (3.3)
 \end{enumerate}
 
@@ -1286,9 +1286,9 @@ When a group of users wants to start a group recommendation, they firstly need t
 \newpage
 \textbf{Scenario}: Users want to see the restaurant recommendation for individuals and they want to see more suggestions than the first set of the suggested restaurants.
 \begin{enumerate}
-\item When users want to see a recommendation, App Client will send an initial recommendation request to the App Server (1.1), App Server will create a new recommendation data (1.1.1 and 1.1.2) and send the recommendation back to App Client (1.2). Next, App Client will send the token to App Server again (1.3). Once App Server receives the token, it will fetch nearby restaurants (1.3.1 and 1.3.2) and send a recommendation request with the restaurants to Recommender (1.4.1). Recommender will generate a set of suggested restaurants and send them back to App Server and App Client (1.4.2 and 1.5). Lastly, App Client will show a restaurant in the restaurant set to users  (1.6).
-\item Users will see the suggested restaurants. In this scenario, users choose to see more suggested restaurants (2). After that App Client will send a recommendation token with current restaurants interaction data to filter out the suggested restaurants in the first set (2.1). The next process is generating a restaurant suggestion which is the same process as before, but this time, App Server will send only the filtered restaurants to Recommender (2.2.1). After the suggestion is generated, it will be sent back to App Server, App Client and users (2.2.2, 2.3, and 2.4).
-\item When users select the restaurant from the set (3) which means the recommendation is finished, App Client will send the recommendation token with a finish flag to App Server (3.1). App Server will send an update request to Database (3.1.1) and after its success, the recommendation success screen will be shown to users (3.3).
+\item When users want to see a recommendation, \textit{App Client} will send an initial recommendation request to the \textit{App Server} (1.1), \textit{App Server} will create a new recommendation data (1.1.1 and 1.1.2) and send the recommendation back to \textit{App Client} (1.2). Next, \textit{App Client} will send the token to \textit{App Server} again (1.3). Once \textit{App Server} receives the token, it will fetch nearby restaurants (1.3.1 and 1.3.2) and send a recommendation request with the restaurants to \textit{Recommender} (1.4.1). \textit{Recommender} will generate a set of suggested restaurants and send them back to \textit{App Server} and \textit{App Client} (1.4.2 and 1.5). Lastly, \textit{App Client} will show a restaurant in the restaurant set to users  (1.6).
+\item Users will see the suggested restaurants. In this scenario, users choose to see more suggested restaurants (2). After that \textit{App Client} will send a recommendation token with current restaurants interaction data to filter out the suggested restaurants in the first set (2.1). The next process is generating a restaurant suggestion which is the same process as before, but this time, \textit{App Server} will send only the filtered restaurants to \textit{Recommender} (2.2.1). After the suggestion is generated, it will be sent back to \textit{App Server}, \textit{App Client} and users (2.2.2, 2.3, and 2.4).
+\item When users select the restaurant from the set (3) which means the recommendation is finished, \textit{App Client} will send the recommendation token with a finish flag to \textit{App Server} (3.1). \textit{App Server} will send an update request to \textit{Database} (3.1.1) and after its success, the recommendation success screen will be shown to users (3.3).
 \end{enumerate}
 
 
@@ -1304,8 +1304,8 @@ When a group of users wants to start a group recommendation, they firstly need t
 
 \textbf{Scenario}: A group of 2 people wants to create a new eating group by the first user creating a group and the other one joining the group.
 \begin{enumerate}
-\item The first member creates a group (1). App Client sends data to App Server (1.1). App Server generates a group pin code (1.1.1) and creates a new record in the database (1.1.2). Finally, the member will see a group confirmation page and a group pin code (1.3).
-\item After the member has the group pin code, they can share it to other members (2). When other members join a group with a pin code (2.1), App Server will update the record in the database (2.1.1) and other members will see the same group confirmation page as the person who created a group (2.2). The group information of the first member will also be updated (2.3).
+\item The first member creates a group (1). \textit{App Client} sends data to \textit{App Server} (1.1). \textit{App Server} generates a group pin code (1.1.1) and creates a new record in the database (1.1.2). Finally, the member will see a group confirmation page and a group pin code (1.3).
+\item After the member has the group pin code, they can share it to other members (2). When other members join a group with a pin code (2.1), \textit{App Server} will update the record in the database (2.1.1) and other members will see the same group confirmation page as the person who created a group (2.2). The group information of the first member will also be updated (2.3).
 \end{enumerate}
 
 
@@ -1321,9 +1321,9 @@ When a group of users wants to start a group recommendation, they firstly need t
 \newpage
 \textbf{Scenario}: A group of 2 people wants to have a restaurant recommendation for their group and they already have a group created.
 \begin{enumerate}
-\item When a head of the group which is the first member who created the group chooses to start a recommendation (1), App Client will request a new group recommendation to App Server (1.1). After that App Server and Recommender will generate a suggestion which has the same process as the individual recommendation (1.1.1 to 1.1.4). Note that Recommender can handle multiple users in the recommendation. Finally, the same suggested restaurant set will be shown to all members (1.3 and 1.4).
-\item The first member finishes selecting their restaurant by their preference (2). App Server will update a group data (2.1) and both of the members will receive the update group data (2.3 and 2.4). However, the recommendation is not completed yet, it needs to wait for the other member to finish selecting the restaurants.
-\item The second member finishes selecting the restaurants (3). App Server will update a group data again (3.1). In this time, App Client detects that every member has finished selecting the restaurant, so it will send a group finalization request with a finish flag (3.3). App Server will finalize the final restaurant to the group (3.3.1) and update the group data again (3.3.2). Finally, the final restaurant will be shown to every member (3.5 and 3.6) and the recommendation will be completed.
+\item When a head of the group which is the first member who created the group chooses to start a recommendation (1), \textit{App Client} will request a new group recommendation to \textit{App Server} (1.1). After that \textit{App Server} and \textit{Recommender} will generate a suggestion which has the same process as the individual recommendation (1.1.1 to 1.1.4). Note that \textit{Recommender} can handle multiple users in the recommendation. Finally, the same suggested restaurant set will be shown to all members (1.3 and 1.4).
+\item The first member finishes selecting their restaurant by their preference (2). \textit{App Server} will update a group data (2.1) and both of the members will receive the update group data (2.3 and 2.4). However, the recommendation is not completed yet, it needs to wait for the other member to finish selecting the restaurants.
+\item The second member finishes selecting the restaurants (3). \textit{App Server} will update a group data again (3.1). In this time, \textit{App Client} detects that every member has finished selecting the restaurant, so it will send a group finalization request with a finish flag (3.3). \textit{App Server} will finalize the final restaurant to the group (3.3.1) and update the group data again (3.3.2). Finally, the final restaurant will be shown to every member (3.5 and 3.6) and the recommendation will be completed.
 \end{enumerate}
 
 
@@ -1490,8 +1490,8 @@ After the group has been created and confirmed, the group recommendation will be
 After users choose to view their profile (number 6 in Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}), they will see the left picture in Figure~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}. They can choose to view their selected restaurant history by tapping the “History” button (1) and a list of selected restaurants will be shown (the right picture of Figure~\ref{fig:3ui_ProfileManagementPageUserInterfaceDesign}). They can also choose to edit their profile such as their name, gender, or birthdate or choose to edit their food preferences. They can reset their password and set the privacy setting under the “Privacy” section (2). They can go back to the main screen by tapping the arrow icon (3).
 
 
-\section{Database Structure}
-In this section, we explain our database structure in the Database component. Our database stores all information for our system as a NoSQL database. Then, we discuss the database collection’s name and description, the schema of each collection, and database indexing.
+\section{Database Structure} \label{sec:databasestructure}
+In this section, we explain our database structure in the \textit{Database} component. Our database stores all information for our system as a NoSQL database. Then, we discuss the database collection’s name and description, the schema of each collection, and database indexing.
 
 \newpage
 \subsection{Collections}
@@ -1711,7 +1711,7 @@ Lastly, the type score, rank score and cost score, are normalized with min-max n
 
 \subsection{Production Deployment}
 
-We will deploy our components that need to listen to requests and send requests to other components which are App Client, App Server, Recommender, and Database. App Client, App Server, and Recommender will be deployed on Google Cloud App Engine since the deployment service is flexible for multiple programming languages and supports auto scalability. Database will be deployed on MongoDB Atlas which is an official cloud deployment service for MongoDB databases. Both Google Cloud App Engine and MongoDB Atlas provide an interactive dashboard for monitoring the performance.
+We will deploy our components that need to listen to requests and send requests to other components which are \textit{App Client}, \textit{App Server}, \textit{Recommender}, and \textit{Database}. \textit{App Client}, \textit{App Server}, and \textit{Recommender} will be deployed on Google Cloud App Engine since the deployment service is flexible for multiple programming languages and supports auto scalability. \textit{Database} will be deployed on MongoDB Atlas which is an official cloud deployment service for MongoDB databases. Both Google Cloud App Engine and MongoDB Atlas provide an interactive dashboard for monitoring the performance.
 
 \subsection{User Evaluation}
 
@@ -1719,7 +1719,7 @@ We will test our application and gather feedback from 20 people. We will collect
 
 \subsection{Application Evaluation}
 
-The performance of main components, App Client, App Server, and Recommender, will be evaluated by monitoring the response latency and doing load tests. The production application performance metrics can also be retrieved by the Google Cloud App Engine dashboard.
+The performance of main components, \textit{App Client}, \textit{App Server}, and \textit{Recommender}, will be evaluated by monitoring the response latency and doing load tests. The production application performance metrics can also be retrieved by the Google Cloud App Engine dashboard.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1755,7 +1755,7 @@ Figure~\ref{fig:4FacebooksRestaurantDataExample} shows an example of Facebook Gr
 
 For restaurant data preprocessing, it consists of mainly 2 processes which are data transforming and restaurant duplication checking.
 
-In data transformation, we format our collected data into the right format from our database schema. This transformation process happens in the Data Service component and then it will send each restaurant to App Server. Consequently, App Server has a logic for solving restaurant duplication problems that we have faced. This issue is very common because some restaurants may create multiple Facebook pages. So, Facebook data did not guarantee that all of the restaurants in the data is unique. To fix this problem, App Server detects the duplicated restaurant.
+In data transformation, we format our collected data into the right format from our database schema. This transformation process happens in the \textit{Data Service} component and then it will send each restaurant to \textit{App Server}. Consequently, \textit{App Server} has a logic for solving restaurant duplication problems that we have faced. This issue is very common because some restaurants may create multiple Facebook pages. So, Facebook data did not guarantee that all of the restaurants in the data is unique. To fix this problem, \textit{App Server} detects the duplicated restaurant.
 
 \newpage
 \begin{figure}[H]\centering
@@ -1964,7 +1964,7 @@ In our first design of the group recommendation, each member will see the same s
 
 \section{Web Application Result}
 
-The web application result includes the results of server-side services as well as the results of the user interface or client-side service. The server-side services consist of 4 components: Data Service, App Server, Recommender, and Database, where the user interface result is from App Client. The full source code is available at \url{https://github.com/restaurant-recommender}.
+The web application result includes the results of server-side services as well as the results of the user interface or client-side service. The server-side services consist of 4 components: \textit{Data Service}, \textit{App Server}, \textit{Recommender}, and \textit{Database}, where the user interface result is from \textit{App Client}. The full source code is available at \url{https://github.com/restaurant-recommender}.
 
 \subsection{Server-side Services Result}
 
@@ -1975,11 +1975,11 @@ The web application result includes the results of server-side services as well 
 \caption{Restaurant Local Data from Facebook}\label{fig:4result_dataservice}
 \end{figure}\vspace{-24pt}
 
-This data service component is implemented as Python scripts. Figure~\ref{fig:4result_dataservice} shows the information about the local fetched data from Facebook. This data will be read and transformed into the right format before sending it to the App Server to create a restaurant in the system.
+This data service component is implemented as Python scripts. Figure~\ref{fig:4result_dataservice} shows the information about the local fetched data from Facebook. This data will be read and transformed into the right format before sending it to the \textit{App Server} to create a restaurant in the system.
 
 \subsubsection{App Server}
 
-App Server is implemented with TypeScript with Express web framework and has been deployed on Google Cloud App Engine. This component needs to listen to other components’ requests. The API specification is described in Table~\ref{tbl:4AppServerAPISpecification} below.
+\textit{App Server} is implemented with TypeScript with Express web framework and has been deployed on Google Cloud App Engine. This component needs to listen to other components’ requests. The API specification is described in Table~\ref{tbl:4AppServerAPISpecification} below.
 
 \begin{table}[H]
 \caption{App Server API Specification}\label{tbl:4AppServerAPISpecification}
@@ -2010,7 +2010,7 @@ POST & /api/recommendations/request & Get recommendation \\ \hline\hline
 
 \subsubsection{Recommender}
 
-Recommender is implemented with Python with Flask web framework and has been deployed on Google Cloud App Engine. This component needs to listen to other App Server’s requests. The API specification is described in Table~\ref{tbl:4RecommenderAPISpecification} below.
+\textit{Recommender} is implemented with Python with Flask web framework and has been deployed on Google Cloud App Engine. This component needs to listen to other \textit{App Server}’s requests. The API specification is described in Table~\ref{tbl:4RecommenderAPISpecification} below.
 
 \begin{table}[H]
 \caption{Recommender API Specification}\label{tbl:4RecommenderAPISpecification}
@@ -2449,9 +2449,9 @@ The average score for overall satisfaction is 4.2 out of 5. We can conclude that
 \caption{Application Performance Evaluation Request}\label{fig:4ApplicationPerformanceEvaluationRequest}
 \end{figure}\vspace{-24pt}
 
-For the application performance evaluation, we do the load test and monitor the latency of our main components: App Client, App Server, and Recommender. The load test is performed with 100 concurrent requests which simulate the scenario that 100 users are using the application at the exact same time.
+For the application performance evaluation, we do the load test and monitor the latency of our main components: \textit{App Client}, \textit{App Server}, and \textit{Recommender}. The load test is performed with 100 concurrent requests which simulate the scenario that 100 users are using the application at the exact same time.
 
-Figure~\ref{fig:4ApplicationPerformanceEvaluationRequest} shows a request for application performance evaluation. All 3 services can handle 100 concurrent requests without errors and have an average response time of 4,747.69 milliseconds. The longest response time is taken by Recommender, which is 11,243 milliseconds. Note that this is a scenario in which 100 users request a recommendation at the same time. If the number of concurrent users is reduced, the response time will be significantly decreased. Recommender also has the largest sent data size, which is 873.33 KB per second, because it needs a set of available nearby restaurants from the server. On the other hand, App Client has the largest received data size since servers send entire reference pages, related scripts, and assets to users.
+Figure~\ref{fig:4ApplicationPerformanceEvaluationRequest} shows a request for application performance evaluation. All 3 services can handle 100 concurrent requests without errors and have an average response time of 4,747.69 milliseconds. The longest response time is taken by \textit{Recommender}, which is 11,243 milliseconds. Note that this is a scenario in which 100 users request a recommendation at the same time. If the number of concurrent users is reduced, the response time will be significantly decreased. \textit{Recommender} also has the largest sent data size, which is 873.33 KB per second, because it needs a set of available nearby restaurants from the server. On the other hand, \textit{App Client} has the largest received data size since servers send entire reference pages, related scripts, and assets to users.
 
 All of our evaluation is tested with the production server deployment and database. However, since we use Google Cloud Platform for our deployment, it supports auto scaling and manages all of the network traffic for us. As a result, it can accomodate more concurrent users and have improved performance. Although the auto scaling setup is very easy, the deployment cost would be charged considerably higher. Another reason we cannot test with multiple instances is that Google Cloud Platform only allows us to run 1 instance per service, and our request to increase the quota was denied due to low utilization.
 
