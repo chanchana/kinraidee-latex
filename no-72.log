@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 18:13
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.11)  21 MAY 2021 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1380,19 +1380,19 @@ bmp)
 File: ./images/4GeneticAlgorithmExecutionTimewith10Genes.png Graphic file (type
  bmp)
 <./images/4GeneticAlgorithmExecutionTimewith10Genes.png>
- [112]
+ [112] [113]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 2491.
+(hyperref)                removed on input line 2499.
 
-[113
+[114
 
 ]
 File: ./images/5LINEMiniAppIntegration.png Graphic file (type bmp)
 <./images/5LINEMiniAppIntegration.png>
- [114] (./no-72.bbl [115]
+ [115] (./no-72.bbl [116]
 Underfull \hbox (badness 10000) in paragraph at lines 17--21
 []\TU/TimesNewRoman(0)/m/n/10 Wikipedia,  “Recommender system,” Available at []
 []$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] []
@@ -1471,7 +1471,7 @@ Underfull \hbox (badness 1264) in paragraph at lines 132--136
 [][][][][][][] []
  []
 
-[116
+[117
 
 ]
 Underfull \hbox (badness 3375) in paragraph at lines 171--175
@@ -1504,17 +1504,17 @@ Overfull \hbox (48.13pt too wide) in paragraph at lines 226--231
 [][][][][][][][][][][][][][][][][][]$[][]\TU/TimesNewRoman(0)/m/n/10 ,
  []
 
-) [117] [118]
+) [118] [119]
 
 Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2556.
+(hyperref)                replaced by space on input line 2564.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2558--2559
+Underfull \hbox (badness 10000) in paragraph at lines 2566--2567
 
  []
 
@@ -1525,7 +1525,7 @@ File: ./images/A1GenderofRespondents.png Graphic file (type bmp)
 <./images/A1GenderofRespondents.png>
 File: ./images/A1DistributionofRespondentsAge.png Graphic file (type bmp)
 <./images/A1DistributionofRespondentsAge.png>
-[119]
+[120]
 File: ./images/A1OccupationofRespondents.png Graphic file (type bmp)
 <./images/A1OccupationofRespondents.png>
 File: ./images/A1EstimatedDailyCostofEating.png Graphic file (type bmp)
@@ -1534,7 +1534,7 @@ File: ./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheResta
 urants.png Graphic file (type bmp)
 <./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheRestaurant
 s.png>
- [120] [121]
+ [121] [122]
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingAlone.png Graphic f
 ile (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingAlone.png>
@@ -1546,10 +1546,10 @@ png Graphic file (type bmp)
 <./images/A1NumberofRespondentsThinkingthatRestaurantSelectionisTheirPain.png>
 File: ./images/A1WhichMealHasProblemtheMost.png Graphic file (type bmp)
 <./images/A1WhichMealHasProblemtheMost.png>
- [122]
+ [123]
 File: ./images/A1ProblemBetweenDine-inandDelivery.png Graphic file (type bmp)
 <./images/A1ProblemBetweenDine-inandDelivery.png>
- [123]
+ [124]
 File: ./images/A1AverageTimetoSelecttheRestaurantinGroup.png Graphic file (type
  bmp)
 <./images/A1AverageTimetoSelecttheRestaurantinGroup.png>
@@ -1559,7 +1559,7 @@ irPain.png Graphic file (type bmp)
 n.png>
 File: ./images/A1TheFrequencyofGroupEatingProblems.png Graphic file (type bmp)
 <./images/A1TheFrequencyofGroupEatingProblems.png>
- [124]
+ [125]
 File: ./images/A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem.png Graph
 ic file (type bmp)
 <./images/A1TheMostTypeofGroupthatUsuallyOccurGroupEatingProblem.png>
@@ -1569,7 +1569,7 @@ png Graphic file (type bmp)
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily.png Grap
 hic file (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithFamily.png>
- [125]
+ [126]
 File: ./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend.png 
 Graphic file (type bmp)
 <./images/A1Top3ConditionstoFindtheRestaurantwhenEatingwithGirlfriend.png>
@@ -1579,11 +1579,11 @@ ic file (type bmp)
 File: ./images/A1HowInvolvedAreYouinMakingRestaurantDecisions.png Graphic file 
 (type bmp)
 <./images/A1HowInvolvedAreYouinMakingRestaurantDecisions.png>
- [126]
+ [127]
 File: ./images/A1SolutiontoSolveGroupEatingProblems.png Graphic file (type bmp)
 
 <./images/A1SolutiontoSolveGroupEatingProblems.png>
- [127]
+ [128]
 File: ./images/A1PercentageofRespondentsthatUsingRecommendationApplications.png
  Graphic file (type bmp)
 <./images/A1PercentageofRespondentsthatUsingRecommendationApplications.png>
@@ -1592,14 +1592,14 @@ File: ./images/A1RecommendationApplications.png Graphic file (type bmp)
 File: ./images/A1UsageProblemofExistingRecommendationApplication.png Graphic fi
 le (type bmp)
 <./images/A1UsageProblemofExistingRecommendationApplication.png>
- [128] [129] [130]
+ [129] [130] [131]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2748.
+(hyperref)                replaced by space on input line 2756.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2750--2751
+Underfull \hbox (badness 10000) in paragraph at lines 2758--2759
 
  []
 
@@ -1607,21 +1607,21 @@ File: ./images/A2AgeofRespondents.png Graphic file (type bmp)
 <./images/A2AgeofRespondents.png>
 File: ./images/A2OccupationofRespondents.png Graphic file (type bmp)
 <./images/A2OccupationofRespondents.png>
-[131]
+[132]
 File: ./images/A2NumberofRespondentsthatusingIndividualRecommendation.png Graph
 ic file (type bmp)
 <./images/A2NumberofRespondentsthatusingIndividualRecommendation.png>
 File: ./images/A2SatisfactionofRestaurantRecommendationforIndividual.png Graphi
 c file (type bmp)
 <./images/A2SatisfactionofRestaurantRecommendationforIndividual.png>
- [132]
+ [133]
 File: ./images/A2NumberofRespondentsthatusingGroupRecommendation.png Graphic fi
 le (type bmp)
 <./images/A2NumberofRespondentsthatusingGroupRecommendation.png>
 File: ./images/A2SatisfactionofRestaurantRecommendationforGroup.png Graphic fil
 e (type bmp)
 <./images/A2SatisfactionofRestaurantRecommendationforGroup.png>
- [133]
+ [134]
 File: ./images/A2ApplicationUsability.png Graphic file (type bmp)
 <./images/A2ApplicationUsability.png>
 File: ./images/A2UserInterfaceofthisapplication.png Graphic file (type bmp)
@@ -1630,30 +1630,30 @@ File: ./images/A2OverallSatisfaction.png Graphic file (type bmp)
 <./images/A2OverallSatisfaction.png>
 File: ./images/A2ChanceofUsersReturningtoUseAgain.png Graphic file (type bmp)
 <./images/A2ChanceofUsersReturningtoUseAgain.png>
- [134]
+ [135]
 File: ./images/A2OtherFeedbacksandSuggestions.png Graphic file (type bmp)
 <./images/A2OtherFeedbacksandSuggestions.png>
- [135] [136]
+ [136] [137]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 2860.
+(hyperref)                replaced by space on input line 2868.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2861--2862
+Underfull \hbox (badness 10000) in paragraph at lines 2869--2870
 
  []
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 2863.
-[137] [138] [139] [140]
+(Font)              scaled to size 9.0pt on input line 2871.
+[138] [139] [140] [141]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.0pt
-(hyperref)                replaced by space on input line 3004.
+(hyperref)                replaced by space on input line 3012.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3005--3006
+Underfull \hbox (badness 10000) in paragraph at lines 3013--3014
 
  []
 
@@ -1707,7 +1707,7 @@ braces):
 >  {thai/babelname}  =>  {thai}
 >  {thai/localnumeral}  =>  {thainumerals}
 >  {thai/Localnumeral}  =>  {thainumerals}.
-[141] (./no-72.aux
+[142] (./no-72.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
@@ -1727,4 +1727,4 @@ Here is how much of TeX's memory you used:
  319 hyphenation exceptions out of 8191
  110i,10n,117p,1219b,1860s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on no-72.pdf (159 pages).
+Output written on no-72.pdf (160 pages).
