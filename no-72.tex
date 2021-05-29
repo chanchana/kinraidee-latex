@@ -725,7 +725,7 @@ HTTP is a protocol that allows the fetching of resources, such as HTML documents
 \end{figure}\vspace{-24pt}
 \vspace{1em}
 
-Figure~\ref{fig:2http} shows how messages are communicated via the HTTP protocol. As you can see clients and servers communicate by exchanging individual messages. \cite{AnoverviewofHTTP} The messages sent from clients are requests. and the reply messages from servers are called responses.
+From Figure~\ref{fig:2http}, it shows how messages are communicated via the HTTP protocol. As you can see clients and servers communicate by exchanging individual messages. \cite{AnoverviewofHTTP} The messages sent from clients are requests. and the reply messages from servers are called responses.
 
 HTTP defines a set of request methods for requests to indicate the desired action to be performed for a given resource. Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs. \cite{HTTPrequestmethods} The common HTTP verbs are shown in Table~\ref{tbl:2CommonHTTPVerbs}.
 
@@ -954,7 +954,7 @@ The knowledge in this paper that used the genetic algorithm is close to our syst
 \subsection{Use Case Narrative}
 \subsubsection{Login}
 
-\textbf{Name}: Users Login\\
+\noindent\textbf{Name}: Users Login\\
 \textbf{Actors}: Users\\
 \textbf{Goal}: Users want to login into the system.\\
 \textbf{Preconditions}: None\\
@@ -971,25 +971,7 @@ The knowledge in this paper that used the genetic algorithm is close to our syst
 \textbf{Postconditions}: None
 
 \subsubsection{Register}
-
-\textbf{Name}: Users Login\\
-\textbf{Actors}: Users\\
-\textbf{Goal}: Users want to login into the system.\\
-\textbf{Preconditions}: None\\
-\textbf{Main Success Scenario}:\\
-\textbf{1}. Users input their valid username and password.\\
-\textbf{2}. User is logged in.\\
-\textbf{Extensions (a)}\\
-\textbf{1a}. Input username or password is not correct.\\
-\textbf{2a}. System asks a user to input username and password again.\\
-\textbf{3a}. Go back to the main scenario number 1.\\
-\textbf{Extensions (b)}\\
-\textbf{1b}. Input username or password is not correct.\\
-\textbf{2b}. Users go to a registration page.\\
-\textbf{Postconditions}: None
-
-\subsubsection{Register}
-\textbf{Name}: Users Registration\\
+\noindent\textbf{Name}: Users Registration\\
 \textbf{Actors}: Users\\
 \textbf{Goal}: Users do not have an account and want to use the system.\\
 \textbf{Preconditions}: User open registration page.\\
@@ -1014,7 +996,7 @@ The knowledge in this paper that used the genetic algorithm is close to our syst
 \textbf{Postconditions}: None
 
 \subsubsection{Individual Recommendation}
-\textbf{Name}: Individual Recommendation\\
+\noindent\textbf{Name}: Individual Recommendation\\
 \textbf{Actors}: Users\\
 \textbf{Goal}: Users want the system to suggest restaurants for them.\\
 \textbf{Preconditions}: User is logged in and opens an individual recommendation page.\\
@@ -1039,7 +1021,7 @@ The knowledge in this paper that used the genetic algorithm is close to our syst
 \textbf{Postconditions}: None
 
 \subsubsection{Group Recommendation}
-\textbf{Name}: Group Recommendation\\
+\noindent\textbf{Name}: Group Recommendation\\
 \textbf{Actors}: Users\\
 \textbf{Goal}: Users want the system to suggest restaurants for their group.\\
 \textbf{Preconditions}: Users are logged in and open a group recommendation page.\\
@@ -1053,7 +1035,7 @@ The knowledge in this paper that used the genetic algorithm is close to our syst
 \textbf{7}. Everybody selects their restaurant they want to go to by their preference.\\
 \textbf{8}. Everybody finished selecting the restaurants.\\
 \textbf{9}. The system shows the final restaurant to the group.\\
-\textbf{9}. Recommendation completed\\
+\textbf{10}. Recommendation completed\\
 \textbf{Extensions (a)} \\
 \textbf{3a}. Users choose to join the group by inputting the group pin.\\
 \textbf{4a}. Group pin is invalid.\\
@@ -1064,16 +1046,18 @@ The knowledge in this paper that used the genetic algorithm is close to our syst
 \textbf{Postconditions}: None
 
 \subsubsection{Edit the Food Preference}
+\noindent\textbf{Name}: Food Preference\\
 \textbf{Actors}: Users\\
 \textbf{Goal}: Users want to edit their food preference.\\
 \textbf{Preconditions}: Users are logged in.\\
 \textbf{Main Success Scenario}: \\
 \textbf{1}. Users choose to edit their food preference.\\
 \textbf{2}. The old food preference will be shown and let users edit them.\\
-\textbf{5}. User confirm the modification\\
+\textbf{3}. User confirm the modification\\
 \textbf{Postconditions}: None
 
 \subsubsection{See the Favorite List}
+\noindent\textbf{Name}: Favorite List\\
 \textbf{Actors}: Users\\
 \textbf{Goal}: Users want to see their restaurant favorite list.\\
 \textbf{Preconditions}: Users are logged in\\
@@ -1087,7 +1071,7 @@ The knowledge in this paper that used the genetic algorithm is close to our syst
 \textbf{Postconditions}: None
 
 \subsubsection{Logout}
-\textbf{Name}: Users Logout\\
+\noindent\textbf{Name}: Users Logout\\
 \textbf{Actors}: Users\\
 \textbf{Goal}: Users want to logout from the system.\\
 \textbf{Preconditions}: Users are logged in.\\
@@ -1146,7 +1130,7 @@ We separate these components into 2 sides which are the backend side and the fro
 \caption{System Architecture}\label{fig:3architect}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:3architect} shows the detailed architecture of our system. As we mentioned before, our system consists of 5 components. Each of these components communicates via HTTP request and response. All of the components except \textit{Database} are deployed using Google Cloud App Engine and \textit{Database} is deployed via MongoDB Atlas. There are 3 external services that our system needs to be interacted with which are Google Cloud Storage, Facebook Graph API and Longdo Map API. Google Cloud Storage is used for storing restaurant’s images. Facebook Graph API is used for querying primary restaurant information. Longdo Map API is used to query places by keywords. We will walk through each component in detail in the following section.
+From Figure~\ref{fig:3architect}, it shows the detailed architecture of our system. As we mentioned before, our system consists of 5 components. Each of these components communicates via HTTP request and response. All of the components except \textit{Database} are deployed using Google Cloud App Engine and \textit{Database} is deployed via MongoDB Atlas. There are 3 external services that our system needs to be interacted with which are Google Cloud Storage, Facebook Graph API and Longdo Map API. Google Cloud Storage is used for storing restaurant’s images. Facebook Graph API is used for querying primary restaurant information. Longdo Map API is used to query places by keywords. We will walk through each component in detail in the following section.
 
 \newpage
 \subsubsection{App Server Architecture}
@@ -1323,7 +1307,7 @@ This section presents the user interface design of the restaurant recommendation
 The user interface of our web application includes login, registration, individual restaurant recommendation, group restaurant recommendation, and users’ profile as follows.
 
 \newpage
-\subsubsection{Login Page}
+\subsection{Login Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_StartPageUserInterfaceDesign.png}
 \caption{Start Page User Interface Design}\label{fig:3ui_StartPageUserInterfaceDesign}
@@ -1339,7 +1323,7 @@ The user interface of our web application includes login, registration, individu
 When users open the application, the login page will appear first if they did not login yet. They need to input their username and password in the fields (1) then They can tap the “Login” button (2) to log in. After login, they will see the home page (Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}). If they do not have an account, they can tap on the “Register” button (3) and they will see the registration page (Figure~\ref{fig:3ui_RegistrationPageUserInterfaceDesign}). However, they can choose to login without any account by tapping on the “Login as Guest” button (4) and the system will directly bring them to the home page (Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}).
 
 \newpage
-\subsubsection{Registration Page}
+\subsection{Registration Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_RegistrationPageUserInterfaceDesign.png}
 \caption{Registration Page User Interface Design}\label{fig:3ui_RegistrationPageUserInterfaceDesign}
@@ -1368,10 +1352,10 @@ If users choose to register, the registration page will appear and ask users to 
 \item Skip button, lets users skip the food preference setup process.
 \end{enumerate}
 
-After users input the valid username and password, the next step is user profile setup. This process consists of 2 steps which are general information setup and food preferences information setup. The first one on the left of Figure~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign} is a general information setup step. Users are required to fill in all the information in the form and accept the terms and privacy (1) then they can proceed to the next step by tapping the “Next” button (2). For the second step, preferences information set up, they will see many available categories of food. They can choose their food preferences in the form (3) and tap on “Finish” to complete the registration. However, if they do not want to set their preferences yet, they can tap on the “Skip” button (5) to skip the preferences setup process. After the registration is completed, they will see the home page (Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}) and start using our system.
+After users input the valid username and password, the next step is user profile setup. This process consists of 2 steps which are general information setup and food preferences information setup. The first one on the left of From Figure~\ref{fig:3ui_ProfileSetupPageUserInterfaceDesign}, it is a general information setup step. Users are required to fill in all the information in the form and accept the terms and privacy (1) then they can proceed to the next step by tapping the “Next” button (2). For the second step, preferences information set up, they will see many available categories of food. They can choose their food preferences in the form (3) and tap on “Finish” to complete the registration. However, if they do not want to set their preferences yet, they can tap on the “Skip” button (5) to skip the preferences setup process. After the registration is completed, they will see the home page (Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}) and start using our system.
 
 \newpage
-\subsubsection{Individual Restaurant Recommendation Page}
+\subsection{Individual Restaurant Recommendation Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_HomePageUserInterfaceDesign.png}
 \caption{Home Page User Interface Design}\label{fig:3ui_HomePageUserInterfaceDesign}
@@ -1419,7 +1403,7 @@ After users tap on the “Filter” button on the home page (number 3 on Figure~
 On the home page which users see the suggested restaurant, if users are satisfied with the suggested restaurant, they can swipe right (1) or tap on the “Yummy” button (2). After that, the recommendation success page will appear (the right picture in Figure~\ref{fig:3ui_RecommendationSuccessPageUserInterfaceDesign}). On the success page, users can see the restaurant information in the center of the screen (3). They can give a rating score for the recommendation from 1 star to 5 stars (4). After they are done seeing the information, they can tap on the “Done” button (5) to close the success page and they will see the home page (Figure~\ref{fig:3ui_HomePageUserInterfaceDesign}) again.
 
 \newpage
-\subsubsection{Group Restaurant Recommendation Page}
+\subsection{Group Restaurant Recommendation Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_GroupJoiningUserInterfaceDesign.png}
 \caption{Group Joining User Interface Design}\label{fig:3ui_GroupJoiningUserInterfaceDesign}
@@ -1465,7 +1449,7 @@ After someone joins the group, all joined members will see this group confirmati
 After the group has been created and confirmed, the group recommendation will begin. All members will see the same suggested set of restaurants. Each member will choose whether they like or not but tapping “Yummy” and “Nah” or swiping (1) is the same as in individual recommendation. The group recommendation will be finished after all members like the same restaurant. The top bar (2) indicates the highest number of members that agree on the same restaurant, when it is full, it means everybody agrees on the same restaurant and the recommendation is finished. Users can see the members by tapping the “Member” button (3). Users still can set the filter by tapping the “Filter” button (4) but this time the filters will be applied to every member in the group.
 
 \newpage
-\subsubsection{Profile Page}
+\subsection{Profile Page}
 \begin{figure}[H]\centering
 \includegraphics[height=300pt]{./images/3ui_ProfileManagementPageUserInterfaceDesign.png}
 \caption{Profile Management Page User Interface Design}\label{fig:3ui_ProfileManagementPageUserInterfaceDesign}
@@ -1598,11 +1582,11 @@ In conclusion, we decided to use the \textit{\textbf{Genetic Algorithm}} for our
 \caption{Restaurant Recommendation Process for Individual}\label{fig:3GeneticAlgorithmFlowchart}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:3GeneticAlgorithmFlowchart} displays the main process of the restaurant recommendation by applying the principles of the Genetic Algorithm to the system.
+From Figure~\ref{fig:3GeneticAlgorithmFlowchart}, it displays the main process of the restaurant recommendation by applying the principles of the Genetic Algorithm to the system.
 
 \textbf{1. Initial Population}\par
 
-One set of the restaurant recommendations consists of 10 restaurants. In the genetic algorithm, one chromosome then contains 10 genes for 10 restaurants.  Initially, restaurants are drawn from the database based on the user's surroundings or selected locations only. Then, the restaurants are randomly assigned to each gene in the chromosome. Figure~\ref{fig:3ga_init} shows the example of the genes in one chromosome that has a list of restaurants R1 to R10. We set the number of chromosomes to 100. Therefore, 100 chromosomes are initialized in the same manner.
+One set of the restaurant recommendations consists of 10 restaurants. In the genetic algorithm, one chromosome then contains 10 genes for 10 restaurants.  Initially, restaurants are drawn from the database based on the user's surroundings or selected locations only. Then, the restaurants are randomly assigned to each gene in the chromosome. From Figure~\ref{fig:3ga_init}, it shows the example of the genes in one chromosome that has a list of restaurants R1 to R10. We set the number of chromosomes to 100. Therefore, 100 chromosomes are initialized in the same manner.
 
 \begin{figure}[H]\centering
 \includegraphics[width=300pt]{./images/3ga_init.png}
@@ -1731,7 +1715,7 @@ Our system needs to recommend restaurants to users, so restaurant data is crucia
 \caption{Thai Chana’s Restaurant Data Example}\label{fig:4ThaiChanasRestaurantDataExample}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4ThaiChanasRestaurantDataExample} shows an example of Thai Chana’s restaurant data. However, there is one issue with this data which is it does not contain information about the categories of restaurants which we need to use in the data analytic and machine learning part. To overcome this issue, we will use Facebook Graph API for additional information. We used names of restaurants from Thai Chana data to query new restaurant information from Facebook Graph API which contains tags about restaurant categories.
+From Figure~\ref{fig:4ThaiChanasRestaurantDataExample}, it shows an example of Thai Chana’s restaurant data. However, there is one issue with this data which is it does not contain information about the categories of restaurants which we need to use in the data analytic and machine learning part. To overcome this issue, we will use Facebook Graph API for additional information. We used names of restaurants from Thai Chana data to query new restaurant information from Facebook Graph API which contains tags about restaurant categories.
 
 \newpage
 \begin{figure}[H]\centering
@@ -1739,7 +1723,7 @@ Figure~\ref{fig:4ThaiChanasRestaurantDataExample} shows an example of Thai Chana
 \caption{Facebook’s Restaurant Data Example}\label{fig:4FacebooksRestaurantDataExample}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4FacebooksRestaurantDataExample} shows an example of Facebook Graph API data. The data contains all information we need such as name, coordinate and restaurant profile such as restaurant categories, price range, and engagement. Moreover, some restaurant data contains image URLs for the restaurant which is very useful for users’ consideration.
+From Figure~\ref{fig:4FacebooksRestaurantDataExample}, it shows an example of Facebook Graph API data. The data contains all information we need such as name, coordinate and restaurant profile such as restaurant categories, price range, and engagement. Moreover, some restaurant data contains image URLs for the restaurant which is very useful for users’ consideration.
 
 \subsection{Preprocessing Process}
 
@@ -1755,7 +1739,7 @@ In data transformation, we format our collected data into the right format from 
 
 The restaurant duplication checking is done by checking their name’s similarity with a ratio of 0.65 and their distance from the new incoming restaurant with all of the existing restaurants in the 200 meters range from our database. The system will choose to store only the restaurant that contains more information.
 
-Figure~\ref{fig:4RestaurantDuplicationChecking} shows an example of restaurant duplication checking. We can see that “McDonald’s PARAGON” and “McDonald’s SiamParagon” are very close to each other and the name similarity is more than our threshold. Therefore, the system will classify one of the restaurants as a duplicate and choose to store only one that contains more information. However, “McDonald’s MBK” has a similar name with “McDonald’s PARAGON” but it is not in the range of 200 meters. The system then will not detect this restaurant as a duplicate, which is correct because it is a different branch.
+From Figure~\ref{fig:4RestaurantDuplicationChecking}, it shows an example of restaurant duplication checking. We can see that “McDonald’s PARAGON” and “McDonald’s SiamParagon” are very close to each other and the name similarity is more than our threshold. Therefore, the system will classify one of the restaurants as a duplicate and choose to store only one that contains more information. However, “McDonald’s MBK” has a similar name with “McDonald’s PARAGON” but it is not in the range of 200 meters. The system then will not detect this restaurant as a duplicate, which is correct because it is a different branch.
 
 \subsection{Result}
 
@@ -1766,21 +1750,21 @@ After the restaurant data has been collected, transformed, and cleaned, we got a
 \caption{Restaurant’s Location in Map}\label{fig:4RestaurantsLocationinMap}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4RestaurantsLocationinMap} illustrates the distribution of the restaurant’s locations in our data. The data contains restaurants distributed around Bangkok and spread a little bit to the perimeters. Most of the restaurants are located in the center of Bangkok.
+From Figure~\ref{fig:4RestaurantsLocationinMap}, it illustrates the distribution of the restaurant’s locations in our data. The data contains restaurants distributed around Bangkok and spread a little bit to the perimeters. Most of the restaurants are located in the center of Bangkok.
 
 \begin{figure}[H]\centering
 \includegraphics[width=350pt]{./images/4RestaurantsCategoryDistribution.png}
 \caption{Restaurant’s Category Distribution}\label{fig:4RestaurantsCategoryDistribution}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4RestaurantsCategoryDistribution} shows the distribution of the restaurant category in our data. The top restaurant categories are Restaurant, Thai Restaurant, Food \& Beverage, and Fast Food Restaurant. However, we cannot use the tag Restaurant because it does not give any information about the restaurant. Our data contains restaurants that have only one Restaurant tag around 3,000 restaurants. We still need to include this information but it might not be accurate when we recommend restaurants to users.
+From Figure~\ref{fig:4RestaurantsCategoryDistribution}, it shows the distribution of the restaurant category in our data. The top restaurant categories are Restaurant, Thai Restaurant, Food \& Beverage, and Fast Food Restaurant. However, we cannot use the tag Restaurant because it does not give any information about the restaurant. Our data contains restaurants that have only one Restaurant tag around 3,000 restaurants. We still need to include this information but it might not be accurate when we recommend restaurants to users.
 
 \begin{figure}[H]\centering
 \includegraphics[width=350pt]{./images/4RestaurantsPriceRangeDistribution.png}
 \caption{Restaurant’s Price Range Distribution}\label{fig:4RestaurantsPriceRangeDistribution}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4RestaurantsPriceRangeDistribution} shows the distribution of restaurants' price range. Price range level 2, 100 - 250 baht, is found in most restaurants, followed by level 1, lower than 100 baht, and level 3, 251 - 500 baht. The least price range found in our data is level 4, more than 500 baht. However, only 5,561 restaurants in our data specified their price range which is around 50\% of total restaurants.
+From Figure~\ref{fig:4RestaurantsPriceRangeDistribution}, it shows the distribution of restaurants' price range. Price range level 2, 100 - 250 baht, is found in most restaurants, followed by level 1, lower than 100 baht, and level 3, 251 - 500 baht. The least price range found in our data is level 4, more than 500 baht. However, only 5,561 restaurants in our data specified their price range which is around 50\% of total restaurants.
 
 \begin{figure}[H]\centering
 \includegraphics[width=350pt]{./images/4ExampleofRestaurantPicturefromFacebookPage.jpeg}
@@ -1788,7 +1772,7 @@ Figure~\ref{fig:4RestaurantsPriceRangeDistribution} shows the distribution of re
 \end{figure}\vspace{-24pt}
 \vspace{1em}
 
-Figure~\ref{fig:4ExampleofRestaurantPicturefromFacebookPage} is an example of a restaurant picture in our data. The picture came from the restaurant's Facebook page photo cover image. The image is a crucial part of considering a restaurant from our feedback. However, only 3,513 restaurants in our data contain pictures which are around only 30\%. This is also one issue that we need to improve in order to make users’ restaurant consideration easier.
+From Figure~\ref{fig:4ExampleofRestaurantPicturefromFacebookPage}, it is an example of a restaurant picture in our data. The picture came from the restaurant's Facebook page photo cover image. The image is a crucial part of considering a restaurant from our feedback. However, only 3,513 restaurants in our data contain pictures which are around only 30\%. This is also one issue that we need to improve in order to make users’ restaurant consideration easier.
 
 \begin{figure}[H]\centering
 \includegraphics[width=350pt]{./images/4ExampleofUnrelatedRestaurantPicturefromFacebookPage.jpeg}
@@ -1812,7 +1796,7 @@ To collect this data, we implemented a data collection tool that lets users regi
 \caption{Registration Page of the Data Collection Tool}\label{fig:4RegistrationPageoftheDataCollectionTool}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4RegistrationPageoftheDataCollectionTool} shows the registration page of the data collection tool. This is the first page that interviewees see. They need to input their new username, general profile information such as gender and birthdate and food preference which let users select from hate to love.
+From Figure~\ref{fig:4RegistrationPageoftheDataCollectionTool}, it shows the registration page of the data collection tool. This is the first page that interviewees see. They need to input their new username, general profile information such as gender and birthdate and food preference which let users select from hate to love.
 
 \newpage
 \begin{figure}[H]\centering
@@ -1848,35 +1832,35 @@ We collected data from 143 people which contains 5,102 interaction data. The dat
 \caption{Distribution of People’s Location}\label{fig:4DistributionofPeoplesLocation}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4DistributionofPeoplesLocation} shows the distribution of people’s location while doing the survey. The top 2 most locations are Thung Khru district which mainly KMUTT students and Pathum Wan district which is the center of Bangkok.
+From Figure~\ref{fig:4DistributionofPeoplesLocation}, it shows the distribution of people’s location while doing the survey. The top 2 most locations are Thung Khru district which mainly KMUTT students and Pathum Wan district which is the center of Bangkok.
 
 \begin{figure}[H]\centering
 \includegraphics[width=250pt]{./images/4TotalNumberofInteractedRestaurantsperPerson.png}
 \caption{Total Number of Interacted Restaurants per Person}\label{fig:4TotalNumberofInteractedRestaurantsperPerson}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4TotalNumberofInteractedRestaurantsperPerson} shows the total number of interacted restaurants per person. Most people interact with 20 restaurants, which is the minimum number, but there are a lot of people who kindly do 60 interactions. The average number of interactions is 36 restaurants. In total, we got a total of 5,102 interactions from this survey.
+From Figure~\ref{fig:4TotalNumberofInteractedRestaurantsperPerson}, it shows the total number of interacted restaurants per person. Most people interact with 20 restaurants, which is the minimum number, but there are a lot of people who kindly do 60 interactions. The average number of interactions is 36 restaurants. In total, we got a total of 5,102 interactions from this survey.
 
 \begin{figure}[H]\centering
 \includegraphics[width=250pt]{./images/4VisualizationofPeoplesDemographic.png}
 \caption{Visualization of People’s Demographic}\label{fig:4VisualizationofPeoplesDemographic}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4VisualizationofPeoplesDemographic} shows the summary of demographics in our data. The left visualization in Figure~\ref{fig:4VisualizationofPeoplesDemographic} shows the gender distribution which is almost half-and-half for males and females. The right visualization shows the age distribution. The highest age range in our data is the age of 20 to 25 years old. There are also a few people aged around 30 to 35 years old and more than 50 years old only a little.
+From Figure~\ref{fig:4VisualizationofPeoplesDemographic}, it shows the summary of demographics in our data. The left visualization in Figure~\ref{fig:4VisualizationofPeoplesDemographic} shows the gender distribution which is almost half-and-half for males and females. The right visualization shows the age distribution. The highest age range in our data is the age of 20 to 25 years old. There are also a few people aged around 30 to 35 years old and more than 50 years old only a little.
 
 \begin{figure}[H]\centering
 \includegraphics[width=250pt]{./images/4AverageScoreofEachRestaurantCategoryfromPeople.png}
 \caption{Average Score of Each Restaurant Category from People}\label{fig:4AverageScoreofEachRestaurantCategoryfromPeople}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4AverageScoreofEachRestaurantCategoryfromPeople} shows the average restaurant category score from all of our people. The score ranges from 0 to 100 which refers to hate and love respectively. The top three most favorite categories are Japanese restaurant, Thai restaurant, and shabu shabu restaurant respectively. The least favorite restaurant category is Chinese restaurants.
+From Figure~\ref{fig:4AverageScoreofEachRestaurantCategoryfromPeople}, it shows the average restaurant category score from all of our people. The score ranges from 0 to 100 which refers to hate and love respectively. The top three most favorite categories are Japanese restaurant, Thai restaurant, and shabu shabu restaurant respectively. The least favorite restaurant category is Chinese restaurants.
 
 \begin{figure}[H]\centering
 \includegraphics[width=200pt]{./images/4DistributionofUsersRatings.png}
 \caption{Distribution of User’s Ratings}\label{fig:4DistributionofUsersRatings}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4DistributionofUsersRatings} shows the distribution of the user’s rating in our data from -2 which means the user is not interested in the restaurant to 2 which means the user is interested in that restaurant. The most rated score is 0 which is a neutral score.
+From Figure~\ref{fig:4DistributionofUsersRatings}, it shows the distribution of the user’s rating in our data from -2 which means the user is not interested in the restaurant to 2 which means the user is interested in that restaurant. The most rated score is 0 which is a neutral score.
 
 This collected user behavior data will be used to be our data set for training the models in our system.
 
@@ -1965,7 +1949,7 @@ The web application result includes the results of server-side services as well 
 \caption{Restaurant Local Data from Facebook}\label{fig:4result_dataservice}
 \end{figure}\vspace{-24pt}
 
-This data service component is implemented as Python scripts. Figure~\ref{fig:4result_dataservice} shows the information about the local fetched data from Facebook. This data will be read and transformed into the right format before sending it to the \textit{App Server} to create a restaurant in the system.
+This data service component is implemented as Python scripts. From Figure~\ref{fig:4result_dataservice}, it shows the information about the local fetched data from Facebook. This data will be read and transformed into the right format before sending it to the \textit{App Server} to create a restaurant in the system.
 
 \subsubsection{App Server}
 
@@ -2017,7 +2001,7 @@ POST & /recommend/<type> & Request a set of suggested restaurants. “type” is
 \caption{Group Recommendation User Journey Changes}\label{fig:4mongodashboard}
 \end{figure}\vspace{-24pt}
 
-Our NoSQL database is deployed on MongoDB Atlas which is an official cloud deployment tool for MongoDB. Figure~\ref{fig:4mongodashboard} shows the monitoring dashboard of our database.
+Our NoSQL database is deployed on MongoDB Atlas which is an official cloud deployment tool for MongoDB. From Figure~\ref{fig:4mongodashboard}, it shows the monitoring dashboard of our database.
 
 
 \subsection{User Interface Result}
@@ -2265,7 +2249,7 @@ In ‘id’ column refers to the unique identification of each restaurant which 
 \caption{Sample of Selected Restaurant Data}\label{fig:4SampleofSelectedRestaurantData}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4SampleofSelectedRestaurantData} is the example data of the selected restaurant that we are going to use in this experiment.
+From Figure~\ref{fig:4SampleofSelectedRestaurantData}, it is the example data of the selected restaurant that we are going to use in this experiment.
 
 \subsection{Collaborative Filtering Technique} \label{sec:cf}
 
@@ -2289,7 +2273,7 @@ So, the more restaurants in the database, the more dimensionality per user by th
 \caption{Function to Find a Similarity Between User}\label{fig:4FunctiontoFindaSimilarityBetweenUser}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4FunctiontoFindaSimilarityBetweenUser} is a function to find a user similarity with cosine similarity by selecting only the top 3 users that have the most similarity to the target user. From this function, it will return the user ID of the top 3 users with a similarity score of each user with the target user as the example in Figure~\ref{fig:4ReturnValuefromsimilaruesrFunction} below.
+From Figure~\ref{fig:4FunctiontoFindaSimilarityBetweenUser}, it is a function to find a user similarity with cosine similarity by selecting only the top 3 users that have the most similarity to the target user. From this function, it will return the user ID of the top 3 users with a similarity score of each user with the target user as the example in Figure~\ref{fig:4ReturnValuefromsimilaruesrFunction} below.
 
 \begin{figure}[H]\centering
 \includegraphics[width=350pt]{./images/4ReturnValuefromsimilar_uesrFunction.png}
@@ -2316,7 +2300,7 @@ Lastly, we get the average ratings from similar users to filter only restaurants
 \caption{Example of Top 10 Recommended Restaurants for User}\label{fig:4ExampleofTop10RecommendedRestaurantsforUser}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:4ExampleofTop10RecommendedRestaurantsforUser} is the final result from the recommend\_item function which recommends user ID number 1 by sorting the average ratings of the top 3 similar users from highest to lowest. As you can see from the figure, the category of each restaurant is in the same direction e.g. Thai restaurant category which occurs 3 times, or noodle house category which occurs 2 times.
+From Figure~\ref{fig:4ExampleofTop10RecommendedRestaurantsforUser}, it is the final result from the recommend\_item function which recommends user ID number 1 by sorting the average ratings of the top 3 similar users from highest to lowest. As you can see from the figure, the category of each restaurant is in the same direction e.g. Thai restaurant category which occurs 3 times, or noodle house category which occurs 2 times.
 
 \begin{figure}[H]\centering
 \includegraphics[width=200pt]{./images/4AverageRatingsofTop10RecommendedRestaurants.png}
@@ -2358,7 +2342,7 @@ For individual recommendation results, we tested the algorithm with the sample o
 \caption{Result of Group Recommendation Algorithm}\label{fig:4ResultofGroupRecommendationAlgorithm}
 \end{figure}\vspace{-24pt}
 
-As a part of the group recommendation, developers tested the algorithm using a 2-member group with restaurant preferences as shown in  Figure~\ref{fig:4SampleGroupofTwosPreferences} and using Siam Paragon as a restaurant's recommendation location as well as individual recommendation. The system can recommend 6 restaurants according to the preferences of the members as shown in Figure~\ref{fig:4ResultofGroupRecommendationAlgorithm}. From the figure, we can see that all restaurants match with the users preferences including Korean, Thai and Japanese restaurants. Moreover, the fitness value of the generation dramatically increased to 75.
+As a part of the group recommendation, developers tested the algorithm using a 2-member group with restaurant preferences as shown in Figure~\ref{fig:4SampleGroupofTwosPreferences} and using Siam Paragon as a restaurant's recommendation location as well as individual recommendation. The system can recommend 6 restaurants according to the preferences of the members as shown in Figure~\ref{fig:4ResultofGroupRecommendationAlgorithm}. From the figure, we can see that all restaurants match with the users preferences including Korean, Thai and Japanese restaurants. Moreover, the fitness value of the generation dramatically increased to 75.
 
 \subsubsection{Rank Aggregation Result}
 
@@ -2372,7 +2356,7 @@ As a part of the group recommendation, developers tested the algorithm using a 2
 \caption{Final Score from the Sample}\label{fig:4FinalScorefromtheSample}
 \end{figure}\vspace{-24pt}
 
-After the genetic algorithm generates a set of suggested restaurants and lets each user rank the restaurants based on their preferences, rank aggregation finalizes that information to show the most suitable final restaurant for that group by computing the score for each restaurant. Figure~\ref{fig:4SampleofSuggestedRestaurantsandRanksfromUsers} shows the sample of generated restaurants that has shown to users and how each user ranks their restaurant. After that the rank aggregation algorithm calculates the score for each restaurant as stated in Figure~\ref{fig:4FinalScorefromtheSample}. As a result, the final restaurant for this input is a restaurant named Hua Pla Chongnonsea with a highest score of 3.4. This result shows that our finalization process considers not only users’ ranking but also restaurant’s type and cost.
+After the genetic algorithm generates a set of suggested restaurants and lets each user rank the restaurants based on their preferences, rank aggregation finalizes that information to show the most suitable final restaurant for that group by computing the score for each restaurant. From Figure~\ref{fig:4SampleofSuggestedRestaurantsandRanksfromUsers}, it shows the sample of generated restaurants that has shown to users and how each user ranks their restaurant. After that the rank aggregation algorithm calculates the score for each restaurant as stated in Figure~\ref{fig:4FinalScorefromtheSample}. As a result, the final restaurant for this input is a restaurant named Hua Pla Chongnonsea with a highest score of 3.4. This result shows that our finalization process considers not only users’ ranking but also restaurant’s type and cost.
 
 
 \section{Evaluation Result}
@@ -2449,7 +2433,7 @@ The average score for overall satisfaction is 4.2 out of 5. We can conclude that
 
 For the application performance evaluation, we do the load test and monitor the latency of our main components: \textit{App Client}, \textit{App Server}, and \textit{Recommender}. The load test is performed with 100 concurrent requests which simulate the scenario that 100 users are using the application at the exact same time.
 
-Figure~\ref{fig:4ApplicationPerformanceEvaluationRequest} shows a request for application performance evaluation. All 3 services can handle 100 concurrent requests without errors and have an average response time of 4,747.69 milliseconds. The longest response time is taken by \textit{Recommender}, which is 11,243 milliseconds. Note that this is a scenario in which 100 users request a recommendation at the same time. If the number of concurrent users is reduced, the response time will be significantly decreased. \textit{Recommender} also has the largest sent data size, which is 873.33 KB per second, because it needs a set of available nearby restaurants from the server. On the other hand, \textit{App Client} has the largest received data size since servers send entire reference pages, related scripts, and assets to users.
+From Figure~\ref{fig:4ApplicationPerformanceEvaluationRequest}, it shows a request for application performance evaluation. All 3 services can handle 100 concurrent requests without errors and have an average response time of 4,747.69 milliseconds. The longest response time is taken by \textit{Recommender}, which is 11,243 milliseconds. Note that this is a scenario in which 100 users request a recommendation at the same time. If the number of concurrent users is reduced, the response time will be significantly decreased. \textit{Recommender} also has the largest sent data size, which is 873.33 KB per second, because it needs a set of available nearby restaurants from the server. On the other hand, \textit{App Client} has the largest received data size since servers send entire reference pages, related scripts, and assets to users.
 
 All of our evaluation is tested with the production server deployment and database. However, since we use Google Cloud Platform for our deployment, it supports auto scaling and manages all of the network traffic for us. As a result, it can accomodate more concurrent users and have improved performance. Although the auto scaling setup is very easy, the deployment cost would be charged considerably higher. Another reason we cannot test with multiple instances is that Google Cloud Platform only allows us to run 1 instance per service, and our request to increase the quota was denied due to low utilization.
 
@@ -2484,7 +2468,7 @@ However, the results from this graph show us that we can reduce the number of te
 \caption{Genetic Algorithm Execution Time with 10 Genes}\label{fig:4GeneticAlgorithmExecutionTimewith10Genes}
 \end{figure}\vspace{-24pt}
 
-We measure the execution time of our genetic algorithm implementation. Figure~\ref{fig:4GeneticAlgorithmExecutionTimewith6Genes} shows the execution time with the total number of 6 genes in each chromosome which is used in group recommendation. The average execution time is 81 milliseconds. Figure~\ref{fig:4GeneticAlgorithmExecutionTimewith10Genes} shows the execution time with the total number of 10 genes in each chromosome which is used in individual recommendation. The average execution time is 165 milliseconds. We can conclude that the algorithm can deliver a fast suggestion generation with less than 1 second of both individual and group recommendations. Moreover, if we reduce the number of termination conditions, we can save even more execution time.
+We measure the execution time of our genetic algorithm implementation. From Figure~\ref{fig:4GeneticAlgorithmExecutionTimewith6Genes}, it shows the execution time with the total number of 6 genes in each chromosome which is used in group recommendation. The average execution time is 81 milliseconds. From Figure~\ref{fig:4GeneticAlgorithmExecutionTimewith10Genes}, it shows the execution time with the total number of 10 genes in each chromosome which is used in individual recommendation. The average execution time is 165 milliseconds. We can conclude that the algorithm can deliver a fast suggestion generation with less than 1 second of both individual and group recommendations. Moreover, if we reduce the number of termination conditions, we can save even more execution time.
 
 
 
@@ -2537,7 +2521,7 @@ We can divide our future works into 3 parts which are dataset, web application a
 \caption{LINE Mini App Integration}\label{fig:5LINEMiniAppIntegration}
 \end{figure}\vspace{-24pt}
 
-Moreover, in the web application improvement, we could integrate our existing application with LINE Mini App. Figure~\ref{fig:5LINEMiniAppIntegration} shows the 3 main benefits from this integration. The first is that users can easily add our application to their LINE home screen without any installation. Next, users can invite friends via individual and group LINE chat. Lastly, users can easily see and join a group within LINE chat.
+Moreover, in the web application improvement, we could integrate our existing application with LINE Mini App. From Figure~\ref{fig:5LINEMiniAppIntegration}, it shows the 3 main benefits from this integration. The first is that users can easily add our application to their LINE home screen without any installation. Next, users can invite friends via individual and group LINE chat. Lastly, users can easily see and join a group within LINE chat.
 
 \section{Conclusion}
 
@@ -2604,7 +2588,7 @@ The most occupation of our respondents are students with 52.7\% and followed by 
 \caption{Estimated Daily Cost of Eating}\label{fig:A1EstimatedDailyCostofEating}
 \end{figure}\vspace{-24pt}
 
-Figure~\ref{fig:A1EstimatedDailyCostofEating}, The most eating cost per day is 200 baht with 32.4\% or 48 out of 148 respondents. As you can see from the figure, a few respondents have a lot of budget for eating per day which the maximum budget is 4,000 baht.
+From Figure~\ref{fig:A1EstimatedDailyCostofEating}, The most eating cost per day is 200 baht with 32.4\% or 48 out of 148 respondents. As you can see from the figure, a few respondents have a lot of budget for eating per day which the maximum budget is 4,000 baht.
 
 \begin{figure}[H]\centering
 \includegraphics[width=350pt]{./images/A1TheApplicationorPlatformthatRespondentUsuallyUsetoFindtheRestaurants.png}
